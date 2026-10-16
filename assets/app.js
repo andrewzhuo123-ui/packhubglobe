@@ -50,11 +50,13 @@ if(catalogSearch){
     const copy=document.createElement('div');copy.className='catalog-copy';
     const group=document.createElement('p');group.className='eyebrow';group.textContent=record.groups[0];
     const heading=document.createElement('h2');const link=document.createElement('a');link.href=record.path;link.textContent=record.name;heading.append(link);
+    const facts=document.createElement('dl');facts.className='catalog-facts';for(const [label,value] of record.facts){const row=document.createElement('div');const dt=document.createElement('dt');dt.textContent=label;const dd=document.createElement('dd');dd.textContent=value.length>95?value.slice(0,95)+'…':value;row.append(dt,dd);facts.append(row)}
     const reference=document.createElement('p');reference.className='catalog-ref';reference.textContent=record.reference;
     const actions=document.createElement('div');actions.className='catalog-actions';
     const details=document.createElement('a');details.className='textlink';details.href=record.path;details.textContent='View details ↗';
     const quote=document.createElement('a');quote.className='button';quote.href='/request-quote/?product='+encodeURIComponent(record.name+' · '+record.reference);quote.textContent='Get a quote';
-    actions.append(details,quote);copy.append(group,heading,reference,actions);card.append(photo,copy);grid.append(card);
+    const chat=document.createElement('a');chat.className='button chat-now';chat.href=record.chat;chat.target='_blank';chat.rel='noopener noreferrer';chat.textContent='Chat now · WhatsApp';
+    actions.append(details,quote,chat);copy.append(group,heading,facts,reference,actions);card.append(photo,copy);grid.append(card);
    }
    if(pagination)pagination.hidden=true;
    status.textContent=matches.length?`${matches.length} matching products across the collection${matches.length>48?' · Showing the first 48; add another word to narrow your search.':'.'}`:'No matching products. Try a material, format or product reference.';

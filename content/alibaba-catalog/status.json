@@ -14,8 +14,14 @@
   "attributesMin": 15,
   "attributesMax": 31,
   "missingKeywordMetadata": 0,
-  "publicPages": 1063,
+  "publicPages": 1100,
   "previewUrl": "http://localhost:4174/catalog/",
   "githubTarget": "https://github.com/andrewzhuo123-ui/packhubglobe",
-  "hostingDeployment": "Verify separately from the GitHub push"
+  "hostingDeployment": "Verify separately from the GitHub push",
+  "catalogMinimumOrderPieces": 500,
+  "primaryFamilies": {
+    "paper-boxes": 771,
+    "bags": 46,
+    "packaging-accessories": 39
+  }
 }

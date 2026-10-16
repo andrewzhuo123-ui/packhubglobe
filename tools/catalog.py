@@ -7,6 +7,7 @@ catalog_queue = json.loads((catalog_data / 'detail-queue.json').read_text())
 catalog_inventory = json.loads((catalog_data / 'inventory.json').read_text())
 catalog_selection = json.loads((catalog_data / 'selected.json').read_text())
 catalog_images = {p['id']: p for p in json.loads((catalog_data / 'images.json').read_text())}
+catalog_item_paths=json.loads((catalog_data/'item-paths.json').read_text())
 catalog_records = {}
 catalog_missing = []
 for source in catalog_queue:
@@ -92,19 +93,38 @@ for product_id, record in catalog_records.items():
  record['reference'] = 'PHG-' + product_id
  record['path'] = '/catalog/' + catalog_slug(record['name'])[:90].rstrip('-') + '-' + product_id + '/'
  record['groups'] = [g for g in record['source']['groups'] if g in catalog_groups]
+ if '953304411' in record['groups']:record['name']='Custom Cardboard Display'
+ elif '952983140' in record['groups']:record['name']='Custom Printed Hang Tag'
+ elif '807897313' in record['groups']:
+  raw=record['detail']['title'].lower()
+  if 'dust cover' in raw:record['name']='Custom Candle Dust Covers'
+  elif 'table tent' in raw:record['name']='Custom Printed Table Tent'
+  elif 'sleeve' in raw:record['name']='Custom Paper Packaging Sleeve'
+ record['path']=catalog_item_paths[product_id]
  record['facts'] = []
  for label, names in [('Material', ('Material Structure','Material','Paper Type','Plastic Type')),
-                       ('Size', ('Size',)), ('Printing', ('Printing','Printing Handling'))]:
+                       ('Size', ('Size',)), ('Printing', ('Printing','Printing Handling','Surface Handling'))]:
   value = catalog_clean(catalog_attr(record, *names))
   if value and not re.search(r'Finer|Xiamen|https?://',value,re.I):
    record['facts'].append((label,value))
+ for label,names in [('Structure / closure',('Box Type','Bag Type','Sealing & Handle','Shape')),('Finish',('Surface Finish','Surface Treatment')),('Insert / accessories',('Liner type','Accessories')),('Color',('Color','Colors')),('Logo',('Logo printing','Logo'))]:
+  value=catalog_clean(catalog_attr(record,*names))
+  if value and not re.search(r'Finer|Xiamen|https?://',value,re.I):record['facts'].append((label,value))
+ record['family']='packaging-accessories' if product_profile(record) in ['label','print','display'] else 'bags' if product_profile(record) in ['bag','poly','pouch'] else 'paper-boxes'
+
+FAMILIES={'paper-boxes':'Paper boxes','bags':'Bags & pouches','packaging-accessories':'Packaging accessories'}
+def catalog_chat(record):
+ return 'https://wa.me/8615105916426?text='+quote('Hello PackHubGlobe, I would like a quote for '+record['name']+' ('+record['reference']+').\nProduct: '+ORIGIN+record['path']+'\nQuantity: 500 pieces or more\nCustom size: \nLogo / printing: \nDelivery country: \nPlease advise the material, sample options and quotation.')
+
+def family_nav(base):
+ return '<nav class="family-nav" aria-label="Packaging families"><a href="/catalog/"'+(' aria-current="page"' if base=='/catalog/' else '')+'>All products</a>'+''.join('<a href="/catalog/'+slug+'/"'+(' aria-current="page"' if base=='/catalog/'+slug+'/' else '')+'>'+title+'</a>' for slug,title in FAMILIES.items())+'</nav>'
 
 def catalog_card(record):
  image = record['image'];name = esc(record['name']);path = record['path']
  group = catalog_groups[record['groups'][0]]['public_name']
- facts = ''.join('<div><dt>'+label+'</dt><dd>'+esc(value[:100])+'</dd></div>'
-                 for label,value in record['facts'][:2])
- return '<article class="catalog-card"><a class="catalog-photo" href="'+path+'"><img src="'+image['path']+'" alt="'+esc(record['name'],quote=True)+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" loading="lazy"></a><div class="catalog-copy"><p class="eyebrow">'+esc(group)+'</p><h2><a href="'+path+'">'+name+'</a></h2><dl class="catalog-facts">'+facts+'</dl><p class="catalog-ref">'+record['reference']+'</p><div class="catalog-actions"><a class="textlink" href="'+path+'">View details ↗</a>'+button('Get a quote',qurl(record['name']+' · '+record['reference']))+'</div></div></article>'
+ facts = '<div class="moq-fact"><dt>MOQ</dt><dd>500 pieces</dd></div>'+''.join('<div><dt>'+label+'</dt><dd>'+esc(value[:95])+('…' if len(value)>95 else '')+'</dd></div>'
+                 for label,value in record['facts'][:5])
+ return '<article class="catalog-card"><a class="catalog-photo" href="'+path+'"><img src="'+image['path']+'" alt="'+esc(record['name'],quote=True)+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" loading="lazy"></a><div class="catalog-copy"><p class="eyebrow">'+esc(group)+'</p><h2><a href="'+path+'">'+name+'</a></h2><dl class="catalog-facts">'+facts+'</dl><p class="catalog-ref">'+record['reference']+'</p><div class="catalog-actions"><a class="textlink" href="'+path+'">View details ↗</a>'+button('Get a quote',qurl(record['name']+' · '+record['reference']))+'<a class="button chat-now" href="'+esc(catalog_chat(record),quote=True)+'" target="_blank" rel="noopener noreferrer">Chat now · WhatsApp</a></div></div></article>'
 
 def catalog_pagination(base,page,total):
  if total<=1:return ''
@@ -126,6 +146,7 @@ def catalog_listing(base,name,ids,all_products=False):
   description=('Browse '+name.lower()+' references with product photos, material and printing details. Request custom sizes and logo printing.')
   if page>1:description+=' Page '+str(page)+'.'
   body=intro('Product collection',name+'.',description,'<a href="/catalog/">Product collection</a>'+(' / '+esc(name) if not all_products else ''))
+  body+='<div class="wrap">'+family_nav(base)+'</div>'
   body+='<section class="wrap catalog-layout"><aside class="catalog-sidebar"><details'+(' open' if all_products else '')+'><summary>Browse packaging</summary><a href="/catalog/">All products</a>'+''.join('<a href="/catalog/'+g['slug']+'/"'+(' aria-current="page"' if base=='/catalog/'+g['slug']+'/' else '')+'>'+esc(g['public_name'])+' <span>'+str(len(catalog_selection[id]))+'</span></a>' for id,g in catalog_groups.items())+'</details><a class="textlink" href="/products/">Compare packaging formats ↗</a></aside><div class="catalog-results"><div class="catalog-toolbar"><p>'+str(len(ids))+' products · Page '+str(page)+' of '+str(total)+'</p><div class="catalog-search" hidden><label for="catalog-search">Find a product</label><input type="search" id="catalog-search" placeholder="Try drawer box or kraft bag" autocomplete="off"><button type="button" id="catalog-clear">Clear</button></div></div><p id="catalog-search-status" class="smallnote" role="status" aria-live="polite"></p><div class="catalog-grid" id="catalog-grid">'+''.join(catalog_card(catalog_records[id]) for id in ids[(page-1)*24:page*24])+'</div>'+catalog_pagination(base,page,total)+'</div></section>'+cta()
   listing_schema={'@type':'ItemList','name':name,'numberOfItems':len(ids),'itemListElement':[{'@type':'ListItem','position':(page-1)*24+i+1,'url':ORIGIN+catalog_records[id]['path']} for i,id in enumerate(ids[(page-1)*24:page*24])]}
   write(path,name+(' · Page '+str(page) if page>1 else '')+' | PackHubGlobe',description,body,[listing_schema])
@@ -139,6 +160,8 @@ while any(catalog_pools):
    id=pool.pop(0)
    if id not in catalog_order:catalog_order.append(id)
 catalog_listing('/catalog/','Custom packaging collection',catalog_order,True)
+for slug,title in FAMILIES.items():
+ catalog_listing('/catalog/'+slug+'/',title,[id for id in catalog_order if catalog_records[id]['family']==slug])
 for id,group in catalog_groups.items():
  catalog_listing('/catalog/'+group['slug']+'/',group['public_name'],catalog_selection[id])
 
@@ -148,12 +171,15 @@ for product_id, record in catalog_records.items():
  description=name+'. '+reference+'. Review material, size and printing options for a custom packaging quotation.'
  visual='<figure class="catalog-product-image"><a href="'+image['path']+'" target="_blank" rel="noopener noreferrer"><img src="'+image['path']+'" alt="'+esc(name,quote=True)+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" fetchpriority="high"></a></figure>'
  body=detailhero(group['public_name'],esc(name),reference+' · Custom size and printed artwork available for specification review.',visual,name+' · '+reference,'<a href="/catalog/">Product collection</a> / <a href="/catalog/'+group['slug']+'/">'+esc(group['public_name'])+'</a>')
- rows=list(record['facts'])
+ rows=[('Minimum order quantity','500 pieces')]+list(record['facts'])
  for label,names in [('Structure',('Shape','Box Type')),('Logo',('Logo printing','Logo')),('Insert / lining',('Liner type','Accessories'))]:
   value=catalog_clean(catalog_attr(record,*names))
   if value and not re.search(r'Finer|Xiamen|https?://',value,re.I):rows.append((label,value))
- body+='<section class="section wrap product-details"><div><h2>Product details.</h2>'+specs(rows)+'<p class="smallnote">These are reference specifications. Confirm the material, dimensions, finish, MOQ and sample for your order. Packaging shown is a printing reference; branded contents are not included.</p></div><aside class="help-note"><h3>Make this packaging yours.</h3><p>Share your product dimensions, quantity per design, artwork and delivery country. Include reference '+reference+' in your enquiry.</p><div class="actions">'+button('Request a quote',qurl(name+' · '+reference))+'<a class="textlink" href="https://wa.me/8615105916426?text='+quote('Hello, I am interested in '+reference+': '+name+' '+ORIGIN+record['path'])+'" target="_blank" rel="noopener noreferrer">Discuss on WhatsApp ↗</a></div><a class="textlink" href="/guides/packaging-quote-checklist/">Prepare your specification</a></aside></section>'
- body+='<section class="section softbg"><div class="wrap"><h2>Explore related packaging.</h2><div class="related-links">'+''.join('<a href="/catalog/'+catalog_groups[g]['slug']+'/">'+esc(catalog_groups[g]['public_name'])+'</a>' for g in record['groups'])+'</div></div></section>'+cta()
+ body+='<section class="section wrap product-details"><div><h2>Product details.</h2>'+specs(rows)+'<p class="smallnote">These are reference specifications. Confirm the material, dimensions, finish and sample for your order. MOQ: 500 pieces. Packaging shown is a printing reference; branded contents are not included.</p></div><aside class="help-note"><h3>Make this packaging yours.</h3><p>Share your product dimensions, quantity per design, artwork and delivery country. Include reference '+reference+' in your enquiry.</p><div class="actions">'+button('Request a quote',qurl(name+' · '+reference))+'<a class="textlink" href="https://wa.me/8615105916426?text='+catalog_chat(record).split('?text=',1)[1]+'" target="_blank" rel="noopener noreferrer">Discuss on WhatsApp ↗</a></div><a class="textlink" href="/guides/packaging-quote-checklist/">Prepare your specification</a></aside></section>'
+ body+=product_editorial(record,rows)
+ related_items=[r for id,r in catalog_records.items() if id!=product_id and r['family']==record['family'] and set(r['groups'])&set(record['groups'])][:3]
+ body+='<section class="section wrap"><h2>Compare related product references.</h2><div class="catalog-grid related-products">'+''.join(catalog_card(r) for r in related_items)+'</div></section>'
+ body+='<section class="section softbg"><div class="wrap"><h2>Explore related packaging.</h2><div class="related-links"><a href="/catalog/'+record['family']+'/">'+FAMILIES[record['family']]+'</a>'+''.join('<a href="/catalog/'+catalog_groups[g]['slug']+'/">'+esc(catalog_groups[g]['public_name'])+'</a>' for g in record['groups'])+'</div></div></section>'+cta()
  schema={'@type':'Product','name':name,'sku':reference,'url':ORIGIN+record['path'],'image':ORIGIN+image['path'],'description':description,'brand':{'@type':'Brand','name':'PackHubGlobe'},'additionalProperty':[{'@type':'PropertyValue','name':label,'value':value} for label,value in rows]}
  write(record['path'],name+' · '+reference+' | PackHubGlobe',description,body,[schema])
  file=ROOT/record['path'].strip('/')/'index.html'
@@ -170,6 +196,6 @@ with map_file.open('w',encoding='utf-8-sig',newline='') as stream:
  writer=csv.DictWriter(stream,fieldnames=fields);writer.writeheader();writer.writerows(planned)
 
 # Small search index uses only the curated public fields; original metadata remains in content/.
-search=[{'name':r['name'],'reference':r['reference'],'path':r['path'],'image':r['image']['path'],'groups':[catalog_groups[g]['public_name'] for g in r['groups']]} for r in catalog_records.values()]
+search=[{'name':r['name'],'reference':r['reference'],'path':r['path'],'image':r['image']['path'],'family':r['family'],'chat':catalog_chat(r),'facts':[['MOQ','500 pieces']]+r['facts'][:5],'groups':[catalog_groups[g]['public_name'] for g in r['groups']]} for r in catalog_records.values()]
 (ROOT/'assets/catalog-index.json').write_text(json.dumps(search,ensure_ascii=False))
 (catalog_data/'publication.json').write_text(json.dumps({'products':len(catalog_records),'groups':{id:{'name':g['public_name'],'published':len(catalog_selection[id]),'candidates':len(json.loads((catalog_data/'listings.json').read_text())[id])} for id,g in catalog_groups.items()},'public_paths':[p[0] for p in PAGES if p[0].startswith('/catalog/')]},indent=2))

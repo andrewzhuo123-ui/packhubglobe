@@ -1,4 +1,5 @@
 """Build the complete static product, industry and resource page inventory."""
+exec(compile((ROOT/'tools/editorial.py').read_text(),str(ROOT/'tools/editorial.py'),'exec'))
 import sys
 sys.path.insert(0,str(ROOT/'content'))
 from products import PRODUCTS
@@ -65,8 +66,8 @@ overview=intro('Buyer resources','Packaging guides.','Practical answers for choo
 for slug,title,desc,chapters in allguides:
  overview+='<article class="guidecard"><h2><a href="/guides/'+slug+'/">'+title+'</a></h2><p>'+desc+'</p><a class="textlink" href="/guides/'+slug+'/">Read guide</a></article>'
  body=intro('Buyer guide',title,desc,'<a href="/guides/">Guides</a> / '+title)
- body+='<article class="article wrap">'+sections(chapters)+'<p class="article-note">For your own project, confirm the specification and sample requirements with us. <a href="/services/sampling/">Explore sampling</a> or <a href="/products/">browse packaging</a>.</p></article>'+cta()
- write('/guides/'+slug+'/',title+' | PackHubGlobe',desc,body)
+ body+='<article class="article wrap guide-longform"><p class="article-byline">By PackHubGlobe packaging team · Updated 16 October 2026</p><nav class="article-toc" aria-label="Guide contents"><a href="#worked-example">Worked example</a><a href="#comparison">Comparison</a><a href="#approval-checklist">Checklist</a><a href="#guide-faq">FAQ</a></nav>'+sections(chapters)+guide_extra(slug)+'<p class="article-note">For your own project, confirm the specification and sample requirements with us. <a href="/services/sampling/">Explore sampling</a> or <a href="/products/">browse packaging</a>.</p></article>'+cta()
+ write('/guides/'+slug+'/',title+' | PackHubGlobe',desc,body,[{'@type':'Article','headline':title,'dateModified':'2026-10-16','author':{'@type':'Organization','name':'PackHubGlobe packaging team'},'publisher':{'@type':'Organization','name':'PackHubGlobe'},'mainEntityOfPage':ORIGIN+'/guides/'+slug+'/'}])
 overview+='</div></section>'+cta()
 write('/guides/','Packaging Guides for B2B Buyers | PackHubGlobe','Compare packaging structures, dimensions, print proofs, sample types, label rolls and material choices.',overview)
 
@@ -93,6 +94,6 @@ error=(ROOT/'404/index.html').read_text().replace('content="index,follow"','cont
 from xml.sax.saxutils import escape as xesc
 (ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+xesc(ORIGIN+p[0])+'</loc></url>\n' for p in sorted(PAGES))+'</urlset>\n')
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\nDisallow: /tools/\nDisallow: /content/\n\nSitemap: '+ORIGIN+'/sitemap.xml\n')
-(ROOT/'llms.txt').write_text('# PackHubGlobe\n\nCustom packaging and printing for business buyers. Contact: '+EMAIL+'. MOQ, pricing, materials and production timing require a project-specific quotation. Original virtual-brand imagery is illustrative.\n\n'+''.join('- ['+title+']('+ORIGIN+path+'): '+desc+'\n' for path,title,desc in PAGES if path in ['/','/catalog/','/products/','/industries/','/materials/','/services/','/guides/','/about/','/factory/','/request-quote/']))
+(ROOT/'llms.txt').write_text('# PackHubGlobe\n\nCustom packaging and printing for business buyers. Contact: '+EMAIL+'. Catalog MOQ is 500 pieces. Pricing, materials and production timing require a project-specific quotation. Original virtual-brand imagery is illustrative.\n\n'+''.join('- ['+title+']('+ORIGIN+path+'): '+desc+'\n' for path,title,desc in PAGES if path in ['/','/catalog/','/products/','/industries/','/materials/','/services/','/guides/','/about/','/factory/','/request-quote/']))
 (ROOT/'content/page-manifest.json').write_text(json.dumps(sorted(PAGES),indent=2))
 print(f'Built {len(PAGES)} public pages plus a real 404 document for {ORIGIN}')

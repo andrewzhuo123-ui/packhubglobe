@@ -15,11 +15,20 @@ Complete collection: 33 groups inventoried, 2,259 distinct candidate products. 8
 ## Build and validation
 
 - python3 tools/catalog_verify.py checks category completion, selected counts, local assets, product identity, source store and attributes before HTML is written.
-- python3 tools/build.py generates 1,063 public pages and one 404 document, including all original 100 routes.
-- python3 tools/validate.py passed: 1,063 sitemap URLs, 44,031 internal links, all pages reachable, unique titles/descriptions, one H1 per page, local assets and JSON-LD.
+- python3 tools/build.py generates 1,100 public pages and one 404 document, including all original 100 routes.
+- python3 tools/validate.py passed: 1,100 sitemap URLs, 70,167 internal links, all pages reachable, unique titles/descriptions, one H1 per page, local assets and JSON-LD.
 - 79 representative routes tested at 320/390/768/1440 widths: 316 checks, no overflow. Exact-reference search, zero-result state, reset, pagination, mobile menu and quote prefill/email-draft recipient verified.
-- python3 tools/package.py creates packhubglobe-hostinger-public_html.zip with 1,955 deployable files.
+- python3 tools/package.py creates packhubglobe-hostinger-public_html.zip with 1,992 deployable files.
 - Publication to GitHub and actual Hostinger deployment are separate states; see status.json.
+
+## October 16 catalog expansion
+
+- Owner-set catalog MOQ: 500 pieces for every product; original marketplace values remain unchanged in source records.
+- Primary families: 771 paper boxes, 46 bags and pouches, 39 packaging accessories; all 856 original detail URLs preserved in item-paths.json.
+- Cards and search results include captured attributes and a product-specific WhatsApp inquiry link.
+- Every product has a relevant procurement guide, customization checklist, sample review and FAQs. All 10 Guides and the homepage have expanded editorial content.
+- python3 tools/validate-expansion.py verifies MOQ, card facts, WhatsApp messages, original URLs, content sections and family coverage.
+- Current responsive smoke test: 28 checks across homepage, catalog, three family hubs, product detail and Guide at 320/390/768/1440, no overflow.
 
 ## Coverage
 

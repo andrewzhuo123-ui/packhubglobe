@@ -1,0 +1,47 @@
+[
+  {
+    "path": "assets/process/plate-making.webp",
+    "source": "/Users/autumnzhang/Downloads/Finer Pack网站素材包/工厂/工厂流程图片/版房制版-01.jpg"
+  },
+  {
+    "path": "assets/process/paper-cutting.webp",
+    "source": "/Users/autumnzhang/Downloads/Finer Pack网站素材包/工厂/工厂流程图片/切纸-02.jpg"
+  },
+  {
+    "path": "assets/process/printing.webp",
+    "source": "/Users/autumnzhang/Downloads/Finer Pack网站素材包/工厂/工厂流程图片/印刷-03.jpg"
+  },
+  {
+    "path": "assets/process/coating.webp",
+    "source": "/Users/autumnzhang/Downloads/Finer Pack网站素材包/工厂/工厂流程图片/过油-04.jpg"
+  },
+  {
+    "path": "assets/process/lamination.webp",
+    "source": "/Users/autumnzhang/Downloads/Finer Pack网站素材包/工厂/工厂流程图片/自动覆膜-05.jpg"
+  },
+  {
+    "path": "assets/process/corrugating.webp",
+    "source": "/Users/autumnzhang/Downloads/Finer Pack网站素材包/工厂/工厂流程图片/裱瓦-06.jpg"
+  },
+  {
+    "path": "assets/process/die-cutting.webp",
+    "source": "/Users/autumnzhang/Downloads/Finer Pack网站素材包/工厂/工厂流程图片/自动模切-07.jpg"
+  },
+  {
+    "path": "assets/process/gluing.webp",
+    "source": "/Users/autumnzhang/Downloads/Finer Pack网站素材包/工厂/工厂流程图片/自动糊盒-08.jpg"
+  },
+  {
+    "path": "assets/company/material-warehouse.webp",
+    "source": "/Users/autumnzhang/Downloads/Finer Pack网站素材包/工厂/工厂流程图片/原材料仓库-04.png"
+  },
+  {
+    "path": "assets/company/project-office.webp",
+    "source": "/Users/autumnzhang/Downloads/Finer Pack网站素材包/工厂/工厂流程图片/办公室.jpg"
+  },
+  {
+    "path": "assets/company/sample-room.webp",
+    "source": "https://skill.accio.com/web-app/273622a71d5443ef_sample-room.jpg",
+    "page": "https://finerpackaging.en.alibaba.com/"
+  }
+]

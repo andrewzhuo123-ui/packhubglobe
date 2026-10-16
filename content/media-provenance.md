@@ -1,0 +1,8 @@
+# Real factory media — 2026-10-16
+
+- Banner source: user-authorized `Factory.mp4` from the supplied local materials, 99.103 s, 1280 × 720. Inspected frames carry the Unique Packaging mark and show flexible-packaging production. The user explicitly allowed this complete video while Factory 2.mp4 was still downloading. It is not presented as paper-packaging footage.
+- Edit: 26–32 s + 56–62 s + 82–88 s, 18 seconds total, 24 fps, silent H.264 MP4 with faststart. Crop the image to 1024 × 576 at x=128,y=144 before scaling to 1280 × 720, keeping the website Banner visually focused on equipment rather than the source-video corner branding. Mobile rendition: 854 × 480. No generated factory imagery.
+- Factory photographs: copied unchanged from the supplied Finer Pack factory material directory. Offset press, die cutter, folder-gluer, foil stamping. Placed on About / Factory, with the offset press also supporting the homepage production section.
+- Certificate: supplied `FSC证书 25年更新.pdf`, copied unchanged to assets/documents/finer-packaging-fsc-coc.pdf; rendered first-page thumbnail. Holder Xiamen Finer Packaging Co., Ltd.; ESTS-COC-200302; issue 2025-11-27; validity shown to 2030-11-26. The page distinguishes the supplied document from live registry status and product-level claims.
+- Not published as PackHubGlobe credentials: iso.jpg / iso-1.jpg name a different holder and show expired validity. The 2025 GRS PDF names another company and expires 2026-08-29. Other unreviewed or unmatched documents remain excluded.
+- WhatsApp icon: Bootstrap Icons (MIT); source https://github.com/twbs/icons/blob/main/icons/whatsapp.svg, license stored in assets/icons/LICENSE-bootstrap-icons.txt.

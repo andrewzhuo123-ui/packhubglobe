@@ -3,3 +3,4 @@ __pycache__/
 *.zip
 qa/
 .DS_Store
+design-qa.md

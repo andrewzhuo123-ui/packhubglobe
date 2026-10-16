@@ -33,7 +33,7 @@ Hostinger 的选项可能随账号和套餐不同，按目标站点显示的 Git
 - `https://www.packhubglobe.com/sitemap.xml` 应含 100 个规范 URL；`robots.txt` 指向同一个 sitemap。
 - `/tools/`、`/content/`、`/.git/`、`README.md` 和 `DEPLOYMENT.md` 不应公开。Git 部署时它们由 `.htaccess` 拦截；ZIP 部署包完全不含这些文件。
 - 手机打开菜单、选择分类、展开问答、填写表单并下载简报。
-- 所有联系入口均为 **andrew@packhubglobe.com**。表单打开的是访客邮件客户端草稿，必须由访客发送；未配置自动后台投递。
+- 邮件询盘入口为 **andrew@packhubglobe.com**；全站 WhatsApp 悬浮入口为 **+86 15105916426**。表单打开的是访客邮件客户端草稿，必须由访客发送；未配置自动后台投递。
 - 收录、排名、邮箱实际接收与 Hostinger 上线都需要分别验证，不由 GitHub 推送自动证明。
 
-本次按用户要求只推送 GitHub；没有登录或操作 Hostinger，也没有绑定 DNS、修改邮箱配置或发送邮件。
+GitHub 推送完成后，仍需在 Hostinger 部署并检查公开站点；Git 推送不等于上线。首页使用 18 秒静音工厂视频，含桌面版、手机版、封面图和暂停控制；视频和证书文件均包含在 assets/ 与上传包中。

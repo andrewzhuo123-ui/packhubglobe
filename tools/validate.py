@@ -7,11 +7,13 @@ import json,re,csv,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1];ORIGIN='https://www.packhubglobe.com'
 class Page(HTMLParser):
  def __init__(self,text):
-  super().__init__();self.tags=[];self.ids=set();self.links=[];self.schema=[];self.buffer='';self.in_schema=False;self.h1=0;self.title='';self.in_title=False;self.text=[];self.feed(text)
+  super().__init__();self.tags=[];self.ids=set();self.duplicate_ids=[];self.links=[];self.schema=[];self.buffer='';self.in_schema=False;self.h1=0;self.title='';self.in_title=False;self.text=[];self.feed(text)
  def handle_starttag(self,tag,attrs):
   a=dict(attrs);self.tags.append((tag,a))
   if tag=='h1':self.h1+=1
-  if 'id' in a:self.ids.add(a['id'])
+  if 'id' in a:
+   if a['id'] in self.ids:self.duplicate_ids.append(a['id'])
+   self.ids.add(a['id'])
   if tag=='a':self.links.append(a.get('href',''))
   if tag=='title':self.in_title=True
   if tag=='script' and a.get('type')=='application/ld+json':self.in_schema=True;self.buffer=''
@@ -28,6 +30,8 @@ for file in ROOT.rglob('*.html'):
  if any(p in ['.git','qa'] for p in file.relative_to(ROOT).parts):continue
  path='/404.html' if file.name=='404.html' else '/'+str(file.relative_to(ROOT)).removesuffix('index.html')
  text=file.read_text();p=Page(text);pages[path]=p
+ if p.duplicate_ids:errors.append(path+': duplicate IDs '+repr(p.duplicate_ids))
+ if re.search(r'\b(?:Cutomized|Customezed|Offest|Carboard|Partone|Panton|Prinitng)\b',' '.join(p.text)):errors.append(path+': uncorrected source spelling')
  if p.h1!=1:errors.append(path+': H1 count '+str(p.h1))
  if not p.title:errors.append(path+': missing title')
  for tag in ['header','nav','main','footer']:
@@ -45,8 +49,16 @@ for file in ROOT.rglob('*.html'):
  for email in re.findall(r'mailto:([^?"\s]+)',text):
   if email!='andrew@packhubglobe.com':errors.append(path+': unexpected email')
  for tag,a in p.tags:
+  if tag=='a' and a.get('target')=='_blank' and 'noopener' not in a.get('rel',''):errors.append(path+': external tab missing noopener')
+  if tag=='main' and a.get('tabindex')!='-1':errors.append(path+': skip-link target is not focusable')
   if tag=='img':
    if not a.get('alt') or not a.get('width') or not a.get('height'):errors.append(path+': image missing alt or dimensions')
+  if tag in ['video','source']:
+   for key in ['src','poster','data-desktop','data-mobile']:
+    value=a.get(key)
+    if value and value.startswith('/'):
+     assets.add(urlparse(value).path.lstrip('/'))
+     if not (ROOT/urlparse(value).path.lstrip('/')).is_file():errors.append(path+': missing media '+value)
   resource=a.get('src') if tag in ['img','script'] else a.get('href') if tag=='link' and a.get('rel') in ['stylesheet','icon'] else None
   if resource:
    if resource.startswith('/'):
@@ -54,6 +66,9 @@ for file in ROOT.rglob('*.html'):
     if not target.is_file():errors.append(path+': missing asset '+resource)
    else:errors.append(path+': external runtime resource '+resource)
 for path,p in pages.items():
+ for block in re.findall(r'<dl class="spec-list">(.*?)</dl>',(ROOT/path.strip('/')/'index.html').read_text() if path!='/404.html' else '',re.S):
+  labels=re.findall(r'<dt>(.*?)</dt>',block)
+  if len(labels)!=len(set(labels)):errors.append(path+': duplicate specification fields')
  graph[path]=[]
  for href in p.links:
   if not href or href in ['#','javascript:void(0)']:errors.append(path+': empty action');continue

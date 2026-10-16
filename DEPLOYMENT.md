@@ -1,7 +1,7 @@
 # Hostinger 部署说明
 
 目标域名：**https://www.packhubglobe.com/**
-GitHub：**https://github.com/a1147618450-ops/Packhubglobe**
+GitHub：**https://github.com/andrewzhuo123-ui/packhubglobe**
 分支：**main**
 网站根目录：**public_html**
 
@@ -10,7 +10,7 @@ GitHub：**https://github.com/a1147618450-ops/Packhubglobe**
 本仓库根目录就是网站文件根目录，已有 `index.html`、`assets/`、`products/`、`industries/`、`.htaccess`、`robots.txt`、`sitemap.xml` 等。
 
 1. 在 Hostinger 中为 packhubglobe.com 使用支持自定义 HTML / PHP 文件的站点。
-2. 进入目标站点的 **Advanced → Git**，连接有权访问此私有仓库的 GitHub 账户，并选择 `a1147618450-ops/Packhubglobe`。
+2. 进入目标站点的 **Advanced → Git**，连接有权访问此仓库的 GitHub 账户，并选择 `andrewzhuo123-ui/packhubglobe`。
 3. 分支选择 `main`，部署目录使用 `public_html`。不需要 npm、构建命令或启动命令。
 4. 首次部署前确认目标目录没有需要保留的网站文件；有旧文件时先备份，不要直接覆盖未知站点。
 5. 如需 Git 推送后自动更新，在该目标站点开启 Auto-deployment。

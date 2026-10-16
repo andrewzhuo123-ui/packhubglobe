@@ -18,7 +18,7 @@ def sections(items):return ''.join('<section><h2>'+esc(title)+'</h2><p>'+esc(tex
 
 for c in CATEGORIES:
  family=c['slug'];items=PRODUCTS[family]
- body=intro(c['name'],c['name']+' for a complete brand experience.',c['intro'],'<a href="/products/">Packaging</a> / '+c['name'])
+ body=intro(c['name'],c['name']+' — formats & specifications.',c['intro'],'<a href="/products/">Packaging</a> / '+c['name'])
  body+='<section class="wrap categorylead"><div><h2>Choose your structure.<br>Make the print yours.</h2><p style="margin-top:22px">'+c['summary']+'</p><div class="actions" style="margin-top:25px">'+button('Discuss my packaging',qurl(c['name']))+'</div></div>'+art(c['art'])+'</section>'
  body+='<section class="section wrap"><span class="eyebrow">COMPARE THE FORMATS</span><h2>Find the right starting point.</h2><div class="formats" style="margin-top:28px">'
  for slug,name,desc,options,check,use in items:body+='<article class="format"><h3>'+name+'</h3><p>'+desc+'</p><a class="textlink" href="/products/'+family+'/'+slug+'/">Explore '+name.lower()+' ↗</a></article>'
@@ -36,7 +36,7 @@ for c in CATEGORIES:
   body+='<section class="section wrap"><div class="sectionhead"><div><span class="eyebrow">CONTINUE THE BRIEF</span><h2>Compare related formats.</h2></div><a class="textlink" href="/guides/packaging-quote-checklist/">Prepare your quote details ↗</a></div>'+related(other)+'</section>'+cta()
   write(path,title+' | PackHubGlobe',desc,body,[{'@type':'Service','name':title,'description':desc,'serviceType':'Packaging specification and custom printing'}])
 
-overview=intro('Industry solutions','One packaging partner.<br>Different brand worlds.','Find an application that matches your product. Connect the structure, graphic identity and packing requirements across boxes, bags, pouches and printed details.')+'<section class="wrap section" style="padding-top:0"><div class="industry-grid">'
+overview=intro('Industry solutions','Packaging by industry.','Find an application that matches your product. Connect the structure, graphic identity and packing requirements across boxes, bags, pouches and printed details.')+'<section class="wrap section" style="padding-top:0"><div class="industry-grid">'
 for slug,name,desc,brief,approach,check,links,img in INDUSTRIES:
  overview+='<a class="industry-card" href="/industries/'+slug+'/">'+scene(img,name+' with original printed brand concepts')+'<div class="cardtitle"><h3>'+name+'</h3><span class="arrow" aria-hidden="true">↗</span></div><p>'+desc+'</p></a>'
  body=intro('Industry packaging',name,desc,'<a href="/industries/">Industries</a> / '+name)
@@ -47,7 +47,7 @@ overview+='</div></section>'+cta()
 write('/industries/','Custom Packaging by Industry | PackHubGlobe','Explore custom packaging for beauty, coffee, food, pet products, apparel, gifting, ecommerce and more.',overview)
 
 for root,label,records in [('materials','Materials & finishes',MATERIALS),('services','Packaging services',SERVICES)]:
- overview=intro(label,'Better decisions.<br>From material to final pack.','Use these practical guides to define your packaging brief, review options and agree the specification and approvals needed for your project.')+'<section class="section wrap" style="padding-top:0"><div class="formats">'
+ overview=intro(label,'Materials & finishing options.' if root=='materials' else 'Custom packaging services.','Use these practical guides to define your packaging brief, review options and agree the specification and approvals needed for your project.')+'<section class="section wrap" style="padding-top:0"><div class="formats">'
  for slug,name,desc,first,second,third,links in records:
   overview+='<article class="format"><span class="eyebrow">'+label+'</span><h3>'+name+'</h3><p>'+desc+'</p><a class="textlink" href="/'+root+'/'+slug+'/">Explore the details ↗</a></article>'
   body=intro(label,name,desc,'<a href="/'+root+'/">'+label+'</a> / '+name)
@@ -57,7 +57,7 @@ for root,label,records in [('materials','Materials & finishes',MATERIALS),('serv
  write('/'+root+'/',label+' | PackHubGlobe','Explore '+label.lower()+' for custom boxes, bags, pouches, cards and labels.',overview)
 
 allguides=[(g[0],g[2],g[3],g[4]) for g in GUIDES]+EXTRA_GUIDES
-overview=intro('The packaging notebook','Useful answers.<br>More confident packaging decisions.','Practical guidance for brand teams and buyers: compare structures, clarify dimensions, prepare artwork and choose the right sample.')+'<section class="section wrap" style="padding-top:0"><div class="resourcegrid">'
+overview=intro('Buyer resources','Packaging procurement guides.','Practical guidance for brand teams and buyers: compare structures, clarify dimensions, prepare artwork and choose the right sample.')+'<section class="section wrap" style="padding-top:0"><div class="resourcegrid">'
 for slug,title,desc,chapters in allguides:
  overview+='<article class="guidecard"><span class="eyebrow">Buyer guide</span><h3><a href="/guides/'+slug+'/">'+title+'</a></h3><p>'+desc+'</p><a class="textlink" href="/guides/'+slug+'/">Read the guide ↗</a></article>'
  body=intro('Buyer guide',title,desc,'<a href="/guides/">Guides</a> / '+title)
@@ -78,16 +78,6 @@ terms=[('Information and quotations','This website introduces packaging formats 
 write('/terms/','Quotation & Website Information | PackHubGlobe','Understand how packaging references, quotations, artwork, samples and order specifications are handled.',intro('Quotation information','Clear details.<br>A better project brief.','The points below explain how website information relates to a packaging enquiry and an agreed order.')+'<article class="article wrap">'+sections(terms)+'<p><a href="/about/">About the brand</a> · <a href="/request-quote/">Prepare your enquiry</a></p></article>')
 editorial=[('Purpose','The packaging notebook helps buyers ask clearer questions and prepare comparable specifications. Product, material and process guidance is framed around the actual application rather than a universal promise.'),('Claims and evidence','We do not publish invented prices, delivery guarantees, ratings, test results or certifications. Numerical performance and compliance claims need evidence for the relevant material, structure, intended use and conditions.'),('Imagery','Original fictional logos, slogans and photorealistic design references demonstrate graphic directions. They are labelled as concepts and are not used as proof of a factory, certificate or customer relationship.'),('Sources and revisions','Company information is linked to source profiles on the About and Factory pages. Guidance should be revised when a relevant specification or source changes. We do not change dates solely to imply freshness.'),('Corrections','Email andrew@packhubglobe.com with the page URL and the point that needs review. For a purchasing decision, request a written specification and suitable sample or evidence for your actual project.')]
 write('/editorial-policy/','Editorial & Image Policy | PackHubGlobe','Read PackHubGlobe’s approach to procurement guidance, factual claims, original concept imagery and corrections.',intro('Editorial policy','Useful information.<br>Clear boundaries.','How we present packaging guidance, design references and project information.')+'<article class="article wrap">'+sections(editorial)+'</article>')
-
-# Build the retained homepage with current industry routes and additional discovery links.
-replacements={'/industries/#coffee':'/industries/coffee-tea/','/industries/#food':'/industries/food-snacks/','/industries/#pet':'/industries/pet-food/','/industries/#apparel':'/industries/apparel/','/industries/#gifting':'/industries/gifting/','/industries/#ecommerce':'/industries/ecommerce/','/industries/#refills':'/industries/personal-care-refills/'}
-for a,b in replacements.items():home=home.replace(a,b)
-home=home.replace('/assets/packaging-collection.webp','/assets/images/print-collection.webp')
-home=home.replace('Packaging concept with a green mailer box, kraft paper bag, printed pouches, cards and stickers','Original fictional brands printed on colorful boxes, bags, pouches, cards and labels')
-home=home.replace('PackHubGlobe packaging concept · Illustrative imagery','Original fictional brands · Print design references')
-home=home.replace('<img src="/assets/category-collection.webp" alt="Coordinated packaging concept with boxes, bags, pouches, cards and labels" width="1536" height="1024" loading="lazy">','<img src="/assets/images/print-packing.webp" alt="Illustrative ecommerce packing scene with a mailer, poly bag, printed cards and stickers" width="1536" height="1024" loading="lazy">')
-home+='<section class="section wrap"><div class="sectionhead"><div><span class="eyebrow">DESIGNED TO WORK TOGETHER</span><h2>Explore the print.<br>Understand the process.</h2></div></div><div class="formats"><a class="format related-card" href="/materials/"><h3>Materials &amp; finishes</h3><p>Compare paper, films, print and finishing decisions.</p><span class="textlink">Explore materials ↗</span></a><a class="format related-card" href="/services/"><h3>From brief to production</h3><p>Plan structure, artwork, sampling and quality review.</p><span class="textlink">Explore services ↗</span></a><a class="format related-card" href="/cases/"><h3>Original brand concepts</h3><p>See different print directions across complete packaging ranges.</p><span class="textlink">Explore design references ↗</span></a></div></section>'
-write('/','Custom Packaging & Printing for Brands | PackHubGlobe','Custom printed boxes, bags, pouches, cards and labels. Explore packaging formats and prepare a brief for your brand.',home)
 
 errorbody=intro('Page not found','Let’s find the right package.','This address does not match a page on PackHubGlobe. Browse the packaging collection or start a brief.')+'<section class="wrap section" style="padding-top:0"><div class="actions">'+button('Explore packaging','/products/')+button('Contact PackHubGlobe','/request-quote/','light')+'</div></section>'
 write('/404/','Page Not Found | PackHubGlobe','Find packaging products or contact PackHubGlobe.',errorbody)

@@ -4,8 +4,8 @@ Self-contained English B2B custom packaging website for **https://www.packhubglo
 
 ## Website
 
-- 100 public pages plus a branded `404.html`.
-- Six packaging families, 44 detailed product formats, 15 industry solutions, materials and services, ten buyer guides, company/contact and information pages.
+- 1,100 public pages plus a branded `404.html`.
+- 856 catalog products in three primary catalog families, 44 detailed product formats, 15 industry solutions, materials and services, ten buyer guides, company/contact and information pages.
 - Local fonts and five original AI packaging images with fictional logos and slogans. No external runtime dependencies.
 - Responsive navigation, category filters, native FAQ accordions, prefilled enquiry brief, email draft and text download.
 - Unique titles, meta descriptions, H1s, canonical URLs, image alt text, semantic HTML, JSON-LD, sitemap and robots.
@@ -27,6 +27,7 @@ Python 3 and Node.js are needed only for local maintenance and checks, not on th
 ```sh
 python3 tools/build.py
 python3 tools/validate.py
+python3 tools/validate-expansion.py
 node --check assets/app.js
 python3 tools/package.py
 ```
@@ -47,4 +48,4 @@ The form prepares a complete brief in the visitor’s browser. The visitor can o
 
 Printed virtual brands and photorealistic scenes are original illustrative design references, not customer endorsements, manufactured-order evidence or certification claims. Provenance and full prompts: `content/image-provenance.md`. Fonts are distributed with their OFL licences in `assets/fonts/`.
 
-MOQ, prices, production timing, materials, features and documents are confirmed for each project. The website does not promise Google rankings or AI citations.
+Catalog products start at 500 pieces. Prices, production timing, materials, features and documents are confirmed for each project. The website does not promise Google rankings or AI citations.

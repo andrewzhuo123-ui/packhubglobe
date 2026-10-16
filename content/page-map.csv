@@ -1,0 +1,101 @@
+﻿url,page,parent,primary_query,priority,navigation,prototype,evidence
+https://www.packhubglobe.com/,Home,,custom packaging,P0,Header,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/,All packaging,/,custom packaging products,P0,Header,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/custom-boxes/,Custom boxes,/products/,custom boxes,P0,Header group,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/custom-boxes/folding-cartons/,Folding cartons,/products/custom-boxes/,custom folding cartons,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/custom-boxes/rigid-boxes/,Rigid boxes,/products/custom-boxes/,custom rigid boxes,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/custom-boxes/mailer-boxes/,Mailer boxes,/products/custom-boxes/,custom mailer boxes,P1,Contextual,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/custom-boxes/shipping-boxes/,Shipping boxes,/products/custom-boxes/,custom shipping boxes,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/custom-boxes/magnetic-gift-boxes/,Magnetic gift boxes,/products/custom-boxes/,custom magnetic gift boxes,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/custom-boxes/drawer-boxes/,Drawer boxes,/products/custom-boxes/,custom drawer boxes,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/custom-boxes/lid-and-base-boxes/,Lid and base boxes,/products/custom-boxes/,custom lid and base boxes,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/custom-boxes/tube-boxes/,Tube boxes,/products/custom-boxes/,custom tube boxes,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/custom-boxes/window-boxes/,Window boxes,/products/custom-boxes/,custom window boxes,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/custom-boxes/display-boxes/,Display boxes,/products/custom-boxes/,custom display boxes,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/custom-boxes/packaging-sleeves/,Packaging sleeves,/products/custom-boxes/,packaging sleeves,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/custom-boxes/box-inserts/,Box inserts,/products/custom-boxes/,custom box inserts,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/paper-bags/,Paper bags,/products/,custom paper bags,P0,Header group,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/paper-bags/kraft-paper-bags/,Kraft paper bags,/products/paper-bags/,custom kraft paper bags,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/paper-bags/luxury-shopping-bags/,Luxury shopping bags,/products/paper-bags/,custom luxury shopping bags,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/paper-bags/paper-gift-bags/,Paper gift bags,/products/paper-bags/,custom paper gift bags,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/paper-bags/twisted-handle-bags/,Twisted handle bags,/products/paper-bags/,custom twisted handle bags,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/paper-bags/flat-handle-bags/,Flat handle bags,/products/paper-bags/,custom flat handle bags,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/paper-bags/paper-mailing-bags/,Paper mailing bags,/products/paper-bags/,custom paper mailing bags,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/flexible-pouches/,Flexible pouches,/products/,custom printed pouches,P0,Header group,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/flexible-pouches/stand-up-pouches/,Stand up pouches,/products/flexible-pouches/,custom stand up pouches,P1,Contextual,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/flexible-pouches/flat-bottom-pouches/,Flat bottom pouches,/products/flexible-pouches/,custom flat bottom pouches,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/flexible-pouches/side-gusset-bags/,Side gusset bags,/products/flexible-pouches/,custom side gusset bags,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/flexible-pouches/spout-pouches/,Spout pouches,/products/flexible-pouches/,custom spout pouches,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/flexible-pouches/three-side-seal-pouches/,Three side seal pouches,/products/flexible-pouches/,custom three side seal pouches,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/flexible-pouches/quad-seal-bags/,Quad seal bags,/products/flexible-pouches/,custom quad seal bags,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/flexible-pouches/sachets/,Sachet packaging,/products/flexible-pouches/,sachet packaging,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/flexible-pouches/printed-rollstock/,Printed rollstock,/products/flexible-pouches/,custom printed rollstock,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/plastic-bags/,Plastic bags & mailers,/products/,custom plastic bags,P0,Header group,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/plastic-bags/poly-mailers/,Poly mailers,/products/plastic-bags/,custom poly mailers,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/plastic-bags/garment-bags/,Garment bags,/products/plastic-bags/,custom garment bags,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/plastic-bags/resealable-bags/,Resealable plastic bags,/products/plastic-bags/,custom resealable plastic bags,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/plastic-bags/die-cut-handle-bags/,Die cut handle bags,/products/plastic-bags/,custom die cut handle bags,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/plastic-bags/shopping-bags/,Plastic shopping bags,/products/plastic-bags/,custom plastic shopping bags,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/plastic-bags/protective-product-bags/,Protective product bags,/products/plastic-bags/,custom protective product bags,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/cards-tags/,Cards & hang tags,/products/,custom printed cards and hang tags,P0,Header group,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/cards-tags/insert-cards/,Packaging insert cards,/products/cards-tags/,packaging insert cards,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/cards-tags/thank-you-cards/,Thank you cards,/products/cards-tags/,custom thank you cards,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/cards-tags/hang-tags/,Hang tags,/products/cards-tags/,custom hang tags,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/cards-tags/product-information-cards/,Product information cards,/products/cards-tags/,custom product information cards,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/cards-tags/header-cards/,Header cards,/products/cards-tags/,custom header cards,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/cards-tags/care-cards/,Care cards,/products/cards-tags/,custom care cards,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/stickers-labels/,Stickers & labels,/products/,custom stickers and labels,P0,Header group,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/stickers-labels/die-cut-stickers/,Die cut stickers,/products/stickers-labels/,custom die cut stickers,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/stickers-labels/roll-labels/,Roll labels,/products/stickers-labels/,custom roll labels,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/stickers-labels/clear-labels/,Clear labels,/products/stickers-labels/,custom clear labels,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/stickers-labels/paper-labels/,Paper labels,/products/stickers-labels/,custom paper labels,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/stickers-labels/packaging-seals/,Packaging seals,/products/stickers-labels/,packaging seals,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/products/stickers-labels/sticker-sheets/,Sticker sheets,/products/stickers-labels/,custom sticker sheets,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/,Industry solutions,/,packaging by industry,P0,Header,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/beauty-skincare/,Cosmetic and skincare packaging,/industries/,cosmetic and skincare packaging,P1,Contextual,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/perfume/,Perfume packaging,/industries/,perfume packaging,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/coffee-tea/,Coffee and tea packaging,/industries/,coffee and tea packaging,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/food-snacks/,Food and snack packaging,/industries/,food and snack packaging,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/bakery/,Bakery packaging,/industries/,bakery packaging,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/chocolate/,Chocolate packaging,/industries/,chocolate packaging,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/pet-food/,Pet food packaging,/industries/,pet food packaging,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/supplements/,Supplement packaging,/industries/,supplement packaging,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/apparel/,Apparel packaging,/industries/,apparel packaging,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/jewellery/,Jewellery packaging,/industries/,jewellery packaging,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/candles/,Candle packaging,/industries/,candle packaging,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/gifting/,Gift packaging,/industries/,gift packaging,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/ecommerce/,Ecommerce packaging,/industries/,ecommerce packaging,P1,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/personal-care-refills/,Personal care refill packaging,/industries/,personal care refill packaging,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/industries/electronics/,Electronics packaging,/industries/,electronics packaging,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/materials/,Materials and finishes,/,materials and finishes,P1,Footer,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/materials/paperboard/,Paperboard packaging,/materials/,paperboard packaging,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/materials/corrugated-board/,Corrugated packaging materials,/materials/,corrugated packaging materials,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/materials/kraft-paper/,Kraft paper packaging,/materials/,kraft paper packaging,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/materials/barrier-films/,Barrier films for packaging,/materials/,barrier films for packaging,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/materials/recyclable-structures/,Recyclable packaging structures,/materials/,recyclable packaging structures,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/materials/printing-finishes/,Packaging printing and finishes,/materials/,packaging printing and finishes,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/services/,Packaging services,/,packaging services,P1,Footer,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/services/structural-design/,Packaging structural design,/services/,packaging structural design,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/services/sampling/,Packaging samples,/services/,packaging samples,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/services/artwork-preflight/,Packaging artwork preparation,/services/,packaging artwork preparation,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/services/quality-control/,Packaging quality control,/services/,packaging quality control,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/services/export-packing/,Export packing,/services/,export packing,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/services/multi-product-sourcing/,Multi product packaging sourcing,/services/,multi product packaging sourcing,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/guides/,Packaging guides,/,packaging buyer guides,P1,Header,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/guides/packaging-quote-checklist/,What do you need for a custom packaging quote?,/guides/,what do you need for a custom packaging quote,P1,Contextual,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/guides/mailer-boxes-vs-shipping-boxes/,Mailer boxes vs shipping boxes: which fits your order?,/guides/,mailer boxes vs shipping boxes: which fits your order,P1,Contextual,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/guides/stand-up-vs-flat-bottom-pouches/,Stand-up vs flat-bottom pouches: what should you compare?,/guides/,stand-up vs flat-bottom pouches: what should you compare,P1,Contextual,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/guides/folding-cartons-vs-rigid-boxes/,Folding cartons vs rigid boxes,/guides/,folding cartons vs rigid boxes,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/guides/internal-vs-external-box-dimensions/,Internal vs external box dimensions,/guides/,internal vs external box dimensions,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/guides/packaging-print-proof/,CMYK and Pantone packaging proof,/guides/,cmyk and pantone packaging proof,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/guides/packaging-sample-types/,Packaging sample types,/guides/,packaging sample types,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/guides/label-roll-direction/,Roll label unwind direction,/guides/,roll label unwind direction,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/guides/paper-bag-load-testing/,Paper bag load testing,/guides/,paper bag load testing,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/guides/brand-color-across-materials/,Brand color across packaging materials,/guides/,brand color across packaging materials,P2,Contextual,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/about/,About PackHubGlobe,/,PackHubGlobe,P0,Header,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/factory/,Factory and capabilities,/,packaging factory,P0,Footer,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/request-quote/,Request a quote,/,custom packaging quote,P0,Header,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/privacy/,Privacy,/,,P0,Footer,yes,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/terms/,Terms,/,,P0,Footer,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/editorial-policy/,Editorial policy,/,,P2,Footer,planned,Candidate extension; validate demand and capability
+https://www.packhubglobe.com/cases/,Packaging cases,/,packaging case studies,P2,Footer,planned,Candidate extension; validate demand and capability

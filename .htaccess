@@ -1,0 +1,29 @@
+Options -Indexes -MultiViews
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# Build sources and Git metadata are not public site content.
+RewriteRule ^(?:tools|content|\.git)(?:/|$) - [R=404,L,NC]
+RewriteRule ^\.(?!well-known(?:/|$)) - [R=404,L,NC]
+RewriteRule ^(?:README|DEPLOYMENT)\.md$ - [R=404,L,NC]
+# Let a local Apache preview run without a production-domain redirect.
+RewriteCond %{HTTP_HOST} ^(?:www\.)?packhubglobe\.com$ [NC]
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.packhubglobe\.com$ [NC]
+RewriteRule ^ https://www.packhubglobe.com%{REQUEST_URI} [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html(?:[?\s]) [NC]
+RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L,NE]
+</IfModule>
+
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+<FilesMatch "\.(?:html|xml|txt)$">
+Header set Cache-Control "no-cache, max-age=0, must-revalidate"
+</FilesMatch>
+<FilesMatch "\.(?:webp|svg|woff2)$">
+Header set Cache-Control "public, max-age=604800"
+</FilesMatch>
+</IfModule>

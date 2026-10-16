@@ -21,3 +21,46 @@ if(heroVideo&&videoToggle){
  if(!matchMedia('(prefers-reduced-motion:reduce)').matches&&!navigator.connection?.saveData)startVideo();
  document.addEventListener('visibilitychange',()=>{if(document.hidden)heroVideo.pause()});
 }
+
+const catalogSearch=document.querySelector('#catalog-search');
+if(catalogSearch){
+ if(matchMedia('(max-width:700px)').matches)document.querySelector('.catalog-sidebar details').open=false;
+ const grid=document.querySelector('#catalog-grid');
+ const original=grid.innerHTML;
+ const pagination=document.querySelector('.catalog-pages');
+ const status=document.querySelector('#catalog-search-status');
+ let indexPromise;
+ let searchTimer;
+ const clearSearch=()=>{catalogSearch.value='';grid.innerHTML=original;if(pagination)pagination.hidden=false;status.textContent='';catalogSearch.focus()};
+ const showResults=async()=>{
+  const query=catalogSearch.value.trim().toLowerCase();
+  if(!query){clearSearch();return}
+  status.textContent='Searching the collection…';
+  try{
+   indexPromise??=fetch('/assets/catalog-index.json').then(response=>{if(!response.ok)throw new Error('Search unavailable');return response.json()}).catch(error=>{indexPromise=null;throw error});
+   const records=await indexPromise;
+   if(catalogSearch.value.trim().toLowerCase()!==query)return;
+   const words=query.split(/\s+/);
+   const matches=records.filter(record=>words.every(word=>(record.name+' '+record.reference+' '+record.groups.join(' ')).toLowerCase().includes(word)));
+   grid.replaceChildren();
+   for(const record of matches.slice(0,48)){
+    const card=document.createElement('article');card.className='catalog-card';
+    const photo=document.createElement('a');photo.className='catalog-photo';photo.href=record.path;
+    const image=document.createElement('img');image.src=record.image;image.alt=record.name;image.width=1000;image.height=1000;image.loading='lazy';photo.append(image);
+    const copy=document.createElement('div');copy.className='catalog-copy';
+    const group=document.createElement('p');group.className='eyebrow';group.textContent=record.groups[0];
+    const heading=document.createElement('h2');const link=document.createElement('a');link.href=record.path;link.textContent=record.name;heading.append(link);
+    const reference=document.createElement('p');reference.className='catalog-ref';reference.textContent=record.reference;
+    const actions=document.createElement('div');actions.className='catalog-actions';
+    const details=document.createElement('a');details.className='textlink';details.href=record.path;details.textContent='View details ↗';
+    const quote=document.createElement('a');quote.className='button';quote.href='/request-quote/?product='+encodeURIComponent(record.name+' · '+record.reference);quote.textContent='Get a quote';
+    actions.append(details,quote);copy.append(group,heading,reference,actions);card.append(photo,copy);grid.append(card);
+   }
+   if(pagination)pagination.hidden=true;
+   status.textContent=matches.length?`${matches.length} matching products across the collection${matches.length>48?' · Showing the first 48; add another word to narrow your search.':'.'}`:'No matching products. Try a material, format or product reference.';
+  }catch{status.textContent='Search is temporarily unavailable. Please use the packaging categories.'}
+ };
+ document.querySelector('.catalog-search').hidden=false;
+ catalogSearch.addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(showResults,180)});
+ document.querySelector('#catalog-clear').addEventListener('click',clearSearch);
+}

@@ -1,0 +1,21 @@
+{
+  "status": "validated",
+  "discoveredGroups": 33,
+  "groupsWithCompleteListings": 33,
+  "emptyGroups": [
+    "Health care box"
+  ],
+  "uniqueCandidates": 2259,
+  "selectedProducts": 856,
+  "selectedGroupMemberships": 1177,
+  "localImages": 856,
+  "detailsCaptured": 856,
+  "detailsRemaining": 0,
+  "attributesMin": 15,
+  "attributesMax": 31,
+  "missingKeywordMetadata": 0,
+  "publicPages": 1063,
+  "previewUrl": "http://localhost:4174/catalog/",
+  "githubTarget": "https://github.com/andrewzhuo123-ui/packhubglobe",
+  "hostingDeployment": "Verify separately from the GitHub push"
+}

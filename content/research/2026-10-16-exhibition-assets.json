@@ -1,0 +1,23 @@
+[
+  {
+    "path": "assets/exhibitions/booth-01.webp",
+    "source": "https://skill.accio.com/web-app/93eba9855ab945d7_exhibition-booth-01.jpg",
+    "sourcePage": "https://finerpackaging.en.alibaba.com/",
+    "reviewed": "2026-10-16",
+    "use": "Owner-authorized merchant trade-fair photography; captions do not infer a venue, date or visitor identity."
+  },
+  {
+    "path": "assets/exhibitions/booth-02.webp",
+    "source": "https://skill.accio.com/web-app/61c7fffb7ff54f40_exhibition-booth-02.jpg",
+    "sourcePage": "https://finerpackaging.en.alibaba.com/",
+    "reviewed": "2026-10-16",
+    "use": "Owner-authorized merchant trade-fair photography; captions do not infer a venue, date or visitor identity."
+  },
+  {
+    "path": "assets/exhibitions/booth-05.webp",
+    "source": "https://skill.accio.com/web-app/46c265b93fcf4471_exhibition-booth-05.jpg",
+    "sourcePage": "https://finerpackaging.en.alibaba.com/",
+    "reviewed": "2026-10-16",
+    "use": "Owner-authorized merchant trade-fair photography; captions do not infer a venue, date or visitor identity."
+  }
+]

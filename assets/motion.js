@@ -11,30 +11,29 @@ if(!reducedMotion.matches&&'IntersectionObserver' in window){
 
 const productionRail=document.querySelector('#production-rail');
 if(productionRail){
- const section=productionRail.closest('section');const track=productionRail.querySelector('.process-track');const stages=[...track.children];
- const toggle=section.querySelector('[data-process-toggle]');
- let playing=!reducedMotion.matches;let hovered=false;let focused=false;let visible=false;let frame;let previousTime=0;let position=0;
- for(const stage of stages){const clone=stage.cloneNode(true);clone.setAttribute('aria-hidden','true');clone.inert=true;track.append(clone)}
- const cycleWidth=()=>track.children[stages.length].offsetLeft-track.children[0].offsetLeft;
+ let playing=!reducedMotion.matches;let hovered=false;let focused=false;let visible=false;let frame;let previousTime=0;let position=0;let direction=1;
  const stopFrame=()=>{cancelAnimationFrame(frame);frame=undefined;previousTime=0};
  const animate=time=>{
-  if(previousTime){position+=Math.min(time-previousTime,50)*.024;const width=cycleWidth();if(position>=width)position-=width;productionRail.scrollLeft=position}
+  if(previousTime){
+   const limit=productionRail.scrollWidth-productionRail.clientWidth;
+   position+=Math.min(time-previousTime,50)*.072*direction;
+   if(position>=limit){position=limit;direction=-1}
+   else if(position<=0){position=0;direction=1}
+   productionRail.scrollLeft=position;
+  }
   previousTime=time;frame=requestAnimationFrame(animate);
  };
  const sync=()=>{stopFrame();position=productionRail.scrollLeft;if(playing&&visible&&!hovered&&!focused&&!document.hidden)frame=requestAnimationFrame(animate)};
- const setPlaying=value=>{playing=value;toggle.textContent=playing?'Pause motion':'Play motion';toggle.setAttribute('aria-pressed',String(!playing));sync()};
- toggle.addEventListener('click',()=>setPlaying(!playing));
- section.querySelector('[data-process-prev]').addEventListener('click',()=>{setPlaying(false);if(productionRail.scrollLeft<10)productionRail.scrollLeft=cycleWidth();productionRail.scrollBy({left:-(stages[0].offsetWidth+24),behavior:reducedMotion.matches?'auto':'smooth'})});
- section.querySelector('[data-process-next]').addEventListener('click',()=>{setPlaying(false);productionRail.scrollBy({left:stages[0].offsetWidth+24,behavior:reducedMotion.matches?'auto':'smooth'})});
+ const pause=()=>{playing=false;sync()};
  productionRail.addEventListener('pointerenter',()=>{hovered=true;sync()});
  productionRail.addEventListener('pointerleave',()=>{hovered=false;sync()});
- productionRail.addEventListener('pointerdown',()=>setPlaying(false),{passive:true});
- productionRail.addEventListener('wheel',()=>setPlaying(false),{passive:true});
- productionRail.addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key))setPlaying(false)});
- section.addEventListener('focusin',()=>{focused=true;sync()});
- section.addEventListener('focusout',event=>{focused=section.contains(event.relatedTarget);sync()});
+ productionRail.addEventListener('pointerdown',pause,{passive:true});
+ productionRail.addEventListener('wheel',pause,{passive:true});
+ productionRail.addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key))pause()});
+ productionRail.addEventListener('focusin',()=>{focused=true;sync()});
+ productionRail.addEventListener('focusout',event=>{focused=productionRail.contains(event.relatedTarget);sync()});
  document.addEventListener('visibilitychange',sync);
  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync()},{threshold:.05}).observe(productionRail);
- reducedMotion.addEventListener('change',()=>{if(reducedMotion.matches)setPlaying(false)});
- setPlaying(playing);
+ reducedMotion.addEventListener('change',()=>{playing=!reducedMotion.matches;sync()});
+ sync();
 }

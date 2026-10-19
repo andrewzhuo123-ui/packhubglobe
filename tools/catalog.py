@@ -138,8 +138,9 @@ for record in pouch_products:
  catalog_records[record['id']] = record
  catalog_selection['919632767'].append(record['id'])
 
-for record in json.loads((ROOT/'content/luxopack-sources/products.json').read_text()):
- catalog_records[record['id']]=record
+for source_file in ['luxopack-sources','finerpack-sources']:
+ for record in json.loads((ROOT/'content'/source_file/'products.json').read_text()):
+  catalog_records[record['id']]=record
 
 exec(compile((ROOT/'tools/catalog_review.py').read_text(),str(ROOT/'tools/catalog_review.py'),'exec'))
 
@@ -187,7 +188,7 @@ def catalog_listing(base,name,ids,all_products=False):
   if page>1:description+=' Page '+str(page)+'.'
   body=intro('Product collection',name+'.',description,'<a href="/catalog/">Product collection</a>'+(' / '+esc(name) if not all_products else ''))
   body+='<div class="wrap">'+family_nav(base)+'</div>'
-  body+='<section class="wrap catalog-layout"><aside class="catalog-sidebar"><details'+(' open' if all_products else '')+'><summary>Browse packaging</summary><a href="/catalog/">All products</a>'+''.join('<a href="/catalog/'+g['slug']+'/"'+(' aria-current="page"' if base=='/catalog/'+g['slug']+'/' else '')+'>'+esc(g['public_name'])+' <span>'+str(len(catalog_selection[id]))+'</span></a>' for id,g in catalog_groups.items())+'</details><a class="textlink" href="/products/">Compare packaging formats ↗</a></aside><div class="catalog-results"><div class="catalog-toolbar"><p>'+str(len(ids))+' products · Page '+str(page)+' of '+str(total)+'</p><div class="catalog-search" hidden><label for="catalog-search">Search all products</label><input type="search" id="catalog-search" placeholder="Try a format, material or PHG reference" autocomplete="off"><button type="button" id="catalog-clear">Clear</button></div></div><p id="catalog-search-status" class="smallnote" role="status" aria-live="polite"></p><div class="catalog-grid" id="catalog-grid">'+''.join(catalog_card(catalog_records[id]) for id in ids[(page-1)*24:page*24])+'</div>'+catalog_pagination(base,page,total)+'</div></section>'+cta()
+  body+='<section class="wrap catalog-layout"><aside class="catalog-sidebar"><details'+(' open' if all_products else '')+'><summary>Browse packaging</summary><a href="/catalog/">All products</a>'+''.join('<a href="/catalog/'+g['slug']+'/"'+(' aria-current="page"' if base=='/catalog/'+g['slug']+'/' else '')+'>'+esc(g['public_name'])+' <span>'+str(len(catalog_selection[id]))+'</span></a>' for id,g in catalog_groups.items())+'</details><a class="textlink" href="/products/">Compare packaging formats ↗</a></aside><div class="catalog-results"><div class="catalog-toolbar"><p>'+str(len(ids))+(' product' if len(ids)==1 else ' products')+' · Page '+str(page)+' of '+str(total)+'</p><div class="catalog-search" hidden><label for="catalog-search">Search all products</label><input type="search" id="catalog-search" placeholder="Try a format, material or PHG reference" autocomplete="off"><button type="button" id="catalog-clear">Clear</button></div></div><p id="catalog-search-status" class="smallnote" role="status" aria-live="polite"></p><div class="catalog-grid" id="catalog-grid">'+''.join(catalog_card(catalog_records[id]) for id in ids[(page-1)*24:page*24])+'</div>'+catalog_pagination(base,page,total)+'</div></section>'+cta()
   listing_schema={'@type':'ItemList','name':name,'numberOfItems':len(ids),'itemListElement':[{'@type':'ListItem','position':(page-1)*24+i+1,'url':ORIGIN+catalog_records[id]['path']} for i,id in enumerate(ids[(page-1)*24:page*24])]}
   write(path,name+(' · Page '+str(page) if page>1 else '')+' | PackHubGlobe',description.split('. ',1)[0]+('. Page '+str(page)+'.' if page>1 else '.'),body,[listing_schema])
 

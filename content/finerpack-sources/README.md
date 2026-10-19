@@ -1,0 +1,11 @@
+# FinerPack reference import — 19 October 2026
+
+The live canonical directory at `https://www.finerpack.com/products` exposes 341 independent product cards: 241 structure-based paper-box references and 100 cosmetic-packaging references. All 341 detail pages, their main images, specification fields and body text were captured successfully. Category models and structure hubs are not counted as individual products. Raw HTML is preserved as gzip archives; JSON snapshots retain the source URLs, original names and fields.
+
+Every main image was visually reviewed using 18 numbered contact sheets. `review.json` records the approved names, formats, primary collections, applications and per-product selection notes. It corrects source color/name conflicts and distinguishes folding cartons, mailers, rigid boxes, carry boxes, food packaging and molded paper-pulp inserts. The structure collection copy and full procurement guidance remain specific to the actual packaging type.
+
+314 new references are published. 23 source entries match already-published PackHubGlobe images, and four additional entries are duplicates within this batch. Equivalent-image detection uses a 256-bit difference hash followed by mean/RMS RGB comparison. `report.json` records every duplicate's retained product URL; each newly retained product preserves all associated source URLs. All 341 candidates are accounted for. Existing 1,510 catalog records remain unchanged.
+
+Public pages use local images with at least 300 pixels per axis, PackHubGlobe references and contact routes, and the established MOQ of 500 pieces. Source prices, MOQ, timing, certifications and environmental/performance claims are not adopted. Source-brand image marks remain visible; the catalog's reference-image explanation applies. Original source material remains under the existing protected `/content/` path.
+
+Re-run `python3 tools/import_finerpack.py` to restore missing captures/images and regenerate public records from the reviewed identities. Newly discovered unreviewed product routes block the import. Build with `python3 tools/build.py`; verify using `tools/validate.py`, `tools/validate-expansion.py`, `tools/validate-finerpack.py`, and `tools/audit-catalog-consistency.py`.

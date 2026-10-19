@@ -1,0 +1,262 @@
+{
+  "source": "https://www.finerpack.com/products",
+  "candidates": 341,
+  "captured": 341,
+  "errors": [],
+  "published": 314,
+  "main_images": 314,
+  "duplicates": [
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/pink-magnetic-makeup-gift-box-877290",
+        "title": "Pink Magnetic Makeup Gift Box",
+        "source_id": "1601584877290"
+      },
+      "retained_reference": "PHG-FP-1601584833769",
+      "retained_path": "/catalog/pink-rigid-magnetic-skincare-box-fp-1601584833769/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/hard-board-folding-magnetic-lid-gift-box-303887",
+        "title": "Hard-Board Folding Magnetic-Lid Gift Box",
+        "source_id": "62575303887"
+      },
+      "retained_reference": "PHG-FP-1600220653522",
+      "retained_path": "/catalog/black-hardcover-magnetic-gift-set-box-fp-1600220653522/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/printed-self-sealing-mailer-with-tear-strip-324729",
+        "title": "Printed Self-Sealing Mailer with Tear Strip",
+        "source_id": "1600941324729"
+      },
+      "retained_reference": "PHG-1601307959500",
+      "retained_path": "/catalog/custom-corrugated-mailer-box-for-apparel-1601307959500/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/corrugated-gift-box-for-beauty-and-apparel-orders-630496",
+        "title": "Corrugated Gift Box for Beauty and Apparel Orders",
+        "source_id": "1601254630496"
+      },
+      "retained_reference": "PHG-FP-1600471522305",
+      "retained_path": "/catalog/folding-corrugated-apparel-and-shoe-box-fp-1600471522305/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/self-stick-zip-open-airplane-mailer-480904",
+        "title": "Self-Stick Zip-Open Airplane Mailer",
+        "source_id": "1601564480904"
+      },
+      "retained_reference": "PHG-1601307959500",
+      "retained_path": "/catalog/custom-corrugated-mailer-box-for-apparel-1601307959500/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/cosmetic-paper-packaging-custom-corrugated-beauty-makeup-gift-ca-986481",
+        "title": "Cosmetic Paper Packaging Custom Corrugated Beauty Makeup Gift Carton with Divide Paper Insert Skincare",
+        "source_id": "1600549986481"
+      },
+      "retained_reference": "PHG-1600549986481",
+      "retained_path": "/catalog/kraft-corrugated-mailer-box-for-skincare-1600549986481/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/skincare-packaging-gift-box-embossed-makeup-cosmetic-set-sale-sk-139515",
+        "title": "Skincare Packaging Gift Box Embossed Makeup Cosmetic Set Sale Skin Care Bottles Includes Print",
+        "source_id": "1601273139515"
+      },
+      "retained_reference": "PHG-1601171510930",
+      "retained_path": "/catalog/custom-corrugated-mailer-box-1601171510930/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/skincare-box-custom-size-folded-specialty-paper-beauty-makeup-gi-938082",
+        "title": "Skincare Box Custom Size Folded Specialty Paper Beauty Makeup Gift Box Cosmetic Creams",
+        "source_id": "1600592938082"
+      },
+      "retained_reference": "PHG-1600592938082",
+      "retained_path": "/catalog/custom-gift-box-for-skincare-1600592938082/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/skincare-box-custom-glass-bottle-oil-paper-container-carton-make-357887",
+        "title": "Skincare Box Custom Glass Bottle Oil Paper Container Carton Makeup Sets Cosmetic Box",
+        "source_id": "1600596357887"
+      },
+      "retained_reference": "PHG-1600596357887",
+      "retained_path": "/catalog/custom-printed-carton-for-skincare-1600596357887/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/custom-cosmetic-pr-box-design-shipping-box-for-cosmetic-packagin-517641",
+        "title": "Custom Cosmetic PR Box Design Shipping Box for Cosmetic Packaging Skincare Mailer Cosmetic Packaging Box With Logo",
+        "source_id": "1601314517641"
+      },
+      "retained_reference": "PHG-1601314517641",
+      "retained_path": "/catalog/custom-corrugated-mailer-box-for-skincare-1601314517641/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/custom-foldable-cosmetics-packaging-box-disposable-gold-foil-pri-453741",
+        "title": "Custom Foldable Cosmetics Packaging Box Disposable Gold Foil Printed Folders for Lotion Products",
+        "source_id": "1601049453741"
+      },
+      "retained_reference": "PHG-1601049453741",
+      "retained_path": "/catalog/custom-product-packaging-box-for-skincare-1601049453741/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/custom-branded-paperboard-corrugated-paper-mailer-box-cosmetic-p-618517",
+        "title": "Custom Branded Paperboard Corrugated Paper Mailer Box Cosmetic Perfume Skin Care Packaging Set Shipping Box",
+        "source_id": "1601225618517"
+      },
+      "retained_reference": "PHG-1601225618517",
+      "retained_path": "/catalog/custom-corrugated-mailer-box-for-skincare-1601225618517/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/cosmetic-packaging-skincare-textured-art-paper-boxes-gold-foil-s-098968",
+        "title": "Cosmetic Packaging Skincare Textured Art Paper Boxes Gold Foil Stamping & Embossing for Perfume Use",
+        "source_id": "1601195098968"
+      },
+      "retained_reference": "PHG-FP-1601250820963",
+      "retained_path": "/catalog/gray-textured-cosmetic-carton-fp-1601250820963/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/kraft-custom-design-cosmetic-packaging-perfume-boxes-custom-pape-097822",
+        "title": "Kraft Custom Design Cosmetic Packaging Perfume Boxes Custom Paper Boxes for Cosmetics Packaging with Embossing",
+        "source_id": "1601296097822"
+      },
+      "retained_reference": "PHG-1601296097822",
+      "retained_path": "/catalog/custom-product-packaging-box-for-perfume-1601296097822/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/printing-white-cosmetic-box-paper-cardboard-perfume-box-packagin-564225",
+        "title": "Printing White Cosmetic Box Paper Cardboard Perfume Box Packaging Gift Box Cosmetic Package Square Ivory Board Accept",
+        "source_id": "1600745564225"
+      },
+      "retained_reference": "PHG-1600745564225",
+      "retained_path": "/catalog/custom-gift-box-for-perfume-1600745564225/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/custom-3ml-and-10ml-perfume-bottle-packaging-cosmetic-oil-bottle-500969",
+        "title": "Custom 3ml & 10ml Perfume Bottle Packaging Cosmetic Oil Bottle Packaging Perfume Sample Sets Paper Packing",
+        "source_id": "1601181500969"
+      },
+      "retained_reference": "PHG-1601181500969",
+      "retained_path": "/catalog/custom-printed-packaging-for-perfume-1601181500969/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/logo-fold-card-perfume-oil-box-perfume-packaging-set-perfume-bot-334647",
+        "title": "Logo Fold Card Perfume Oil Box Perfume Packaging Set Perfume Bottle Box Gift Set",
+        "source_id": "1600968334647"
+      },
+      "retained_reference": "PHG-1600968334647",
+      "retained_path": "/catalog/custom-gift-box-for-perfume-1600968334647/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/lip-gloss-packaging-box-cosmetic-makeup-lipstick-skincare-eco-fr-255800",
+        "title": "Lip Gloss Packaging Box Cosmetic Makeup Lipstick Skincare Eco Friend Gold Silver Foil UV LIp Gloss Packaging",
+        "source_id": "1600229255800"
+      },
+      "retained_reference": "PHG-1600229255800",
+      "retained_path": "/catalog/custom-product-packaging-box-for-lipstick-1600229255800/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/elegant-custom-box-lipstick-colorful-cardboard-double-sided-prin-106343",
+        "title": "Elegant Custom Box Lipstick Colorful Cardboard Double-sided Printing Lipstick Paper Box Cosmetic Lipstick Packaging Box",
+        "source_id": "1601096106343"
+      },
+      "retained_reference": "PHG-1601096106343",
+      "retained_path": "/catalog/custom-product-packaging-box-for-lipstick-1601096106343/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/drawer-box-custom-printed-design-kraft-paper-whitening-soap-disp-378416",
+        "title": "Drawer Box Custom Printed Design Kraft Paper Whitening Soap Dispenser Gift Foleded Carton Soap Packaging",
+        "source_id": "1600597378416"
+      },
+      "retained_reference": "PHG-1600597378416",
+      "retained_path": "/catalog/custom-drawer-gift-box-for-soap-1600597378416/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/cosmetic-packaging-box-custom-print-folders-sponge-lining-for-lo-357960",
+        "title": "Cosmetic Packaging Box Custom Print Folders Sponge Lining for Loose Powder Eye Cream Facial Cleanser",
+        "source_id": "1601175357960"
+      },
+      "retained_reference": "PHG-1601175357960",
+      "retained_path": "/catalog/custom-product-packaging-box-for-skincare-1601175357960/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/handmade-whitening-toilet-bar-soap-dispenser-custom-packaging-pa-259419",
+        "title": "Handmade Whitening Toilet Bar Soap Dispenser Custom Packaging Paper Soap Dish Drawer Embossing for Facial Cleanser Face Cream",
+        "source_id": "1600488259419"
+      },
+      "retained_reference": "PHG-1600488259419",
+      "retained_path": "/catalog/custom-drawer-gift-box-for-skincare-1600488259419/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/custom-design-pink-beauty-cosmetic-packaging-box-with-insert-cos-127117",
+        "title": "Custom Design Pink Beauty Cosmetic Packaging Box With Insert Cosmetic Makeup Box Package With Clear Window",
+        "source_id": "1601284127117"
+      },
+      "retained_reference": "PHG-1601284127117",
+      "retained_path": "/catalog/custom-product-packaging-box-1601284127117/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/custom-disposable-folding-cosmetic-packaging-box-with-gold-foil-441976",
+        "title": "Custom Disposable Folding Cosmetic Packaging Box with Gold Foil Embossing Matt Lamination for Nail Polish Oil & Cosmetics",
+        "source_id": "1601011441976"
+      },
+      "retained_reference": "PHG-1601011441976",
+      "retained_path": "/catalog/custom-printed-carton-1601011441976/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/pink-cosmetic-packaging-makeup-box-with-uv-coating-varnishing-ma-928365",
+        "title": "Pink Cosmetic Packaging Makeup Box with UV Coating Varnishing Matt Lamination Embossing for Cosmetics Custom Box",
+        "source_id": "1601297928365"
+      },
+      "retained_reference": "PHG-1601297928365",
+      "retained_path": "/catalog/custom-product-packaging-box-1601297928365/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/custom-box-2024-gift-box-packaging-for-cosmetic-travel-size-cosm-114442",
+        "title": "Custom Box 2024 Gift Box Packaging for Cosmetic Travel Size Cosmetic Packaging Cosmetic Personal Care Packaging",
+        "source_id": "1601274114442"
+      },
+      "retained_reference": "PHG-1601274114442",
+      "retained_path": "/catalog/custom-gift-box-1601274114442/"
+    },
+    {
+      "source": {
+        "url": "https://www.finerpack.com/products/high-grade-cosmetics-packaging-boxes-textured-paper-embossing-ma-224555",
+        "title": "High-grade Cosmetics Packaging Boxes Textured Paper Embossing Matt Varnishing Cosmetic Packaging with Custom Design",
+        "source_id": "1601154224555"
+      },
+      "retained_reference": "PHG-1601154224555",
+      "retained_path": "/catalog/custom-product-packaging-box-1601154224555/"
+    }
+  ],
+  "formats": {
+    "rigid": 160,
+    "mailer": 88,
+    "carton": 63,
+    "food-box": 1,
+    "pulp-insert": 1,
+    "carry-box": 1
+  },
+  "visual_reviewed": 341
+}

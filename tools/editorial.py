@@ -33,16 +33,18 @@ def product_editorial(record,rows):
  printing=next((v for k,v in rows if k in ['Printing options','Print / finish options']),'Print route and finishing to confirm with the artwork')
  application=next((v for k,v in rows if k=='Application'),'the intended product and use conditions')
  opening=next((v for k,v in rows if k=='Opening'),'the opening shown on the approved construction drawing')
- component=record['format']=='container-reference'
+ component=record['format'] in ['container-reference','pulp-insert']
  flexible=record['family']=='bags'
  print_piece=profile in ['print','label','sleeve','dust-cover']
  features=('component, dimensions, material, print surface and items included in the quotation' if component else 'finished size, paper, cut or fold layout, printed panels and any attachment or adhesive requirements' if print_piece else 'complete material, finished dimensions, seams, opening and requested features' if flexible else 'board, finished dimensions, opening, any insert and printed finish')
- if profile=='dust-cover':features='cover outline, paper, wick clearance, removal feature and approved print'
+ if profile=='insert':features='cavity dimensions, support points, paper furnish, wall geometry, nesting and outer-pack fit'
+ elif profile=='dust-cover':features='cover outline, paper, wick clearance, removal feature and approved print'
  elif profile=='sleeve':features='underlying pack dimensions, wrap length, paper, fold layout, closing method and print'
  elif profile=='print':features='finished size, paper, printed panels, fold or cut layout and attachment where needed'
  elif profile=='label':features='finished shape, label material, adhesive, backing supply and print'
  quantity_note=('For roll supply, list the unit count and roll configuration separately.' if profile in ['roll-bag','label'] else 'For a set, list the quantity and specification of each included component.' if component or profile=='bag-in-box' else 'Confirm the quantity for each size and printed design in the written quotation.')
  sample_focus=('scope, fit and printed appearance of the component being supplied' if component else 'application, fit, readable print and the handling of the finished piece' if print_piece else 'filled fit, opening, seams and the planned packing method' if flexible else 'product fit, assembly, opening and the complete packing arrangement')
+ if profile=='insert':sample_focus='cavity fit, support, removal access, nesting and interaction with the actual outer pack'
  body='<section class="section softbg"><div class="wrap tank-layout"><nav class="tank-nav" aria-label="On this product page"><h2>Plan your packaging</h2>'+''.join('<a href="#'+id+'">'+title+'</a>' for id,title in [('reference-specification','This reference'),('product-design','Structure & use'),('customization','Customization'),('sample-review','Samples & quality'),('order-planning','Order planning'),('product-questions','Product FAQ')])+'</nav><article class="tank-content">'
  body+=prose_section('reference-specification','Review '+name.lower(),f'Use {reference} to identify this image and its reference details when contacting PackHubGlobe. Material reference: {material}. Size reference: {size}. Printing or finishing reference: {printing}. These entries describe starting points for a custom specification, not an approved bill of materials or a fixed stock item. Review the {features} together and identify any requested changes. Confirm one final construction and artwork revision in the written quotation and sample approval. Catalog orders start at 500 pieces.')
  if record['format'] in POUCH_FORMATS:

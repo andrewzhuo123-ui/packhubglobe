@@ -24,6 +24,7 @@ CATALOG_FORMATS = {
  'bag-in-box':('bags','bag-in-box','bag-in-box','Bag-in-box references'),
  'container-reference':('packaging-accessories','reference','presentation-container-references','Presentation & container references'),
  'sleeve':('packaging-accessories','sleeve','packaging-sleeves','Packaging sleeves & wraps'),
+ 'pulp-insert':('packaging-accessories','insert','molded-pulp-inserts','Molded pulp inserts'),
  'dust-cover':('packaging-accessories','dust-cover','candle-dust-covers','Candle dust covers'),
  'print':('packaging-accessories','print','807897313','Cards & booklets'),
  'label':('packaging-accessories','label','803759676','Stickers & labels'),
@@ -32,7 +33,7 @@ CATALOG_FORMATS = {
 
 def reviewed_format(record):
  key=record['reference'].removeprefix('PHG-')
- if key.startswith('LX-'):return record['format']
+ if key.startswith(('LX-','FP-')):return record['format']
  if key in review_overrides:return review_overrides[key]['format']
  title=record['detail']['title'].lower();name=record['name'].lower();groups=set(record['groups'])
  if key.startswith('PC-'):
@@ -69,7 +70,7 @@ for record in catalog_records.values():
  key=record['reference'].removeprefix('PHG-');override=review_overrides.get(key,{})
  kind=reviewed_format(record);family,profile,primary,label=CATALOG_FORMATS[kind]
  name=override.get('name',record['name'])
- if key.startswith('LX-'):
+ if key.startswith(('LX-','FP-')):
   primary=record['groups'][0]
  elif not key.startswith('PC-'):
   name=name.split(' for ',1)[0]
@@ -102,7 +103,7 @@ for record in catalog_records.values():
   if field=='Structure / closure' and (value in ['Slotted Boxes','Greeting cards'] or kind=='paper-mailer' and 'stand' in value.lower()):continue
   if field not in [k for k,v in facts]:facts.append([field,value])
  if override.get('application') and not any(k=='Application' for k,v in facts):facts.append(['Application',override['application']])
- structure={'mailer':'Folding mailer box; closure confirmed on the dieline','carton':'Folding carton; flap and base construction to confirm','carry-box':'Carry box with handle; attachment and load to confirm','pillow':'Curved-end folding pillow box','rigid':'Rigid presentation box; opening and insert to confirm','paper-bag':'Paper carrier bag; handle and base to confirm','poly':'Flexible product bag; opening and seams to confirm','poly-mailer':'Poly mailing bag; seam and adhesive flap to confirm','paper-mailer':'Paper mailing bag; seam and flap construction to confirm','stand-up':'Bottom-gusset pouch reference','flat-bottom':'Flat-bottom bag reference','side-gusset':'Side-gusset bag reference','spout':'Pouch with fitment; bore, cap and position to confirm','flat':'Flat bag / pouch; seal pattern to confirm','drink-pouch':'Beverage pouch with straw-opening reference','carry-bag':'Gift / carry bag; material and construction to confirm','roll-bag':'Bags supplied on rolls; perforation and bag count to confirm','bag-in-box':'Liner, dispensing fitment and outer box specified separately','container-reference':'Presentation reference; supplied component to confirm','sleeve':'Printed wrap-around sleeve','dust-cover':'Removable printed candle dust cover'}
+ structure={'mailer':'Folding mailer box; closure confirmed on the dieline','carton':'Folding carton; flap and base construction to confirm','carry-box':'Carry box with handle; attachment and load to confirm','pillow':'Curved-end folding pillow box','rigid':'Rigid presentation box; opening and insert to confirm','paper-bag':'Paper carrier bag; handle and base to confirm','poly':'Flexible product bag; opening and seams to confirm','poly-mailer':'Poly mailing bag; seam and adhesive flap to confirm','paper-mailer':'Paper mailing bag; seam and flap construction to confirm','stand-up':'Bottom-gusset pouch reference','flat-bottom':'Flat-bottom bag reference','side-gusset':'Side-gusset bag reference','spout':'Pouch with fitment; bore, cap and position to confirm','flat':'Flat bag / pouch; seal pattern to confirm','drink-pouch':'Beverage pouch with straw-opening reference','carry-bag':'Gift / carry bag; material and construction to confirm','roll-bag':'Bags supplied on rolls; perforation and bag count to confirm','bag-in-box':'Liner, dispensing fitment and outer box specified separately','container-reference':'Presentation reference; supplied component to confirm','sleeve':'Printed wrap-around sleeve','dust-cover':'Removable printed candle dust cover','pulp-insert':'Molded insert; cavities, support and wall geometry to confirm'}
  if kind in structure:facts=[[k,v] for k,v in facts if k!='Structure / closure'];facts.insert(0,['Structure / closure',structure[kind]])
  if kind in {'drink-pouch','spout','carry-bag','roll-bag','container-reference'}:
   facts=[[k,v] for k,v in facts if k!='Opening']
@@ -126,7 +127,7 @@ for record in catalog_records.values():
  record['facts']=clean_facts
  if kind=='spout' and re.search(r'grain|rice|litter|dry grain',name,re.I):record['profile']='pouch-spout-dry'
  note=record.get('review_note','')
- if note and not key.startswith('LX-'):
+ if note and not key.startswith(('LX-','FP-')):
   if re.search(r'material field|unidentified component',note):
    record['review_note']='Confirm the complete layer construction, polymer identities and thickness. A film-name reference does not establish the finished laminate or its performance.'
   elif re.search(r'size field|volume and mass',note):

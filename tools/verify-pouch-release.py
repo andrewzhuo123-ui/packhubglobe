@@ -1,7 +1,7 @@
 """Compare every changed public file with normal and cache-busted production bytes."""
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from urllib.request import Request,urlopen
+from urllib.request import Request,urlopen,install_opener,build_opener
 import hashlib,json,subprocess,time
 ROOT=Path(__file__).resolve().parents[1]
 sha=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
@@ -24,6 +24,7 @@ def verify(path):
    if attempt<2:time.sleep(2)
   results.append(dict(url=url,match=not error,error=error))
  return dict(path=path,checks=results)
+install_opener(build_opener())
 checks=[]
 with ThreadPoolExecutor(max_workers=16) as pool:
  jobs=[pool.submit(verify,path) for path in files]

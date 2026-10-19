@@ -1,9 +1,9 @@
 {
-  "products": 1461,
+  "products": 1510,
   "groups": {
     "920016676": {
       "name": "Mailer & shipping boxes",
-      "published": 200,
+      "published": 202,
       "candidates": 185
     },
     "950338332": {
@@ -28,32 +28,32 @@
     },
     "803631155": {
       "name": "Gift boxes",
-      "published": 210,
+      "published": 220,
       "candidates": 207
     },
     "953980869": {
       "name": "Magnetic boxes",
-      "published": 191,
+      "published": 205,
       "candidates": 191
     },
     "954034112": {
       "name": "Lid & base boxes",
-      "published": 2,
+      "published": 6,
       "candidates": 4
     },
     "952891404": {
       "name": "Paper tubes",
-      "published": 1,
+      "published": 2,
       "candidates": 1
     },
     "954038904": {
       "name": "Specialty gift boxes",
-      "published": 4,
+      "published": 7,
       "candidates": 4
     },
     "921840222": {
       "name": "Clothing packaging",
-      "published": 28,
+      "published": 29,
       "candidates": 28
     },
     "954067551": {
@@ -78,12 +78,12 @@
     },
     "803708590": {
       "name": "Cosmetic packaging",
-      "published": 200,
+      "published": 205,
       "candidates": 1603
     },
     "810538305": {
       "name": "Food packaging",
-      "published": 118,
+      "published": 122,
       "candidates": 97
     },
     "920318966": {
@@ -98,12 +98,12 @@
     },
     "920803216": {
       "name": "Tea packaging",
-      "published": 1,
+      "published": 2,
       "candidates": 1
     },
     "920793609": {
       "name": "Candle packaging",
-      "published": 25,
+      "published": 27,
       "candidates": 25
     },
     "807897313": {
@@ -143,7 +143,7 @@
     },
     "951398518": {
       "name": "Tear-strip boxes",
-      "published": 2,
+      "published": 4,
       "candidates": 2
     },
     "951662766": {
@@ -153,12 +153,12 @@
     },
     "952968758": {
       "name": "Paper shopping bags",
-      "published": 9,
+      "published": 10,
       "candidates": 9
     },
     "953294826": {
       "name": "Drawer boxes",
-      "published": 19,
+      "published": 26,
       "candidates": 6
     },
     "pouch-stand-up": {
@@ -193,13 +193,13 @@
     },
     "folding-cartons": {
       "name": "Folding cartons",
-      "published": 291,
-      "candidates": 291
+      "published": 293,
+      "candidates": 293
     },
     "handle-carry-boxes": {
       "name": "Handle carry boxes",
-      "published": 3,
-      "candidates": 3
+      "published": 4,
+      "candidates": 4
     },
     "pillow-boxes": {
       "name": "Pillow boxes",
@@ -304,6 +304,8 @@
     "/catalog/page-59/",
     "/catalog/page-60/",
     "/catalog/page-61/",
+    "/catalog/page-62/",
+    "/catalog/page-63/",
     "/catalog/paper-boxes/",
     "/catalog/paper-boxes/page-2/",
     "/catalog/paper-boxes/page-3/",
@@ -336,6 +338,8 @@
     "/catalog/paper-boxes/page-30/",
     "/catalog/paper-boxes/page-31/",
     "/catalog/paper-boxes/page-32/",
+    "/catalog/paper-boxes/page-33/",
+    "/catalog/paper-boxes/page-34/",
     "/catalog/bags/",
     "/catalog/bags/page-2/",
     "/catalog/bags/page-3/",
@@ -390,6 +394,7 @@
     "/catalog/gift-boxes/page-7/",
     "/catalog/gift-boxes/page-8/",
     "/catalog/gift-boxes/page-9/",
+    "/catalog/gift-boxes/page-10/",
     "/catalog/magnetic-boxes/",
     "/catalog/magnetic-boxes/page-2/",
     "/catalog/magnetic-boxes/page-3/",
@@ -398,6 +403,7 @@
     "/catalog/magnetic-boxes/page-6/",
     "/catalog/magnetic-boxes/page-7/",
     "/catalog/magnetic-boxes/page-8/",
+    "/catalog/magnetic-boxes/page-9/",
     "/catalog/lid-base-boxes/",
     "/catalog/paper-tubes/",
     "/catalog/specialty-gift-boxes/",
@@ -421,6 +427,7 @@
     "/catalog/food-packaging/page-3/",
     "/catalog/food-packaging/page-4/",
     "/catalog/food-packaging/page-5/",
+    "/catalog/food-packaging/page-6/",
     "/catalog/sushi-packaging-boxes/",
     "/catalog/sushi-packaging-boxes/page-2/",
     "/catalog/cardboard-displays/",
@@ -462,6 +469,7 @@
     "/catalog/protective-shipping-boxes/",
     "/catalog/paper-shopping-bags/",
     "/catalog/drawer-boxes/",
+    "/catalog/drawer-boxes/page-2/",
     "/catalog/stand-up-pouches/",
     "/catalog/stand-up-pouches/page-2/",
     "/catalog/stand-up-pouches/page-3/",
@@ -1971,6 +1979,55 @@
     "/catalog/transparent-barrier-freeze-dried-apple-chips-pouch-pc-5cf40c7876/",
     "/catalog/transparent-hard-candy-pouch-pc-78103385c1/",
     "/catalog/turkey-jerky-lightweight-stand-up-pouch-pc-2e976205af/",
-    "/catalog/wide-mouth-tortilla-chips-pouch-pc-c67ca69ff5/"
+    "/catalog/wide-mouth-tortilla-chips-pouch-pc-c67ca69ff5/",
+    "/catalog/apparel-magnetic-gift-box-lx-966f53725a/",
+    "/catalog/candle-presentation-box-with-insert-lx-a050912adc/",
+    "/catalog/corporate-gift-set-presentation-box-lx-8d9897d565/",
+    "/catalog/advent-calendar-drawer-cabinet-with-doors-lx-dba47bae8e/",
+    "/catalog/advent-calendar-multi-drawer-box-lx-cd3a2b1361/",
+    "/catalog/baby-keepsake-and-memory-box-lx-4c45822acb/",
+    "/catalog/book-and-journal-presentation-box-lx-f3b73f4905/",
+    "/catalog/candle-and-aromatherapy-gift-set-box-lx-31a22daa7b/",
+    "/catalog/festive-cosmetic-gift-box-lx-ef7dc6f348/",
+    "/catalog/coffee-and-tea-gift-set-box-lx-3d71360226/",
+    "/catalog/corrugated-product-box-lx-3c9346cdbb/",
+    "/catalog/printed-mailer-box-with-tear-strip-lx-a8153ad7fa/",
+    "/catalog/round-paper-tube-gift-box-lx-06310a49f9/",
+    "/catalog/printed-food-packaging-set-lx-a1dd5c7fd8/",
+    "/catalog/printed-folding-carton-lx-8579620adc/",
+    "/catalog/gable-gift-box-with-handle-lx-2bc608bbe9/",
+    "/catalog/window-gift-box-with-compartments-lx-24f15dc33a/",
+    "/catalog/retail-hanging-tab-carton-lx-662d2f6935/",
+    "/catalog/heart-shaped-presentation-box-lx-1dbb20e9cf/",
+    "/catalog/hexagonal-presentation-box-lx-e99f67e114/",
+    "/catalog/paper-gift-bag-with-rope-handles-lx-3720dd575a/",
+    "/catalog/wellness-gift-set-box-with-fitted-insert-lx-539335a71c/",
+    "/catalog/magnetic-gift-box-with-modular-insert-lx-319add04a9/",
+    "/catalog/ribbon-tied-rigid-gift-box-lx-96747723a2/",
+    "/catalog/medal-and-coin-presentation-box-lx-21146419b8/",
+    "/catalog/perfume-gift-box-with-bottle-insert-lx-5e69f9acac/",
+    "/catalog/pyramid-gift-box-lx-938733d61e/",
+    "/catalog/arched-calendar-drawer-box-lx-ca96753583/",
+    "/catalog/lantern-style-calendar-drawer-box-lx-eaf489c7a0/",
+    "/catalog/vial-presentation-box-with-fitted-insert-lx-7064181911/",
+    "/catalog/printed-corrugated-shipping-box-lx-0f11b86a69/",
+    "/catalog/skincare-gift-set-box-with-fitted-insert-lx-ae2c577862/",
+    "/catalog/printed-sliding-drawer-gift-box-lx-eaa6421907/",
+    "/catalog/two-bottle-presentation-box-lx-08bf02520e/",
+    "/catalog/printed-food-service-box-lx-fdf8801f4c/",
+    "/catalog/fragrance-and-beauty-gift-set-box-lx-974301e629/",
+    "/catalog/beauty-pr-presentation-box-lx-840f749f7a/",
+    "/catalog/jewelry-presentation-box-with-lined-insert-lx-d3fcc0bff6/",
+    "/catalog/leather-look-jewelry-drawer-box-lx-1601ece02b/",
+    "/catalog/long-presentation-box-with-carry-handle-lx-c5bffc50f2/",
+    "/catalog/chocolate-gift-box-with-divider-tray-lx-17ff571f45/",
+    "/catalog/dates-and-chocolate-gift-box-lx-5a55e2e162/",
+    "/catalog/lid-and-base-gift-box-with-ribbon-lx-e78089659f/",
+    "/catalog/window-phone-case-packaging-box-lx-048461871f/",
+    "/catalog/kraft-mailer-box-with-tear-strip-lx-9e5045bc5b/",
+    "/catalog/shoulder-and-neck-rigid-gift-box-lx-684c87643f/",
+    "/catalog/sleeve-and-drawer-presentation-box-lx-b482755aa3/",
+    "/catalog/textured-gift-box-with-ribbon-lx-68c8bf0b4c/",
+    "/catalog/watch-presentation-box-with-cushion-lx-693cab2a6f/"
   ]
 }

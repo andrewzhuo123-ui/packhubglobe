@@ -138,6 +138,9 @@ for record in pouch_products:
  catalog_records[record['id']] = record
  catalog_selection['919632767'].append(record['id'])
 
+for record in json.loads((ROOT/'content/luxopack-sources/products.json').read_text()):
+ catalog_records[record['id']]=record
+
 exec(compile((ROOT/'tools/catalog_review.py').read_text(),str(ROOT/'tools/catalog_review.py'),'exec'))
 
 FAMILIES={'paper-boxes':'Paper boxes','bags':'Bags & pouches','packaging-accessories':'Packaging accessories'}
@@ -212,6 +215,8 @@ for product_id, record in catalog_records.items():
  body+='<section class="section wrap product-details"><div><h2>Product details.</h2>'+specs(rows)+'<p class="smallnote">These are reference specifications. Confirm the material, dimensions, finish and sample for your order. MOQ: 500 pieces. Images show design references. Branded contents are not supplied; printed claims do not verify the order specification.</p></div><aside class="help-note"><h3>Make this packaging yours.</h3><p>Share your product dimensions, quantity per design, artwork and delivery country. Include reference '+reference+' in your enquiry.</p><div class="actions">'+button('Request a quote',qurl(name+' · '+reference))+'<a class="textlink" href="https://wa.me/8615105916426?text='+catalog_chat(record).split('?text=',1)[1]+'" target="_blank" rel="noopener noreferrer">Discuss on WhatsApp ↗</a></div><a class="textlink" href="/guides/packaging-quote-checklist/">Prepare your specification</a></aside></section>'
  if record.get('review_note'):
   body+='<section class="section wrap"><h2>Points to confirm for this reference.</h2><p>'+esc(record['review_note'])+'</p></section>'
+ if record.get('gallery'):
+  body+='<section class="section wrap"><h2>Additional design references.</h2><p>Compare these views with the main reference. Confirm the supplied components, dimensions and construction for your order.</p><div class="catalog-grid">'+''.join('<figure class="catalog-product-image"><a href="'+im['path']+'" target="_blank" rel="noopener noreferrer"><img src="'+im['path']+'" alt="'+esc(name+' · additional reference '+str(i+1),quote=True)+'" width="'+str(im['width'])+'" height="'+str(im['height'])+'" loading="lazy"></a><figcaption>'+esc(reference+' · additional design reference '+str(i+1))+'</figcaption></figure>' for i,im in enumerate(record['gallery']))+'</div></section>'
  body+=product_editorial(record,rows)
  related_pool=[r for id,r in catalog_records.items() if id!=product_id and r['format']==record['format']]
  if len(related_pool)<3:related_pool.extend(r for id,r in catalog_records.items() if id!=product_id and r['family']==record['family'] and r not in related_pool)

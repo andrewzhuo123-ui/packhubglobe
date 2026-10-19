@@ -6,7 +6,6 @@ ErrorDocument 404 /404.html
 RewriteEngine On
 # Keep superseded catalog pagination URLs usable after the product review.
 RewriteRule ^catalog/stand\-up\-pouches/page\-18/$ /catalog/stand-up-pouches/page-17/ [R=301,L,NE]
-RewriteRule ^catalog/paper\-boxes/page\-33/$ /catalog/paper-boxes/page-32/ [R=301,L,NE]
 RewriteRule ^catalog/bags/page\-28/$ /catalog/bags/page-27/ [R=301,L,NE]
 RewriteRule ^catalog/pouches/page\-26/$ /catalog/pouches/page-25/ [R=301,L,NE]
 # Build sources and Git metadata are not public site content.

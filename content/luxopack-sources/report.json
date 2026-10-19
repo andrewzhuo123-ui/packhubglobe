@@ -1,0 +1,27 @@
+{
+  "source": "https://luxopack.com",
+  "source_routes": 52,
+  "captured": 52,
+  "errors": [],
+  "excluded_collections": [
+    "https://luxopack.com/products/eco-friendly-packaging",
+    "https://luxopack.com/products/jewelry-boxes"
+  ],
+  "merged_source": {
+    "url": "https://luxopack.com/products/collapsible-magnetic-gift-box-wholesale",
+    "retained": "https://luxopack.com/products/shoulder-neck-rigid-box",
+    "reason": "Equivalent main image; collapsible mechanism not established by photograph"
+  },
+  "existing_duplicates": [],
+  "published": 49,
+  "main_images": 49,
+  "detail_images": 4,
+  "formats": {
+    "rigid": 39,
+    "mailer": 4,
+    "food-box": 2,
+    "carton": 2,
+    "carry-box": 1,
+    "paper-bag": 1
+  }
+}

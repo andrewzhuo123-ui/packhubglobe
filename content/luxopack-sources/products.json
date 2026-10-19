@@ -1,0 +1,2454 @@
+[
+  {
+    "id": "LX-966F53725A",
+    "reference": "PHG-LX-966F53725A",
+    "name": "Apparel Magnetic Gift Box",
+    "path": "/catalog/apparel-magnetic-gift-box-lx-966f53725a/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869",
+      "921840222"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-apparel-magnetic-box.webp",
+      "path": "/assets/images/luxopack-catalog/2c657700a731b43b9257.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "2c657700a731b43b925760c20c00d9af09645ccec27feb41d119107f9cd2ce6b",
+      "file_sha256": "fc27a626aed9ad2bfe29170130cd0c974b433be606f35aa887b3e8ac41d333e9"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Apparel"
+      ]
+    ],
+    "review_note": "Review folded garment dimensions, tissue clearance, lid alignment and the packing sequence with the actual garment.",
+    "detail": {
+      "title": "Apparel & Clothing Packaging Box Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/apparel-clothing-packaging-box",
+        "title": "Apparel & Clothing Packaging Box Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-A050912ADC",
+    "reference": "PHG-LX-A050912ADC",
+    "name": "Candle Presentation Box with Insert",
+    "path": "/catalog/candle-presentation-box-with-insert-lx-a050912adc/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869",
+      "920793609"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-candle-presentation-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/55724d7852e3c9a3a493.webp",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "55724d7852e3c9a3a49314d1da9a698ee8eb0ce7b1a4fe76fcc7e92555f4dbeb",
+      "file_sha256": "78cb834c34ca89e7d1fdc223ff90c02631e555757586068d593a7521609556f6"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Candles"
+      ]
+    ],
+    "review_note": "Fit the candle jar, cap and insert together; confirm removal clearance, odor requirements and the filled transit arrangement.",
+    "detail": {
+      "title": "Custom Candle Boxes & Gift Box Packaging Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/candle-gift-box-packaging",
+        "title": "Custom Candle Boxes & Gift Box Packaging Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-8D9897D565",
+    "reference": "PHG-LX-8D9897D565",
+    "name": "Corporate Gift Set Presentation Box",
+    "path": "/catalog/corporate-gift-set-presentation-box-lx-8d9897d565/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-graduation-gift-set.webp",
+      "path": "/assets/images/luxopack-catalog/aeae372ba7cf468a2cea.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "aeae372ba7cf468a2cea5246968426f9a92baef46088a6f806903b70c5d5df93",
+      "file_sha256": "db9e4af8a25d184e82e5e6e3a91be3d5a986283180c3729ad125c9f930f8762b"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Corporate gifts"
+      ]
+    ],
+    "review_note": "Specify every item in the set, including bottles, apparel and cards; approve the individual cavities and the complete packed layout.",
+    "detail": {
+      "title": "Corporate Gift Set Box Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/corporate-gift-set-box",
+        "title": "Corporate Gift Set Box Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-DBA47BAE8E",
+    "reference": "PHG-LX-DBA47BAE8E",
+    "name": "Advent Calendar Drawer Cabinet with Doors",
+    "path": "/catalog/advent-calendar-drawer-cabinet-with-doors-lx-dba47bae8e/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953294826"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-advent-calendar-cabinet-with-doors-1.webp",
+      "path": "/assets/images/luxopack-catalog/9cd9687e5141e0222de0.webp",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "9cd9687e5141e0222de0ec20a16478f22be694dd0a3390e80c084d374ac2d48b",
+      "file_sha256": "22db8d146bc095d98b14d5b861ada0fc289b566dc7841be76283dcdc0561babc"
+    },
+    "gallery": [
+      {
+        "url": "https://luxopack.com/assets/images/products/luxopack-custom-advent-calendar-cabinet-with-doors-2.webp",
+        "path": "/assets/images/luxopack-catalog/c877a6db4475bcb6ba24.webp",
+        "width": 1200,
+        "height": 1200,
+        "sha256": "c877a6db4475bcb6ba24a95df47484b54079622a73167525d55a4de1d2eef83b",
+        "file_sha256": "10d0d493ad5ada7a3fdf6c28e26eb7cf30baad4be198300595cefb7b89245f5f"
+      }
+    ],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Seasonal gifts"
+      ]
+    ],
+    "review_note": "Approve the two-door opening, drawer grid, day numbering and cavity dimensions; check that loaded drawers remain accessible.",
+    "detail": {
+      "title": "Custom Advent Calendar Cabinet with Doors",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-advent-calendar-cabinet-with-doors",
+        "title": "Custom Advent Calendar Cabinet with Doors"
+      }
+    ]
+  },
+  {
+    "id": "LX-CD3A2B1361",
+    "reference": "PHG-LX-CD3A2B1361",
+    "name": "Advent Calendar Multi-Drawer Box",
+    "path": "/catalog/advent-calendar-multi-drawer-box-lx-cd3a2b1361/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953294826"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-advent-calendar-drawer-box-1.webp",
+      "path": "/assets/images/luxopack-catalog/3c992cd79e3054803221.webp",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "3c992cd79e30548032219666d2e95f533dc82903a3f3bd3fcb62ba9636d488f3",
+      "file_sha256": "083a3405b7a3ee078d85042f317b15c91b61adc8717c42dc206f34fd0858dbc8"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Seasonal gifts"
+      ]
+    ],
+    "review_note": "Confirm the number and size of drawers, ribbon pulls and numbering artwork using the actual contents for each compartment.",
+    "detail": {
+      "title": "Custom Advent Calendar Drawer Box",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-advent-calendar-drawer-box",
+        "title": "Custom Advent Calendar Drawer Box"
+      }
+    ]
+  },
+  {
+    "id": "LX-4C45822ACB",
+    "reference": "PHG-LX-4C45822ACB",
+    "name": "Baby Keepsake and Memory Box",
+    "path": "/catalog/baby-keepsake-and-memory-box-lx-4c45822acb/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "803631155"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-baby-keepsake-box-1.webp",
+      "path": "/assets/images/luxopack-catalog/0209be236bdcf3e16564.webp",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "0209be236bdcf3e16564b017fe291b05106380552ef99530fe884f3680ea5b26",
+      "file_sha256": "3bf501899d8daab057796f87abe8c01ee99dde4385f8ee29d6c02a7cd115018d"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Keepsake gifts"
+      ]
+    ],
+    "review_note": "Define the compartments for keepsakes, cards and folded items; confirm which drawers, dividers and exterior components are included.",
+    "detail": {
+      "title": "Custom Baby Keepsake & Memory Box",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-baby-keepsake-box",
+        "title": "Custom Baby Keepsake & Memory Box"
+      }
+    ]
+  },
+  {
+    "id": "LX-F3B73F4905",
+    "reference": "PHG-LX-F3B73F4905",
+    "name": "Book and Journal Presentation Box",
+    "path": "/catalog/book-and-journal-presentation-box-lx-f3b73f4905/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "803631155"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-book-journal-gift-box-1.webp",
+      "path": "/assets/images/luxopack-catalog/b5f22067897eb42f8399.webp",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "b5f22067897eb42f83997209ffbeaca8da4c5e277257269f3b967a4bf4186788",
+      "file_sha256": "9a1850ce55170a7ec5be3abe7bb17afcd7377a296eea1cc4c67244ed577cb593"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Books and stationery"
+      ]
+    ],
+    "review_note": "Provide the book trim size, thickness and any pen or bookmark; review lift access and insert fit with the actual set.",
+    "detail": {
+      "title": "Custom Book & Journal Gift Box",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-book-journal-gift-box",
+        "title": "Custom Book & Journal Gift Box"
+      }
+    ]
+  },
+  {
+    "id": "LX-31A22DAA7B",
+    "reference": "PHG-LX-31A22DAA7B",
+    "name": "Candle and Aromatherapy Gift Set Box",
+    "path": "/catalog/candle-and-aromatherapy-gift-set-box-lx-31a22daa7b/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869",
+      "920793609"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/custom-candle-aromatherapy-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/43414a887e51aa65e84d.webp",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "43414a887e51aa65e84d2befe32b8d6295b6f0f0311225e5942d44c00b8b8aa6",
+      "file_sha256": "c4c82c5b31a8bf63834deb555a72386e63d075595149eb4ebd2e1f9afd96ff96"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Candles"
+      ]
+    ],
+    "review_note": "Map the candle, oil bottles and accessories individually; confirm the insert material and separation between components.",
+    "detail": {
+      "title": "Custom Candle & Aromatherapy Gift Box with Insert",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-candle-aromatherapy-gift-box",
+        "title": "Custom Candle & Aromatherapy Gift Box with Insert"
+      }
+    ]
+  },
+  {
+    "id": "LX-EF7DC6F348",
+    "reference": "PHG-LX-EF7DC6F348",
+    "name": "Festive Cosmetic Gift Box",
+    "path": "/catalog/festive-cosmetic-gift-box-lx-ef7dc6f348/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869",
+      "803708590"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/custom-christmas-cosmetic-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/a95a051b2040a0cf1b93.webp",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "a95a051b2040a0cf1b93b5c75d606ea86f81c01ac8a9876a4611f034df5820d6",
+      "file_sha256": "44de44240515fd26b562682cb6d86f5b21cf1b630a7e970a36b34f8082b6a5b3"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Cosmetics"
+      ]
+    ],
+    "review_note": "Review bottle cavities, seasonal artwork and the foil or printed decoration; confirm the lid and insert against a filled sample.",
+    "detail": {
+      "title": "Custom Christmas Cosmetic Gift Box with Gold Foil",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-christmas-cosmetic-gift-box",
+        "title": "Custom Christmas Cosmetic Gift Box with Gold Foil"
+      }
+    ]
+  },
+  {
+    "id": "LX-3D71360226",
+    "reference": "PHG-LX-3D71360226",
+    "name": "Coffee and Tea Gift Set Box",
+    "path": "/catalog/coffee-and-tea-gift-set-box-lx-3d71360226/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "803631155",
+      "920803216"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-coffee-tea-arabic-set-v2.webp",
+      "path": "/assets/images/luxopack-catalog/4cf3d7e71413c5e179fb.webp",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "4cf3d7e71413c5e179fb725675d468ff9fb0319af6ca3407532c3e0af1a2caa8",
+      "file_sha256": "aa51b4f4f3ec86bce06fe831ee32a089932f72d7e9740848bc1d5e664adde6e1"
+    },
+    "gallery": [
+      {
+        "url": "https://luxopack.com/assets/images/products/luxopack-coffee-tea-bags-set-v2.webp",
+        "path": "/assets/images/luxopack-catalog/41d2799c8056421d25c7.webp",
+        "width": 1200,
+        "height": 1007,
+        "sha256": "41d2799c8056421d25c73eccb0367be3d824b14f08d781373391f185517e069a",
+        "file_sha256": "85456f16bc2cc54a75917a22d36063ce7a8a173208ec1ecb23425ec1f432781a"
+      }
+    ],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Tea and coffee"
+      ]
+    ],
+    "review_note": "Specify whether the set contains pouches, tins, cups or a serving pot; size each compartment and approve the complete arrangement.",
+    "detail": {
+      "title": "Custom Coffee & Tea Gift Box",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-coffee-tea-gift-box",
+        "title": "Custom Coffee & Tea Gift Box"
+      }
+    ]
+  },
+  {
+    "id": "LX-3C9346CDBB",
+    "reference": "PHG-LX-3C9346CDBB",
+    "name": "Corrugated Product Box",
+    "path": "/catalog/corrugated-product-box-lx-3c9346cdbb/",
+    "format": "mailer",
+    "family": "paper-boxes",
+    "groups": [
+      "920016676"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-corrugated-product-box.webp",
+      "path": "/assets/images/luxopack-catalog/b7a61a3d8fa9390dca9a.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "b7a61a3d8fa9390dca9ae27f915c2d2e9d2d387680ac0710202b76a8b6851eb0",
+      "file_sha256": "4fb252543747f5e7887839cd0ae86653b916ae572122d5e7f3fb8bc90d14eebd"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Corrugated board; grade and flute to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Product shipping"
+      ]
+    ],
+    "review_note": "Select the flute, board grade, flap construction and internal dimensions for the packed product and shipping route.",
+    "detail": {
+      "title": "Custom Corrugated Boxes Wholesale",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-corrugated-boxes",
+        "title": "Custom Corrugated Boxes Wholesale"
+      }
+    ]
+  },
+  {
+    "id": "LX-A8153AD7FA",
+    "reference": "PHG-LX-A8153AD7FA",
+    "name": "Printed Mailer Box with Tear Strip",
+    "path": "/catalog/printed-mailer-box-with-tear-strip-lx-a8153ad7fa/",
+    "format": "mailer",
+    "family": "paper-boxes",
+    "groups": [
+      "951398518"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-premium-custom-printed-mailer-box.webp",
+      "path": "/assets/images/luxopack-catalog/2d8235a0c0847262ef3c.webp",
+      "width": 1200,
+      "height": 896,
+      "sha256": "2d8235a0c0847262ef3c71f53405fb6296bc8af35843a662b243b64fb2d31097",
+      "file_sha256": "f7a6df2fe34e0fd7caba00983420d921396b760c6e7deef01aa65b82a80a92ac"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Corrugated board; grade and flute to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Product shipping"
+      ]
+    ],
+    "review_note": "Review the lid, adhesive closure and tear-strip route; test opening and retention with the actual packed contents.",
+    "detail": {
+      "title": "Custom Mailer Boxes Corrugated, with Built-in Tear Strip",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-corrugated-mailer-box-with-tear-strip",
+        "title": "Custom Mailer Boxes Corrugated, with Built-in Tear Strip"
+      }
+    ]
+  },
+  {
+    "id": "LX-06310A49F9",
+    "reference": "PHG-LX-06310A49F9",
+    "name": "Round Paper Tube Gift Box",
+    "path": "/catalog/round-paper-tube-gift-box-lx-06310a49f9/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "952891404"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-luxury-cylinder-tube-box.webp",
+      "path": "/assets/images/luxopack-catalog/cee76a11d65882f43911.webp",
+      "width": 1200,
+      "height": 896,
+      "sha256": "cee76a11d65882f439117e8a320c619a3c170fc0f3aa7b116f29e5a76afbaf87",
+      "file_sha256": "fb1dc26f3f2565636ce1f7bae8141c3327a0b5f4ade8e1956336fc3ce7a05167"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift packaging"
+      ]
+    ],
+    "review_note": "Confirm tube diameter, usable height, lid overlap and insert requirements; check the wrap artwork at the body joint.",
+    "detail": {
+      "title": "Custom Cylinder Tube Box Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-cylinder-tube-box",
+        "title": "Custom Cylinder Tube Box Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-A1DD5C7FD8",
+    "reference": "PHG-LX-A1DD5C7FD8",
+    "name": "Printed Food Packaging Set",
+    "path": "/catalog/printed-food-packaging-set-lx-a1dd5c7fd8/",
+    "format": "food-box",
+    "family": "paper-boxes",
+    "groups": [
+      "810538305"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-burgundy-fast-food-packaging-set.webp",
+      "path": "/assets/images/luxopack-catalog/2e9e905fb023e071d2b6.webp",
+      "width": 800,
+      "height": 446,
+      "sha256": "2e9e905fb023e071d2b63467889b20efb2769eb453dc61d4bbdc63d22c5ddc48",
+      "file_sha256": "b7e9cd17311fc2a9351e0a3ce24e203598298d7c2c7c10ea861fb5d46048a447"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Paperboard; coating and intended contact conditions to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Food service"
+      ]
+    ],
+    "review_note": "List the boxes, cups, bags or other components required; approve each material, coating, size and intended contact condition separately.",
+    "detail": {
+      "title": "Custom Fast Food Packaging Set",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-fast-food-packaging-set",
+        "title": "Custom Fast Food Packaging Set"
+      }
+    ]
+  },
+  {
+    "id": "LX-8579620ADC",
+    "reference": "PHG-LX-8579620ADC",
+    "name": "Printed Folding Carton",
+    "path": "/catalog/printed-folding-carton-lx-8579620adc/",
+    "format": "carton",
+    "family": "paper-boxes",
+    "groups": [
+      "folding-cartons"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-cardstock-product-box.webp",
+      "path": "/assets/images/luxopack-catalog/39cd52e519fcbd3aa37b.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "39cd52e519fcbd3aa37b80090746ce3d3061bd6cb1976c4e6bcf06fd7acaf444",
+      "file_sha256": "f0d382bc2945bd4054ad844fe404a2c24a90ef3501b1b594ebf232c57aa7a045"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Folding paperboard; grade and thickness to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Retail products"
+      ]
+    ],
+    "review_note": "Approve the tuck flaps, base construction, paperboard and artwork on a dieline sized to the actual product.",
+    "detail": {
+      "title": "Custom Folding Carton Boxes Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-folding-carton-boxes",
+        "title": "Custom Folding Carton Boxes Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-2BC608BBE9",
+    "reference": "PHG-LX-2BC608BBE9",
+    "name": "Gable Gift Box with Handle",
+    "path": "/catalog/gable-gift-box-with-handle-lx-2bc608bbe9/",
+    "format": "carry-box",
+    "family": "paper-boxes",
+    "groups": [
+      "handle-carry-boxes"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-gable-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/90dd58e21c19decf02cb.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "90dd58e21c19decf02cb78cb87cfcce318cbb4e364bf2ad9e085af58175e5b85",
+      "file_sha256": "3928d50300867f1b9385440af1bb442a62d29ccccf1475ce9e3e5cb9da937997"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Folding paperboard; handle and base construction to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift packaging"
+      ]
+    ],
+    "review_note": "Check the interlocking top, hand opening and base with the intended contents; confirm the carrying arrangement on a loaded sample.",
+    "detail": {
+      "title": "Custom Gable Box with Handle Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-gable-gift-box-with-handle",
+        "title": "Custom Gable Box with Handle Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-24F15DC33A",
+    "reference": "PHG-LX-24F15DC33A",
+    "name": "Window Gift Box with Compartments",
+    "path": "/catalog/window-gift-box-with-compartments-lx-24f15dc33a/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "803631155"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-gift-box-with-window-1.webp",
+      "path": "/assets/images/luxopack-catalog/fa10907d3f599f1f1c3f.webp",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "fa10907d3f599f1f1c3f1c85aa53ef8a8d555dabda95969273682b9f4965d054",
+      "file_sha256": "93b75b0576294881a0d506390dad87570c8f0b7bd4ec894fd3acf2858864eeb4"
+    },
+    "gallery": [
+      {
+        "url": "https://luxopack.com/assets/images/products/luxopack-custom-gift-box-with-window-2.webp",
+        "path": "/assets/images/luxopack-catalog/1d0b50e8d8a76854dec6.webp",
+        "width": 1200,
+        "height": 1200,
+        "sha256": "1d0b50e8d8a76854dec66b2be078f2b4f86ccc720fd076214c2e848aed685f70",
+        "file_sha256": "2f2418646545ba181ff28df93959f5e59d5a435b0f218cffdc2f03ef17981c6f"
+      }
+    ],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift packaging"
+      ]
+    ],
+    "review_note": "Confirm the window material, attachment and insert layout; review the view of the contents and suitability for their intended contact conditions.",
+    "detail": {
+      "title": "Custom Gift Boxes with Window",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-gift-box-with-window",
+        "title": "Custom Gift Boxes with Window"
+      }
+    ]
+  },
+  {
+    "id": "LX-662D2F6935",
+    "reference": "PHG-LX-662D2F6935",
+    "name": "Retail Hanging-Tab Carton",
+    "path": "/catalog/retail-hanging-tab-carton-lx-662d2f6935/",
+    "format": "carton",
+    "family": "paper-boxes",
+    "groups": [
+      "folding-cartons"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-hanging-tab-box.webp",
+      "path": "/assets/images/luxopack-catalog/1a7cf1269e6f26f25b9a.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "1a7cf1269e6f26f25b9a3faa124e9cb4d928702ea2bd7417e8f4a9789fc394f0",
+      "file_sha256": "1a3bd4212c9950e61f8662e88b3d1e3820d9c58878f0a1d5965314489dd1d837"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Folding paperboard; grade and thickness to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Retail products"
+      ]
+    ],
+    "review_note": "Define the hang-tab hole and display fixture; review loaded hanging, closure, barcode area and product removal.",
+    "detail": {
+      "title": "Custom Hang Tab Boxes for Retail Pegs",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-hang-tab-boxes",
+        "title": "Custom Hang Tab Boxes for Retail Pegs"
+      }
+    ]
+  },
+  {
+    "id": "LX-1DBB20E9CF",
+    "reference": "PHG-LX-1DBB20E9CF",
+    "name": "Heart-Shaped Presentation Box",
+    "path": "/catalog/heart-shaped-presentation-box-lx-1dbb20e9cf/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "954038904"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-heart-shaped-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/d040c00854a1f2673a56.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "d040c00854a1f2673a56e9afa1cf66580a52438d8f183f2399f5a952d5b51f91",
+      "file_sha256": "8e00ddfb4f1bcf955577ae76b0efddc6ee92b6ff94aec722fc4584d2ec7d893e"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift packaging"
+      ]
+    ],
+    "review_note": "Approve the curved outline, lid fit and internal insert or lining; define the product orientation and removal point.",
+    "detail": {
+      "title": "Custom Heart-Shaped Gift Box Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-heart-shaped-gift-box",
+        "title": "Custom Heart-Shaped Gift Box Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-E99F67E114",
+    "reference": "PHG-LX-E99F67E114",
+    "name": "Hexagonal Presentation Box",
+    "path": "/catalog/hexagonal-presentation-box-lx-e99f67e114/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "954038904"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-hexagon-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/c77a04958505383e00e0.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "c77a04958505383e00e003766007b07f7d160b6945988dfdc55202a77ee7ccb1",
+      "file_sha256": "abf9697f4d54b6ba1c6313df155c122a20c10ed1ed76426786d45717394a946b"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift packaging"
+      ]
+    ],
+    "review_note": "Review the six-sided shape, panel joins, lid overlap and fitted interior; align artwork across adjacent faces.",
+    "detail": {
+      "title": "Custom Hexagon Gift Box Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-hexagon-gift-box",
+        "title": "Custom Hexagon Gift Box Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-3720DD575A",
+    "reference": "PHG-LX-3720DD575A",
+    "name": "Paper Gift Bag with Rope Handles",
+    "path": "/catalog/paper-gift-bag-with-rope-handles-lx-3720dd575a/",
+    "format": "paper-bag",
+    "family": "bags",
+    "groups": [
+      "952968758"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-premium-luxury-paper-gift-bag.webp",
+      "path": "/assets/images/luxopack-catalog/4061673e41fa984bda31.webp",
+      "width": 1200,
+      "height": 896,
+      "sha256": "4061673e41fa984bda3105ac315afa9d1bb51bdd48d1c6be9eac8d84584c690b",
+      "file_sha256": "fe49385c6913a387197b00deb0db55e930cfe3126a36d7a8785e3427facefd16"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Paper carrier construction; paper, handle and reinforcement to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Retail gifting"
+      ]
+    ],
+    "review_note": "Confirm paper, rope handles, attachment points and reinforced base with the packed weight and carrying conditions.",
+    "detail": {
+      "title": "Custom Luxury Paper Bags with Logo — Gift Bags Wholesale",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-luxury-paper-gift-bag",
+        "title": "Custom Luxury Paper Bags with Logo — Gift Bags Wholesale"
+      }
+    ]
+  },
+  {
+    "id": "LX-539335A71C",
+    "reference": "PHG-LX-539335A71C",
+    "name": "Wellness Gift Set Box with Fitted Insert",
+    "path": "/catalog/wellness-gift-set-box-with-fitted-insert-lx-539335a71c/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/custom-luxury-wellness-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/1de9fd39a821f653f5ef.webp",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "1de9fd39a821f653f5ef50448f0f9da23c57debbe4123fa0a5410e874c6538cf",
+      "file_sha256": "708c83cb875c0363b2727a2ed4cd810c027b931ec860c4cf80208d9bf7dbf571"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Wellness gifts"
+      ]
+    ],
+    "review_note": "Define the bottles, jars, eye mask or accessories included in the project; approve cavity spacing and removal access with the actual set.",
+    "detail": {
+      "title": "Custom Luxury Wellness Gift Box with Fitted Insert",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-luxury-wellness-gift-box",
+        "title": "Custom Luxury Wellness Gift Box with Fitted Insert"
+      }
+    ]
+  },
+  {
+    "id": "LX-319ADD04A9",
+    "reference": "PHG-LX-319ADD04A9",
+    "name": "Magnetic Gift Box with Modular Insert",
+    "path": "/catalog/magnetic-gift-box-with-modular-insert-lx-319add04a9/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/luxopack-eco-conscious-skincare-box.webp",
+      "path": "/assets/images/luxopack-catalog/c8dfb71e686faf77b12c.webp",
+      "width": 828,
+      "height": 552,
+      "sha256": "c8dfb71e686faf77b12cec287e3d51a8634e45385add597de46701a91baecfb3",
+      "file_sha256": "de70d02ed6c3678d2a90457ee3282c746fb8067cafd42b4fa2bb11a2af345a62"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift sets"
+      ]
+    ],
+    "review_note": "List each item, insert cavity and finger access point; check the lid clearance and retention on the complete filled sample.",
+    "detail": {
+      "title": "Custom Magnetic Gift Box with Precision Modular Insert",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-magnetic-gift-box-with-modular-insert",
+        "title": "Custom Magnetic Gift Box with Precision Modular Insert"
+      }
+    ]
+  },
+  {
+    "id": "LX-96747723A2",
+    "reference": "PHG-LX-96747723A2",
+    "name": "Ribbon-Tied Rigid Gift Box",
+    "path": "/catalog/ribbon-tied-rigid-gift-box-lx-96747723a2/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "803631155"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-magnetic-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/d1f4eb850f17a081c65f.webp",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "d1f4eb850f17a081c65fe51505a8b48739c8c9746fb5e582fb12260f14d624a4",
+      "file_sha256": "5c386ea4ce8fec65a027f999d9fc59bd60292960c68d4e6785a7f0e873216c68"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift packaging"
+      ]
+    ],
+    "review_note": "The image shows a ribbon presentation direction. Confirm the actual lid construction, ribbon attachment and any insert before selecting the final closure.",
+    "detail": {
+      "title": "Custom Magnetic Closure Gift Boxes Rigid Box Manufacturer in China",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-magnetic-rigid-gift-box-manufacturer",
+        "title": "Custom Magnetic Closure Gift Boxes Rigid Box Manufacturer in China"
+      }
+    ]
+  },
+  {
+    "id": "LX-21146419B8",
+    "reference": "PHG-LX-21146419B8",
+    "name": "Medal and Coin Presentation Box",
+    "path": "/catalog/medal-and-coin-presentation-box-lx-21146419b8/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "803631155"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-medal-coin-presentation-box-1.webp",
+      "path": "/assets/images/luxopack-catalog/4e71f4cf4bff5f9fec5b.webp",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "4e71f4cf4bff5f9fec5b5f2217d534eaa1a1d00aadc43bd7df0576dcceef1830",
+      "file_sha256": "9abd46c790a4020081078be594853d8dcb94426e31bb119e564bd2de9e6a197e"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Collector gifts"
+      ]
+    ],
+    "review_note": "Confirm the item diameter, thickness, support angle and retaining method; review the lining contact and removal access.",
+    "detail": {
+      "title": "Custom Medal & Coin Presentation Box",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-medal-coin-presentation-box",
+        "title": "Custom Medal & Coin Presentation Box"
+      }
+    ]
+  },
+  {
+    "id": "LX-5E69F9ACAC",
+    "reference": "PHG-LX-5E69F9ACAC",
+    "name": "Perfume Gift Box with Bottle Insert",
+    "path": "/catalog/perfume-gift-box-with-bottle-insert-lx-5e69f9acac/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869",
+      "803708590"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-perfume-box-black-insert-v2.webp",
+      "path": "/assets/images/luxopack-catalog/aabec8c7eeedee9bde81.webp",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "aabec8c7eeedee9bde81eb363573cef3f683d8f442dfec4007692697a5cc2fa3",
+      "file_sha256": "ee0df054b1b3f975d544fd67e84c2110427d337f25dcca3ee7a51b54e221b96e"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Perfume"
+      ]
+    ],
+    "review_note": "Fit the bottle, cap and any companion item individually; confirm cavity depth, cap clearance and the complete packed layout.",
+    "detail": {
+      "title": "Custom Perfume Boxes with Bottle Insert",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-perfume-box-bottle-insert",
+        "title": "Custom Perfume Boxes with Bottle Insert"
+      }
+    ]
+  },
+  {
+    "id": "LX-938733D61E",
+    "reference": "PHG-LX-938733D61E",
+    "name": "Pyramid Gift Box",
+    "path": "/catalog/pyramid-gift-box-lx-938733d61e/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "954038904"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-pyramid-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/e0ed55b92d2dad092dda.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "e0ed55b92d2dad092ddad095d524741cd2c29e7300ab84860467cc270ef937aa",
+      "file_sha256": "139d3c1ba187c7e66b401e9e180d55458a98d3eac75afdbd2e87f37a46b4c37c"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift packaging"
+      ]
+    ],
+    "review_note": "Confirm the triangular panels, base dimensions and opening method; approve product fit and assembly before finalizing artwork.",
+    "detail": {
+      "title": "Custom Pyramid Gift Box Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-pyramid-gift-box",
+        "title": "Custom Pyramid Gift Box Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-CA96753583",
+    "reference": "PHG-LX-CA96753583",
+    "name": "Arched Calendar Drawer Box",
+    "path": "/catalog/arched-calendar-drawer-box-lx-ca96753583/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953294826"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-ramadan-calendar-box-1.webp",
+      "path": "/assets/images/luxopack-catalog/1bcc7a649aa653dd8200.webp",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "1bcc7a649aa653dd82003dcc491cbc10b545300b291a6cdcfd5fafedf14bdf99",
+      "file_sha256": "75265b5fd6e6eb54994659c75f8b0cbbc81be27fba958f2e7a3f5fe011515ec5"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Seasonal gifts"
+      ]
+    ],
+    "review_note": "Approve the arched outer shape, numbered drawer grid and pull positions; confirm all cavity dimensions with the intended contents.",
+    "detail": {
+      "title": "Custom Ramadan Calendar Box — Arch Design",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-ramadan-calendar-box",
+        "title": "Custom Ramadan Calendar Box — Arch Design"
+      }
+    ]
+  },
+  {
+    "id": "LX-EAF489C7A0",
+    "reference": "PHG-LX-EAF489C7A0",
+    "name": "Lantern-Style Calendar Drawer Box",
+    "path": "/catalog/lantern-style-calendar-drawer-box-lx-eaf489c7a0/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953294826"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-ramadan-calendar-drawer-box-1.webp",
+      "path": "/assets/images/luxopack-catalog/19f97e4306a7f630e2fa.webp",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "19f97e4306a7f630e2fae0891d034a4ccad7ff0cfeb6ba7e5e55be025ccc3990",
+      "file_sha256": "067b26c2832bdea97891776a8bb3bce957da020bb6c250fcc28443768fb820b1"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Seasonal gifts"
+      ]
+    ],
+    "review_note": "Review the calendar count, drawer sizes and decorative artwork together; check access and retention for every loaded compartment.",
+    "detail": {
+      "title": "Custom Ramadan Calendar Drawer Box — Lantern Design",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-ramadan-calendar-drawer-box",
+        "title": "Custom Ramadan Calendar Drawer Box — Lantern Design"
+      }
+    ]
+  },
+  {
+    "id": "LX-7064181911",
+    "reference": "PHG-LX-7064181911",
+    "name": "Vial Presentation Box with Fitted Insert",
+    "path": "/catalog/vial-presentation-box-with-fitted-insert-lx-7064181911/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "954034112"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/custom-rigid-vial-box-eva-insert.webp",
+      "path": "/assets/images/luxopack-catalog/cc34363d591557680fc9.webp",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "cc34363d591557680fc97efd13caaaf7aa3563a9329a1f5ed6ffb397255ceb7f",
+      "file_sha256": "c7edac01dc3b637b1e9de0c75632cd00f29945d7f5a862a0e5074e3ccfa41b81"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Vials and sample bottles"
+      ]
+    ],
+    "review_note": "Confirm vial diameters, cap clearance and the selected insert; identify whether the quotation includes only the box and insert. Packaging alone does not establish medical or temperature-control performance.",
+    "detail": {
+      "title": "Custom Rigid Vial Box with EVA Foam Insert",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-rigid-vial-box-eva-insert",
+        "title": "Custom Rigid Vial Box with EVA Foam Insert"
+      }
+    ]
+  },
+  {
+    "id": "LX-0F11B86A69",
+    "reference": "PHG-LX-0F11B86A69",
+    "name": "Printed Corrugated Shipping Box",
+    "path": "/catalog/printed-corrugated-shipping-box-lx-0f11b86a69/",
+    "format": "mailer",
+    "family": "paper-boxes",
+    "groups": [
+      "920016676"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-standard-shipping-box.webp",
+      "path": "/assets/images/luxopack-catalog/aa47d8240ceed239d3e7.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "aa47d8240ceed239d3e77fbc34e446a041e432b40fe22c77b23f160926e09d49",
+      "file_sha256": "df6a6042731c47a9e8b0ea2f90c440af769096cb86cd800a4cb0c3543ca93106"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Corrugated board; grade and flute to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Product shipping"
+      ]
+    ],
+    "review_note": "Specify flap closure, tape, board grade and internal dimensions; evaluate the complete parcel at the intended packed weight.",
+    "detail": {
+      "title": "Custom Shipping Boxes with Logo",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-shipping-boxes-with-logo",
+        "title": "Custom Shipping Boxes with Logo"
+      }
+    ]
+  },
+  {
+    "id": "LX-AE2C577862",
+    "reference": "PHG-LX-AE2C577862",
+    "name": "Skincare Gift Set Box with Fitted Insert",
+    "path": "/catalog/skincare-gift-set-box-with-fitted-insert-lx-ae2c577862/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869",
+      "803708590"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-ivory-skincare-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/9237f4df3a1879242760.webp",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "9237f4df3a187924276055575b4813956c2bd8c6079be4692856f658f9af2c0e",
+      "file_sha256": "91aaaf2d7e5044f65a8f12a56bf4184e193e3bebf48b73fb44368484950eb6ba"
+    },
+    "gallery": [
+      {
+        "url": "https://luxopack.com/assets/images/products/luxopack-kraft-skincare-gift-box.webp",
+        "path": "/assets/images/luxopack-catalog/cf388963af89eb7a2430.webp",
+        "width": 1600,
+        "height": 1000,
+        "sha256": "cf388963af89eb7a24305a45fbd06abc23e9525da52a800fc1bd7e39a0f40412",
+        "file_sha256": "82060e0d20b35c3c8d1cceae6e72e077d9e810f85db0f70dace021a53e0ed8cc"
+      }
+    ],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Cosmetics"
+      ]
+    ],
+    "review_note": "Size the tray around the actual jars and bottles; review labels, cap clearance, removal points and handling of the filled pack.",
+    "detail": {
+      "title": "Custom Skincare Gift Box with Fitted Insert",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-skincare-gift-box-fitted-insert",
+        "title": "Custom Skincare Gift Box with Fitted Insert"
+      }
+    ]
+  },
+  {
+    "id": "LX-EAA6421907",
+    "reference": "PHG-LX-EAA6421907",
+    "name": "Printed Sliding Drawer Gift Box",
+    "path": "/catalog/printed-sliding-drawer-gift-box-lx-eaa6421907/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953294826"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-luxury-sliding-drawer-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/59c8e82b722e107591e4.webp",
+      "width": 1200,
+      "height": 896,
+      "sha256": "59c8e82b722e107591e4faa7b44f9bff7370c4fcd32453be8a231765638d3ab8",
+      "file_sha256": "a1f866d01be4ed4f3a671a9cb0a2bf275c59b8c6568eda50bd2f1e53f115f4e9"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift packaging"
+      ]
+    ],
+    "review_note": "Check the sleeve-to-tray clearance, ribbon pull and insert fit; review artwork alignment in the closed and open positions.",
+    "detail": {
+      "title": "Custom Sliding Drawer Boxes & Slide Box Packaging Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-sliding-drawer-packaging-box",
+        "title": "Custom Sliding Drawer Boxes & Slide Box Packaging Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-08BF02520E",
+    "reference": "PHG-LX-08BF02520E",
+    "name": "Two-Bottle Presentation Box",
+    "path": "/catalog/two-bottle-presentation-box-lx-08bf02520e/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-wine-bottle-gift-box-1.webp",
+      "path": "/assets/images/luxopack-catalog/049f0a64582d126d3daa.webp",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "049f0a64582d126d3daa55a0504ad684d478694271756cfed3cfd05765df2559",
+      "file_sha256": "e4aee5bddadd6254bcb98165d911316cc992c6ba8b9584194947adc5c629ce53"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Bottle gifting"
+      ]
+    ],
+    "review_note": "Confirm bottle diameters, shoulders and caps, individual cradles and separation; evaluate the filled set with its outer transport pack.",
+    "detail": {
+      "title": "Custom Wine Bottle Gift Box",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/custom-wine-bottle-gift-box",
+        "title": "Custom Wine Bottle Gift Box"
+      }
+    ]
+  },
+  {
+    "id": "LX-FDF8801F4C",
+    "reference": "PHG-LX-FDF8801F4C",
+    "name": "Printed Food Service Box",
+    "path": "/catalog/printed-food-service-box-lx-fdf8801f4c/",
+    "format": "food-box",
+    "family": "paper-boxes",
+    "groups": [
+      "810538305"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/luxopack-round-hat-box-wholesale.webp",
+      "path": "/assets/images/luxopack-catalog/4e6b2bb3626c49916001.webp",
+      "width": 1200,
+      "height": 804,
+      "sha256": "4e6b2bb3626c49916001585b65691163cdbc6cac68a23fd0725918ee55ec2ef6",
+      "file_sha256": "79d45664782af924993fe2ed040a7e68aeb1da603713c97f3043fb11450aa262"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Paperboard; coating and intended contact conditions to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Food service"
+      ]
+    ],
+    "review_note": "Confirm the food type, contact time and temperature before choosing paperboard, coating and any inner liner. Contact suitability and environmental claims require evidence for the agreed construction.",
+    "detail": {
+      "title": "Eco-Friendly Food Grade Packaging Box Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/eco-friendly-food-grade-packaging-box",
+        "title": "Eco-Friendly Food Grade Packaging Box Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-974301E629",
+    "reference": "PHG-LX-974301E629",
+    "name": "Fragrance and Beauty Gift Set Box",
+    "path": "/catalog/fragrance-and-beauty-gift-set-box-lx-974301e629/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869",
+      "803708590"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-fragrance-beauty-gift-set-box-1.webp",
+      "path": "/assets/images/luxopack-catalog/38c2d1d224240953f5d0.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "38c2d1d224240953f5d0dc1335f18c98c018929e18c6b6f12c28de41da0e9176",
+      "file_sha256": "f335e43bb3e2a882e2e2a2e0a43373c03a3b4bd7d87777971440dcb192dd21ad"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Cosmetics"
+      ]
+    ],
+    "review_note": "Arrange the fragrance bottle, cosmetics and accessories using actual dimensions; approve insert cavities and lid clearance as a complete set.",
+    "detail": {
+      "title": "Custom Fragrance & Beauty Gift Set Box",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/fragrance-beauty-gift-set-box",
+        "title": "Custom Fragrance & Beauty Gift Set Box"
+      }
+    ]
+  },
+  {
+    "id": "LX-840F749F7A",
+    "reference": "PHG-LX-840F749F7A",
+    "name": "Beauty PR Presentation Box",
+    "path": "/catalog/beauty-pr-presentation-box-lx-840f749f7a/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869",
+      "803708590"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-influencer-pr-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/22c9b173a97efac2c3a4.webp",
+      "width": 1200,
+      "height": 675,
+      "sha256": "22c9b173a97efac2c3a4bdb4dcab65dd2a76757577839ed56d210f083ffd1e18",
+      "file_sha256": "106a7b9b85e44bc05ec136590af21559abb2c7f2e92e77b076a54b57fb587ec7"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Cosmetics"
+      ]
+    ],
+    "review_note": "Coordinate the product tray, printed message and presentation sequence; confirm included components and remove or revise any campaign-specific copy.",
+    "detail": {
+      "title": "Custom PR Boxes & Influencer Kit Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/influencer-pr-box",
+        "title": "Custom PR Boxes & Influencer Kit Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-D3FCC0BFF6",
+    "reference": "PHG-LX-D3FCC0BFF6",
+    "name": "Jewelry Presentation Box with Lined Insert",
+    "path": "/catalog/jewelry-presentation-box-with-lined-insert-lx-d3fcc0bff6/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "803631155"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-premium-jewelry-presentation-box.webp",
+      "path": "/assets/images/luxopack-catalog/20055a4b53324ae2bd6e.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "20055a4b53324ae2bd6edb417535ca964dfcfe17b9b2d512d1658b70bbcb6a51",
+      "file_sha256": "77000105ee9dac1bef54eff0f43b3ad06da66eb976205bf04e1b9e1c8cfb11ec"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Jewelry"
+      ]
+    ],
+    "review_note": "Define necklace, earring, ring or bracelet supports; review lining composition, contact surfaces and comfortable removal.",
+    "detail": {
+      "title": "Jewelry Presentation Box with Velvet Insert",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/jewelry-presentation-box-velvet-insert",
+        "title": "Jewelry Presentation Box with Velvet Insert"
+      }
+    ]
+  },
+  {
+    "id": "LX-1601ECE02B",
+    "reference": "PHG-LX-1601ECE02B",
+    "name": "Leather-Look Jewelry Drawer Box",
+    "path": "/catalog/leather-look-jewelry-drawer-box-lx-1601ece02b/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953294826"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-rose-leather-jewelry-drawer-box.webp",
+      "path": "/assets/images/luxopack-catalog/b8bd968d63f58154d751.webp",
+      "width": 800,
+      "height": 446,
+      "sha256": "b8bd968d63f58154d751434ec808d979600ecf0b51d8d89a3e267ef18482af24",
+      "file_sha256": "bb06098de75f869bcf8c5265c485eb0b8307d29e486b5f8ebf4379c19e238ed5"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Jewelry"
+      ]
+    ],
+    "review_note": "Confirm the composition of the leather-look wrap and lining; review drawer clearance, pull attachment and individual jewelry supports.",
+    "detail": {
+      "title": "Leather Jewelry Drawer Box Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/leather-jewelry-drawer-box",
+        "title": "Leather Jewelry Drawer Box Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-C5BFFC50F2",
+    "reference": "PHG-LX-C5BFFC50F2",
+    "name": "Long Presentation Box with Carry Handle",
+    "path": "/catalog/long-presentation-box-with-carry-handle-lx-c5bffc50f2/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "954034112"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-elongated-ribbon-handle-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/6179e2678f8d54a2694b.webp",
+      "width": 1200,
+      "height": 1200,
+      "sha256": "6179e2678f8d54a2694b514315fb9c4f2b2fc2a126d26d32fbf3f91d53157f9c",
+      "file_sha256": "a5e8e33ed03aff18d27e44bef6369ed7e699a3b3c62be4a0cd45f1c77312b629"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift packaging"
+      ]
+    ],
+    "review_note": "Confirm lid-and-base overlap, handle attachment and the long item's support; evaluate loaded carrying with the actual contents.",
+    "detail": {
+      "title": "Long Gift Box with Handle",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/long-gift-box-with-handle",
+        "title": "Long Gift Box with Handle"
+      }
+    ]
+  },
+  {
+    "id": "LX-17FF571F45",
+    "reference": "PHG-LX-17FF571F45",
+    "name": "Chocolate Gift Box with Divider Tray",
+    "path": "/catalog/chocolate-gift-box-with-divider-tray-lx-17ff571f45/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869",
+      "810538305"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-chocolate-gift-box-gold-divider.webp",
+      "path": "/assets/images/luxopack-catalog/0f0c5269a2653e7aa707.webp",
+      "width": 1200,
+      "height": 751,
+      "sha256": "0f0c5269a2653e7aa7072440bc4720658bd18a4ec214558f066d31e09ae5f2d6",
+      "file_sha256": "7393915fffcac168e757b3ba371712b8b83282c580af894320907b03b3f055eb"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Chocolate"
+      ]
+    ],
+    "review_note": "Define piece count, cavity dimensions and divider material; confirm the actual food-contact arrangement and removal access.",
+    "detail": {
+      "title": "Luxury Chocolate Gift Box with Gold Divider Tray",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/luxury-chocolate-gift-box-gold-divider",
+        "title": "Luxury Chocolate Gift Box with Gold Divider Tray"
+      }
+    ]
+  },
+  {
+    "id": "LX-5A55E2E162",
+    "reference": "PHG-LX-5A55E2E162",
+    "name": "Dates and Chocolate Gift Box",
+    "path": "/catalog/dates-and-chocolate-gift-box-lx-5a55e2e162/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953980869",
+      "810538305"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-date-chocolate-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/d3bf06f7f4d98e000c1b.webp",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "d3bf06f7f4d98e000c1b4490b6984ab2c851929a3277e174d33026376f840322",
+      "file_sha256": "8b44045fae856292af1a057a80e15d9f737cf0aa8fe5ecd65e09d78c7b400de2"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Dates and chocolate"
+      ]
+    ],
+    "review_note": "Approve cavity count and dimensions for the actual dates or chocolates; confirm the contact materials and bilingual decorative artwork.",
+    "detail": {
+      "title": "Luxury Dates Gift Box for Ramadan & Eid",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/luxury-dates-gift-box-ramadan",
+        "title": "Luxury Dates Gift Box for Ramadan & Eid"
+      }
+    ]
+  },
+  {
+    "id": "LX-E78089659F",
+    "reference": "PHG-LX-E78089659F",
+    "name": "Lid and Base Gift Box with Ribbon",
+    "path": "/catalog/lid-and-base-gift-box-with-ribbon-lx-e78089659f/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "954034112"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/luxopack-modular-insert-packaging.webp",
+      "path": "/assets/images/luxopack-catalog/4f3ac96c7e884edc1627.webp",
+      "width": 705,
+      "height": 594,
+      "sha256": "4f3ac96c7e884edc16270442581d0333c5a71f2985d14b249454c0693370d2d7",
+      "file_sha256": "e7b2a0300b9ea715b32a803d7e8d6a3830c081f84dbc7a80de42a900cef28367"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift packaging"
+      ]
+    ],
+    "review_note": "Specify lid overlap, ribbon attachment and any inner tray; approve the opening fit and decorative finish on a formed sample.",
+    "detail": {
+      "title": "Luxury Lid & Base Gift Box with Custom Ribbon Tie",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/luxury-lid-and-base-rigid-gift-box-ribbon",
+        "title": "Luxury Lid & Base Gift Box with Custom Ribbon Tie"
+      }
+    ]
+  },
+  {
+    "id": "LX-048461871F",
+    "reference": "PHG-LX-048461871F",
+    "name": "Window Phone Case Packaging Box",
+    "path": "/catalog/window-phone-case-packaging-box-lx-048461871f/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "954034112"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-phone-case-retail-box.webp",
+      "path": "/assets/images/luxopack-catalog/e0903ac90829b8c93939.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "e0903ac90829b8c93939bc0c82186d650de5002f70512c3c93ee381dc63a5a1b",
+      "file_sha256": "ab8e80181680ca4ae01147e6e4048fbf1628f21dbd86bb43139bbfb42137311c"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Phone accessories"
+      ]
+    ],
+    "review_note": "Match the tray and window to the phone-case dimensions; confirm product extraction, window attachment and the outer construction.",
+    "detail": {
+      "title": "Phone Case Packaging Box Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/phone-case-packaging-box",
+        "title": "Phone Case Packaging Box Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-9E5045BC5B",
+    "reference": "PHG-LX-9E5045BC5B",
+    "name": "Kraft Mailer Box with Tear Strip",
+    "path": "/catalog/kraft-mailer-box-with-tear-strip-lx-9e5045bc5b/",
+    "format": "mailer",
+    "family": "paper-boxes",
+    "groups": [
+      "951398518"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/luxopack-mailer-box-with-tear-strip.webp",
+      "path": "/assets/images/luxopack-catalog/24400555f11d03c4515e.webp",
+      "width": 465,
+      "height": 347,
+      "sha256": "24400555f11d03c4515e07d42467e9b62fb6fd9743ec94cc55d36c7ec0b95e1c",
+      "file_sha256": "b6360a3280bd3c00d21b26a842d970a6145e8546ea0e55f1bf956d8e030a2c29"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Corrugated board; grade and flute to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Product shipping"
+      ]
+    ],
+    "review_note": "Confirm the tear strip, sealing areas and parcel dimensions. Recycled content and any environmental description require documentation for the selected board.",
+    "detail": {
+      "title": "Recycled Kraft Mailer Box with Built-in Tear Strip",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/recycled-kraft-mailer-box-tear-strip",
+        "title": "Recycled Kraft Mailer Box with Built-in Tear Strip"
+      }
+    ]
+  },
+  {
+    "id": "LX-684C87643F",
+    "reference": "PHG-LX-684C87643F",
+    "name": "Shoulder and Neck Rigid Gift Box",
+    "path": "/catalog/shoulder-and-neck-rigid-gift-box-lx-684c87643f/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "803631155"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/luxopack-high-end-candle-packaging.webp",
+      "path": "/assets/images/luxopack-catalog/47bd02edb13b72f7e663.webp",
+      "width": 1200,
+      "height": 896,
+      "sha256": "47bd02edb13b72f7e6639212c923c216e199d5746ec8378b9b2a47d2e5e1586c",
+      "file_sha256": "3cffe47a43bec81e0c17df0ceb889722db693bd83f6e97871353d1ae45e7fe61"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift packaging"
+      ]
+    ],
+    "review_note": "Approve the stepped neck, lid clearance and visible shoulder; confirm the final assembled construction. The shared source photograph does not establish a collapsible mechanism.",
+    "detail": {
+      "title": "Shoulder & Neck Rigid Box Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/shoulder-neck-rigid-box",
+        "title": "Shoulder & Neck Rigid Box Manufacturer"
+      },
+      {
+        "url": "https://luxopack.com/products/collapsible-magnetic-gift-box-wholesale",
+        "title": "Collapsible Magnetic Gift Box Wholesale Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-B482755AA3",
+    "reference": "PHG-LX-B482755AA3",
+    "name": "Sleeve and Drawer Presentation Box",
+    "path": "/catalog/sleeve-and-drawer-presentation-box-lx-b482755aa3/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "953294826"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/luxopack-gradient-color-printing-box.webp",
+      "path": "/assets/images/luxopack-catalog/9d5a3a20a459db0df568.webp",
+      "width": 1376,
+      "height": 768,
+      "sha256": "9d5a3a20a459db0df568c0b002c82e5372177e49e4b240cf8e85aee34404fc1f",
+      "file_sha256": "d751b7e36751251084ec0432d484b94bf40e3e89e16c141a359e7229963456ae"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift packaging"
+      ]
+    ],
+    "review_note": "Confirm the sliding tray, outer sleeve and opening method; review clearance and any lining or product support with the filled pack.",
+    "detail": {
+      "title": "Sleeve & Matchbox Style Box Manufacturer",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/sleeve-matchbox-style-box",
+        "title": "Sleeve & Matchbox Style Box Manufacturer"
+      }
+    ]
+  },
+  {
+    "id": "LX-68C8BF0B4C",
+    "reference": "PHG-LX-68C8BF0B4C",
+    "name": "Textured Gift Box with Ribbon",
+    "path": "/catalog/textured-gift-box-with-ribbon-lx-68c8bf0b4c/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "803631155"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-custom-velvet-ribbon-gift-box.webp",
+      "path": "/assets/images/luxopack-catalog/9e8f2902b2810f7d947c.webp",
+      "width": 1200,
+      "height": 900,
+      "sha256": "9e8f2902b2810f7d947c1630266861bc56645344b99e62cb33614ee1944bb346",
+      "file_sha256": "d507c8c9fbc1ca585ea5253dffe104a418e878597505707bef59adfa120d8036"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Gift packaging"
+      ]
+    ],
+    "review_note": "Approve the texture and composition of the outer wrap, ribbon configuration and chosen closure; inspect the finish and insert on a physical sample.",
+    "detail": {
+      "title": "Velvet Gift Box with Custom Ribbon",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/velvet-gift-box-with-ribbon",
+        "title": "Velvet Gift Box with Custom Ribbon"
+      }
+    ]
+  },
+  {
+    "id": "LX-693CAB2A6F",
+    "reference": "PHG-LX-693CAB2A6F",
+    "name": "Watch Presentation Box with Cushion",
+    "path": "/catalog/watch-presentation-box-with-cushion-lx-693cab2a6f/",
+    "format": "rigid",
+    "family": "paper-boxes",
+    "groups": [
+      "803631155"
+    ],
+    "image": {
+      "url": "https://luxopack.com/assets/images/products/luxopack-luxury-magnetic-box-gold-leaf.webp",
+      "path": "/assets/images/luxopack-catalog/7fd129c8a4bb4cdafc73.webp",
+      "width": 800,
+      "height": 446,
+      "sha256": "7fd129c8a4bb4cdafc73da2d34a5808abf1d70e26ddc52848c6fbb08cb833484",
+      "file_sha256": "b694e7b6216c9adc0a4572eaad6e13882587c7a70683e9328fe08588923d6480"
+    },
+    "gallery": [],
+    "facts": [
+      [
+        "Material",
+        "Wrapped rigid board; board, wrap and insert grades to confirm"
+      ],
+      [
+        "Size",
+        "Custom dimensions; confirm internal measurements with the packed product"
+      ],
+      [
+        "Printing",
+        "Custom artwork; confirm print route and finishing with the approved proof"
+      ],
+      [
+        "Application",
+        "Watches"
+      ]
+    ],
+    "review_note": "Fit the cushion to the watch, strap or bracelet; confirm lining contact, lid clearance and removal without placing strain on the watch.",
+    "detail": {
+      "title": "Custom Watch Boxes Manufacturer in China",
+      "attributes": []
+    },
+    "sources": [
+      {
+        "url": "https://luxopack.com/products/watch-boxes",
+        "title": "Custom Watch Boxes Manufacturer in China"
+      }
+    ]
+  }
+]

@@ -110,8 +110,9 @@ for file in sorted((ROOT/'products').glob('*/*/index.html')):
  formats.append({'path':path,'blocks':blocks(s)})
 old=json.loads((ROOT/'content/alibaba-catalog/item-paths.json').read_text())
 old.update({p['id']:p['path'] for p in json.loads((ROOT/'content/pouch-sources/products.json').read_text())})
+old.update({p['id']:p['path'] for p in json.loads((ROOT/'content/luxopack-sources/products.json').read_text())})
 check(set(old.values())==set(by_path),'catalog','stable published product URLs')
-report={'products':len(index),'collections_including_pagination':len(collections),'format_pages':len(formats),'text_blocks_checked':paragraphs,'formats':dict(Counter(r['format'] for r in index)),'visual_review_products':1461,'visual_corrections':len(json.loads((ROOT/'content/catalog-review.json').read_text())),'errors':errors}
+report={'products':len(index),'collections_including_pagination':len(collections),'format_pages':len(formats),'text_blocks_checked':paragraphs,'formats':dict(Counter(r['format'] for r in index)),'visual_review_products':1461+len(json.loads((ROOT/'content/luxopack-sources/products.json').read_text())),'visual_corrections':len(json.loads((ROOT/'content/catalog-review.json').read_text())),'errors':errors}
 (OUT/'summary.json').write_text(json.dumps(report,indent=2))
 (OUT/'page-evidence.json').write_text(json.dumps({'products':pages,'collections':collections,'format_pages':formats},indent=2))
 print(json.dumps(report,indent=2));raise SystemExit(bool(errors))

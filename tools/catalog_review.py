@@ -32,6 +32,7 @@ CATALOG_FORMATS = {
 
 def reviewed_format(record):
  key=record['reference'].removeprefix('PHG-')
+ if key.startswith('LX-'):return record['format']
  if key in review_overrides:return review_overrides[key]['format']
  title=record['detail']['title'].lower();name=record['name'].lower();groups=set(record['groups'])
  if key.startswith('PC-'):
@@ -68,7 +69,9 @@ for record in catalog_records.values():
  key=record['reference'].removeprefix('PHG-');override=review_overrides.get(key,{})
  kind=reviewed_format(record);family,profile,primary,label=CATALOG_FORMATS[kind]
  name=override.get('name',record['name'])
- if not key.startswith('PC-'):
+ if key.startswith('LX-'):
+  primary=record['groups'][0]
+ elif not key.startswith('PC-'):
   name=name.split(' for ',1)[0]
   compatible={'mailer':r'mailer','carton':r'carton','rigid':r'magnetic|drawer|lid & base|tube|rigid','paper-bag':r'shopping bag','paper-mailer':r'mailing bag','poly-mailer':r'poly mailing','stand-up':r'stand.up','side-gusset':r'side.gusset','flat-bottom':r'flat.bottom','sleeve':r'sleeve','dust-cover':r'dust cover','food-box':r'food box'}
   if not override and kind in compatible and not re.search(compatible[kind],name,re.I):name=FORMAT_NAMES[kind]
@@ -123,7 +126,7 @@ for record in catalog_records.values():
  record['facts']=clean_facts
  if kind=='spout' and re.search(r'grain|rice|litter|dry grain',name,re.I):record['profile']='pouch-spout-dry'
  note=record.get('review_note','')
- if note:
+ if note and not key.startswith('LX-'):
   if re.search(r'material field|unidentified component',note):
    record['review_note']='Confirm the complete layer construction, polymer identities and thickness. A film-name reference does not establish the finished laminate or its performance.'
   elif re.search(r'size field|volume and mass',note):

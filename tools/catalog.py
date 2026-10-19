@@ -138,6 +138,8 @@ for record in pouch_products:
  catalog_records[record['id']] = record
  catalog_selection['919632767'].append(record['id'])
 
+exec(compile((ROOT/'tools/catalog_review.py').read_text(),str(ROOT/'tools/catalog_review.py'),'exec'))
+
 FAMILIES={'paper-boxes':'Paper boxes','bags':'Bags & pouches','packaging-accessories':'Packaging accessories'}
 def catalog_chat(record):
  return 'https://wa.me/8615105916426?text='+quote('Hello PackHubGlobe, I would like a quote for '+record['name']+' ('+record['reference']+').\nProduct: '+ORIGIN+record['path']+'\nQuantity: 500 pieces or more\nCustom size: \nLogo / printing: \nDelivery country: \nPlease advise the material, sample options and quotation.')
@@ -170,17 +172,21 @@ def catalog_pagination(base,page,total):
  if page<total:links.append('<a rel="next" href="'+url(page+1)+'">Next →</a>')
  return '<nav class="catalog-pages" aria-label="Catalog pages">'+''.join(links)+'</nav>'
 
+collection_copy=json.loads((ROOT/'content/catalog-collection-copy.json').read_text())
+
 def catalog_listing(base,name,ids,all_products=False):
  total=ceil(len(ids)/24)
  for page in range(1,total+1):
   path=base if page==1 else base+'page-'+str(page)+'/'
-  description=('Browse '+name.lower()+' references with product photos, material and printing details. Request custom sizes and logo printing.')
+  group_id=next((key for key,g in catalog_groups.items() if base=='/catalog/'+g['slug']+'/'),None)
+  description=collection_copy.get(base,collection_copy.get(group_id,''))
+  if not description:raise ValueError('Missing collection copy: '+base)
   if page>1:description+=' Page '+str(page)+'.'
   body=intro('Product collection',name+'.',description,'<a href="/catalog/">Product collection</a>'+(' / '+esc(name) if not all_products else ''))
   body+='<div class="wrap">'+family_nav(base)+'</div>'
   body+='<section class="wrap catalog-layout"><aside class="catalog-sidebar"><details'+(' open' if all_products else '')+'><summary>Browse packaging</summary><a href="/catalog/">All products</a>'+''.join('<a href="/catalog/'+g['slug']+'/"'+(' aria-current="page"' if base=='/catalog/'+g['slug']+'/' else '')+'>'+esc(g['public_name'])+' <span>'+str(len(catalog_selection[id]))+'</span></a>' for id,g in catalog_groups.items())+'</details><a class="textlink" href="/products/">Compare packaging formats ↗</a></aside><div class="catalog-results"><div class="catalog-toolbar"><p>'+str(len(ids))+' products · Page '+str(page)+' of '+str(total)+'</p><div class="catalog-search" hidden><label for="catalog-search">Search all products</label><input type="search" id="catalog-search" placeholder="Try a format, material or PHG reference" autocomplete="off"><button type="button" id="catalog-clear">Clear</button></div></div><p id="catalog-search-status" class="smallnote" role="status" aria-live="polite"></p><div class="catalog-grid" id="catalog-grid">'+''.join(catalog_card(catalog_records[id]) for id in ids[(page-1)*24:page*24])+'</div>'+catalog_pagination(base,page,total)+'</div></section>'+cta()
   listing_schema={'@type':'ItemList','name':name,'numberOfItems':len(ids),'itemListElement':[{'@type':'ListItem','position':(page-1)*24+i+1,'url':ORIGIN+catalog_records[id]['path']} for i,id in enumerate(ids[(page-1)*24:page*24])]}
-  write(path,name+(' · Page '+str(page) if page>1 else '')+' | PackHubGlobe',description,body,[listing_schema])
+  write(path,name+(' · Page '+str(page) if page>1 else '')+' | PackHubGlobe',description.split('. ',1)[0]+('. Page '+str(page)+'.' if page>1 else '.'),body,[listing_schema])
 
 # Interleave source groups so the main collection opens with a varied range.
 catalog_order=[]
@@ -201,13 +207,16 @@ for product_id, record in catalog_records.items():
  group=catalog_groups[record['groups'][0]]
  description=name+'. '+reference+'. Review material, size and printing options for a custom packaging quotation.'
  visual='<figure class="catalog-product-image"><a href="'+image['path']+'" target="_blank" rel="noopener noreferrer"><img src="'+image['path']+'" alt="'+esc(name,quote=True)+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" fetchpriority="high"></a></figure>'
- body=detailhero(group['public_name'],esc(name),reference+' · Custom size and printed artwork available for specification review.',visual,name+' · '+reference,'<a href="/catalog/">Product collection</a> / <a href="/catalog/'+group['slug']+'/">'+esc(group['public_name'])+'</a>')
+ body=detailhero(group['public_name'],esc(name),reference+' · Compare the construction and artwork, then confirm your project specification.',visual,name+' · '+reference,'<a href="/catalog/">Product collection</a> / <a href="/catalog/'+group['slug']+'/">'+esc(group['public_name'])+'</a>')
  rows=[('Minimum order quantity','500 pieces')]+list(record['facts'])
- body+='<section class="section wrap product-details"><div><h2>Product details.</h2>'+specs(rows)+'<p class="smallnote">These are reference specifications. Confirm the material, dimensions, finish and sample for your order. MOQ: 500 pieces. Packaging shown is a printing reference; branded contents are not included.</p></div><aside class="help-note"><h3>Make this packaging yours.</h3><p>Share your product dimensions, quantity per design, artwork and delivery country. Include reference '+reference+' in your enquiry.</p><div class="actions">'+button('Request a quote',qurl(name+' · '+reference))+'<a class="textlink" href="https://wa.me/8615105916426?text='+catalog_chat(record).split('?text=',1)[1]+'" target="_blank" rel="noopener noreferrer">Discuss on WhatsApp ↗</a></div><a class="textlink" href="/guides/packaging-quote-checklist/">Prepare your specification</a></aside></section>'
+ body+='<section class="section wrap product-details"><div><h2>Product details.</h2>'+specs(rows)+'<p class="smallnote">These are reference specifications. Confirm the material, dimensions, finish and sample for your order. MOQ: 500 pieces. Images show design references. Branded contents are not supplied; printed claims do not verify the order specification.</p></div><aside class="help-note"><h3>Make this packaging yours.</h3><p>Share your product dimensions, quantity per design, artwork and delivery country. Include reference '+reference+' in your enquiry.</p><div class="actions">'+button('Request a quote',qurl(name+' · '+reference))+'<a class="textlink" href="https://wa.me/8615105916426?text='+catalog_chat(record).split('?text=',1)[1]+'" target="_blank" rel="noopener noreferrer">Discuss on WhatsApp ↗</a></div><a class="textlink" href="/guides/packaging-quote-checklist/">Prepare your specification</a></aside></section>'
  if record.get('review_note'):
   body+='<section class="section wrap"><h2>Points to confirm for this reference.</h2><p>'+esc(record['review_note'])+'</p></section>'
  body+=product_editorial(record,rows)
- related_items=[r for id,r in catalog_records.items() if id!=product_id and r['family']==record['family'] and set(r['groups'])&set(record['groups'])][:3]
+ related_pool=[r for id,r in catalog_records.items() if id!=product_id and r['format']==record['format']]
+ if len(related_pool)<3:related_pool.extend(r for id,r in catalog_records.items() if id!=product_id and r['family']==record['family'] and r not in related_pool)
+ application=next((v for k,v in record['facts'] if k=='Application'),'')
+ related_items=sorted(related_pool,key=lambda r:(r['format']==record['format'],bool(application) and any(k=='Application' and v==application for k,v in r['facts']),len(set(r['groups'])&set(record['groups']))),reverse=True)[:3]
  body+='<section class="section wrap"><h2>Compare related product references.</h2><div class="catalog-grid related-products">'+''.join(catalog_card(r,'h3') for r in related_items)+'</div></section>'
  body+='<section class="section softbg"><div class="wrap"><h2>Explore related packaging.</h2><div class="related-links"><a href="/catalog/'+record['family']+'/">'+FAMILIES[record['family']]+'</a>'+''.join('<a href="/catalog/'+catalog_groups[g]['slug']+'/">'+esc(catalog_groups[g]['public_name'])+'</a>' for g in record['groups'])+'</div></div></section>'+cta()
  schema={'@type':'Product','name':name,'sku':reference,'url':ORIGIN+record['path'],'image':ORIGIN+image['path'],'description':description,'brand':{'@type':'Brand','name':'PackHubGlobe'},'additionalProperty':[{'@type':'PropertyValue','name':label,'value':value} for label,value in rows]}
@@ -226,6 +235,6 @@ with map_file.open('w',encoding='utf-8-sig',newline='') as stream:
  writer=csv.DictWriter(stream,fieldnames=fields);writer.writeheader();writer.writerows(planned)
 
 # Small search index uses only the curated public fields; original metadata remains in content/.
-search=[{'name':r['name'],'reference':r['reference'],'path':r['path'],'image':r['image']['path'],'family':r['family'],'chat':catalog_chat(r),'searchText':' '.join(value for label,value in r['facts']),'facts':[['MOQ','500 pieces']]+[(label,catalog_fact_preview(value)) for label,value in r['facts'][:5]],'groups':[catalog_groups[g]['public_name'] for g in r['groups']]} for r in catalog_records.values()]
+search=[{'name':r['name'],'reference':r['reference'],'path':r['path'],'image':r['image']['path'],'family':r['family'],'format':r['format'],'chat':catalog_chat(r),'searchText':' '.join(value for label,value in r['facts']),'facts':[['MOQ','500 pieces']]+[(label,catalog_fact_preview(value)) for label,value in r['facts'][:5]],'groups':[catalog_groups[g]['public_name'] for g in r['groups']]} for r in catalog_records.values()]
 (ROOT/'assets/catalog-index.json').write_text(json.dumps(search,ensure_ascii=False))
 (catalog_data/'publication.json').write_text(json.dumps({'products':len(catalog_records),'groups':{id:{'name':g['public_name'],'published':len(catalog_selection[id]),'candidates':len(json.loads((catalog_data/'listings.json').read_text()).get(id, catalog_selection[id]))} for id,g in catalog_groups.items()},'public_paths':[p[0] for p in PAGES if p[0].startswith('/catalog/')]},indent=2))

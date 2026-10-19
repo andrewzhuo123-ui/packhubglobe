@@ -19,6 +19,16 @@ def scene(name,alt):
 def sections(items):return ''.join('<section><h2>'+esc(title)+'</h2><p>'+esc(text)+'</p></section>' for title,text in items)
 def specs(rows):return '<dl class="spec-list">'+''.join('<div><dt>'+esc(title)+'</dt><dd>'+esc(text)+'</dd></div>' for title,text in rows)+'</dl>'
 
+format_references=json.loads((ROOT/'content/format-references.json').read_text())
+def format_visual(slug,name,category):
+ reference=format_references.get(slug)
+ if not reference:
+  return '<figure class="productvisual">'+art(category['art'])+'<figcaption>Packaging family reference; confirm the '+esc(name.lower())+' construction separately.</figcaption></figure>'
+ return '<figure class="catalog-product-image"><a href="'+reference['path']+'"><img src="'+reference['image']+'" alt="Packaging reference for '+esc(name.lower(),quote=True)+'" width="'+str(reference['width'])+'" height="'+str(reference['height'])+'" fetchpriority="high"></a><figcaption>Related structure reference · <a href="'+reference['path']+'">'+reference['reference']+'</a>. Confirm your final dimensions, material and construction.</figcaption></figure>'
+
+def format_collection(slug,family):
+ return {'stand-up-pouches':'/catalog/stand-up-pouches/','flat-bottom-pouches':'/catalog/flat-bottom-pouches/','side-gusset-bags':'/catalog/side-gusset-pouches/','spout-pouches':'/catalog/spout-refill-pouches/','three-side-seal-pouches':'/catalog/flat-pouches-sachets/','sachets':'/catalog/flat-pouches-sachets/','folding-cartons':'/catalog/folding-cartons/','mailer-boxes':'/catalog/mailer-shipping-boxes/','magnetic-gift-boxes':'/catalog/magnetic-boxes/','drawer-boxes':'/catalog/drawer-boxes/','lid-and-base-boxes':'/catalog/lid-base-boxes/','tube-boxes':'/catalog/paper-tubes/','display-boxes':'/catalog/cardboard-displays/','packaging-sleeves':'/catalog/packaging-sleeves-wraps/','paper-mailing-bags':'/catalog/paper-mailing-bags/','poly-mailers':'/catalog/poly-mailing-bags/'}.get(slug,{'custom-boxes':'/catalog/paper-boxes/','paper-bags':'/catalog/paper-bags/','flexible-pouches':'/catalog/pouches/','plastic-bags':'/catalog/poly-bags/','cards-tags':'/catalog/cards-booklets/','stickers-labels':'/catalog/stickers-labels/'}[family])
+
 for c in CATEGORIES:
  family=c['slug'];items=PRODUCTS[family]
  trail='<a href="/products/">Packaging</a> / '+c['name']
@@ -33,9 +43,10 @@ for c in CATEGORIES:
   title='Custom '+name.lower()+' with Logo Printing'
   title=title[0].upper()+title[1:]
   trail='<a href="/products/">Packaging</a> / <a href="/products/'+family+'/">'+c['name']+'</a> / '+name
-  visual='<figure class="productvisual">'+art(c['art'])+'<figcaption>Packaging family design reference</figcaption></figure>'
+  visual=format_visual(slug,name,c)
   body=detailhero(c['name'],'Custom '+name.lower(),desc,visual,name,trail,use)
-  body+='<section class="section wrap product-details"><div><h2>Make it your own.</h2><p>Review these details with your product and artwork.</p>'+specs([('Structure & options',options),('Sample check',check),('For your quotation','Approximate dimensions or fill weight, quantity per size and design, artwork status and delivery country.')])+'</div><aside class="help-note"><h3>Not sure where to start?</h3><p>Send a product photo or reference with your enquiry. We’ll help you define the next step.</p><a class="textlink" href="/guides/packaging-sample-types/">Understand sample options</a><a class="textlink" href="/guides/packaging-print-proof/">Review print proofs</a><p class="smallnote">Final features, MOQ and performance requirements are confirmed for the agreed specification.</p></aside></section>'
+  body+='<section class="section wrap product-details"><div><h2>Make it your own.</h2><p>Review these details with your product and artwork.</p>'+specs([('Structure & options',options),('Sample check',check),('For your quotation','Approximate dimensions or fill weight, quantity per size and design, artwork status and delivery country.')])+'</div><aside class="help-note"><h3>Not sure where to start?</h3><p>Send a product photo or reference with your enquiry. We’ll help you define the next step.</p><a class="textlink" href="/guides/packaging-sample-types/">Understand sample options</a><a class="textlink" href="/guides/packaging-print-proof/">Review print proofs</a><p class="smallnote">Catalog references start at 500 pieces. Confirm the final features, performance requirements and quantity split in the written quotation.</p></aside></section>'
+  body+='<section class="section wrap"><h2>Compare product references.</h2><p>Browse images and specification starting points for this packaging direction.</p><a class="textlink" href="'+format_collection(slug,family)+'">Browse related product references ↗</a></section>'
   other=[family+'/'+r[0] for r in items if r[0]!=slug][:3]
   body+='<section class="section softbg"><div class="wrap"><h2>Other formats to explore.</h2>'+related(other)+'</div></section>'+cta()
   write(path,title+' | PackHubGlobe',desc,body,[{'@type':'Service','name':title,'description':desc,'serviceType':'Packaging specification and custom printing'}])
@@ -95,5 +106,9 @@ from xml.sax.saxutils import escape as xesc
 (ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+xesc(ORIGIN+p[0])+'</loc></url>\n' for p in sorted(PAGES))+'</urlset>\n')
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\nDisallow: /tools/\nDisallow: /content/\n\nSitemap: '+ORIGIN+'/sitemap.xml\n')
 (ROOT/'llms.txt').write_text('# PackHubGlobe\n\nCustom packaging and printing for business buyers. Contact: '+EMAIL+'. Catalog MOQ is 500 pieces. Pricing, materials and production timing require a project-specific quotation. Original virtual-brand imagery is illustrative.\n\n'+''.join('- ['+title+']('+ORIGIN+path+'): '+desc+'\n' for path,title,desc in PAGES if path in ['/','/catalog/','/products/','/industries/','/materials/','/services/','/guides/','/about/','/factory/','/request-quote/']))
+# Superseded pagination is redirected; it must not remain as an orphaned HTML page.
+for old_path in json.loads((ROOT/'content/catalog-redirects.json').read_text()):
+ stale=ROOT/old_path.strip('/')/'index.html'
+ if stale.exists():stale.unlink()
 (ROOT/'content/page-manifest.json').write_text(json.dumps(sorted(PAGES),indent=2))
 print(f'Built {len(PAGES)} public pages plus a real 404 document for {ORIGIN}')

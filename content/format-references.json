@@ -1,0 +1,261 @@
+{
+  "folding-cartons": {
+    "path": "/catalog/custom-printed-carton-1601834986848/",
+    "image": "/assets/catalog/1601834986848.webp",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601834986848"
+  },
+  "rigid-boxes": {
+    "path": "/catalog/custom-magnetic-gift-box-1600795798810/",
+    "image": "/assets/catalog/1600795798810.webp",
+    "width": 650,
+    "height": 650,
+    "reference": "PHG-1600795798810"
+  },
+  "mailer-boxes": {
+    "path": "/catalog/custom-corrugated-mailer-box-1600659751763/",
+    "image": "/assets/catalog/1600659751763.webp",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1600659751763"
+  },
+  "magnetic-gift-boxes": {
+    "path": "/catalog/custom-magnetic-gift-box-1600795798810/",
+    "image": "/assets/catalog/1600795798810.webp",
+    "width": 650,
+    "height": 650,
+    "reference": "PHG-1600795798810"
+  },
+  "drawer-boxes": {
+    "path": "/catalog/custom-drawer-gift-box-for-jewelry-1601204257673/",
+    "image": "/assets/catalog/1601204257673.webp",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601204257673"
+  },
+  "lid-and-base-boxes": {
+    "path": "/catalog/custom-lid-base-gift-box-1601225888821/",
+    "image": "/assets/catalog/1601225888821.webp",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601225888821"
+  },
+  "tube-boxes": {
+    "path": "/catalog/custom-paper-tube-box-for-essential-oils-1600117237421/",
+    "image": "/assets/catalog/1600117237421.webp",
+    "width": 400,
+    "height": 400,
+    "reference": "PHG-1600117237421"
+  },
+  "window-boxes": {
+    "path": "/catalog/custom-product-packaging-box-for-apparel-1601194794673/",
+    "image": "/assets/catalog/1601194794673.webp",
+    "width": 825,
+    "height": 825,
+    "reference": "PHG-1601194794673"
+  },
+  "display-boxes": {
+    "path": "/catalog/custom-product-packaging-box-1601425266531/",
+    "image": "/assets/catalog/1601425266531.webp",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601425266531"
+  },
+  "packaging-sleeves": {
+    "path": "/catalog/custom-printed-packaging-1601023928044/",
+    "image": "/assets/catalog/1601023928044.webp",
+    "width": 750,
+    "height": 750,
+    "reference": "PHG-1601023928044"
+  },
+  "box-inserts": {
+    "path": "/catalog/custom-product-packaging-box-1601284127117/",
+    "image": "/assets/catalog/1601284127117.webp",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601284127117"
+  },
+  "kraft-paper-bags": {
+    "path": "/catalog/kraft-paper-shopping-bag-60519970698/",
+    "image": "/assets/catalog/60519970698.webp",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-60519970698"
+  },
+  "luxury-shopping-bags": {
+    "path": "/catalog/custom-paper-shopping-bag-11000015570855/",
+    "image": "/assets/catalog/11000015570855.webp",
+    "width": 564,
+    "height": 564,
+    "reference": "PHG-11000015570855"
+  },
+  "paper-gift-bags": {
+    "path": "/catalog/custom-paper-shopping-bag-for-apparel-1601614381128/",
+    "image": "/assets/catalog/1601614381128.webp",
+    "width": 369,
+    "height": 367,
+    "reference": "PHG-1601614381128"
+  },
+  "paper-mailing-bags": {
+    "path": "/catalog/kraft-paper-mailing-bag-for-apparel-1600659089221/",
+    "image": "/assets/catalog/1600659089221.webp",
+    "width": 750,
+    "height": 750,
+    "reference": "PHG-1600659089221"
+  },
+  "stand-up-pouches": {
+    "path": "/catalog/snack-stand-up-pouch-pc-45465e8116/",
+    "image": "/assets/images/pouch-catalog/29e54de1435b91c75523.webp",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-PC-45465E8116"
+  },
+  "flat-bottom-pouches": {
+    "path": "/catalog/coffee-bean-flat-bottom-pouch-pc-e462fac2cd/",
+    "image": "/assets/images/pouch-catalog/49d867e9788ddac6411c.webp",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-PC-E462FAC2CD"
+  },
+  "side-gusset-bags": {
+    "path": "/catalog/seed-fertilizer-side-gusset-bag-pc-690ced3e93/",
+    "image": "/assets/images/pouch-catalog/6ee1623b473ba5bd37be.webp",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-PC-690CED3E93"
+  },
+  "spout-pouches": {
+    "path": "/catalog/lotion-cream-spout-pouch-pc-bd42c09e15/",
+    "image": "/assets/images/pouch-catalog/b24832408774ccfae873.webp",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-PC-BD42C09E15"
+  },
+  "three-side-seal-pouches": {
+    "path": "/catalog/whey-protein-powder-stand-up-pouch-pc-674101d769/",
+    "image": "/assets/images/pouch-catalog/cfbbb52acb7ea1418dd4.webp",
+    "width": 742,
+    "height": 742,
+    "reference": "PHG-PC-674101D769"
+  },
+  "sachets": {
+    "path": "/catalog/freeze-dried-fruit-stand-up-pouch-pc-6d4bef4ec0/",
+    "image": "/assets/images/pouch-catalog/0b0cb24e2ec8c0e7eb5c.webp",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-PC-6D4BEF4EC0"
+  },
+  "poly-mailers": {
+    "path": "/catalog/custom-poly-mailing-bag-for-apparel-1601254940568/",
+    "image": "/assets/catalog/1601254940568.webp",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601254940568"
+  },
+  "garment-bags": {
+    "path": "/catalog/custom-zipper-bag-for-apparel-1600658665574/",
+    "image": "/assets/catalog/1600658665574.webp",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1600658665574"
+  },
+  "resealable-bags": {
+    "path": "/catalog/custom-zipper-bag-for-apparel-1600908190577/",
+    "image": "/assets/catalog/1600908190577.webp",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1600908190577"
+  },
+  "die-cut-handle-bags": {
+    "path": "/catalog/clear-rice-flour-flat-bottom-pouch-pc-fae1f16c47/",
+    "image": "/assets/images/pouch-catalog/41d449a9eae9b4e6a8c7.webp",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-PC-FAE1F16C47"
+  },
+  "shopping-bags": {
+    "path": "/catalog/cosmetic-stand-up-pouch-pc-ac6433c3ca/",
+    "image": "/assets/images/pouch-catalog/c35549b412d69ca250c7.webp",
+    "width": 750,
+    "height": 750,
+    "reference": "PHG-PC-AC6433C3CA"
+  },
+  "protective-product-bags": {
+    "path": "/catalog/garment-flat-pouch-pc-44ebde7f70/",
+    "image": "/assets/images/pouch-catalog/d0120bdd9a469386d86e.webp",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-PC-44EBDE7F70"
+  },
+  "insert-cards": {
+    "path": "/catalog/custom-printed-card-1601570421546/",
+    "image": "/assets/catalog/1601570421546.webp",
+    "width": 519,
+    "height": 511,
+    "reference": "PHG-1601570421546"
+  },
+  "thank-you-cards": {
+    "path": "/catalog/custom-printed-card-1600730595512/",
+    "image": "/assets/catalog/1600730595512.webp",
+    "width": 750,
+    "height": 750,
+    "reference": "PHG-1600730595512"
+  },
+  "hang-tags": {
+    "path": "/catalog/custom-hang-tag-for-apparel-1600805461726/",
+    "image": "/assets/catalog/1600805461726.webp",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1600805461726"
+  },
+  "product-information-cards": {
+    "path": "/catalog/custom-printed-card-1601570425645/",
+    "image": "/assets/catalog/1601570425645.webp",
+    "width": 396,
+    "height": 398,
+    "reference": "PHG-1601570425645"
+  },
+  "care-cards": {
+    "path": "/catalog/custom-printed-card-1601570392619/",
+    "image": "/assets/catalog/1601570392619.webp",
+    "width": 407,
+    "height": 405,
+    "reference": "PHG-1601570392619"
+  },
+  "die-cut-stickers": {
+    "path": "/catalog/custom-printed-sticker-1600770268154/",
+    "image": "/assets/catalog/1600770268154.webp",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1600770268154"
+  },
+  "roll-labels": {
+    "path": "/catalog/custom-printed-sticker-1600976392997/",
+    "image": "/assets/catalog/1600976392997.webp",
+    "width": 700,
+    "height": 700,
+    "reference": "PHG-1600976392997"
+  },
+  "paper-labels": {
+    "path": "/catalog/custom-printed-sticker-1600976392997/",
+    "image": "/assets/catalog/1600976392997.webp",
+    "width": 700,
+    "height": 700,
+    "reference": "PHG-1600976392997"
+  },
+  "packaging-seals": {
+    "path": "/catalog/custom-printed-sticker-1600976392997/",
+    "image": "/assets/catalog/1600976392997.webp",
+    "width": 700,
+    "height": 700,
+    "reference": "PHG-1600976392997"
+  },
+  "sticker-sheets": {
+    "path": "/catalog/custom-printed-sticker-1600770268154/",
+    "image": "/assets/catalog/1600770268154.webp",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1600770268154"
+  }
+}

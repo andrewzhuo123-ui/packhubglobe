@@ -3,17 +3,17 @@
   "groups": {
     "920016676": {
       "name": "Mailer & shipping boxes",
-      "published": 185,
+      "published": 200,
       "candidates": 185
     },
     "950338332": {
       "name": "Kraft shipping boxes",
-      "published": 19,
+      "published": 18,
       "candidates": 19
     },
     "950338333": {
       "name": "Printed shipping boxes",
-      "published": 29,
+      "published": 28,
       "candidates": 29
     },
     "919910675": {
@@ -28,7 +28,7 @@
     },
     "803631155": {
       "name": "Gift boxes",
-      "published": 200,
+      "published": 210,
       "candidates": 207
     },
     "953980869": {
@@ -38,7 +38,7 @@
     },
     "954034112": {
       "name": "Lid & base boxes",
-      "published": 4,
+      "published": 2,
       "candidates": 4
     },
     "952891404": {
@@ -58,12 +58,12 @@
     },
     "954067551": {
       "name": "Zipper bags",
-      "published": 7,
+      "published": 6,
       "candidates": 7
     },
     "954072335": {
       "name": "Poly mailing bags",
-      "published": 3,
+      "published": 4,
       "candidates": 3
     },
     "954038909": {
@@ -83,7 +83,7 @@
     },
     "810538305": {
       "name": "Food packaging",
-      "published": 97,
+      "published": 118,
       "candidates": 97
     },
     "920318966": {
@@ -93,7 +93,7 @@
     },
     "953304411": {
       "name": "Cardboard displays",
-      "published": 18,
+      "published": 19,
       "candidates": 18
     },
     "920803216": {
@@ -108,17 +108,17 @@
     },
     "807897313": {
       "name": "Cards & booklets",
-      "published": 11,
+      "published": 10,
       "candidates": 11
     },
     "803759676": {
       "name": "Stickers & labels",
-      "published": 4,
+      "published": 3,
       "candidates": 4
     },
     "919632767": {
       "name": "Pouches",
-      "published": 613,
+      "published": 599,
       "candidates": 8
     },
     "0": {
@@ -148,7 +148,7 @@
     },
     "951662766": {
       "name": "Protective shipping boxes",
-      "published": 8,
+      "published": 7,
       "candidates": 8
     },
     "952968758": {
@@ -158,13 +158,13 @@
     },
     "953294826": {
       "name": "Drawer boxes",
-      "published": 6,
+      "published": 19,
       "candidates": 6
     },
     "pouch-stand-up": {
       "name": "Stand-up pouches",
-      "published": 432,
-      "candidates": 432
+      "published": 408,
+      "candidates": 408
     },
     "pouch-flat-bottom": {
       "name": "Flat-bottom pouches",
@@ -173,23 +173,73 @@
     },
     "pouch-side-gusset": {
       "name": "Side-gusset pouches",
-      "published": 1,
-      "candidates": 1
+      "published": 3,
+      "candidates": 3
     },
     "pouch-spout": {
       "name": "Spout & refill pouches",
-      "published": 88,
-      "candidates": 88
+      "published": 92,
+      "candidates": 92
     },
     "pouch-flat": {
       "name": "Flat pouches & sachets",
-      "published": 8,
-      "candidates": 8
+      "published": 15,
+      "candidates": 15
     },
     "pouch-specialty": {
       "name": "Specialty flexible packaging",
-      "published": 13,
-      "candidates": 13
+      "published": 12,
+      "candidates": 12
+    },
+    "folding-cartons": {
+      "name": "Folding cartons",
+      "published": 291,
+      "candidates": 291
+    },
+    "handle-carry-boxes": {
+      "name": "Handle carry boxes",
+      "published": 3,
+      "candidates": 3
+    },
+    "pillow-boxes": {
+      "name": "Pillow boxes",
+      "published": 2,
+      "candidates": 2
+    },
+    "packaging-sleeves": {
+      "name": "Packaging sleeves & wraps",
+      "published": 7,
+      "candidates": 7
+    },
+    "candle-dust-covers": {
+      "name": "Candle dust covers",
+      "published": 3,
+      "candidates": 3
+    },
+    "presentation-container-references": {
+      "name": "Presentation & container references",
+      "published": 5,
+      "candidates": 5
+    },
+    "gift-carry-bags": {
+      "name": "Gift & carry bags",
+      "published": 6,
+      "candidates": 6
+    },
+    "beverage-straw-pouches": {
+      "name": "Beverage & straw pouches",
+      "published": 7,
+      "candidates": 7
+    },
+    "bag-in-box": {
+      "name": "Bag-in-box references",
+      "published": 1,
+      "candidates": 1
+    },
+    "roll-bags-liners": {
+      "name": "Roll bags & liners",
+      "published": 1,
+      "candidates": 1
     }
   },
   "public_paths": [
@@ -286,7 +336,6 @@
     "/catalog/paper-boxes/page-30/",
     "/catalog/paper-boxes/page-31/",
     "/catalog/paper-boxes/page-32/",
-    "/catalog/paper-boxes/page-33/",
     "/catalog/bags/",
     "/catalog/bags/page-2/",
     "/catalog/bags/page-3/",
@@ -314,9 +363,9 @@
     "/catalog/bags/page-25/",
     "/catalog/bags/page-26/",
     "/catalog/bags/page-27/",
-    "/catalog/bags/page-28/",
     "/catalog/packaging-accessories/",
     "/catalog/packaging-accessories/page-2/",
+    "/catalog/packaging-accessories/page-3/",
     "/catalog/mailer-shipping-boxes/",
     "/catalog/mailer-shipping-boxes/page-2/",
     "/catalog/mailer-shipping-boxes/page-3/",
@@ -325,6 +374,7 @@
     "/catalog/mailer-shipping-boxes/page-6/",
     "/catalog/mailer-shipping-boxes/page-7/",
     "/catalog/mailer-shipping-boxes/page-8/",
+    "/catalog/mailer-shipping-boxes/page-9/",
     "/catalog/kraft-shipping-boxes/",
     "/catalog/printed-shipping-boxes/",
     "/catalog/printed-shipping-boxes/page-2/",
@@ -404,7 +454,6 @@
     "/catalog/pouches/page-23/",
     "/catalog/pouches/page-24/",
     "/catalog/pouches/page-25/",
-    "/catalog/pouches/page-26/",
     "/catalog/more-packaging-ideas/",
     "/catalog/poly-bags/",
     "/catalog/featured-packaging/",
@@ -430,7 +479,6 @@
     "/catalog/stand-up-pouches/page-15/",
     "/catalog/stand-up-pouches/page-16/",
     "/catalog/stand-up-pouches/page-17/",
-    "/catalog/stand-up-pouches/page-18/",
     "/catalog/flat-bottom-pouches/",
     "/catalog/flat-bottom-pouches/page-2/",
     "/catalog/flat-bottom-pouches/page-3/",
@@ -441,6 +489,28 @@
     "/catalog/spout-refill-pouches/page-4/",
     "/catalog/flat-pouches-sachets/",
     "/catalog/specialty-flexible-packaging/",
+    "/catalog/folding-cartons/",
+    "/catalog/folding-cartons/page-2/",
+    "/catalog/folding-cartons/page-3/",
+    "/catalog/folding-cartons/page-4/",
+    "/catalog/folding-cartons/page-5/",
+    "/catalog/folding-cartons/page-6/",
+    "/catalog/folding-cartons/page-7/",
+    "/catalog/folding-cartons/page-8/",
+    "/catalog/folding-cartons/page-9/",
+    "/catalog/folding-cartons/page-10/",
+    "/catalog/folding-cartons/page-11/",
+    "/catalog/folding-cartons/page-12/",
+    "/catalog/folding-cartons/page-13/",
+    "/catalog/handle-carry-boxes/",
+    "/catalog/pillow-boxes/",
+    "/catalog/packaging-sleeves-wraps/",
+    "/catalog/candle-dust-covers/",
+    "/catalog/presentation-container-references/",
+    "/catalog/gift-carry-bags/",
+    "/catalog/beverage-straw-pouches/",
+    "/catalog/bag-in-box-references/",
+    "/catalog/roll-bags-liners/",
     "/catalog/custom-corrugated-mailer-box-1600659751763/",
     "/catalog/custom-corrugated-mailer-box-1600615165951/",
     "/catalog/custom-corrugated-mailer-box-for-apparel-1600623269526/",

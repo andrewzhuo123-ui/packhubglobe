@@ -1,0 +1,2212 @@
+{
+  "candidates": 1155,
+  "captured": 1155,
+  "published": 605,
+  "sources": {
+    "up": 540,
+    "sp": 615
+  },
+  "duplicates": [
+    {
+      "url": "https://uniquepouches.com/custom-ups-0008-window-coffee-stand-up-pouch.html",
+      "retained": "https://uniquepouches.com/custom-ups-0005-matte-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://uniquepouches.com/custom-ups-0137-matte-candy-stand-up-pouch.html",
+      "retained": "https://uniquepouches.com/custom-ups-0025-window-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://uniquepouches.com/custom-ups-0192-foil-laminate-food-stand-up-pouch.html",
+      "retained": "https://uniquepouches.com/custom-ups-0096-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://uniquepouches.com/custom-ups-0209-coffee-flat-bottom-pouch.html",
+      "retained": "https://uniquepouches.com/custom-ups-0075-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://uniquepouches.com/custom-ups-0236-foil-laminate-coffee-stand-up-pouch.html",
+      "retained": "https://uniquepouches.com/custom-ups-0107-foil-laminate-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://uniquepouches.com/custom-ups-0285-foil-laminate-food-stand-up-pouch.html",
+      "retained": "https://uniquepouches.com/custom-ups-0141-stand-up-pouch.html"
+    },
+    {
+      "url": "https://uniquepouches.com/custom-ups-0314-matte-food-flat-bottom-pouch.html",
+      "retained": "https://uniquepouches.com/custom-ups-0116-matte-stand-up-pouch.html"
+    },
+    {
+      "url": "https://uniquepouches.com/custom-ups-0334-foil-laminate-candy-stand-up-pouch.html",
+      "retained": "https://uniquepouches.com/custom-ups-0005-matte-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://uniquepouches.com/custom-ups-0336-candy-stand-up-pouch.html",
+      "retained": "https://uniquepouches.com/custom-ups-0018-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://uniquepouches.com/custom-ups-0419-coffee-stand-up-pouch.html",
+      "retained": "https://uniquepouches.com/custom-ups-0411-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://uniquepouches.com/custom-ups-0438-foil-laminate-coffee-stand-up-pouch.html",
+      "retained": "https://uniquepouches.com/custom-ups-0437-foil-laminate-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-baby-food-spout-pouch-sp344-1600477685850/",
+      "retained": "https://uniquepouches.com/custom-ups-0344-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-baby-food-spout-pouch-sp345-60738916078/",
+      "retained": "https://uniquepouches.com/custom-ups-0345-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-bakery-stand-up-pouch-with-zipper-sp369-1601408322941/",
+      "retained": "https://uniquepouches.com/custom-ups-0369-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-packaging-pouch-sp383-1601598790475/",
+      "retained": "https://uniquepouches.com/custom-ups-0383-clear-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp223-1601220598525/",
+      "retained": "https://uniquepouches.com/custom-ups-0223-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp254-1601399502682/",
+      "retained": "https://uniquepouches.com/custom-ups-0254-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp263-1601720147752/",
+      "retained": "https://uniquepouches.com/custom-ups-0263-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp265-1600406313747/",
+      "retained": "https://uniquepouches.com/custom-ups-0265-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp268-1600830164099/",
+      "retained": "https://uniquepouches.com/custom-ups-0268-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp351-1601363966045/",
+      "retained": "https://uniquepouches.com/custom-ups-0351-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp360-1601369817544/",
+      "retained": "https://uniquepouches.com/custom-ups-0360-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp388-11000032248938/",
+      "retained": "https://uniquepouches.com/custom-ups-0388-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp389-1601173086826/",
+      "retained": "https://uniquepouches.com/custom-ups-0389-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp405-1601015562586/",
+      "retained": "https://uniquepouches.com/custom-ups-0405-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp454-1601792987404/",
+      "retained": "https://uniquepouches.com/custom-ups-0454-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp531-1601733175160/",
+      "retained": "https://uniquepouches.com/custom-ups-0531-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp545-1601891892728/",
+      "retained": "https://uniquepouches.com/custom-ups-0545-clear-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-sp548-1601219200795/",
+      "retained": "https://uniquepouches.com/custom-ups-0548-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-spout-pouch-with-valve-sp355-1601727546355/",
+      "retained": "https://uniquepouches.com/custom-ups-0355-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-stand-up-pouch-sp114-1601255846732/",
+      "retained": "https://uniquepouches.com/custom-ups-0114-clear-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-stand-up-pouch-sp162-1601792868093/",
+      "retained": "https://uniquepouches.com/custom-ups-0162-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-stand-up-pouch-sp256-1601569536310/",
+      "retained": "https://uniquepouches.com/custom-ups-0256-clear-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-stand-up-pouch-sp530-62053761759/",
+      "retained": "https://uniquepouches.com/custom-ups-0530-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-stand-up-pouch-with-zipper-sp065-1601406191408/",
+      "retained": "https://uniquepouches.com/custom-ups-0065-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-beverage-stand-up-pouch-with-zipper-sp177-1601012695208/",
+      "retained": "https://uniquepouches.com/custom-ups-0177-clear-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-breast-milk-stand-up-pouch-with-zipper-sp249-1600226785631/",
+      "retained": "https://uniquepouches.com/custom-ups-0249-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-breast-milk-stand-up-pouch-with-zipper-sp363-1600226554560/",
+      "retained": "https://uniquepouches.com/custom-ups-0363-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-breast-milk-stand-up-pouch-with-zipper-sp519-1600096468154/",
+      "retained": "https://uniquepouches.com/custom-ups-0519-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-flat-bottom-pouch-with-window-sp163-1601634177150/",
+      "retained": "https://uniquepouches.com/custom-ups-0163-candy-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-packaging-pouch-sp527-1600057687346/",
+      "retained": "https://uniquepouches.com/custom-ups-0527-candy-custom-packaging-bag.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-packaging-pouch-with-zipper-sp129-1601458638993/",
+      "retained": "https://uniquepouches.com/custom-ups-0129-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-packaging-pouch-with-zipper-sp418-1600946016596/",
+      "retained": "https://uniquepouches.com/custom-ups-0418-clear-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-packaging-pouch-with-zipper-sp518-1601496851367/",
+      "retained": "https://uniquepouches.com/custom-ups-0518-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-specialty-bag-with-zipper-sp050-1601579754442/",
+      "retained": "https://uniquepouches.com/custom-ups-0050-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-sp070-1600238956836/",
+      "retained": "https://uniquepouches.com/custom-ups-0070-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-sp194-1600284354823/",
+      "retained": "https://uniquepouches.com/custom-ups-0194-clear-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-sp381-1601513821154/",
+      "retained": "https://uniquepouches.com/custom-ups-0381-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-sp392-1601220510710/",
+      "retained": "https://uniquepouches.com/custom-ups-0392-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-window-sp185-1601709462986/",
+      "retained": "https://uniquepouches.com/custom-ups-0185-window-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-window-sp237-1601009264714/",
+      "retained": "https://uniquepouches.com/custom-ups-0237-window-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-window-sp244-1601800957048/",
+      "retained": "https://uniquepouches.com/custom-ups-0244-candy-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-window-sp445-1601018991777/",
+      "retained": "https://uniquepouches.com/custom-ups-0445-window-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-window-sp488-1601881407692/",
+      "retained": "https://uniquepouches.com/custom-ups-0488-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-zipper-sp010-1601028590963/",
+      "retained": "https://uniquepouches.com/custom-ups-0010-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-zipper-sp026-1601406247070/",
+      "retained": "https://uniquepouches.com/custom-ups-0026-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-zipper-sp062-1601279584858/",
+      "retained": "https://uniquepouches.com/custom-ups-0062-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-zipper-sp118-1601795868699/",
+      "retained": "https://uniquepouches.com/custom-ups-0118-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-zipper-sp123-1601914403416/",
+      "retained": "https://uniquepouches.com/custom-ups-0123-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-zipper-sp136-1601573200149/",
+      "retained": "https://uniquepouches.com/custom-ups-0136-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-zipper-sp259-1601803684186/",
+      "retained": "https://uniquepouches.com/custom-ups-0259-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-zipper-sp293-1601097909457/",
+      "retained": "https://uniquepouches.com/custom-ups-0293-clear-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-zipper-sp304-1601680883975/",
+      "retained": "https://uniquepouches.com/custom-ups-0304-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-zipper-sp336-1601369767107/",
+      "retained": "https://uniquepouches.com/custom-ups-0018-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-zipper-sp366-1601092651168/",
+      "retained": "https://uniquepouches.com/custom-ups-0366-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-candy-stand-up-pouch-with-zipper-sp457-1601219386535/",
+      "retained": "https://uniquepouches.com/custom-ups-0457-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-cat-litter-flat-bottom-pouch-with-window-sp483-1601665060835/",
+      "retained": "https://uniquepouches.com/custom-ups-0483-window-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-cat-litter-flat-bottom-pouch-with-zipper-sp477-1600988482869/",
+      "retained": "https://uniquepouches.com/custom-ups-0477-pet-food-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-cat-litter-spout-pouch-with-window-sp479-1601787665103/",
+      "retained": "https://uniquepouches.com/custom-ups-0479-window-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-cat-litter-spout-pouch-with-window-sp482-1601639211355/",
+      "retained": "https://uniquepouches.com/custom-ups-0482-window-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-cat-litter-stand-up-pouch-with-zipper-sp475-1601572544847/",
+      "retained": "https://uniquepouches.com/custom-ups-0475-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-flat-bottom-pouch-sp212-1601655790651/",
+      "retained": "https://uniquepouches.com/custom-ups-0212-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-flat-bottom-pouch-with-valve-sp038-1601701122619/",
+      "retained": "https://uniquepouches.com/custom-ups-0038-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-flat-bottom-pouch-with-valve-sp040-1601236379014/",
+      "retained": "https://uniquepouches.com/custom-ups-0040-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-flat-bottom-pouch-with-valve-sp075-1601605725650/",
+      "retained": "https://uniquepouches.com/custom-ups-0075-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-flat-bottom-pouch-with-valve-sp147-1601429813381/",
+      "retained": "https://uniquepouches.com/custom-ups-0147-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-flat-bottom-pouch-with-valve-sp209-1601826412160/",
+      "retained": "https://uniquepouches.com/custom-ups-0075-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-flat-bottom-pouch-with-valve-sp245-10000023030210/",
+      "retained": "https://uniquepouches.com/custom-ups-0245-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-flat-bottom-pouch-with-valve-sp523-1601000412873/",
+      "retained": "https://uniquepouches.com/custom-ups-0523-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-flat-bottom-pouch-with-window-sp450-1601490755256/",
+      "retained": "https://uniquepouches.com/custom-ups-0450-window-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-flat-bottom-pouch-with-zipper-sp006-1601190871816/",
+      "retained": "https://uniquepouches.com/custom-ups-0006-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-flat-bottom-pouch-with-zipper-sp206-1601420891368/",
+      "retained": "https://uniquepouches.com/custom-ups-0206-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-flat-bottom-pouch-with-zipper-sp406-1601892847035/",
+      "retained": "https://uniquepouches.com/custom-ups-0406-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-packaging-pouch-with-valve-sp041-1601277015541/",
+      "retained": "https://uniquepouches.com/custom-ups-0041-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-packaging-pouch-with-valve-sp243-1601661025977/",
+      "retained": "https://uniquepouches.com/custom-ups-0243-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-packaging-pouch-with-valve-sp420-1601629014662/",
+      "retained": "https://uniquepouches.com/custom-ups-0420-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-packaging-pouch-with-zipper-sp544-1601842016945/",
+      "retained": "https://uniquepouches.com/custom-ups-0544-clear-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-side-gusset-pouch-with-valve-sp042-1601584004616/",
+      "retained": "https://uniquepouches.com/custom-ups-0042-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-specialty-bag-with-valve-sp317-1600484681588/",
+      "retained": "https://uniquepouches.com/custom-ups-0317-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-spout-pouch-sp264-1601624279308/",
+      "retained": "https://uniquepouches.com/custom-ups-0264-clear-coffee-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-sp343-1601380607837/",
+      "retained": "https://uniquepouches.com/custom-ups-0343-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-sp419-1601773298966/",
+      "retained": "https://uniquepouches.com/custom-ups-0411-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-valve-sp037-1601620684941/",
+      "retained": "https://uniquepouches.com/custom-ups-0037-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-valve-sp074-1601814454930/",
+      "retained": "https://uniquepouches.com/custom-ups-0074-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-valve-sp196-1601630519870/",
+      "retained": "https://uniquepouches.com/custom-ups-0196-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-valve-sp528-1601863445804/",
+      "retained": "https://uniquepouches.com/custom-ups-0528-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-window-sp008-1601123770309/",
+      "retained": "https://uniquepouches.com/custom-ups-0005-matte-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-window-sp164-1601408408901/",
+      "retained": "https://uniquepouches.com/custom-ups-0164-window-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-window-sp440-1601675787024/",
+      "retained": "https://uniquepouches.com/custom-ups-0440-window-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-zipper-sp003-1601595219444/",
+      "retained": "https://uniquepouches.com/custom-ups-0003-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-zipper-sp011-1601440936701/",
+      "retained": "https://uniquepouches.com/custom-ups-0011-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-zipper-sp021-1601438435124/",
+      "retained": "https://uniquepouches.com/custom-ups-0021-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-zipper-sp120-1601563440403/",
+      "retained": "https://uniquepouches.com/custom-ups-0120-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-zipper-sp224-1601561039463/",
+      "retained": "https://uniquepouches.com/custom-ups-0224-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-zipper-sp411-1600924605175/",
+      "retained": "https://uniquepouches.com/custom-ups-0411-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-zipper-sp412-1600303060022/",
+      "retained": "https://uniquepouches.com/custom-ups-0412-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-zipper-sp461-1601730160070/",
+      "retained": "https://uniquepouches.com/custom-ups-0461-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-zipper-sp462-1601692562757/",
+      "retained": "https://uniquepouches.com/custom-ups-0462-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-coffee-stand-up-pouch-with-zipper-sp540-1601174445808/",
+      "retained": "https://uniquepouches.com/custom-ups-0540-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dried-fruit-flat-bottom-pouch-with-window-sp251-1601651562929/",
+      "retained": "https://uniquepouches.com/custom-ups-0251-window-food-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dried-fruit-stand-up-pouch-sp053-1601546139082/",
+      "retained": "https://uniquepouches.com/custom-ups-0053-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dried-fruit-stand-up-pouch-with-window-sp028-1601607066733/",
+      "retained": "https://uniquepouches.com/custom-ups-0028-window-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dried-fruit-stand-up-pouch-with-window-sp061-1601487446397/",
+      "retained": "https://uniquepouches.com/custom-ups-0061-window-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dried-fruit-stand-up-pouch-with-zipper-sp054-1600937416990/",
+      "retained": "https://uniquepouches.com/custom-ups-0054-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dried-fruit-stand-up-pouch-with-zipper-sp134-1601430656690/",
+      "retained": "https://uniquepouches.com/custom-ups-0134-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dried-fruit-stand-up-pouch-with-zipper-sp140-1601728731029/",
+      "retained": "https://uniquepouches.com/custom-ups-0140-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dried-fruit-stand-up-pouch-with-zipper-sp407-1601115231986/",
+      "retained": "https://uniquepouches.com/custom-ups-0407-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dried-fruit-stand-up-pouch-with-zipper-sp448-1601388249269/",
+      "retained": "https://uniquepouches.com/custom-ups-0448-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dried-fruit-stand-up-pouch-with-zipper-sp522-11000029569947/",
+      "retained": "https://uniquepouches.com/custom-ups-0522-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-packaging-pouch-sp538-1601627919692/",
+      "retained": "https://uniquepouches.com/custom-ups-0538-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-packaging-pouch-with-window-sp262-1601382405691/",
+      "retained": "https://uniquepouches.com/custom-ups-0262-window-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-packaging-pouch-with-zipper-sp012-1601584377048/",
+      "retained": "https://uniquepouches.com/custom-ups-0012-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-packaging-pouch-with-zipper-sp198-1601698857533/",
+      "retained": "https://uniquepouches.com/custom-ups-0198-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-packaging-pouch-with-zipper-sp542-1600800038772/",
+      "retained": "https://uniquepouches.com/custom-ups-0542-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-stand-up-pouch-sp155-1601604077877/",
+      "retained": "https://uniquepouches.com/custom-ups-0155-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-stand-up-pouch-sp171-1601678483353/",
+      "retained": "https://uniquepouches.com/custom-ups-0171-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-stand-up-pouch-sp320-1601519047490/",
+      "retained": "https://uniquepouches.com/custom-ups-0320-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-stand-up-pouch-with-window-sp015-1601254752631/",
+      "retained": "https://uniquepouches.com/custom-ups-0015-window-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-stand-up-pouch-with-zipper-sp022-1600472200399/",
+      "retained": "https://uniquepouches.com/custom-ups-0022-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-stand-up-pouch-with-zipper-sp029-1601665207193/",
+      "retained": "https://uniquepouches.com/custom-ups-0029-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-stand-up-pouch-with-zipper-sp044-1601287984387/",
+      "retained": "https://uniquepouches.com/custom-ups-0044-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-stand-up-pouch-with-zipper-sp097-60842121075/",
+      "retained": "https://uniquepouches.com/custom-ups-0097-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-stand-up-pouch-with-zipper-sp216-1601863821941/",
+      "retained": "https://uniquepouches.com/custom-ups-0216-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-stand-up-pouch-with-zipper-sp282-1601676358427/",
+      "retained": "https://uniquepouches.com/custom-ups-0282-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-stand-up-pouch-with-zipper-sp309-1601176244153/",
+      "retained": "https://uniquepouches.com/custom-ups-0309-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-stand-up-pouch-with-zipper-sp456-1600880914603/",
+      "retained": "https://uniquepouches.com/custom-ups-0456-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-dry-goods-stand-up-pouch-with-zipper-sp491-11000036228082/",
+      "retained": "https://uniquepouches.com/custom-ups-0491-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-bakery-stand-up-pouch-with-zipper-sp096-1601203828223/",
+      "retained": "https://uniquepouches.com/custom-ups-0096-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-bakery-stand-up-pouch-with-zipper-sp192-1601394708084/",
+      "retained": "https://uniquepouches.com/custom-ups-0096-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-bakery-stand-up-pouch-with-zipper-sp303-1601687731751/",
+      "retained": "https://uniquepouches.com/custom-ups-0303-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-beverage-packaging-pouch-sp362-1601202390573/",
+      "retained": "https://uniquepouches.com/custom-ups-0362-foil-laminate-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-beverage-spout-pouch-sp143-10000041721512/",
+      "retained": "https://uniquepouches.com/custom-ups-0143-foil-laminate-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-beverage-stand-up-pouch-with-zipper-sp051-1600657112813/",
+      "retained": "https://uniquepouches.com/custom-ups-0051-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-candy-flat-bottom-pouch-with-zipper-sp168-1601905862798/",
+      "retained": "https://uniquepouches.com/custom-ups-0168-foil-laminate-candy-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-candy-packaging-pouch-with-window-sp017-1601573960917/",
+      "retained": "https://uniquepouches.com/custom-ups-0017-foil-laminate-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-candy-packaging-pouch-with-zipper-sp094-1601741985931/",
+      "retained": "https://uniquepouches.com/custom-ups-0094-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-candy-stand-up-pouch-sp416-11000014692283/",
+      "retained": "https://uniquepouches.com/custom-ups-0416-foil-laminate-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-candy-stand-up-pouch-with-window-sp334-1601380629382/",
+      "retained": "https://uniquepouches.com/custom-ups-0005-matte-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-candy-stand-up-pouch-with-zipper-sp032-1601075859513/",
+      "retained": "https://uniquepouches.com/custom-ups-0032-foil-laminate-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-candy-stand-up-pouch-with-zipper-sp200-1601302471015/",
+      "retained": "https://uniquepouches.com/custom-ups-0200-foil-laminate-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-candy-stand-up-pouch-with-zipper-sp213-1601048863396/",
+      "retained": "https://uniquepouches.com/custom-ups-0213-foil-laminate-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-candy-stand-up-pouch-with-zipper-sp469-1601423388726/",
+      "retained": "https://uniquepouches.com/custom-ups-0469-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-cat-litter-spout-pouch-with-window-sp476-1601788344758/",
+      "retained": "https://uniquepouches.com/custom-ups-0476-foil-laminate-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-cat-litter-spout-pouch-with-window-sp478-1601815426178/",
+      "retained": "https://uniquepouches.com/custom-ups-0478-clear-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-flat-bottom-pouch-with-valve-sp034-1601457037168/",
+      "retained": "https://uniquepouches.com/custom-ups-0034-foil-laminate-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-flat-bottom-pouch-with-valve-sp039-1601696074019/",
+      "retained": "https://uniquepouches.com/custom-ups-0039-foil-laminate-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-packaging-pouch-sp088-1600829766104/",
+      "retained": "https://uniquepouches.com/custom-ups-0088-foil-laminate-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-packaging-pouch-with-valve-sp036-1601445931448/",
+      "retained": "https://uniquepouches.com/custom-ups-0036-foil-laminate-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-packaging-pouch-with-window-sp373-1601773699029/",
+      "retained": "https://uniquepouches.com/custom-ups-0373-window-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-packaging-pouch-with-zipper-sp284-1601584895131/",
+      "retained": "https://uniquepouches.com/custom-ups-0284-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-spout-pouch-sp549-1600727040485/",
+      "retained": "https://uniquepouches.com/custom-ups-0549-foil-laminate-coffee-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-stand-up-pouch-sp066-60717183248/",
+      "retained": "https://uniquepouches.com/custom-ups-0066-foil-laminate-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-stand-up-pouch-with-valve-sp109-1601220446987/",
+      "retained": "https://uniquepouches.com/custom-ups-0109-foil-laminate-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-stand-up-pouch-with-valve-sp227-1601257985745/",
+      "retained": "https://uniquepouches.com/custom-ups-0227-foil-laminate-pet-food-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-stand-up-pouch-with-valve-sp437-60798136623/",
+      "retained": "https://uniquepouches.com/custom-ups-0437-foil-laminate-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-stand-up-pouch-with-valve-sp438-1601772547315/",
+      "retained": "https://uniquepouches.com/custom-ups-0437-foil-laminate-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-stand-up-pouch-with-zipper-sp024-1600483078530/",
+      "retained": "https://uniquepouches.com/custom-ups-0024-foil-laminate-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-stand-up-pouch-with-zipper-sp197-1601219723334/",
+      "retained": "https://uniquepouches.com/custom-ups-0197-foil-laminate-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-coffee-stand-up-pouch-with-zipper-sp413-1601633917319/",
+      "retained": "https://uniquepouches.com/custom-ups-0413-foil-laminate-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-dried-fruit-packaging-pouch-with-window-sp287-1601688689575/",
+      "retained": "https://uniquepouches.com/custom-ups-0287-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-dried-fruit-stand-up-pouch-sp049-1600371519854/",
+      "retained": "https://uniquepouches.com/custom-ups-0049-foil-laminate-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-dried-fruit-stand-up-pouch-sp367-1600624961419/",
+      "retained": "https://uniquepouches.com/custom-ups-0367-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-dried-fruit-stand-up-pouch-with-zipper-sp043-1600927846264/",
+      "retained": "https://uniquepouches.com/custom-ups-0043-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-dried-fruit-stand-up-pouch-with-zipper-sp124-1601561030352/",
+      "retained": "https://uniquepouches.com/custom-ups-0124-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-dry-goods-specialty-bag-with-zipper-sp219-1601651265892/",
+      "retained": "https://uniquepouches.com/custom-ups-0219-foil-laminate-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-dry-goods-stand-up-pouch-sp241-1601833709735/",
+      "retained": "https://uniquepouches.com/custom-ups-0241-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-dry-goods-stand-up-pouch-sp376-1600984898227/",
+      "retained": "https://uniquepouches.com/custom-ups-0376-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-dry-goods-stand-up-pouch-with-window-sp181-1600531241324/",
+      "retained": "https://uniquepouches.com/custom-ups-0181-foil-laminate-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-dry-goods-stand-up-pouch-with-zipper-sp089-1601056310462/",
+      "retained": "https://uniquepouches.com/custom-ups-0089-foil-laminate-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-flat-bottom-pouch-with-zipper-sp047-1601676627639/",
+      "retained": "https://uniquepouches.com/custom-ups-0047-food-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-packaging-pouch-sp481-1601194803619/",
+      "retained": "https://uniquepouches.com/custom-ups-0481-foil-laminate-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-packaging-pouch-with-zipper-sp093-1601742111054/",
+      "retained": "https://uniquepouches.com/custom-ups-0093-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-packaging-pouch-with-zipper-sp299-1601794862361/",
+      "retained": "https://uniquepouches.com/custom-ups-0299-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-packaging-pouch-with-zipper-sp326-1601635421822/",
+      "retained": "https://uniquepouches.com/custom-ups-0326-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-packaging-pouch-with-zipper-sp385-1601587191786/",
+      "retained": "https://uniquepouches.com/custom-ups-0385-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-packaging-pouch-with-zipper-sp484-1601544944809/",
+      "retained": "https://uniquepouches.com/custom-ups-0484-food-custom-packaging-bag.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-pouch-for-retort-review-sp175-1600700202700/",
+      "retained": "https://uniquepouches.com/custom-ups-0175-foil-laminate-food-retort-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-specialty-bag-with-zipper-sp167-1601651483164/",
+      "retained": "https://uniquepouches.com/custom-ups-0167-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-sp184-1601845392324/",
+      "retained": "https://uniquepouches.com/custom-ups-0184-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-sp225-1601583459334/",
+      "retained": "https://uniquepouches.com/custom-ups-0225-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-window-sp009-1600305044018/",
+      "retained": "https://uniquepouches.com/custom-ups-0009-foil-laminate-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-window-sp052-1601082002232/",
+      "retained": "https://uniquepouches.com/custom-ups-0052-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp018-1600997043494/",
+      "retained": "https://uniquepouches.com/custom-ups-0018-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp020-1601584069588/",
+      "retained": "https://uniquepouches.com/custom-ups-0020-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp046-1601884215479/",
+      "retained": "https://uniquepouches.com/custom-ups-0046-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp112-1601588890929/",
+      "retained": "https://uniquepouches.com/custom-ups-0112-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp130-1601366880098/",
+      "retained": "https://uniquepouches.com/custom-ups-0130-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp141-1601256948505/",
+      "retained": "https://uniquepouches.com/custom-ups-0141-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp144-1601224262890/",
+      "retained": "https://uniquepouches.com/custom-ups-0144-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp173-1601490702525/",
+      "retained": "https://uniquepouches.com/custom-ups-0173-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp201-1600595628472/",
+      "retained": "https://uniquepouches.com/custom-ups-0201-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp214-62377514632/",
+      "retained": "https://uniquepouches.com/custom-ups-0214-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp229-1601595963192/",
+      "retained": "https://uniquepouches.com/custom-ups-0229-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp234-1600439927287/",
+      "retained": "https://uniquepouches.com/custom-ups-0234-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp246-1600829700766/",
+      "retained": "https://uniquepouches.com/custom-ups-0246-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp247-1601216058322/",
+      "retained": "https://uniquepouches.com/custom-ups-0247-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp289-1601357146219/",
+      "retained": "https://uniquepouches.com/custom-ups-0289-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp323-1600171974417/",
+      "retained": "https://uniquepouches.com/custom-ups-0323-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp328-1600930499275/",
+      "retained": "https://uniquepouches.com/custom-ups-0328-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp331-1601028719098/",
+      "retained": "https://uniquepouches.com/custom-ups-0331-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp335-1601605500557/",
+      "retained": "https://uniquepouches.com/custom-ups-0335-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-food-stand-up-pouch-with-zipper-sp467-1601595027761/",
+      "retained": "https://uniquepouches.com/custom-ups-0467-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-juice-spout-pouch-sp161-1600501417461/",
+      "retained": "https://uniquepouches.com/custom-ups-0161-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-juice-spout-pouch-sp353-1600537098792/",
+      "retained": "https://uniquepouches.com/custom-ups-0353-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-laundry-detergent-spout-pouch-sp278-1601561062229/",
+      "retained": "https://uniquepouches.com/custom-ups-0278-foil-laminate-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-matcha-tea-packaging-pouch-with-zipper-sp014-1601625945072/",
+      "retained": "https://uniquepouches.com/custom-ups-0014-foil-laminate-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-matcha-tea-stand-up-pouch-with-zipper-sp083-1601058621994/",
+      "retained": "https://uniquepouches.com/custom-ups-0083-foil-laminate-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-nut-specialty-bag-with-zipper-sp019-11000021232512/",
+      "retained": "https://uniquepouches.com/custom-ups-0019-foil-laminate-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-nut-stand-up-pouch-sp191-1601402210711/",
+      "retained": "https://uniquepouches.com/custom-ups-0191-foil-laminate-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-nut-stand-up-pouch-with-zipper-sp233-1601382424961/",
+      "retained": "https://uniquepouches.com/custom-ups-0233-foil-laminate-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-personal-care-spout-pouch-sp459-1601830035501/",
+      "retained": "https://uniquepouches.com/custom-ups-0459-foil-laminate-personal-care-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-personal-care-stand-up-pouch-with-zipper-sp202-1600475112870/",
+      "retained": "https://uniquepouches.com/custom-ups-0202-foil-laminate-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-pet-food-packaging-pouch-sp311-1601118546685/",
+      "retained": "https://uniquepouches.com/custom-ups-0311-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-pet-food-pouch-for-retort-review-with-zipper-sp176-1601386940268/",
+      "retained": "https://uniquepouches.com/custom-ups-0176-pet-food-retort-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-pet-food-stand-up-pouch-with-zipper-sp318-1601677930834/",
+      "retained": "https://uniquepouches.com/custom-ups-0318-foil-laminate-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-pet-food-stand-up-pouch-with-zipper-sp321-1601047586144/",
+      "retained": "https://uniquepouches.com/custom-ups-0321-foil-laminate-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-powder-flat-bottom-pouch-sp401-1601519705576/",
+      "retained": "https://uniquepouches.com/custom-ups-0401-foil-laminate-powder-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-powder-packaging-pouch-sp068-1601458820142/",
+      "retained": "https://uniquepouches.com/custom-ups-0068-foil-laminate-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-protein-powder-packaging-pouch-with-zipper-sp298-1601798532504/",
+      "retained": "https://uniquepouches.com/custom-ups-0298-foil-laminate-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-protein-powder-stand-up-pouch-sp517-60026501565/",
+      "retained": "https://uniquepouches.com/custom-ups-0517-foil-laminate-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-tea-packaging-pouch-with-zipper-sp149-1601764915802/",
+      "retained": "https://uniquepouches.com/custom-ups-0149-foil-laminate-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-foil-tea-stand-up-pouch-with-zipper-sp490-1600720910683/",
+      "retained": "https://uniquepouches.com/custom-ups-0490-foil-laminate-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-flat-bottom-pouch-sp208-1601106025737/",
+      "retained": "https://uniquepouches.com/custom-ups-0208-food-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-flat-bottom-pouch-sp403-1601487629637/",
+      "retained": "https://uniquepouches.com/custom-ups-0403-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-flat-bottom-pouch-with-zipper-sp240-1601181179834/",
+      "retained": "https://uniquepouches.com/custom-ups-0240-clear-food-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-sp159-1601525859217/",
+      "retained": "https://uniquepouches.com/custom-ups-0159-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-sp235-11000024064816/",
+      "retained": "https://uniquepouches.com/custom-ups-0235-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-window-sp333-1601611301914/",
+      "retained": "https://uniquepouches.com/custom-ups-0333-clear-custom-packaging-bag.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-window-sp339-1601522682797/",
+      "retained": "https://uniquepouches.com/custom-ups-0339-clear-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-window-sp537-1601817541886/",
+      "retained": "https://uniquepouches.com/custom-ups-0537-window-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-zipper-sp215-1601608774635/",
+      "retained": "https://uniquepouches.com/custom-ups-0215-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-zipper-sp217-1601484006381/",
+      "retained": "https://uniquepouches.com/custom-ups-0217-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-zipper-sp220-1601651415938/",
+      "retained": "https://uniquepouches.com/custom-ups-0220-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-zipper-sp242-1601772726309/",
+      "retained": "https://uniquepouches.com/custom-ups-0242-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-zipper-sp327-1601649103870/",
+      "retained": "https://uniquepouches.com/custom-ups-0327-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-zipper-sp329-1601115442587/",
+      "retained": "https://uniquepouches.com/custom-ups-0329-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-zipper-sp372-1600924560428/",
+      "retained": "https://uniquepouches.com/custom-ups-0372-clear-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-zipper-sp384-1601624015082/",
+      "retained": "https://uniquepouches.com/custom-ups-0384-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-zipper-sp396-1601851830562/",
+      "retained": "https://uniquepouches.com/custom-ups-0396-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-zipper-sp409-1601394718234/",
+      "retained": "https://uniquepouches.com/custom-ups-0409-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-zipper-sp415-1601073469993/",
+      "retained": "https://uniquepouches.com/custom-ups-0415-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-zipper-sp447-1601616145590/",
+      "retained": "https://uniquepouches.com/custom-ups-0447-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-packaging-pouch-with-zipper-sp526-1601095338774/",
+      "retained": "https://uniquepouches.com/custom-ups-0526-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-pouch-for-retort-review-with-zipper-sp365-1601687468834/",
+      "retained": "https://uniquepouches.com/custom-ups-0365-food-retort-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-side-gusset-pouch-sp325-1601601325795/",
+      "retained": "https://uniquepouches.com/custom-ups-0325-food-side-gusset-bag.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-side-gusset-pouch-with-zipper-sp013-1601447590734/",
+      "retained": "https://uniquepouches.com/custom-ups-0013-food-side-gusset-bag.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-specialty-bag-with-zipper-sp231-1600372602669/",
+      "retained": "https://uniquepouches.com/custom-ups-0231-clear-food-vacuum-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-specialty-bag-with-zipper-sp552-1601855364751/",
+      "retained": "https://uniquepouches.com/custom-ups-0552-clear-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-spout-pouch-sp346-1601397126451/",
+      "retained": "https://uniquepouches.com/custom-ups-0346-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-spout-pouch-sp350-1601913832893/",
+      "retained": "https://uniquepouches.com/custom-ups-0350-clear-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-spout-pouch-sp494-1600661705203/",
+      "retained": "https://uniquepouches.com/custom-ups-0494-clear-food-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-sp001-1601628845330/",
+      "retained": "https://uniquepouches.com/custom-ups-0001-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-sp286-1600645538681/",
+      "retained": "https://uniquepouches.com/custom-ups-0286-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-sp305-1601518428651/",
+      "retained": "https://uniquepouches.com/custom-ups-0305-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-sp347-11000029487166/",
+      "retained": "https://uniquepouches.com/custom-ups-0347-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-sp441-1601579993076/",
+      "retained": "https://uniquepouches.com/custom-ups-0441-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-sp443-1601611816039/",
+      "retained": "https://uniquepouches.com/custom-ups-0443-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-sp444-1601610997690/",
+      "retained": "https://uniquepouches.com/custom-ups-0444-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-sp449-10000042202112/",
+      "retained": "https://uniquepouches.com/custom-ups-0449-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-window-sp016-1601832662741/",
+      "retained": "https://uniquepouches.com/custom-ups-0016-clear-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-window-sp102-1601297154500/",
+      "retained": "https://uniquepouches.com/custom-ups-0102-window-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-window-sp182-1601102626295/",
+      "retained": "https://uniquepouches.com/custom-ups-0182-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-window-sp190-1601587864762/",
+      "retained": "https://uniquepouches.com/custom-ups-0190-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-window-sp232-1601007082512/",
+      "retained": "https://uniquepouches.com/custom-ups-0232-window-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-window-sp399-10000036365895/",
+      "retained": "https://uniquepouches.com/custom-ups-0399-window-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp007-1600279610405/",
+      "retained": "https://uniquepouches.com/custom-ups-0007-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp023-1600967793719/",
+      "retained": "https://uniquepouches.com/custom-ups-0023-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp031-1601103998290/",
+      "retained": "https://uniquepouches.com/custom-ups-0031-clear-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp055-1601585717976/",
+      "retained": "https://uniquepouches.com/custom-ups-0055-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp064-1601040306266/",
+      "retained": "https://uniquepouches.com/custom-ups-0064-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp095-1600431973880/",
+      "retained": "https://uniquepouches.com/custom-ups-0095-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp098-1601352445744/",
+      "retained": "https://uniquepouches.com/custom-ups-0098-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp099-1601604088082/",
+      "retained": "https://uniquepouches.com/custom-ups-0099-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp106-10000023048866/",
+      "retained": "https://uniquepouches.com/custom-ups-0106-clear-food-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp108-1601785848199/",
+      "retained": "https://uniquepouches.com/custom-ups-0108-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp131-1601394624960/",
+      "retained": "https://uniquepouches.com/custom-ups-0131-clear-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp172-1601572889005/",
+      "retained": "https://uniquepouches.com/custom-ups-0172-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp178-1601273295961/",
+      "retained": "https://uniquepouches.com/custom-ups-0178-personal-care-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp193-1601229770711/",
+      "retained": "https://uniquepouches.com/custom-ups-0193-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp204-1601350687684/",
+      "retained": "https://uniquepouches.com/custom-ups-0204-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp218-1601423369981/",
+      "retained": "https://uniquepouches.com/custom-ups-0218-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp257-11000026144210/",
+      "retained": "https://uniquepouches.com/custom-ups-0257-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp290-1601690562620/",
+      "retained": "https://uniquepouches.com/custom-ups-0290-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp316-1600462891797/",
+      "retained": "https://uniquepouches.com/custom-ups-0316-clear-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp330-1601695780900/",
+      "retained": "https://uniquepouches.com/custom-ups-0330-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp337-1601369786013/",
+      "retained": "https://uniquepouches.com/custom-ups-0337-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp368-1601577712121/",
+      "retained": "https://uniquepouches.com/custom-ups-0368-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp371-1601869512178/",
+      "retained": "https://uniquepouches.com/custom-ups-0371-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp380-1601558783437/",
+      "retained": "https://uniquepouches.com/custom-ups-0380-clear-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp387-1600885449245/",
+      "retained": "https://uniquepouches.com/custom-ups-0387-clear-food-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp404-1601061538768/",
+      "retained": "https://uniquepouches.com/custom-ups-0404-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp410-1601530440706/",
+      "retained": "https://uniquepouches.com/custom-ups-0410-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp434-1601158841951/",
+      "retained": "https://uniquepouches.com/custom-ups-0434-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp453-1600323006921/",
+      "retained": "https://uniquepouches.com/custom-ups-0453-clear-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp460-1601718752688/",
+      "retained": "https://uniquepouches.com/custom-ups-0460-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp470-1601406256040/",
+      "retained": "https://uniquepouches.com/custom-ups-0470-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp486-1601491613355/",
+      "retained": "https://uniquepouches.com/custom-ups-0486-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp487-1601234345472/",
+      "retained": "https://uniquepouches.com/custom-ups-0487-clear-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp524-1600314505085/",
+      "retained": "https://uniquepouches.com/custom-ups-0524-clear-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp533-1600097452279/",
+      "retained": "https://uniquepouches.com/custom-ups-0533-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-food-stand-up-pouch-with-zipper-sp539-1601174490606/",
+      "retained": "https://uniquepouches.com/custom-ups-0539-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-garment-stand-up-pouch-with-window-sp342-1601231234642/",
+      "retained": "https://uniquepouches.com/custom-ups-0342-window-apparel-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-garment-stand-up-pouch-with-zipper-sp543-1601402445427/",
+      "retained": "https://uniquepouches.com/custom-ups-0543-apparel-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-gloss-dry-goods-stand-up-pouch-with-zipper-sp027-1600961682187/",
+      "retained": "https://uniquepouches.com/custom-ups-0027-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-gloss-foil-food-stand-up-pouch-with-window-sp187-62036630640/",
+      "retained": "https://uniquepouches.com/custom-ups-0187-foil-laminate-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-gloss-food-stand-up-pouch-with-window-sp189-1601454654745/",
+      "retained": "https://uniquepouches.com/custom-ups-0189-window-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-gloss-nut-stand-up-pouch-with-window-sp122-1601607094081/",
+      "retained": "https://uniquepouches.com/custom-ups-0122-window-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-hand-wash-spout-pouch-sp500-1600337179390/",
+      "retained": "https://uniquepouches.com/custom-ups-0500-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-holographic-candy-flat-bottom-pouch-with-zipper-sp393-1601380876371/",
+      "retained": "https://uniquepouches.com/custom-ups-0393-holographic-candy-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-holographic-candy-stand-up-pouch-with-zipper-sp465-1601583479065/",
+      "retained": "https://uniquepouches.com/custom-ups-0465-holographic-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-holographic-dry-goods-side-gusset-pouch-sp424-1601424424577/",
+      "retained": "https://uniquepouches.com/custom-ups-0424-holographic-side-gusset-bag.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-holographic-dry-goods-stand-up-pouch-sp423-1601604315052/",
+      "retained": "https://uniquepouches.com/custom-ups-0423-holographic-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-holographic-food-stand-up-pouch-with-zipper-sp086-1601761812566/",
+      "retained": "https://uniquepouches.com/custom-ups-0086-holographic-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-holographic-gift-stand-up-pouch-sp489-1601023164498/",
+      "retained": "https://uniquepouches.com/custom-ups-0489-holographic-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-holographic-personal-care-stand-up-pouch-with-zipper-sp188-1601486800325/",
+      "retained": "https://uniquepouches.com/custom-ups-0188-holographic-personal-care-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-household-stand-up-pouch-sp379-1600492392153/",
+      "retained": "https://uniquepouches.com/custom-ups-0379-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-packaging-pouch-with-zipper-sp551-1601112011170/",
+      "retained": "https://uniquepouches.com/custom-ups-0551-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-specialty-bag-with-zipper-sp433-1600129796551/",
+      "retained": "https://uniquepouches.com/custom-ups-0433-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp056-1601289971767/",
+      "retained": "https://uniquepouches.com/custom-ups-0056-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp058-1600739875525/",
+      "retained": "https://uniquepouches.com/custom-ups-0058-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp060-60698523976/",
+      "retained": "https://uniquepouches.com/custom-ups-0060-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp133-1600336157952/",
+      "retained": "https://uniquepouches.com/custom-ups-0133-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp139-1601557400265/",
+      "retained": "https://uniquepouches.com/custom-ups-0139-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp250-1601906207361/",
+      "retained": "https://uniquepouches.com/custom-ups-0250-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp261-1601172474142/",
+      "retained": "https://uniquepouches.com/custom-ups-0261-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp266-1601611883006/",
+      "retained": "https://uniquepouches.com/custom-ups-0266-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp269-1601600528469/",
+      "retained": "https://uniquepouches.com/custom-ups-0269-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp352-1600830059486/",
+      "retained": "https://uniquepouches.com/custom-ups-0352-clear-tea-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp354-1601519405358/",
+      "retained": "https://uniquepouches.com/custom-ups-0354-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp357-1601406867868/",
+      "retained": "https://uniquepouches.com/custom-ups-0357-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp358-1600636291153/",
+      "retained": "https://uniquepouches.com/custom-ups-0358-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp359-1601490778624/",
+      "retained": "https://uniquepouches.com/custom-ups-0359-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp425-1601694798285/",
+      "retained": "https://uniquepouches.com/custom-ups-0425-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp428-1601601331122/",
+      "retained": "https://uniquepouches.com/custom-ups-0428-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp452-1601823413363/",
+      "retained": "https://uniquepouches.com/custom-ups-0452-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp493-1600878056371/",
+      "retained": "https://uniquepouches.com/custom-ups-0493-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-sp520-62296841189/",
+      "retained": "https://uniquepouches.com/custom-ups-0520-clear-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-spout-pouch-with-window-sp426-1601695005253/",
+      "retained": "https://uniquepouches.com/custom-ups-0426-window-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-stand-up-pouch-sp397-1601580493234/",
+      "retained": "https://uniquepouches.com/custom-ups-0397-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-stand-up-pouch-with-zipper-sp142-1601436765760/",
+      "retained": "https://uniquepouches.com/custom-ups-0142-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-juice-stand-up-pouch-with-zipper-sp361-1601262209015/",
+      "retained": "https://uniquepouches.com/custom-ups-0361-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-baby-food-spout-pouch-sp516-1601350100212/",
+      "retained": "https://uniquepouches.com/custom-ups-0516-kraft-look-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-beverage-stand-up-pouch-sp348-60765495583/",
+      "retained": "https://uniquepouches.com/custom-ups-0348-kraft-look-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-candy-packaging-pouch-with-zipper-sp301-1601405864132/",
+      "retained": "https://uniquepouches.com/custom-ups-0301-kraft-look-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-candy-stand-up-pouch-with-window-sp414-1600563071618/",
+      "retained": "https://uniquepouches.com/custom-ups-0414-kraft-look-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-candy-stand-up-pouch-with-zipper-sp324-1601244592358/",
+      "retained": "https://uniquepouches.com/custom-ups-0324-kraft-look-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-coffee-flat-bottom-pouch-sp532-1601326816805/",
+      "retained": "https://uniquepouches.com/custom-ups-0532-kraft-look-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-coffee-flat-bottom-pouch-with-zipper-sp076-1601882132274/",
+      "retained": "https://uniquepouches.com/custom-ups-0076-kraft-look-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-coffee-flat-bottom-pouch-with-zipper-sp211-1601562983994/",
+      "retained": "https://uniquepouches.com/custom-ups-0211-kraft-look-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-coffee-packaging-pouch-with-zipper-sp370-1601276934715/",
+      "retained": "https://uniquepouches.com/custom-ups-0370-kraft-look-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-coffee-packaging-pouch-with-zipper-sp466-1601581394757/",
+      "retained": "https://uniquepouches.com/custom-ups-0466-kraft-look-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-coffee-stand-up-pouch-sp100-11000031219039/",
+      "retained": "https://uniquepouches.com/custom-ups-0100-kraft-look-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-coffee-stand-up-pouch-with-window-sp253-1601839593889/",
+      "retained": "https://uniquepouches.com/custom-ups-0253-kraft-look-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-coffee-stand-up-pouch-with-zipper-sp529-1601830367939/",
+      "retained": "https://uniquepouches.com/custom-ups-0529-kraft-look-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-dried-fruit-packaging-pouch-with-window-sp063-1601708745989/",
+      "retained": "https://uniquepouches.com/custom-ups-0063-kraft-look-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-food-packaging-pouch-with-window-sp255-1601696123684/",
+      "retained": "https://uniquepouches.com/custom-ups-0255-kraft-look-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-food-packaging-pouch-with-zipper-sp230-1601582408816/",
+      "retained": "https://uniquepouches.com/custom-ups-0230-kraft-look-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-food-pouch-for-retort-review-with-zipper-sp174-1600864134135/",
+      "retained": "https://uniquepouches.com/custom-ups-0174-kraft-look-food-retort-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-food-stand-up-pouch-sp101-11000031239026/",
+      "retained": "https://uniquepouches.com/custom-ups-0101-kraft-look-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-food-stand-up-pouch-with-valve-sp128-1601224240374/",
+      "retained": "https://uniquepouches.com/custom-ups-0128-kraft-look-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-food-stand-up-pouch-with-window-sp183-1600877936310/",
+      "retained": "https://uniquepouches.com/custom-ups-0183-kraft-look-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-food-stand-up-pouch-with-window-sp473-1600887781643/",
+      "retained": "https://uniquepouches.com/custom-ups-0473-kraft-look-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-food-stand-up-pouch-with-zipper-sp349-1601383034911/",
+      "retained": "https://uniquepouches.com/custom-ups-0349-kraft-look-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-food-stand-up-pouch-with-zipper-sp435-1601389045809/",
+      "retained": "https://uniquepouches.com/custom-ups-0435-kraft-look-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-food-stand-up-pouch-with-zipper-sp521-1601414859078/",
+      "retained": "https://uniquepouches.com/custom-ups-0521-kraft-look-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-garment-stand-up-pouch-with-zipper-sp547-1601404731812/",
+      "retained": "https://uniquepouches.com/custom-ups-0547-kraft-look-apparel-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-juice-spout-pouch-sp277-1600884287224/",
+      "retained": "https://uniquepouches.com/custom-ups-0277-kraft-look-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-nut-packaging-pouch-with-window-sp427-1601679340779/",
+      "retained": "https://uniquepouches.com/custom-ups-0427-kraft-look-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-nut-pouch-for-retort-review-with-window-sp166-1601787535134/",
+      "retained": "https://uniquepouches.com/custom-ups-0166-kraft-look-nut-retort-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-nut-stand-up-pouch-with-window-sp179-1601439990439/",
+      "retained": "https://uniquepouches.com/custom-ups-0179-kraft-look-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-nut-stand-up-pouch-with-window-sp390-1601897266314/",
+      "retained": "https://uniquepouches.com/custom-ups-0390-kraft-look-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-nut-stand-up-pouch-with-window-sp535-10000046139796/",
+      "retained": "https://uniquepouches.com/custom-ups-0535-kraft-look-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-personal-care-spout-pouch-sp270-1601394537272/",
+      "retained": "https://uniquepouches.com/custom-ups-0270-kraft-look-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-personal-care-spout-pouch-sp495-1601536480443/",
+      "retained": "https://uniquepouches.com/custom-ups-0495-kraft-look-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-personal-care-stand-up-pouch-sp091-1601491716535/",
+      "retained": "https://uniquepouches.com/custom-ups-0091-kraft-look-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-pet-food-stand-up-pouch-with-window-sp395-1600247596894/",
+      "retained": "https://uniquepouches.com/custom-ups-0395-kraft-look-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-protein-powder-stand-up-pouch-with-window-sp391-11000031235039/",
+      "retained": "https://uniquepouches.com/custom-ups-0391-kraft-look-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-kraft-tea-stand-up-pouch-with-window-sp338-1601388164628/",
+      "retained": "https://uniquepouches.com/custom-ups-0338-kraft-look-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-flat-bottom-pouch-sp210-1601530986272/",
+      "retained": "https://uniquepouches.com/custom-ups-0210-refill-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-packaging-pouch-with-zipper-sp514-1601618261549/",
+      "retained": "https://uniquepouches.com/custom-ups-0514-refill-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-specialty-bag-sp340-1601430407334/",
+      "retained": "https://uniquepouches.com/custom-ups-0340-refill-vacuum-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp127-1600952751499/",
+      "retained": "https://uniquepouches.com/custom-ups-0127-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp145-1601172358450/",
+      "retained": "https://uniquepouches.com/custom-ups-0145-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp273-1601492324412/",
+      "retained": "https://uniquepouches.com/custom-ups-0273-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp274-1601603004104/",
+      "retained": "https://uniquepouches.com/custom-ups-0274-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp275-1601113390189/",
+      "retained": "https://uniquepouches.com/custom-ups-0275-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp356-1601828950050/",
+      "retained": "https://uniquepouches.com/custom-ups-0356-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp364-1600994266146/",
+      "retained": "https://uniquepouches.com/custom-ups-0364-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp378-1601749285414/",
+      "retained": "https://uniquepouches.com/custom-ups-0378-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp432-62171570700/",
+      "retained": "https://uniquepouches.com/custom-ups-0432-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp498-1601125445456/",
+      "retained": "https://uniquepouches.com/custom-ups-0498-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp499-1601118650056/",
+      "retained": "https://uniquepouches.com/custom-ups-0499-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp501-1600844685585/",
+      "retained": "https://uniquepouches.com/custom-ups-0501-clear-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp502-1600953732885/",
+      "retained": "https://uniquepouches.com/custom-ups-0502-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp503-1601460858565/",
+      "retained": "https://uniquepouches.com/custom-ups-0503-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp505-1601780527770/",
+      "retained": "https://uniquepouches.com/custom-ups-0505-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp509-1601780261217/",
+      "retained": "https://uniquepouches.com/custom-ups-0509-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp511-1601378373358/",
+      "retained": "https://uniquepouches.com/custom-ups-0511-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-spout-pouch-sp512-1601808175793/",
+      "retained": "https://uniquepouches.com/custom-ups-0512-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-stand-up-pouch-sp332-1601021991434/",
+      "retained": "https://uniquepouches.com/custom-ups-0332-refill-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-stand-up-pouch-sp515-1601361609579/",
+      "retained": "https://uniquepouches.com/custom-ups-0515-refill-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-stand-up-pouch-with-zipper-sp507-1601674562282/",
+      "retained": "https://uniquepouches.com/custom-ups-0507-refill-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-laundry-detergent-stand-up-pouch-with-zipper-sp508-1601566815573/",
+      "retained": "https://uniquepouches.com/custom-ups-0508-refill-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matcha-tea-stand-up-pouch-sp111-1601757193905/",
+      "retained": "https://uniquepouches.com/custom-ups-0111-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matcha-tea-stand-up-pouch-with-zipper-sp067-1601428225700/",
+      "retained": "https://uniquepouches.com/custom-ups-0067-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matcha-tea-stand-up-pouch-with-zipper-sp077-1601811307439/",
+      "retained": "https://uniquepouches.com/custom-ups-0077-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matcha-tea-stand-up-pouch-with-zipper-sp090-1601671131584/",
+      "retained": "https://uniquepouches.com/custom-ups-0090-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matcha-tea-stand-up-pouch-with-zipper-sp105-1601643606980/",
+      "retained": "https://uniquepouches.com/custom-ups-0105-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matcha-tea-stand-up-pouch-with-zipper-sp296-1601447698853/",
+      "retained": "https://uniquepouches.com/custom-ups-0296-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matcha-tea-stand-up-pouch-with-zipper-sp400-1601671491824/",
+      "retained": "https://uniquepouches.com/custom-ups-0400-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-candy-flat-bottom-pouch-with-window-sp430-1601631117519/",
+      "retained": "https://uniquepouches.com/custom-ups-0430-matte-candy-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-candy-packaging-pouch-with-zipper-sp150-1601672457796/",
+      "retained": "https://uniquepouches.com/custom-ups-0150-matte-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-candy-stand-up-pouch-with-window-sp137-1601822318102/",
+      "retained": "https://uniquepouches.com/custom-ups-0025-window-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-candy-stand-up-pouch-with-zipper-sp059-1601257035309/",
+      "retained": "https://uniquepouches.com/custom-ups-0059-matte-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-candy-stand-up-pouch-with-zipper-sp153-1601048906230/",
+      "retained": "https://uniquepouches.com/custom-ups-0153-matte-candy-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-coffee-flat-bottom-pouch-with-window-sp541-1601723515410/",
+      "retained": "https://uniquepouches.com/custom-ups-0541-matte-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-coffee-packaging-pouch-with-valve-sp035-1601229255299/",
+      "retained": "https://uniquepouches.com/custom-ups-0035-matte-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-coffee-packaging-pouch-with-zipper-sp386-1601587361935/",
+      "retained": "https://uniquepouches.com/custom-ups-0386-matte-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-coffee-stand-up-pouch-with-valve-sp079-1601594669633/",
+      "retained": "https://uniquepouches.com/custom-ups-0079-matte-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-coffee-stand-up-pouch-with-window-sp005-1600910565913/",
+      "retained": "https://uniquepouches.com/custom-ups-0005-matte-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-coffee-stand-up-pouch-with-zipper-sp322-1601560559855/",
+      "retained": "https://uniquepouches.com/custom-ups-0322-matte-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-dry-goods-packaging-pouch-with-zipper-sp463-1601164215226/",
+      "retained": "https://uniquepouches.com/custom-ups-0463-holographic-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-dry-goods-stand-up-pouch-with-zipper-sp002-1600285820985/",
+      "retained": "https://uniquepouches.com/custom-ups-0002-matte-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-dry-goods-stand-up-pouch-with-zipper-sp116-1600825040047/",
+      "retained": "https://uniquepouches.com/custom-ups-0116-matte-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-dry-goods-stand-up-pouch-with-zipper-sp148-1601787128598/",
+      "retained": "https://uniquepouches.com/custom-ups-0148-matte-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-coffee-flat-bottom-pouch-sp107-1601603032454/",
+      "retained": "https://uniquepouches.com/custom-ups-0107-foil-laminate-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-coffee-flat-bottom-pouch-with-valve-sp205-1601889839479/",
+      "retained": "https://uniquepouches.com/custom-ups-0205-foil-laminate-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-coffee-flat-bottom-pouch-with-valve-sp207-1601645012853/",
+      "retained": "https://uniquepouches.com/custom-ups-0207-foil-laminate-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-coffee-stand-up-pouch-sp236-1601444363933/",
+      "retained": "https://uniquepouches.com/custom-ups-0107-foil-laminate-coffee-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-coffee-stand-up-pouch-with-window-sp417-1601361216570/",
+      "retained": "https://uniquepouches.com/custom-ups-0417-foil-laminate-coffee-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-dry-goods-stand-up-pouch-with-zipper-sp030-1601584332212/",
+      "retained": "https://uniquepouches.com/custom-ups-0030-foil-laminate-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-food-packaging-pouch-with-zipper-sp195-1601495252209/",
+      "retained": "https://uniquepouches.com/custom-ups-0195-foil-laminate-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-food-specialty-bag-with-zipper-sp119-1600249148255/",
+      "retained": "https://uniquepouches.com/custom-ups-0119-foil-laminate-food-vacuum-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-food-stand-up-pouch-with-window-sp004-1600703093191/",
+      "retained": "https://uniquepouches.com/custom-ups-0004-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-food-stand-up-pouch-with-zipper-sp110-1600159865358/",
+      "retained": "https://uniquepouches.com/custom-ups-0110-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-food-stand-up-pouch-with-zipper-sp221-1600704286951/",
+      "retained": "https://uniquepouches.com/custom-ups-0221-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-food-stand-up-pouch-with-zipper-sp285-1600206300463/",
+      "retained": "https://uniquepouches.com/custom-ups-0141-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-food-stand-up-pouch-with-zipper-sp375-1600587761254/",
+      "retained": "https://uniquepouches.com/custom-ups-0375-matte-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-food-stand-up-pouch-with-zipper-sp398-1600300262245/",
+      "retained": "https://uniquepouches.com/custom-ups-0398-foil-laminate-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-household-stand-up-pouch-with-zipper-sp248-1601869433090/",
+      "retained": "https://uniquepouches.com/custom-ups-0248-holographic-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-matcha-tea-stand-up-pouch-with-zipper-sp080-1601572634997/",
+      "retained": "https://uniquepouches.com/custom-ups-0080-matte-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-matcha-tea-stand-up-pouch-with-zipper-sp084-1601361112927/",
+      "retained": "https://uniquepouches.com/custom-ups-0084-foil-laminate-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-foil-powder-stand-up-pouch-with-window-sp472-10000033451291/",
+      "retained": "https://uniquepouches.com/custom-ups-0472-matte-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-food-flat-bottom-pouch-with-zipper-sp314-1601793258694/",
+      "retained": "https://uniquepouches.com/custom-ups-0116-matte-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-food-stand-up-pouch-sp302-1600565803992/",
+      "retained": "https://uniquepouches.com/custom-ups-0302-matte-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-food-stand-up-pouch-with-window-sp292-1601002196002/",
+      "retained": "https://uniquepouches.com/custom-ups-0292-matte-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-food-stand-up-pouch-with-zipper-sp117-1600586736433/",
+      "retained": "https://uniquepouches.com/custom-ups-0117-matte-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-food-stand-up-pouch-with-zipper-sp297-1600758927158/",
+      "retained": "https://uniquepouches.com/custom-ups-0297-matte-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-garment-packaging-pouch-with-zipper-sp146-1601265386590/",
+      "retained": "https://uniquepouches.com/custom-ups-0146-matte-apparel-custom-packaging-bag.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-juice-spout-pouch-sp294-1600830557291/",
+      "retained": "https://uniquepouches.com/custom-ups-0294-matte-beverage-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-kraft-pet-food-stand-up-pouch-with-window-sp180-1601602647571/",
+      "retained": "https://uniquepouches.com/custom-ups-0180-kraft-look-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-kraft-tea-stand-up-pouch-with-zipper-sp455-1600891695958/",
+      "retained": "https://uniquepouches.com/custom-ups-0455-kraft-look-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-matcha-tea-stand-up-pouch-sp071-1601277591433/",
+      "retained": "https://uniquepouches.com/custom-ups-0071-matte-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-matcha-tea-stand-up-pouch-with-zipper-sp082-1601812553454/",
+      "retained": "https://uniquepouches.com/custom-ups-0082-matte-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-nut-stand-up-pouch-with-window-sp121-1601805890763/",
+      "retained": "https://uniquepouches.com/custom-ups-0121-matte-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-nut-stand-up-pouch-with-window-sp126-1601643600359/",
+      "retained": "https://uniquepouches.com/custom-ups-0126-matte-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-personal-care-packaging-pouch-with-zipper-sp474-1600703205693/",
+      "retained": "https://uniquepouches.com/custom-ups-0474-matte-personal-care-custom-packaging-bag.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-personal-care-spout-pouch-sp497-1600619598900/",
+      "retained": "https://uniquepouches.com/custom-ups-0497-matte-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-personal-care-stand-up-pouch-with-window-sp271-1601293810890/",
+      "retained": "https://uniquepouches.com/custom-ups-0271-matte-personal-care-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-personal-care-stand-up-pouch-with-zipper-sp496-1600717197128/",
+      "retained": "https://uniquepouches.com/custom-ups-0496-matte-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-pet-food-stand-up-pouch-with-zipper-sp382-1601673651727/",
+      "retained": "https://uniquepouches.com/custom-ups-0382-matte-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-pet-food-stand-up-pouch-with-zipper-sp394-1601117562759/",
+      "retained": "https://uniquepouches.com/custom-ups-0394-matte-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-pet-treat-flat-bottom-pouch-sp408-1601915226226/",
+      "retained": "https://uniquepouches.com/custom-ups-0408-matte-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-specialty-product-stand-up-pouch-with-window-sp471-1600998649526/",
+      "retained": "https://uniquepouches.com/custom-ups-0471-matte-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-specialty-product-stand-up-pouch-with-zipper-sp374-1601924359963/",
+      "retained": "https://uniquepouches.com/custom-ups-0374-holographic-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-tea-packaging-pouch-sp160-1601397376906/",
+      "retained": "https://uniquepouches.com/custom-ups-0160-matte-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-tea-stand-up-pouch-sp281-11000036779026/",
+      "retained": "https://uniquepouches.com/custom-ups-0281-matte-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-matte-tea-stand-up-pouch-with-zipper-sp073-1601028732510/",
+      "retained": "https://uniquepouches.com/custom-ups-0073-matte-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-flat-bottom-pouch-with-window-sp132-1601914470571/",
+      "retained": "https://uniquepouches.com/custom-ups-0132-window-nut-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-flat-bottom-pouch-with-window-sp135-1601764419138/",
+      "retained": "https://uniquepouches.com/custom-ups-0135-window-nut-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-packaging-pouch-with-zipper-sp199-1601380116916/",
+      "retained": "https://uniquepouches.com/custom-ups-0199-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-packaging-pouch-with-zipper-sp295-855375031/",
+      "retained": "https://uniquepouches.com/custom-ups-0295-clear-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-stand-up-pouch-with-window-sp025-1601488917093/",
+      "retained": "https://uniquepouches.com/custom-ups-0025-window-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-stand-up-pouch-with-window-sp069-1600459173870/",
+      "retained": "https://uniquepouches.com/custom-ups-0069-window-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-stand-up-pouch-with-window-sp138-1601767574187/",
+      "retained": "https://uniquepouches.com/custom-ups-0138-window-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-stand-up-pouch-with-window-sp151-1601608738299/",
+      "retained": "https://uniquepouches.com/custom-ups-0151-window-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-stand-up-pouch-with-window-sp165-1601658516500/",
+      "retained": "https://uniquepouches.com/custom-ups-0165-window-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-stand-up-pouch-with-window-sp291-1601737970987/",
+      "retained": "https://uniquepouches.com/custom-ups-0291-window-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-stand-up-pouch-with-zipper-sp057-1600294675805/",
+      "retained": "https://uniquepouches.com/custom-ups-0057-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-stand-up-pouch-with-zipper-sp087-1600908056130/",
+      "retained": "https://uniquepouches.com/custom-ups-0087-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-stand-up-pouch-with-zipper-sp152-1601531008461/",
+      "retained": "https://uniquepouches.com/custom-ups-0152-clear-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-nut-stand-up-pouch-with-zipper-sp169-1600863780913/",
+      "retained": "https://uniquepouches.com/custom-ups-0169-nut-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-personal-care-packaging-pouch-with-window-sp422-1601808449068/",
+      "retained": "https://uniquepouches.com/custom-ups-0422-window-personal-care-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-personal-care-spout-pouch-sp125-1601598705384/",
+      "retained": "https://uniquepouches.com/custom-ups-0125-personal-care-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-personal-care-spout-pouch-sp203-1600224968678/",
+      "retained": "https://uniquepouches.com/custom-ups-0203-clear-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-personal-care-spout-pouch-sp260-1601356671894/",
+      "retained": "https://uniquepouches.com/custom-ups-0260-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-personal-care-spout-pouch-sp283-1601455339087/",
+      "retained": "https://uniquepouches.com/custom-ups-0283-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-personal-care-spout-pouch-sp421-1601397199512/",
+      "retained": "https://uniquepouches.com/custom-ups-0421-clear-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-personal-care-spout-pouch-sp451-1601734988969/",
+      "retained": "https://uniquepouches.com/custom-ups-0451-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-personal-care-spout-pouch-sp510-1601802267727/",
+      "retained": "https://uniquepouches.com/custom-ups-0510-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-personal-care-spout-pouch-sp513-1601515272975/",
+      "retained": "https://uniquepouches.com/custom-ups-0513-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-personal-care-spout-pouch-sp534-1600155031421/",
+      "retained": "https://uniquepouches.com/custom-ups-0534-clear-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-personal-care-stand-up-pouch-with-window-sp113-1601833101126/",
+      "retained": "https://uniquepouches.com/custom-ups-0113-window-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-personal-care-stand-up-pouch-with-zipper-sp276-1601934782387/",
+      "retained": "https://uniquepouches.com/custom-ups-0276-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-personal-care-stand-up-pouch-with-zipper-sp279-1600643327393/",
+      "retained": "https://uniquepouches.com/custom-ups-0279-personal-care-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-flat-bottom-pouch-with-zipper-sp310-1601106837794/",
+      "retained": "https://uniquepouches.com/custom-ups-0310-pet-food-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-specialty-bag-with-window-sp402-1601676418599/",
+      "retained": "https://uniquepouches.com/custom-ups-0402-pet-food-vacuum-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-stand-up-pouch-sp307-1600942219403/",
+      "retained": "https://uniquepouches.com/custom-ups-0307-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-stand-up-pouch-sp550-1601299427761/",
+      "retained": "https://uniquepouches.com/custom-ups-0550-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-stand-up-pouch-with-window-sp186-1601671134573/",
+      "retained": "https://uniquepouches.com/custom-ups-0186-window-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-stand-up-pouch-with-zipper-sp157-1601906267150/",
+      "retained": "https://uniquepouches.com/custom-ups-0157-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-stand-up-pouch-with-zipper-sp158-1601906141494/",
+      "retained": "https://uniquepouches.com/custom-ups-0158-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-stand-up-pouch-with-zipper-sp170-1601520379695/",
+      "retained": "https://uniquepouches.com/custom-ups-0170-clear-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-stand-up-pouch-with-zipper-sp252-1600578059988/",
+      "retained": "https://uniquepouches.com/custom-ups-0252-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-stand-up-pouch-with-zipper-sp306-1601523335579/",
+      "retained": "https://uniquepouches.com/custom-ups-0306-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-stand-up-pouch-with-zipper-sp308-1601429400106/",
+      "retained": "https://uniquepouches.com/custom-ups-0308-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-stand-up-pouch-with-zipper-sp319-1601635348157/",
+      "retained": "https://uniquepouches.com/custom-ups-0319-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-stand-up-pouch-with-zipper-sp442-1601520363705/",
+      "retained": "https://uniquepouches.com/custom-ups-0442-clear-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-food-stand-up-pouch-with-zipper-sp468-1601218784641/",
+      "retained": "https://uniquepouches.com/custom-ups-0468-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-treat-packaging-pouch-with-zipper-sp092-1601762158681/",
+      "retained": "https://uniquepouches.com/custom-ups-0092-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-pet-treat-stand-up-pouch-with-zipper-sp228-1601819421708/",
+      "retained": "https://uniquepouches.com/custom-ups-0228-pet-food-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-powder-stand-up-pouch-with-zipper-sp300-1601688359537/",
+      "retained": "https://uniquepouches.com/custom-ups-0300-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-powder-stand-up-pouch-with-zipper-sp485-1600557886785/",
+      "retained": "https://uniquepouches.com/custom-ups-0485-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-protein-powder-flat-bottom-pouch-with-zipper-sp288-1601724725671/",
+      "retained": "https://uniquepouches.com/custom-ups-0288-powder-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-protein-powder-pouch-for-retort-review-with-zipper-sp492-1601366377758/",
+      "retained": "https://uniquepouches.com/custom-ups-0492-powder-retort-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-protein-powder-spout-pouch-sp258-11000034702311/",
+      "retained": "https://uniquepouches.com/custom-ups-0258-powder-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-protein-powder-stand-up-pouch-with-zipper-sp072-1601688446906/",
+      "retained": "https://uniquepouches.com/custom-ups-0072-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-protein-powder-stand-up-pouch-with-zipper-sp078-1601817731841/",
+      "retained": "https://uniquepouches.com/custom-ups-0078-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-protein-powder-stand-up-pouch-with-zipper-sp103-1601488873204/",
+      "retained": "https://uniquepouches.com/custom-ups-0103-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-protein-powder-stand-up-pouch-with-zipper-sp154-1600439506938/",
+      "retained": "https://uniquepouches.com/custom-ups-0154-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-protein-powder-stand-up-pouch-with-zipper-sp239-1601244533813/",
+      "retained": "https://uniquepouches.com/custom-ups-0239-powder-flat-bottom-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-protein-powder-stand-up-pouch-with-zipper-sp315-1601826329283/",
+      "retained": "https://uniquepouches.com/custom-ups-0315-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-protein-powder-stand-up-pouch-with-zipper-sp429-1600364049381/",
+      "retained": "https://uniquepouches.com/custom-ups-0429-beverage-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-protein-powder-stand-up-pouch-with-zipper-sp436-11000028671525/",
+      "retained": "https://uniquepouches.com/custom-ups-0436-powder-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-shampoo-spout-pouch-sp104-1601144549635/",
+      "retained": "https://uniquepouches.com/custom-ups-0104-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-shampoo-spout-pouch-sp115-1601281659290/",
+      "retained": "https://uniquepouches.com/custom-ups-0115-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-shampoo-spout-pouch-sp272-1600653821741/",
+      "retained": "https://uniquepouches.com/custom-ups-0272-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-shampoo-spout-pouch-sp280-1601002729448/",
+      "retained": "https://uniquepouches.com/custom-ups-0280-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-shampoo-spout-pouch-sp458-1601898096151/",
+      "retained": "https://uniquepouches.com/custom-ups-0458-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-shampoo-spout-pouch-sp504-1601463526126/",
+      "retained": "https://uniquepouches.com/custom-ups-0504-refill-spout-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-specialty-product-packaging-pouch-with-zipper-sp525-1601428590402/",
+      "retained": "https://uniquepouches.com/custom-ups-0525-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-specialty-product-side-gusset-pouch-sp048-1601488870601/",
+      "retained": "https://uniquepouches.com/custom-ups-0048-side-gusset-bag.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-specialty-product-stand-up-pouch-sp439-1601281624392/",
+      "retained": "https://uniquepouches.com/custom-ups-0439-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-specialty-product-stand-up-pouch-sp553-1601819737932/",
+      "retained": "https://uniquepouches.com/custom-ups-0553-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-specialty-product-stand-up-pouch-with-window-sp226-1601679317672/",
+      "retained": "https://uniquepouches.com/custom-ups-0226-window-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-specialty-product-stand-up-pouch-with-window-sp536-1601314193722/",
+      "retained": "https://uniquepouches.com/custom-ups-0536-window-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-specialty-product-stand-up-pouch-with-zipper-sp377-1601585579143/",
+      "retained": "https://uniquepouches.com/custom-ups-0377-clear-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-tea-packaging-pouch-with-zipper-sp222-1600779952839/",
+      "retained": "https://uniquepouches.com/custom-ups-0222-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-tea-stand-up-pouch-with-zipper-sp081-1600699316148/",
+      "retained": "https://uniquepouches.com/custom-ups-0081-tea-stand-up-pouch.html"
+    },
+    {
+      "url": "https://standpouchy.com/products/custom-tea-stand-up-pouch-with-zipper-sp341-1601094486848/",
+      "retained": "https://uniquepouches.com/custom-ups-0341-clear-tea-flat-bottom-pouch.html"
+    }
+  ],
+  "errors": []
+}

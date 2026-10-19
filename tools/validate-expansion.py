@@ -18,6 +18,7 @@ class Content(HTMLParser):
   if self.depth:self.words+=re.findall(r"\b[\w'-]+\b",value)
 
 index=json.loads((ROOT/'assets/catalog-index.json').read_text());paths=json.loads((ROOT/'content/alibaba-catalog/item-paths.json').read_text())
+paths.update({p['id']:p['path'] for p in json.loads((ROOT/'content/pouch-sources/products.json').read_text())})
 errors=[];product_words=[];guide_words={}
 for item in index:
  text=(ROOT/item['path'].strip('/')/'index.html').read_text()

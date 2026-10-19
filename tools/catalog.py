@@ -126,6 +126,18 @@ for product_id, record in catalog_records.items():
   if value and not re.search(r'Finer|Xiamen|https?://',value,re.I):record['facts'].append((label,value))
  record['family']='packaging-accessories' if product_profile(record) in ['label','print','display'] else 'bags' if product_profile(record) in ['bag','poly','pouch'] else 'paper-boxes'
 
+# Verified source references join the existing catalog without changing its URLs.
+pouch_data = ROOT / 'content/pouch-sources'
+pouch_products = json.loads((pouch_data / 'products.json').read_text()) if (pouch_data / 'products.json').exists() else []
+for group_id, label in [('pouch-stand-up','Stand-up pouches'), ('pouch-flat-bottom','Flat-bottom pouches'), ('pouch-side-gusset','Side-gusset pouches'), ('pouch-spout','Spout & refill pouches'), ('pouch-flat','Flat pouches & sachets'), ('pouch-specialty','Specialty flexible packaging')]:
+ ids = [p['id'] for p in pouch_products if group_id in p['groups']]
+ if ids:
+  catalog_groups[group_id] = dict(id=group_id, public_name=label, slug=catalog_slug(label))
+  catalog_selection[group_id] = ids
+for record in pouch_products:
+ catalog_records[record['id']] = record
+ catalog_selection['919632767'].append(record['id'])
+
 FAMILIES={'paper-boxes':'Paper boxes','bags':'Bags & pouches','packaging-accessories':'Packaging accessories'}
 def catalog_chat(record):
  return 'https://wa.me/8615105916426?text='+quote('Hello PackHubGlobe, I would like a quote for '+record['name']+' ('+record['reference']+').\nProduct: '+ORIGIN+record['path']+'\nQuantity: 500 pieces or more\nCustom size: \nLogo / printing: \nDelivery country: \nPlease advise the material, sample options and quotation.')
@@ -192,6 +204,8 @@ for product_id, record in catalog_records.items():
  body=detailhero(group['public_name'],esc(name),reference+' · Custom size and printed artwork available for specification review.',visual,name+' · '+reference,'<a href="/catalog/">Product collection</a> / <a href="/catalog/'+group['slug']+'/">'+esc(group['public_name'])+'</a>')
  rows=[('Minimum order quantity','500 pieces')]+list(record['facts'])
  body+='<section class="section wrap product-details"><div><h2>Product details.</h2>'+specs(rows)+'<p class="smallnote">These are reference specifications. Confirm the material, dimensions, finish and sample for your order. MOQ: 500 pieces. Packaging shown is a printing reference; branded contents are not included.</p></div><aside class="help-note"><h3>Make this packaging yours.</h3><p>Share your product dimensions, quantity per design, artwork and delivery country. Include reference '+reference+' in your enquiry.</p><div class="actions">'+button('Request a quote',qurl(name+' · '+reference))+'<a class="textlink" href="https://wa.me/8615105916426?text='+catalog_chat(record).split('?text=',1)[1]+'" target="_blank" rel="noopener noreferrer">Discuss on WhatsApp ↗</a></div><a class="textlink" href="/guides/packaging-quote-checklist/">Prepare your specification</a></aside></section>'
+ if record.get('review_note'):
+  body+='<section class="section wrap"><h2>Points to confirm for this reference.</h2><p>'+esc(record['review_note'])+'</p></section>'
  body+=product_editorial(record,rows)
  related_items=[r for id,r in catalog_records.items() if id!=product_id and r['family']==record['family'] and set(r['groups'])&set(record['groups'])][:3]
  body+='<section class="section wrap"><h2>Compare related product references.</h2><div class="catalog-grid related-products">'+''.join(catalog_card(r,'h3') for r in related_items)+'</div></section>'
@@ -214,4 +228,4 @@ with map_file.open('w',encoding='utf-8-sig',newline='') as stream:
 # Small search index uses only the curated public fields; original metadata remains in content/.
 search=[{'name':r['name'],'reference':r['reference'],'path':r['path'],'image':r['image']['path'],'family':r['family'],'chat':catalog_chat(r),'searchText':' '.join(value for label,value in r['facts']),'facts':[['MOQ','500 pieces']]+[(label,catalog_fact_preview(value)) for label,value in r['facts'][:5]],'groups':[catalog_groups[g]['public_name'] for g in r['groups']]} for r in catalog_records.values()]
 (ROOT/'assets/catalog-index.json').write_text(json.dumps(search,ensure_ascii=False))
-(catalog_data/'publication.json').write_text(json.dumps({'products':len(catalog_records),'groups':{id:{'name':g['public_name'],'published':len(catalog_selection[id]),'candidates':len(json.loads((catalog_data/'listings.json').read_text())[id])} for id,g in catalog_groups.items()},'public_paths':[p[0] for p in PAGES if p[0].startswith('/catalog/')]},indent=2))
+(catalog_data/'publication.json').write_text(json.dumps({'products':len(catalog_records),'groups':{id:{'name':g['public_name'],'published':len(catalog_selection[id]),'candidates':len(json.loads((catalog_data/'listings.json').read_text()).get(id, catalog_selection[id]))} for id,g in catalog_groups.items()},'public_paths':[p[0] for p in PAGES if p[0].startswith('/catalog/')]},indent=2))

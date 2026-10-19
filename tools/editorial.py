@@ -10,6 +10,7 @@ def question_list(items):
  return '<div class="faq">'+''.join('<details><summary>'+esc(q)+'</summary><p>'+esc(a)+'</p></details>' for q,a in items)+'</div>'
 
 def product_profile(record):
+ if record.get('profile') == 'pouch':return 'pouch'
  groups=set(record['groups'])
  if '953304411' in groups:return 'display'
  if '803759676' in groups:return 'label'

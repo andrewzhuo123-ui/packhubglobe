@@ -151,16 +151,49 @@ def catalog_chat(record):
 def family_nav(base):
  return '<nav class="family-nav" aria-label="Packaging families"><a href="/catalog/"'+(' aria-current="page"' if base=='/catalog/' else '')+'>All products</a>'+''.join('<a href="/catalog/'+slug+'/"'+(' aria-current="page"' if base=='/catalog/'+slug+'/' else '')+'>'+title+'</a>' for slug,title in FAMILIES.items())+'</nav>'
 
+# Keep format navigation separate from secondary application/source collections.
+CATALOG_NAV={
+ 'paper-boxes':(['920016676','folding-cartons','953980869','953294826','954034112','803631155'],['952891404','handle-carry-boxes','pillow-boxes','920318966']),
+ 'bags':(['pouch-stand-up','pouch-flat-bottom','pouch-spout','pouch-flat','952968758','952857851'],['pouch-side-gusset','pouch-specialty','953294833','954072335','gift-carry-bags','beverage-straw-pouches','bag-in-box','roll-bags-liners']),
+ 'packaging-accessories':(['807897313','952983140','803759676','packaging-sleeves','953304411','molded-pulp-inserts'],['candle-dust-covers','presentation-container-references'])
+}
+CATALOG_USES=['803708590','810538305','921840222','920793609','920803216']
+
+def catalog_nav_link(group_id,base):
+ group=catalog_groups[group_id]
+ return '<a href="/catalog/'+group['slug']+'/"'+(' aria-current="page"' if base=='/catalog/'+group['slug']+'/' else '')+'>'+esc(group['public_name'])+' <span>'+str(len(catalog_selection[group_id]))+'</span></a>'
+
+def catalog_navigation(base):
+ result='<aside class="catalog-sidebar"><details class="catalog-browse" open><summary>Categories</summary><nav aria-label="Product categories"><a class="catalog-all" href="/catalog/">All products</a>'
+ for family,(main,more) in CATALOG_NAV.items():
+  active=base=='/catalog/'+family+'/' or any(base=='/catalog/'+catalog_groups[g]['slug']+'/' for g in main+more)
+  result+='<details'+(' open' if active else '')+'><summary>'+FAMILIES[family]+'</summary><a href="/catalog/'+family+'/"'+(' aria-current="page"' if base=='/catalog/'+family+'/' else '')+'>All '+FAMILIES[family].lower()+'</a>'+''.join(catalog_nav_link(g,base) for g in main)
+  if more:
+   result+='<details class="catalog-more"'+(' open' if any(base=='/catalog/'+catalog_groups[g]['slug']+'/' for g in more) else '')+'><summary>More formats</summary>'+''.join(catalog_nav_link(g,base) for g in more)+'</details>'
+  result+='</details>'
+ result+='<details'+(' open' if any(base=='/catalog/'+catalog_groups[g]['slug']+'/' for g in CATALOG_USES) else '')+'><summary>By use</summary>'+''.join(catalog_nav_link(g,base) for g in CATALOG_USES)+'</details></nav></details></aside>'
+ return result
+
+def catalog_family_choices():
+ descriptions={'paper-boxes':'Mailers, folding cartons and gift boxes.','bags':'Flexible pouches, shopping bags and mailing bags.','packaging-accessories':'Cards, labels, sleeves, inserts and displays.'}
+ result='<section class="wrap catalog-family-choices" aria-label="Choose a packaging family">'
+ for family,title in FAMILIES.items():
+  records=[r for r in catalog_records.values() if r['family']==family]
+  result+='<a class="catalog-family-choice" href="/catalog/'+family+'/"><h2>'+title+' <span aria-hidden="true">↗</span></h2><p>'+descriptions[family]+'</p><span>'+str(len(records))+' products</span></a>'
+ return result+'</section>'
+
 def catalog_fact_preview(value):
  parts=value.split(', ')
  if len(parts)>3:return ', '.join(parts[:3])+' +'+str(len(parts)-3)+' more'
  return value if len(value)<=95 else value[:95].rsplit(' ',1)[0]+'…'
 
-def catalog_card(record,heading='h2'):
+def catalog_card(record,heading='h2',compact=False):
  image = record['image'];name = esc(record['name']);path = record['path']
  group = catalog_groups[record['groups'][0]]['public_name']
  facts = '<div class="moq-fact"><dt>MOQ</dt><dd>500 pieces</dd></div>'+''.join('<div><dt>'+label+'</dt><dd>'+esc(catalog_fact_preview(value))+'</dd></div>'
                  for label,value in record['facts'][:5])
+ if compact:
+  return '<article class="catalog-card compact-card"><a class="catalog-photo" href="'+path+'"><img src="'+image['path']+'" alt="'+name+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" loading="lazy"></a><div class="catalog-copy"><p class="eyebrow">'+esc(group)+'</p><'+heading+'><a href="'+path+'">'+name+'</a></'+heading+'><p class="catalog-ref">'+record['reference']+'</p><p class="compact-moq">From 500 pieces</p><a class="textlink" href="'+path+'">View details ↗</a></div></article>'
  return '<article class="catalog-card"><a class="catalog-photo" href="'+path+'"><img src="'+image['path']+'" alt="'+esc(record['name'],quote=True)+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" loading="lazy"></a><div class="catalog-copy"><p class="eyebrow">'+esc(group)+'</p><'+heading+'><a href="'+path+'">'+name+'</a></'+heading+'><dl class="catalog-facts">'+facts+'</dl><p class="catalog-ref">'+record['reference']+'</p><div class="catalog-actions"><a class="textlink" href="'+path+'">View details ↗</a>'+button('Get a quote',qurl(record['name']+' · '+record['reference']))+'<a class="button chat-now" href="'+esc(catalog_chat(record),quote=True)+'" target="_blank" rel="noopener noreferrer">Chat now · WhatsApp</a></div></div></article>'
 
 def catalog_pagination(base,page,total):
@@ -187,8 +220,11 @@ def catalog_listing(base,name,ids,all_products=False):
   if not description:raise ValueError('Missing collection copy: '+base)
   if page>1:description+=' Page '+str(page)+'.'
   body=intro('Product collection',name+'.',description,'<a href="/catalog/">Product collection</a>'+(' / '+esc(name) if not all_products else ''))
-  body+='<div class="wrap">'+family_nav(base)+'</div>'
-  body+='<section class="wrap catalog-layout"><aside class="catalog-sidebar"><details'+(' open' if all_products else '')+'><summary>Browse packaging</summary><a href="/catalog/">All products</a>'+''.join('<a href="/catalog/'+g['slug']+'/"'+(' aria-current="page"' if base=='/catalog/'+g['slug']+'/' else '')+'>'+esc(g['public_name'])+' <span>'+str(len(catalog_selection[id]))+'</span></a>' for id,g in catalog_groups.items())+'</details><a class="textlink" href="/products/">Compare packaging formats ↗</a></aside><div class="catalog-results"><div class="catalog-toolbar"><p>'+str(len(ids))+(' product' if len(ids)==1 else ' products')+' · Page '+str(page)+' of '+str(total)+'</p><div class="catalog-search" hidden><label for="catalog-search">Search all products</label><input type="search" id="catalog-search" placeholder="Try a format, material or PHG reference" autocomplete="off"><button type="button" id="catalog-clear">Clear</button></div></div><p id="catalog-search-status" class="smallnote" role="status" aria-live="polite"></p><div class="catalog-grid" id="catalog-grid">'+''.join(catalog_card(catalog_records[id]) for id in ids[(page-1)*24:page*24])+'</div>'+catalog_pagination(base,page,total)+'</div></section>'+cta()
+  if all_products and page==1:body+=catalog_family_choices()
+  else:body+='<div class="wrap">'+family_nav(base)+'</div>'
+  scope='family:'+base.split('/')[-2] if base.split('/')[-2] in FAMILIES else 'group:'+catalog_groups[group_id]['public_name'] if group_id else 'all'
+  search_label='Search all products' if all_products else 'Search this category'
+  body+='<section class="wrap catalog-layout" data-catalog-scope="'+esc(scope,quote=True)+'">'+catalog_navigation(base)+'<div class="catalog-results"><div class="catalog-toolbar"><p>'+str(len(ids))+(' product' if len(ids)==1 else ' products')+' · Page '+str(page)+' of '+str(total)+'</p><div class="catalog-search" hidden><label for="catalog-search">'+search_label+'</label><input type="search" id="catalog-search" placeholder="Name, material or PHG reference" autocomplete="off"><button type="button" id="catalog-clear">Clear</button></div></div><p id="catalog-search-status" class="smallnote" role="status" aria-live="polite"></p><div class="catalog-grid" id="catalog-grid">'+''.join(catalog_card(catalog_records[id],compact=True) for id in ids[(page-1)*24:page*24])+'</div>'+catalog_pagination(base,page,total)+'</div></section>'+cta()
   listing_schema={'@type':'ItemList','name':name,'numberOfItems':len(ids),'itemListElement':[{'@type':'ListItem','position':(page-1)*24+i+1,'url':ORIGIN+catalog_records[id]['path']} for i,id in enumerate(ids[(page-1)*24:page*24])]}
   write(path,name+(' · Page '+str(page) if page>1 else '')+' | PackHubGlobe',description.split('. ',1)[0]+('. Page '+str(page)+'.' if page>1 else '.'),body,[listing_schema])
 

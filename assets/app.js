@@ -4,16 +4,27 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menuButton?.getAttr
 const form=document.querySelector('#quote-form');
 if(form){const params=new URLSearchParams(location.search);const product=params.get('product');if(product){const option=[...form.elements.product.options].find(o=>o.value===product);if(option)form.elements.product.value=product;else{form.elements.product.add(new Option(product,product,true,true));form.elements.details.value=`Interested in: ${product}\n`}}
 const brief=()=>{const d=new FormData(form);return ['PACKHUBGLOBE — PACKAGING REQUEST',...['name','email','company','product','quantity','country','size','unit','timing','details'].map(k=>`${k[0].toUpperCase()+k.slice(1)}: ${d.get(k)||'Not specified'}`),'','Please review format, material, artwork, sampling, MOQ and shipping options.'].join('\n')};
+const attachments=document.querySelector('#attachments');
+const validateAttachments=()=>{
+ if(!attachments)return;
+ const files=[...attachments.files];let message='';
+ if(files.length>5)message='Please attach no more than 5 files.';
+ else if(files.some(file=>!file.size||file.size>5*1024*1024))message='Each file must be non-empty and 5 MB or less.';
+ else if(files.reduce((total,file)=>total+file.size,0)>10*1024*1024)message='Attachments must total 10 MB or less.';
+ else if(files.some(file=>! /\.(jpe?g|png|webp|pdf|ai|psd|eps|zip)$/i.test(file.name)))message='Use JPG, PNG, WebP, PDF, AI, PSD, EPS or ZIP files.';
+ attachments.setCustomValidity(message);
+};
+attachments?.addEventListener('change',()=>{validateAttachments();attachments.reportValidity()});
 let sending=false;
 form.addEventListener('submit',async e=>{
- e.preventDefault();if(sending||!form.reportValidity())return;
+ e.preventDefault();validateAttachments();if(sending||!form.reportValidity())return;
  const button=form.querySelector('button[type="submit"]');const result=document.querySelector('#form-result');
  sending=true;button.disabled=true;button.textContent='Sending…';result.hidden=false;result.textContent='Sending your enquiry…';
  try{
   const response=await fetch('/request-quote/send.php',{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
   const data=await response.json();
   if(!response.ok||data.ok!==true)throw new Error(data.message||'Your enquiry could not be sent. Please try again or email andrew@packhubglobe.com.');
-  result.textContent='Your enquiry has been submitted for email delivery. You can send artwork or reference files to andrew@packhubglobe.com.';
+  result.textContent='Your enquiry and any attached files have been submitted for email delivery.';
  }catch(error){result.textContent=(error instanceof SyntaxError||error.name==='TypeError')?'The enquiry service is unavailable. Please try again or email andrew@packhubglobe.com.':error.message||'Your enquiry could not be sent. Please try again or email andrew@packhubglobe.com.'}
  finally{sending=false;button.disabled=false;button.textContent='Send enquiry';result.scrollIntoView({block:'nearest',behavior:'smooth'})}
 });

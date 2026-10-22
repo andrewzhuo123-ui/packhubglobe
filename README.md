@@ -42,7 +42,7 @@ The owner deploys this GitHub repository to Hostinger. Git push is not proof of 
 
 ## Enquiries
 
-The form posts to `request-quote/send.php` on PHP hosting and submits the enquiry to **andrew@packhubglobe.com** through the host’s `mail()` transport. The visitor’s validated email is used as Reply-To. Required fields, consent, a honeypot and a per-IP one-minute cooldown are checked on the server. A success response confirms acceptance by the mail transport, not inbox receipt. Failures preserve form input and show direct email/WhatsApp alternatives. Downloading a brief remains local; artwork is sent separately by email.
+The form posts to `request-quote/send.php` on PHP hosting and submits the enquiry to **andrew@packhubglobe.com** through the host’s `mail()` transport. The visitor’s validated email is used as Reply-To. Required fields, consent, a honeypot and a per-IP one-minute cooldown are checked on the server. A success response confirms acceptance by the mail transport, not inbox receipt. Failures preserve form input and show direct email/WhatsApp alternatives. Downloading a brief remains local; up to 5 JPG/PNG/WebP/PDF/AI/PSD/EPS/ZIP attachments are included in the email (5 MB each, 10 MB total). The server checks upload errors, size, extension and file signatures. Files remain in PHP temporary storage and are not published. `request-quote/.user.ini` sets PHP upload limits.
 
 ## Images and claims
 

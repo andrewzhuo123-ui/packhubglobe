@@ -16,8 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 if (isset($_SERVER['HTTP_ORIGIN']) && !in_array($_SERVER['HTTP_ORIGIN'], ['https://www.packhubglobe.com', 'https://packhubglobe.com'], true)) {
     respond(403, false, 'Please submit the form from packhubglobe.com.');
 }
-if ((int) ($_SERVER['CONTENT_LENGTH'] ?? 0) > 32768) {
-    respond(413, false, 'Your enquiry is too long. Please shorten the project details.');
+if ((int) ($_SERVER['CONTENT_LENGTH'] ?? 0) > 11 * 1024 * 1024) {
+    respond(413, false, 'Attachments must total 10 MB or less.');
 }
 
 $fields = [];
@@ -42,6 +42,55 @@ if (!filter_var($fields['email'], FILTER_VALIDATE_EMAIL) || preg_match('/[\r\n]/
     respond(422, false, 'Please enter a valid email address.');
 }
 
+$attachments = [];
+$totalSize = 0;
+if (isset($_FILES['attachments'])) {
+    $upload = $_FILES['attachments'];
+    foreach (['name', 'tmp_name', 'error'] as $key) {
+        if (!isset($upload[$key]) || !is_array($upload[$key])) {
+            respond(422, false, 'Please select the attachments again.');
+        }
+    }
+    if (count($upload['name']) > 5) {
+        respond(422, false, 'Please attach no more than 5 files.');
+    }
+    foreach ($upload['name'] as $index => $name) {
+        $error = $upload['error'][$index] ?? null;
+        if ($error === UPLOAD_ERR_NO_FILE) continue;
+        if ($error !== UPLOAD_ERR_OK) {
+            respond(422, false, 'A file could not be uploaded. Each file must be 5 MB or less. Please select it again.');
+        }
+        $path = $upload['tmp_name'][$index] ?? null;
+        if (!is_string($name) || !is_string($path) || !is_uploaded_file($path)) {
+            respond(422, false, 'Please select the attachments again.');
+        }
+        $size = filesize($path);
+        $totalSize += $size;
+        if ($size === 0 || $size > 5 * 1024 * 1024 || $totalSize > 10 * 1024 * 1024) {
+            respond(422, false, 'Use non-empty files up to 5 MB each and 10 MB in total.');
+        }
+        $extension = strtolower(pathinfo($name, PATHINFO_EXTENSION));
+        $signature = file_get_contents($path, false, null, 0, 12);
+        $types = [
+            'jpg' => ['image/jpeg', strncmp($signature, "\xff\xd8\xff", 3) === 0],
+            'jpeg' => ['image/jpeg', strncmp($signature, "\xff\xd8\xff", 3) === 0],
+            'png' => ['image/png', strncmp($signature, "\x89PNG\r\n\x1a\n", 8) === 0],
+            'webp' => ['image/webp', substr($signature, 0, 4) === 'RIFF' && substr($signature, 8, 4) === 'WEBP'],
+            'pdf' => ['application/pdf', strncmp($signature, '%PDF-', 5) === 0],
+            'ai' => ['application/postscript', strncmp($signature, '%PDF-', 5) === 0 || strncmp($signature, '%!PS', 4) === 0],
+            'eps' => ['application/postscript', strncmp($signature, '%!PS', 4) === 0 || substr($signature, 0, 4) === "\xc5\xd0\xd3\xc6"],
+            'psd' => ['image/vnd.adobe.photoshop', substr($signature, 0, 4) === '8BPS'],
+            'zip' => ['application/zip', in_array(substr($signature, 0, 4), ["PK\x03\x04", "PK\x05\x06", "PK\x07\x08"], true)]
+        ];
+        if (!isset($types[$extension]) || !$types[$extension][1]) {
+            respond(422, false, 'Use JPG, PNG, WebP, PDF, AI, PSD, EPS or ZIP files with the correct file extension.');
+        }
+        // Keep names out of raw MIME headers; uploaded files stay in PHP temporary storage.
+        $filename = basename(str_replace('\\', '/', $name));
+        $attachments[] = ['path' => $path, 'name' => $filename, 'type' => $types[$extension][0]];
+    }
+}
+
 // Serialize requests per IP and allow one successful submission per minute.
 $lock = @fopen(sys_get_temp_dir() . '/phg-enquiry-' . hash('sha256', $_SERVER['REMOTE_ADDR'] ?? 'unknown'), 'c+');
 if (!$lock || !flock($lock, LOCK_EX)) {
@@ -64,7 +113,19 @@ $headers = [
     'Content-Type' => 'text/plain; charset=UTF-8',
     'Content-Transfer-Encoding' => 'base64'
 ];
-$sent = function_exists('mail') && @mail('andrew@packhubglobe.com', 'PackHubGlobe packaging enquiry', chunk_split(base64_encode($body)), $headers);
+$message = chunk_split(base64_encode($body));
+if ($attachments) {
+    $boundary = 'phg-' . bin2hex(random_bytes(16));
+    $headers['Content-Type'] = 'multipart/mixed; boundary="' . $boundary . '"';
+    unset($headers['Content-Transfer-Encoding']);
+    $message = '--' . $boundary . "\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n" . $message;
+    foreach ($attachments as $file) {
+        $filename = rawurlencode($file['name']);
+        $message .= '--' . $boundary . "\r\nContent-Type: " . $file['type'] . "\r\nContent-Disposition: attachment; filename*=UTF-8''" . $filename . "\r\nContent-Transfer-Encoding: base64\r\n\r\n" . chunk_split(base64_encode(file_get_contents($file['path'])));
+    }
+    $message .= '--' . $boundary . "--\r\n";
+}
+$sent = function_exists('mail') && @mail('andrew@packhubglobe.com', 'PackHubGlobe packaging enquiry', $message, $headers);
 if (!$sent) {
     respond(503, false, 'Your enquiry could not be sent. Please email andrew@packhubglobe.com or contact us on WhatsApp.');
 }

@@ -7,7 +7,7 @@ Self-contained English B2B custom packaging website for **https://www.packhubglo
 - 2,247 public pages plus a branded `404.html`.
 - 1,824 catalog products in three primary catalog families, 44 detailed product formats, 15 industry solutions, materials and services, ten buyer guides, company/contact and information pages.
 - Local fonts and five original AI packaging images with fictional logos and slogans. No external runtime dependencies.
-- Responsive navigation, category filters, native FAQ accordions, prefilled enquiry brief, email draft and text download.
+- Responsive navigation, category filters, native FAQ accordions, prefilled enquiry form, server email submission and text download.
 - Unique titles, meta descriptions, H1s, canonical URLs, image alt text, semantic HTML, JSON-LD, sitemap and robots.
 
 ## Local preview
@@ -42,7 +42,7 @@ The owner deploys this GitHub repository to Hostinger. Git push is not proof of 
 
 ## Enquiries
 
-The form prepares a complete brief in the visitor’s browser. The visitor can open a draft to **andrew@packhubglobe.com** and send it using their email client, or download the text and attach artwork manually. The site does not perform server-side mail delivery. It never reports an enquiry as sent automatically. A direct email link is also provided.
+The form posts to `request-quote/send.php` on PHP hosting and submits the enquiry to **andrew@packhubglobe.com** through the host’s `mail()` transport. The visitor’s validated email is used as Reply-To. Required fields, consent, a honeypot and a per-IP one-minute cooldown are checked on the server. A success response confirms acceptance by the mail transport, not inbox receipt. Failures preserve form input and show direct email/WhatsApp alternatives. Downloading a brief remains local; artwork is sent separately by email.
 
 ## Images and claims
 

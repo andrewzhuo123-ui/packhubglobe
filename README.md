@@ -29,6 +29,12 @@ python3 tools/build.py
 python3 tools/validate.py
 python3 tools/validate-expansion.py
 node --check assets/app.js
+node --check assets/motion.js
+python3 tools/audit-ui.py
+node tools/test-enquiry.mjs
+node tools/test-media.mjs
+php -l request-quote/send.php
+python3 tools/test-enquiry.py
 python3 tools/package.py
 ```
 

@@ -11,6 +11,7 @@ if(!reducedMotion.matches&&'IntersectionObserver' in window){
 
 const productionRail=document.querySelector('#production-rail');
 if(productionRail){
+ const productionToggle=document.querySelector('#production-toggle');
  let playing=!reducedMotion.matches;let hovered=false;let focused=false;let visible=false;let frame;let previousTime=0;let position=0;let direction=1;
  const stopFrame=()=>{cancelAnimationFrame(frame);frame=undefined;previousTime=0};
  const animate=time=>{
@@ -23,8 +24,9 @@ if(productionRail){
   }
   previousTime=time;frame=requestAnimationFrame(animate);
  };
- const sync=()=>{stopFrame();position=productionRail.scrollLeft;if(playing&&visible&&!hovered&&!focused&&!document.hidden)frame=requestAnimationFrame(animate)};
+ const sync=()=>{stopFrame();position=productionRail.scrollLeft;if(productionToggle)productionToggle.textContent=playing?'Pause scrolling':'Play scrolling';if(playing&&visible&&!hovered&&!focused&&!document.hidden)frame=requestAnimationFrame(animate)};
  const pause=()=>{playing=false;sync()};
+ if(productionToggle){productionToggle.hidden=false;productionToggle.addEventListener('click',()=>{playing=!playing;sync()})}
  productionRail.addEventListener('pointerenter',()=>{hovered=true;sync()});
  productionRail.addEventListener('pointerleave',()=>{hovered=false;sync()});
  productionRail.addEventListener('pointerdown',pause,{passive:true});
@@ -33,7 +35,8 @@ if(productionRail){
  productionRail.addEventListener('focusin',()=>{focused=true;sync()});
  productionRail.addEventListener('focusout',event=>{focused=productionRail.contains(event.relatedTarget);sync()});
  document.addEventListener('visibilitychange',sync);
- new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync()},{threshold:.05}).observe(productionRail);
+ if('IntersectionObserver' in window)new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync()},{threshold:.05}).observe(productionRail);
+ else visible=true;
  reducedMotion.addEventListener('change',()=>{playing=!reducedMotion.matches;sync()});
  sync();
 }

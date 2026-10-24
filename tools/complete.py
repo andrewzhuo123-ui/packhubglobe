@@ -3,6 +3,7 @@ exec(compile((ROOT/'tools/editorial.py').read_text(),str(ROOT/'tools/editorial.p
 import sys
 sys.path.insert(0,str(ROOT/'content'))
 from products import PRODUCTS
+from product_buying_guides import BUYING_GUIDES
 import importlib.util
 spec=importlib.util.spec_from_file_location('packhub_collections',ROOT/'content/collections.py')
 collection=importlib.util.module_from_spec(spec);spec.loader.exec_module(collection)
@@ -42,11 +43,15 @@ for c in CATEGORIES:
   path='/products/'+family+'/'+slug+'/'
   title='Custom '+name.lower()+' with Logo Printing'
   title=title[0].upper()+title[1:]
+  buying_guide=BUYING_GUIDES.get(slug)
+  if buying_guide:
+   title=buying_guide['title'];desc=buying_guide['description']
   trail='<a href="/products/">Packaging</a> / <a href="/products/'+family+'/">'+c['name']+'</a> / '+name
   visual=format_visual(slug,name,c)
-  body=detailhero(c['name'],'Custom '+name.lower(),desc,visual,name,trail,use)
+  body=detailhero(c['name'],buying_guide['heading'] if buying_guide else 'Custom '+name.lower(),desc,visual,name,trail,use)
   body+='<section class="section wrap product-details"><div><h2>Make it your own.</h2><p>Review these details with your product and artwork.</p>'+specs([('Structure & options',options),('Sample check',check),('For your quotation','Approximate dimensions or fill weight, quantity per size and design, artwork status and delivery country.')])+'</div><aside class="help-note"><h3>Not sure where to start?</h3><p>Send a product photo or reference with your enquiry. We’ll help you define the next step.</p><a class="textlink" href="/guides/packaging-sample-types/">Understand sample options</a><a class="textlink" href="/guides/packaging-print-proof/">Review print proofs</a><p class="smallnote">Catalog references start at 500 pieces. Confirm the final features, performance requirements and quantity split in the written quotation.</p></aside></section>'
   body+='<section class="section wrap"><h2>Compare product references.</h2><p>Browse images and specification starting points for this packaging direction.</p><a class="textlink" href="'+format_collection(slug,family)+'">Browse related product references ↗</a></section>'
+  if buying_guide:body+=buying_guide['body']
   other=[family+'/'+r[0] for r in items if r[0]!=slug][:3]
   body+='<section class="section softbg"><div class="wrap"><h2>Other formats to explore.</h2>'+related(other)+'</div></section>'+cta()
   write(path,title+' | PackHubGlobe',desc,body,[{'@type':'Service','name':title,'description':desc,'serviceType':'Packaging specification and custom printing'}])

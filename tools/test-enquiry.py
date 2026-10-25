@@ -23,6 +23,7 @@ cases = [
     ('mail failure', {}, {}, 503, False),
     ('success', {}, {}, 200, True),
     ('context', {}, dict(source_page='/catalog/custom-corrugated-mailer-box-1600659751763/', product_reference='PHG-1600659751763'), 200, True),
+    ('html source', {}, dict(source_page='/404.html'), 200, True),
     ('foreign source', {}, dict(source_page='https://example.com/private'), 422, False),
     ('source query', {}, dict(source_page='/catalog/?email=private@example.com'), 422, False),
     ('bad reference', {}, dict(product_reference='PHG-123\nBcc: test@example.com'), 422, False),

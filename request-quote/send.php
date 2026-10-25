@@ -42,7 +42,7 @@ if (!filter_var($fields['email'], FILTER_VALIDATE_EMAIL) || preg_match('/[\r\n]/
     respond(422, false, 'Please enter a valid email address.');
 }
 // Optional, visitor-supplied context; never accept query strings or external URLs.
-if (($fields['source_page'] !== '' && !preg_match('~^/(?:[A-Za-z0-9_-]+/)*$~D', $fields['source_page'])) ||
+if (($fields['source_page'] !== '' && !preg_match('~^/(?:[A-Za-z0-9_-]+/)*(?:index\.html|404\.html)?$~D', $fields['source_page'])) ||
     ($fields['product_reference'] !== '' && !preg_match('/^PHG-[A-Za-z0-9-]+$/D', $fields['product_reference']))) {
     respond(422, false, 'Please check the product reference and source page.');
 }

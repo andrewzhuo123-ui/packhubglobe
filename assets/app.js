@@ -3,7 +3,9 @@ menuButton?.addEventListener('click',()=>{const open=menuButton.getAttribute('ar
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menuButton?.getAttribute('aria-expanded')==='true'){menuButton.setAttribute('aria-expanded','false');document.querySelector('.navlinks').classList.remove('open');menuButton.focus()}});
 const form=document.querySelector('#quote-form');
 if(form){const params=new URLSearchParams(location.search);const product=params.get('product');if(product){const option=[...form.elements.product.options].find(o=>o.value===product);if(option)form.elements.product.value=product;else{form.elements.product.add(new Option(product,product,true,true));form.elements.details.value=`Interested in: ${product}\n`}}
-const brief=()=>{const d=new FormData(form);return ['PACKHUBGLOBE — PACKAGING REQUEST',...['name','email','company','product','quantity','country','size','unit','timing','details'].map(k=>`${k[0].toUpperCase()+k.slice(1)}: ${d.get(k)||'Not specified'}`),'','Please review format, material, artwork, sampling, MOQ and shipping options.'].join('\n')};
+if(form.elements.product_reference)form.elements.product_reference.value=product?.match(/\bPHG-[A-Za-z0-9-]+\b/)?.[0]||'';
+if(form.elements.source_page&&document.referrer){try{const source=new URL(document.referrer);if(source.origin===location.origin&&source.pathname!==location.pathname)form.elements.source_page.value=source.pathname}catch{}}
+const brief=()=>{const d=new FormData(form);return ['PACKHUBGLOBE — PACKAGING REQUEST',...['name','email','company','product','product_reference','source_page','quantity','country','size','unit','timing','details'].map(k=>`${(k[0].toUpperCase()+k.slice(1)).replaceAll('_',' ')}: ${d.get(k)||'Not specified'}`),'','Please review format, material, artwork, sampling, MOQ and shipping options.'].join('\n')};
 const attachments=document.querySelector('#attachments');
 const validateAttachments=()=>{
  if(!attachments)return;

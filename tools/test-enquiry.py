@@ -22,6 +22,10 @@ cases = [
     ('oversized', {'CONTENT_LENGTH': '12000000'}, {}, 413, False),
     ('mail failure', {}, {}, 503, False),
     ('success', {}, {}, 200, True),
+    ('context', {}, dict(source_page='/catalog/custom-corrugated-mailer-box-1600659751763/', product_reference='PHG-1600659751763'), 200, True),
+    ('foreign source', {}, dict(source_page='https://example.com/private'), 422, False),
+    ('source query', {}, dict(source_page='/catalog/?email=private@example.com'), 422, False),
+    ('bad reference', {}, dict(product_reference='PHG-123\nBcc: test@example.com'), 422, False),
     ('cooldown', {}, {}, 429, False),
     ('attachments', {}, {}, 200, True),
     ('empty selection', {}, {}, 200, True),
@@ -90,6 +94,9 @@ register_shutdown_function(function(){echo "\\n".http_response_code();});
         message = BytesParser(policy=policy.default).parsebytes(raw.encode())
         text = message.get_body().get_content() if message.is_multipart() else message.get_content()
         assert 'Line one\nLine two' in text
+        if name == 'context':
+            assert 'Source page: /catalog/custom-corrugated-mailer-box-1600659751763/' in text
+            assert 'Product reference: PHG-1600659751763' in text
         parts = list(message.iter_attachments())
         assert len(parts) == (2 if name == 'attachments' else 0)
         if parts:

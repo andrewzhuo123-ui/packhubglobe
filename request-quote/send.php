@@ -21,7 +21,7 @@ if ((int) ($_SERVER['CONTENT_LENGTH'] ?? 0) > 11 * 1024 * 1024) {
 }
 
 $fields = [];
-foreach (['name', 'email', 'company', 'product', 'quantity', 'country', 'size', 'unit', 'timing', 'details', 'website', 'consent'] as $key) {
+foreach (['name', 'email', 'company', 'product', 'product_reference', 'source_page', 'quantity', 'country', 'size', 'unit', 'timing', 'details', 'website', 'consent'] as $key) {
     if (isset($_POST[$key]) && !is_string($_POST[$key])) {
         respond(422, false, 'Please check the form fields.');
     }
@@ -40,6 +40,11 @@ foreach (['name', 'email', 'product', 'quantity', 'country', 'consent'] as $key)
 }
 if (!filter_var($fields['email'], FILTER_VALIDATE_EMAIL) || preg_match('/[\r\n]/', $fields['email'])) {
     respond(422, false, 'Please enter a valid email address.');
+}
+// Optional, visitor-supplied context; never accept query strings or external URLs.
+if (($fields['source_page'] !== '' && !preg_match('~^/(?:[A-Za-z0-9_-]+/)*$~D', $fields['source_page'])) ||
+    ($fields['product_reference'] !== '' && !preg_match('/^PHG-[A-Za-z0-9-]+$/D', $fields['product_reference']))) {
+    respond(422, false, 'Please check the product reference and source page.');
 }
 
 $attachments = [];
@@ -103,8 +108,8 @@ if ($lastSent > time() - 60) {
 }
 
 $body = "PACKHUBGLOBE — PACKAGING REQUEST\n\n";
-foreach (['name', 'email', 'company', 'product', 'quantity', 'country', 'size', 'unit', 'timing', 'details'] as $key) {
-    $body .= ucfirst($key) . ': ' . ($fields[$key] ?: 'Not specified') . "\n";
+foreach (['name', 'email', 'company', 'product', 'product_reference', 'source_page', 'quantity', 'country', 'size', 'unit', 'timing', 'details'] as $key) {
+    $body .= ucfirst(str_replace('_', ' ', $key)) . ': ' . ($fields[$key] ?: 'Not specified') . "\n";
 }
 $headers = [
     'From' => 'PackHubGlobe Website <andrew@packhubglobe.com>',

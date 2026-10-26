@@ -1527,5 +1527,17 @@
     "format": "container-reference",
     "application": "Container and label specification review",
     "evidence": "2026-10-19 visual contact-sheet review: /assets/images/pouch-catalog/855c10eb9007659a4693.webp"
+  },
+  "1600659828071": {
+    "name": "Custom Coffee & Tea Stand-Up Pouch",
+    "format": "stand-up",
+    "application": "Coffee and tea packaging",
+    "evidence": "2026-10-26: captured source title names coffee and tea; Bag Type is Stand Up Pouch. Original image retained at /assets/catalog/1600659828071.webp. No barrier or food-contact claim inferred."
+  },
+  "1600185850128": {
+    "name": "Custom Skincare Folding Carton",
+    "format": "carton",
+    "application": "Skincare packaging",
+    "evidence": "2026-10-26: captured source title includes Skincare; Paper Type is Paperboard. Existing image /assets/catalog/1600185850128.webp shows a skincare cream carton, not a lipstick pack. Preserve URL; do not infer tuck-end or base construction."
   }
 }

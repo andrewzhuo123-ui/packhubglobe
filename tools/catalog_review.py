@@ -78,7 +78,7 @@ for record in catalog_records.values():
   if not override and kind in compatible and not re.search(compatible[kind],name,re.I):name=FORMAT_NAMES[kind]
   if kind=='rigid':
    primary=next((group for word,group in [('magnetic','953980869'),('drawer','953294826'),('lid & base','954034112'),('tube','952891404')] if word in name.lower()),primary)
-  if kind=='print' and '952983140' in record['groups']:primary='952983140'
+  if kind=='print' and '952983140' in record['groups'] and 'table tent' not in name.lower():primary='952983140'
  else:
   name=re.sub(r'\b(?:High Moisture Barrier|Moisture Barrier|Barrier|Lightweight|Organic|Mono-PE|Foil)\b','',name,flags=re.I)
   name=re.sub(r'\bMetali[sz]ed\b','Metallic-Look',name,flags=re.I)
@@ -91,6 +91,7 @@ for record in catalog_records.values():
  if kind in {'rigid','carton','pillow','carry-box','food-box','mailer'}:allowed_boxes|={'803631155','954038904'}
  if kind=='rigid':allowed_boxes.add(primary)
  retained=[g for g in record['groups'] if g in APPLICATION_GROUPS or g in allowed_boxes or kind=='paper-bag' and g in PAPER_BAG_GROUPS-{'952857851'} or kind=='paper-mailer' and g in {'919910675','952857851'} or kind in {'poly','poly-mailer'} and g in POLY_GROUPS or kind in POUCH_FORMATS and g=='919632767']
+ if kind=='print' and 'table tent' in name.lower():retained=[]
  record['groups']=list(dict.fromkeys([primary]+retained))
  facts=[]
  for field,value in record['facts']:

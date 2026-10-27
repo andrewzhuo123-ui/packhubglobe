@@ -95,6 +95,8 @@ for base,members in collection_members.items():
  check(set(members)==expected_members,base,'incomplete paginated membership')
 
 # Regressions found by visual review: these images must not revert to source labels.
+table_tent=next(r for r in index if r['reference']=='PHG-1600275064363')
+check(table_tent['groups']==['Cards & booklets'],table_tent['path'],'table tent belongs with printed cards, not hang tags or clothing packaging')
 expected={'PC-674101D769':'flat','PC-AB4E9973DC':'stand-up','PC-653374F80E':'container-reference','PC-34A0E94A43':'container-reference','PC-EA49A18AF7':'container-reference'}
 for key,kind in expected.items():
  r=next(x for x in index if x['reference']=='PHG-'+key)

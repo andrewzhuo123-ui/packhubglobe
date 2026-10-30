@@ -32,6 +32,13 @@ for file in sorted(ROOT.rglob('*.html')):
     for tag, attrs in page.tags:
         if attrs.get('aria-controls') and attrs['aria-controls'] not in page.ids:
             errors.append('Missing controlled element: ' + attrs['aria-controls'])
+        if 'catalog-layout' in attrs.get('class', '').split() and not attrs.get('data-catalog-scope'):
+            errors.append('Catalog scope missing')
+        if tag == 'img' and attrs.get('srcset'):
+            for variant in attrs['srcset'].split(','):
+                source = variant.strip().split()[0]
+                if not (ROOT / source.lstrip('/')).is_file(): errors.append('Missing responsive image: ' + source)
+            if not attrs.get('sizes'): errors.append('Responsive image missing sizes')
         if tag == 'label' and attrs.get('for') and attrs['for'] not in page.ids:
             errors.append('Missing labelled input: ' + str(attrs.get('for')))
         if tag == 'th' and attrs.get('scope') != 'col':

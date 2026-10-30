@@ -2,10 +2,11 @@ const menuButton=document.querySelector('.navbtn');
 menuButton?.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));document.querySelector('.navlinks').classList.toggle('open',open)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menuButton?.getAttribute('aria-expanded')==='true'){menuButton.setAttribute('aria-expanded','false');document.querySelector('.navlinks').classList.remove('open');menuButton.focus()}});
 const form=document.querySelector('#quote-form');
-if(form){const params=new URLSearchParams(location.search);const product=params.get('product');if(product){const option=[...form.elements.product.options].find(o=>o.value===product);if(option)form.elements.product.value=product;else{form.elements.product.add(new Option(product,product,true,true));form.elements.details.value=`Interested in: ${product}\n`}}
+if(form){const params=new URLSearchParams(location.search);const product=params.get('product');if(product){const option=[...form.elements.product.options].find(o=>o.value===product);if(option)form.elements.product.value=product;else{form.elements.product.add(new Option(product,product,true,true))}}
 if(form.elements.product_reference)form.elements.product_reference.value=product?.match(/\bPHG-[A-Za-z0-9-]+\b/)?.[0]||'';
-if(form.elements.source_page&&document.referrer){try{const source=new URL(document.referrer);if(source.origin===location.origin&&source.pathname!==location.pathname)form.elements.source_page.value=source.pathname}catch{}}
-const brief=()=>{const d=new FormData(form);return ['PACKHUBGLOBE — PACKAGING REQUEST',...['name','email','company','product','product_reference','source_page','quantity','country','size','unit','timing','details'].map(k=>`${(k[0].toUpperCase()+k.slice(1)).replaceAll('_',' ')}: ${d.get(k)||'Not specified'}`),'','Please review format, material, artwork, sampling, MOQ and shipping options.'].join('\n')};
+if(form.elements.source_page&&/^\/(?:[A-Za-z0-9_-]+\/)*(?:index\.html|404\.html)?$/.test(params.get('source')||''))form.elements.source_page.value=params.get('source');
+if(form.elements.source_page&&!form.elements.source_page.value&&document.referrer){try{const source=new URL(document.referrer);if(source.origin===location.origin&&source.pathname!==location.pathname)form.elements.source_page.value=source.pathname}catch{}}
+const brief=()=>{const d=new FormData(form);return ['PACKHUBGLOBE — PACKAGING REQUEST',...['name','email','company','product','product_reference','source_page','quantity','country','size','unit','material','whatsapp','timing','details'].map(k=>`${(k[0].toUpperCase()+k.slice(1)).replaceAll('_',' ')}: ${d.get(k)||'Not specified'}`),'','Please review format, material, artwork, sampling, MOQ and shipping options.'].join('\n')};
 const attachments=document.querySelector('#attachments');
 const validateAttachments=()=>{
  if(!attachments)return;
@@ -21,13 +22,16 @@ let sending=false;
 form.addEventListener('submit',async e=>{
  e.preventDefault();validateAttachments();if(sending||!form.reportValidity())return;
  const button=form.querySelector('button[type="submit"]');const result=document.querySelector('#form-result');
+ globalThis.phgTrack?.('rfq_form_submit');
  sending=true;button.disabled=true;button.textContent='Sending…';result.hidden=false;result.textContent='Sending your enquiry…';
  try{
   const response=await fetch('/request-quote/send.php',{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
   const data=await response.json();
   if(!response.ok||data.ok!==true)throw new Error(data.message||'Your enquiry could not be sent. Please try again or email andrew@packhubglobe.com.');
+  globalThis.phgTrack?.('rfq_form_success');
+  if(attachments?.files.length)globalThis.phgTrack?.('file_upload_success',{file_count:attachments.files.length});
   result.textContent='Your enquiry and any attached files have been submitted for email delivery.';
- }catch(error){result.textContent=(error instanceof SyntaxError||error.name==='TypeError')?'The enquiry service is unavailable. Please try again or email andrew@packhubglobe.com.':error.message||'Your enquiry could not be sent. Please try again or email andrew@packhubglobe.com.'}
+ }catch(error){globalThis.phgTrack?.('rfq_form_error',{error_type:'submission'});result.textContent=(error instanceof SyntaxError||error.name==='TypeError')?'The enquiry service is unavailable. Please try again or email andrew@packhubglobe.com.':error.message||'Your enquiry could not be sent. Please try again or email andrew@packhubglobe.com.'}
  finally{sending=false;button.disabled=false;button.textContent='Send enquiry';result.scrollIntoView({block:'nearest',behavior:'smooth'})}
 });
 document.querySelector('#download-brief').addEventListener('click',()=>{if(!form.reportValidity())return;const blob=new Blob([brief()],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='packhubglobe-packaging-brief.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)})}
@@ -57,22 +61,24 @@ if(catalogSearch){
  const scope=document.querySelector('[data-catalog-scope]')?.dataset.catalogScope||'all';
  const grid=document.querySelector('#catalog-grid');
  const original=grid.innerHTML;
+ const formatFilter=document.querySelector('#format-filter');const materialFilter=document.querySelector('#material-filter');
  const pagination=document.querySelector('.catalog-pages');
  const status=document.querySelector('#catalog-search-status');
  const listingCount=document.querySelector('.catalog-toolbar>p');
  let indexPromise;
  let searchTimer;
- const clearSearch=()=>{clearTimeout(searchTimer);catalogSearch.value='';grid.innerHTML=original;if(pagination)pagination.hidden=false;listingCount.hidden=false;status.textContent='';catalogSearch.focus()};
+ const clearSearch=()=>{clearTimeout(searchTimer);catalogSearch.value='';if(formatFilter)formatFilter.value='';if(materialFilter)materialFilter.value='';grid.innerHTML=original;if(pagination)pagination.hidden=false;listingCount.hidden=false;status.textContent='';catalogSearch.focus()};
  const showResults=async()=>{
   const query=catalogSearch.value.trim().toLowerCase();
-  if(!query){clearSearch();return}
+  if(!query&&!formatFilter?.value&&!materialFilter?.value){clearSearch();return}
   status.textContent='Searching the collection…';
   try{
    indexPromise??=fetch('/assets/catalog-index.json').then(response=>{if(!response.ok)throw new Error('Search unavailable');return response.json()}).catch(error=>{indexPromise=null;throw error});
    const records=await indexPromise;
    if(catalogSearch.value.trim().toLowerCase()!==query)return;
-   const words=query.split(/\s+/);
-   const matches=records.filter(record=>(scope==='all'||scope==='family:'+record.family||scope.startsWith('group:')&&record.groups.includes(scope.slice(6)))&&words.every(word=>(record.name+' '+record.reference+' '+record.groups.join(' ')+' '+record.searchText).toLowerCase().includes(word)));
+   const words=query.replace(/magnetic (closure|lid)/g,'magnetic').replace(/straight tuck end/g,'tuck').split(/\s+/);
+   const synonyms={cartons:['carton','box'],carton:['carton','box'],boxes:['box'],bags:['bag'],labels:['label'],stickers:['sticker'],jewellery:['jewellery','jewelry'],jewelry:['jewelry','jewellery'],fashion:['apparel','garment'],apparel:['apparel','garment'],kraft:['kraft'],corrugated:['corrugated','mailer','shipping']};
+   const matches=records.filter(record=>(scope==='all'||scope==='family:'+record.family||scope.startsWith('group:')&&record.groups.includes(scope.slice(6)))&&words.every(word=>(synonyms[word]||[word]).some(term=>(record.name+' '+record.reference+' '+record.groups.join(' ')+' '+record.searchText).toLowerCase().includes(term)))&&(!formatFilter?.value||record.format===formatFilter.value)&&(!materialFilter?.value||record.facts.some(([key,value])=>/material|film/i.test(key)&&value.toLowerCase().includes(materialFilter.value))));
    grid.replaceChildren();
    for(const record of matches.slice(0,48)){
     const card=document.createElement('article');card.className='catalog-card compact-card';
@@ -91,6 +97,8 @@ if(catalogSearch){
   }catch{if(catalogSearch.value.trim().toLowerCase()===query)status.textContent='Search is temporarily unavailable. Please use the packaging categories.'}
  };
  document.querySelector('.catalog-search').hidden=false;
+ const filters=document.querySelector('.ux-filters');if(filters)filters.hidden=false;
  catalogSearch.addEventListener('input',()=>{clearTimeout(searchTimer);searchTimer=setTimeout(showResults,180)});
  document.querySelector('#catalog-clear').addEventListener('click',clearSearch);
+ [formatFilter,materialFilter].forEach(filter=>filter?.addEventListener('change',showResults));
 }

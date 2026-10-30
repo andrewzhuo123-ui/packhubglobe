@@ -13,6 +13,8 @@ valid = dict(name='Website test', email='buyer@example.com', product='Paper boxe
 cases = [
     ('get', {}, {}, 405, False),
     ('required', {'REQUEST_METHOD': 'POST'}, {}, 422, False),
+    ('minimal brief', {}, dict(name='', quantity='', country=''), 200, True),
+    ('missing requirements', {}, dict(details=''), 422, False),
     ('bad email', {}, dict(email='invalid'), 422, False),
     ('header injection', {}, dict(email='a@example.com\r\nBcc: a@example.com'), 422, False),
     ('array field', {}, dict(name=['bad']), 422, False),

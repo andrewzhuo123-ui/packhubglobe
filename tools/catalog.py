@@ -224,7 +224,16 @@ def catalog_listing(base,name,ids,all_products=False):
   else:body+='<div class="wrap">'+family_nav(base)+'</div>'
   scope='family:'+base.split('/')[-2] if base.split('/')[-2] in FAMILIES else 'group:'+catalog_groups[group_id]['public_name'] if group_id else 'all'
   search_label='Search all products' if all_products else 'Search this category'
-  body+='<section class="wrap catalog-layout" data-catalog-scope="'+esc(scope,quote=True)+'">'+catalog_navigation(base)+'<div class="catalog-results"><div class="catalog-toolbar"><p>'+str(len(ids))+(' product' if len(ids)==1 else ' products')+' · Page '+str(page)+' of '+str(total)+'</p><div class="catalog-search" hidden><label for="catalog-search">'+search_label+'</label><input type="search" id="catalog-search" placeholder="Name, material or PHG reference" autocomplete="off"><button type="button" id="catalog-clear">Clear</button></div></div><p id="catalog-search-status" class="smallnote" role="status" aria-live="polite"></p><div class="catalog-grid" id="catalog-grid">'+''.join(catalog_card(catalog_records[id],compact=True) for id in ids[(page-1)*24:page*24])+'</div>'+catalog_pagination(base,page,total)+'</div></section>'+cta()
+  formats=sorted({catalog_records[id]['format'] for id in ids})
+  materials=sorted({value.split(',')[0].strip() for id in ids for key,value in catalog_records[id]['facts'] if key in ['Material reference','Film reference'] and len(value.split(',')[0])<60})
+  filters='<div class="ux-filters" hidden>'
+  for ident,label,values in [('format','Packaging structure',formats),('material','Material',materials)]:
+   if 1<len(values)<=30:filters+='<label for="'+ident+'-filter">'+label+'<select id="'+ident+'-filter"><option value="">All '+label.lower()+'s</option>'+''.join('<option value="'+esc(value if ident=='format' else value.lower(),quote=True)+'">'+esc(value.replace('-',' ').title() if ident=='format' else value)+'</option>' for value in values)+'</select></label>'
+  filters+='</div>'
+  batch=ids[(page-1)*24:page*24]
+  product_cards=''.join(catalog_card(catalog_records[id],compact=True) for id in batch[:12])
+  if len(batch)>12:product_cards+='<details class="ux-more-products"><summary>View '+str(len(batch)-12)+' more product references on this page</summary><div class="catalog-grid">'+''.join(catalog_card(catalog_records[id],compact=True) for id in batch[12:])+'</div></details>'
+  body+='<section class="wrap catalog-layout" data-catalog-scope="'+esc(scope,quote=True)+'">'+catalog_navigation(base)+'<div class="catalog-results"><div class="catalog-toolbar"><p>'+str(len(ids))+(' product' if len(ids)==1 else ' products')+' · Page '+str(page)+' of '+str(total)+'</p><div class="catalog-search" hidden><label for="catalog-search">'+search_label+'</label><input type="search" id="catalog-search" placeholder="Name, material or PHG reference" autocomplete="off"><button type="button" id="catalog-clear">Clear</button></div></div><p id="catalog-search-status" class="smallnote" role="status" aria-live="polite"></p>'+filters+'<div class="catalog-grid" id="catalog-grid">'+product_cards+'</div>'+catalog_pagination(base,page,total)+'</div></section>'+cta()
   listing_schema={'@type':'ItemList','name':name,'numberOfItems':len(ids),'itemListElement':[{'@type':'ListItem','position':(page-1)*24+i+1,'url':ORIGIN+catalog_records[id]['path']} for i,id in enumerate(ids[(page-1)*24:page*24])]}
   write(path,name+(' · Page '+str(page) if page>1 else '')+' | PackHubGlobe',description.split('. ',1)[0]+('. Page '+str(page)+'.' if page>1 else '.'),body,[listing_schema])
 
@@ -247,14 +256,23 @@ for product_id, record in catalog_records.items():
  group=catalog_groups[record['groups'][0]]
  description=name+'. '+reference+'. Review material, size and printing options for a custom packaging quotation.'
  visual='<figure class="catalog-product-image"><a href="'+image['path']+'" target="_blank" rel="noopener noreferrer"><img src="'+image['path']+'" alt="'+esc(name,quote=True)+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" fetchpriority="high"></a></figure>'
- body=detailhero(group['public_name'],esc(name),reference+' · Compare the construction and artwork, then confirm your project specification.',visual,name+' · '+reference,'<a href="/catalog/">Product collection</a> / <a href="/catalog/'+group['slug']+'/">'+esc(group['public_name'])+'</a>')
+ quick=[('Packaging style',record['format'].replace('-',' ').title())]
+ for label,keys in [('Material options',['Material reference','Film reference','Other film reference']),('Custom dimensions',['Dimensions reference']),('Printing & finishes',['Printing options','Print / finish options']),('Applications',['Application'])]:
+  value=next((v for k,v in record['facts'] if k in keys),'Confirm for your project')
+  quick.append((label,catalog_fact_preview(value)))
+ quick.append(('Quantity','Quantity per design; confirm in your quotation'))
+ gallery=[image]+record.get('gallery',[])
+ visual='<div>'+visual+'<div class="ux-thumbs">'+''.join('<a href="'+im['path']+'" aria-label="Open product view '+str(i+1)+'"><img src="'+im['path']+'" alt="'+esc(name+' reference view '+str(i+1),quote=True)+'" width="72" height="72" loading="lazy"></a>' for i,im in enumerate(gallery))+'</div></div>'
+ body=detailhero(group['public_name'],esc(name),reference+' · Review this packaging direction and tell us what you need to customize.',visual,name+' · '+reference,'<a href="/catalog/">Product collection</a> / <a href="/catalog/'+group['slug']+'/">'+esc(group['public_name'])+'</a>',facts=quick)
  rows=[('Minimum order quantity','500 pieces')]+list(record['facts'])
  body+='<section class="section wrap product-details"><div><h2>Product details.</h2>'+specs(rows)+'<p class="smallnote">These are reference specifications. Confirm the material, dimensions, finish and sample for your order. MOQ: 500 pieces. Images show design references. Branded contents are not supplied; printed claims do not verify the order specification.</p></div><aside class="help-note"><h3>Make this packaging yours.</h3><p>Share your product dimensions, quantity per design, artwork and delivery country. Include reference '+reference+' in your enquiry.</p><div class="actions">'+button('Request a quote',qurl(name+' · '+reference))+'<a class="textlink" href="https://wa.me/8615105916426?text='+catalog_chat(record).split('?text=',1)[1]+'" target="_blank" rel="noopener noreferrer">Discuss on WhatsApp ↗</a></div><a class="textlink" href="/guides/packaging-quote-checklist/">Prepare your specification</a></aside></section>'
  if record.get('review_note'):
   body+='<section class="section wrap"><h2>Points to confirm for this reference.</h2><p>'+esc(record['review_note'])+'</p></section>'
  if record.get('gallery'):
   body+='<section class="section wrap"><h2>Additional design references.</h2><p>Compare these views with the main reference. Confirm the supplied components, dimensions and construction for your order.</p><div class="catalog-grid">'+''.join('<figure class="catalog-product-image"><a href="'+im['path']+'" target="_blank" rel="noopener noreferrer"><img src="'+im['path']+'" alt="'+esc(name+' · additional reference '+str(i+1),quote=True)+'" width="'+str(im['width'])+'" height="'+str(im['height'])+'" loading="lazy"></a><figcaption>'+esc(reference+' · additional design reference '+str(i+1))+'</figcaption></figure>' for i,im in enumerate(record['gallery']))+'</div></section>'
- body+=product_editorial(record,rows)
+ technical=product_editorial(record,rows)
+ technical=re.sub(r'<section id="([^"]+)"><h2>([^<]*)</h2><p>([^<]*)</p></section>',lambda match:'<section id="'+match[1]+'"><details class="ux-technical-details"><summary><h2>'+match[2]+'</h2></summary><p>'+match[3]+'</p></details></section>',technical)
+ body+=technical
  related_pool=[r for id,r in catalog_records.items() if id!=product_id and r['format']==record['format']]
  if len(related_pool)<3:related_pool.extend(r for id,r in catalog_records.items() if id!=product_id and r['family']==record['family'] and r not in related_pool)
  application=next((v for k,v in record['facts'] if k=='Application'),'')

@@ -1,11 +1,13 @@
 from pathlib import Path
 from html import escape as esc
-import json, csv, re, shutil
+import json, csv, re, shutil, hashlib
 
 ROOT=Path(__file__).resolve().parents[1]
 from catalog_verify import verify_catalog
 verify_catalog(ROOT)
 OUT=ROOT
+UX_STYLE='ux-'+hashlib.sha256((ROOT/'assets/ux.css').read_bytes()).hexdigest()[:12]+'.css'
+shutil.copyfile(ROOT/'assets/ux.css',ROOT/'assets'/UX_STYLE)
 ORIGIN='https://www.packhubglobe.com'
 EMAIL='andrew@packhubglobe.com'
 RESPONSIVE=json.loads((ROOT/'assets/responsive/manifest.json').read_text())
@@ -90,7 +92,7 @@ def write(path,title,description,body,extra=None,lang='en',breadcrumb=None):
  if extra:schema.extend(extra)
  home_style='<link rel="stylesheet" href="/assets/home.css?v=20261030-detail-review">' if path=='/' else ''
  asset_version='20261030-detail-review'
- html='<!doctype html><html lang="'+lang+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(title)+'</title><meta name="description" content="'+esc(description,quote=True)+'"><meta name="robots" content="index,follow"><link rel="canonical" href="'+ORIGIN+path+'"><meta property="og:title" content="'+esc(title,quote=True)+'"><meta property="og:description" content="'+esc(description,quote=True)+'"><meta property="og:type" content="website"><meta property="og:url" content="'+ORIGIN+path+'"><meta property="og:image" content="'+ORIGIN+'/assets/images/print-collection.webp"><meta name="theme-color" content="#111315"><link rel="icon" href="/assets/favicon.svg?v=20261030-detail-review" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css?v=20261030-detail-review"><script src="/assets/ux.js?v=20261030-detail-review" defer></script><script src="/assets/app.js?v='+asset_version+'" defer></script><link rel="stylesheet" href="/assets/ux.css?v=20261030-detail-review">'+home_style+'<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@graph':schema},ensure_ascii=False).replace('</',r'<\/')+'</script></head><body'+(' class="has-product-quote"' if product_page else '')+'>'+header(path)+'<main id="main" tabindex="-1">'+body+'</main>'+footer()+'</body></html>'
+ html='<!doctype html><html lang="'+lang+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(title)+'</title><meta name="description" content="'+esc(description,quote=True)+'"><meta name="robots" content="index,follow"><link rel="canonical" href="'+ORIGIN+path+'"><meta property="og:title" content="'+esc(title,quote=True)+'"><meta property="og:description" content="'+esc(description,quote=True)+'"><meta property="og:type" content="website"><meta property="og:url" content="'+ORIGIN+path+'"><meta property="og:image" content="'+ORIGIN+'/assets/images/print-collection.webp"><meta name="theme-color" content="#111315"><link rel="icon" href="/assets/favicon.svg?v=20261030-detail-review" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css?v=20261030-detail-review"><script src="/assets/ux.js?v=20261030-detail-review" defer></script><script src="/assets/app.js?v='+asset_version+'" defer></script><link rel="stylesheet" href="/assets/'+UX_STYLE+'">'+home_style+'<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@graph':schema},ensure_ascii=False).replace('</',r'<\/')+'</script></head><body'+(' class="has-product-quote"' if product_page else '')+'>'+header(path)+'<main id="main" tabindex="-1">'+body+'</main>'+footer()+'</body></html>'
  file.write_text(html);PAGES[:]=[p for p in PAGES if p[0]!=path];PAGES.append((path,title,description))
 
 exec(compile((ROOT/'tools/editorial.py').read_text(),str(ROOT/'tools/editorial.py'),'exec'))

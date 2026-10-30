@@ -18,6 +18,10 @@
 5. Mobile product images precede the main title/specification content. Home CTAs share one row; floating contact controls hide while the mobile menu is open. Product images retain their full proportions.
 6. Reclassification reduces mailer pagination by one page. The removed `/catalog/mailer-shipping-boxes/page-13/` has a 301 to page 12; internal links and sitemap rebuilt. Total changes from 2,247 to 2,246 public pages; no product deleted.
 
+## Deployment cache repair
+
+Hostinger edge nodes returned different CSS revisions for the same query-versioned URL. Generated pages now reference a content-hashed CSS filename, preserving the source stylesheet and preventing old CSS from sharing the new public asset path.
+
 ## Validation and limitations
 
 Whole-site route, asset, structured-data syntax, UI and catalog consistency checks passed. Product editorial depth and all ten guides retained. Enquiry client tests and the 29-case PHP WASM harness passed; no production enquiry was sent. Native PHP is unavailable locally; the harness uses PHP 8.4 WASM and mocked mail/CLI behavior.

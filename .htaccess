@@ -8,6 +8,7 @@ RewriteEngine On
 RewriteRule ^catalog/stand\-up\-pouches/page\-18/$ /catalog/stand-up-pouches/page-17/ [R=301,L,NE]
 RewriteRule ^catalog/bags/page\-28/$ /catalog/bags/page-27/ [R=301,L,NE]
 RewriteRule ^catalog/pouches/page\-26/$ /catalog/pouches/page-25/ [R=301,L,NE]
+RewriteRule ^catalog/mailer\-shipping\-boxes/page\-13/$ /catalog/mailer-shipping-boxes/page-12/ [R=301,L,NE]
 # Build sources and Git metadata are not public site content.
 RewriteRule ^(?:tools|content|\.git)(?:/|$) - [R=404,L,NC]
 RewriteRule ^\.(?!well-known(?:/|$)) - [R=404,L,NC]

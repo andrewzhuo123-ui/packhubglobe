@@ -1539,5 +1539,108 @@
     "format": "carton",
     "application": "Skincare packaging",
     "evidence": "2026-10-26: captured source title includes Skincare; Paper Type is Paperboard. Existing image /assets/catalog/1600185850128.webp shows a skincare cream carton, not a lipstick pack. Preserve URL; do not infer tuck-end or base construction."
+  },
+  "PC-CDF74C091A": {
+    "name": "Clear Grain Spout Pouch",
+    "format": "spout",
+    "application": "Dry grain packaging; confirm the actual contents and dispensing opening",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/images/pouch-catalog/df432f7f170c03ac1358.webp; public URL preserved."
+  },
+  "1601284127117": {
+    "name": "Cosmetic Window Carton with Fitted Insert",
+    "format": "carton",
+    "application": "Cosmetic packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1601284127117.webp; public URL preserved."
+  },
+  "1601194794673": {
+    "name": "Apparel Window Carton",
+    "format": "carton",
+    "application": "Apparel packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1601194794673.webp; public URL preserved."
+  },
+  "1601194864513": {
+    "name": "Apparel Window Carton with Hanging Tab",
+    "format": "carton",
+    "application": "Apparel packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1601194864513.webp; public URL preserved."
+  },
+  "1601835112291": {
+    "name": "Printed Tuck-End Carton",
+    "format": "carton",
+    "application": "Skincare packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1601835112291.webp; public URL preserved.",
+    "material_note": "Paperboard and surface paper; final grade and sourcing documents to confirm"
+  },
+  "60684610689": {
+    "name": "Corrugated Folding Mailer Box",
+    "format": "mailer",
+    "application": "Parcel packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/60684610689.webp; public URL preserved."
+  },
+  "1600240724918": {
+    "name": "Black Folding Mailer Box",
+    "format": "mailer",
+    "application": "Gift and product packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1600240724918.webp; public URL preserved."
+  },
+  "1601292243625": {
+    "name": "Perfume Lid & Base Presentation Box",
+    "format": "rigid",
+    "application": "Perfume packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1601292243625.webp; public URL preserved."
+  },
+  "1601025655836": {
+    "name": "Printed Drawer Gift Box",
+    "format": "rigid",
+    "application": "Gift and product packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1601025655836.webp; public URL preserved."
+  },
+  "1601210593033": {
+    "name": "Window Glassware Carton",
+    "format": "carton",
+    "application": "Glassware packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1601210593033.webp; public URL preserved."
+  },
+  "1601210448091": {
+    "name": "Printed Glassware Carton",
+    "format": "carton",
+    "application": "Glassware packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1601210448091.webp; public URL preserved."
+  },
+  "1600819644087": {
+    "name": "Window Mug Carton",
+    "format": "carton",
+    "application": "Mug packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1600819644087.webp; public URL preserved."
+  },
+  "1600940644601": {
+    "name": "Printed Mug Carton Set",
+    "format": "carton",
+    "application": "Mug packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1600940644601.webp; public URL preserved."
+  },
+  "1601766372769": {
+    "name": "Macaron Drawer Box",
+    "format": "rigid",
+    "application": "Macaron and confectionery presentation; direct-contact layer to confirm",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1601766372769.webp; public URL preserved."
+  },
+  "1601686761559": {
+    "name": "Skincare Presentation Gift Box with Insert",
+    "format": "rigid",
+    "application": "Skincare packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1601686761559.webp; public URL preserved."
+  },
+  "1600136529211": {
+    "name": "Black Lid & Base Gift Box with Insert",
+    "format": "rigid",
+    "application": "Small product and gift packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1600136529211.webp; public URL preserved."
+  },
+  "1601210528009": {
+    "name": "Printed Glassware Carton",
+    "format": "carton",
+    "application": "Glassware packaging",
+    "evidence": "2026-10-30 current image-sheet and original-image review: /assets/catalog/1601210528009.webp; public URL preserved."
   }
 }

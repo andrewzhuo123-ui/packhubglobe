@@ -115,7 +115,7 @@ for record in catalog_records.values():
  material=next((v for k,v in facts if k=='Material'),'')
  if material:
   facts=[[k,v] for k,v in facts if k!='Film / laminate']
- labels={'Material':'Material reference','Film / laminate':'Other film reference' if material else 'Film reference','Size':'Dimensions reference','Printing':'Printing options','Print / finish':'Print / finish options','Structure / closure':'Format reference','Finish':'Finish options'}
+ labels={'Material':'Material reference','Film / laminate':'Other film reference' if material else 'Film reference','Size':'Dimensions reference','Printing':'Printing options','Print / finish':'Print / finish options','Structure / closure':'Format reference','Finish':'Finish options','Insert / accessories':'Insert / accessory options'}
  clean_facts=[]
  for field,value in facts:
   if field=='Insert / accessories' and value=='No insert':value='Insert requirement to confirm with the packed product'
@@ -125,6 +125,8 @@ for record in catalog_records.values():
   value=re.sub(r'\bcorruaged\b','corrugated',value,flags=re.I)
   field=labels.get(field,field)
   if field not in [k for k,v in clean_facts]:clean_facts.append([field,value])
+ if override.get('material_note'):
+  clean_facts=[[field,override['material_note'] if field in ['Material reference','Film reference'] else value] for field,value in clean_facts]
  record['facts']=clean_facts
  if kind=='spout' and re.search(r'grain|rice|litter|dry grain',name,re.I):record['profile']='pouch-spout-dry'
  note=record.get('review_note','')
@@ -137,6 +139,7 @@ for record in catalog_records.values():
    record['review_note']='Confirm the intended contents, complete construction and actual opening against a matching sample. Printed artwork illustrates a presentation direction; it does not qualify the material for a particular product or filling process.'
  if kind=='container-reference':record['review_note']='Identify the component you need: container, printed label, sleeve, wrap or presentation accessory. The photograph is a design reference and does not establish a flexible pouch or a fixed stock specification.'
  if kind=='bag-in-box':record['review_note']='Confirm whether the quotation covers the liner, dispensing fitment, printed outer box or the complete system. Approve fitment compatibility and the filled assembly together.'
+ if key=='PC-CDF74C091A':record['review_note']='The reference image shows grain. Confirm particle size, dispensing bore, cap closure and material suitability for your actual contents; this image is not a water-storage or leak-test result.'
  if key=='PC-3AE35E247D':record['review_note']='The image includes different fill examples. Select one intended product, opening and fitment configuration before confirming the structure and filling process.'
 # Collections derive from the reviewed memberships, rather than supplier marketing buckets.
 for group_id in catalog_groups:

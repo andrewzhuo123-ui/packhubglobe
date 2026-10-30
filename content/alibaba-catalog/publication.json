@@ -3,12 +3,12 @@
   "groups": {
     "920016676": {
       "name": "Mailer & shipping boxes",
-      "published": 290,
+      "published": 285,
       "candidates": 185
     },
     "950338332": {
       "name": "Kraft shipping boxes",
-      "published": 18,
+      "published": 19,
       "candidates": 19
     },
     "950338333": {
@@ -28,17 +28,17 @@
     },
     "803631155": {
       "name": "Gift boxes",
-      "published": 228,
+      "published": 227,
       "candidates": 207
     },
     "953980869": {
       "name": "Magnetic boxes",
-      "published": 321,
+      "published": 320,
       "candidates": 191
     },
     "954034112": {
       "name": "Lid & base boxes",
-      "published": 8,
+      "published": 10,
       "candidates": 4
     },
     "952891404": {
@@ -148,7 +148,7 @@
     },
     "951662766": {
       "name": "Protective shipping boxes",
-      "published": 7,
+      "published": 3,
       "candidates": 8
     },
     "952968758": {
@@ -158,7 +158,7 @@
     },
     "953294826": {
       "name": "Drawer boxes",
-      "published": 58,
+      "published": 60,
       "candidates": 6
     },
     "pouch-stand-up": {
@@ -193,8 +193,8 @@
     },
     "folding-cartons": {
       "name": "Folding cartons",
-      "published": 356,
-      "candidates": 356
+      "published": 358,
+      "candidates": 358
     },
     "handle-carry-boxes": {
       "name": "Handle carry boxes",
@@ -413,7 +413,6 @@
     "/catalog/mailer-shipping-boxes/page-10/",
     "/catalog/mailer-shipping-boxes/page-11/",
     "/catalog/mailer-shipping-boxes/page-12/",
-    "/catalog/mailer-shipping-boxes/page-13/",
     "/catalog/kraft-shipping-boxes/",
     "/catalog/printed-shipping-boxes/",
     "/catalog/printed-shipping-boxes/page-2/",

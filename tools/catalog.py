@@ -256,13 +256,13 @@ for product_id, record in catalog_records.items():
  group=catalog_groups[record['groups'][0]]
  description=name+'. '+reference+'. Review material, size and printing options for a custom packaging quotation.'
  visual='<figure class="catalog-product-image"><a href="'+image['path']+'" target="_blank" rel="noopener noreferrer"><img src="'+image['path']+'" alt="'+esc(name,quote=True)+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" fetchpriority="high"></a></figure>'
- quick=[('Packaging style',record['format'].replace('-',' ').title())]
- for label,keys in [('Material options',['Material reference','Film reference','Other film reference']),('Custom dimensions',['Dimensions reference']),('Printing & finishes',['Printing options','Print / finish options']),('Applications',['Application'])]:
+ quick=[('Packaging style',next((v for k,v in record['facts'] if k=='Format reference'),group['public_name']))]
+ for label,keys in [('Material reference',['Material reference','Film reference','Other film reference']),('Custom dimensions',['Dimensions reference']),('Printing & finishes',['Printing options','Print / finish options']),('Applications',['Application'])]:
   value=next((v for k,v in record['facts'] if k in keys),'Confirm for your project')
   quick.append((label,catalog_fact_preview(value)))
  quick.append(('Quantity','Quantity per design; confirm in your quotation'))
  gallery=[image]+record.get('gallery',[])
- visual='<div>'+visual+'<div class="ux-thumbs">'+''.join('<a href="'+im['path']+'" aria-label="Open product view '+str(i+1)+'"><img src="'+im['path']+'" alt="'+esc(name+' reference view '+str(i+1),quote=True)+'" width="72" height="72" loading="lazy"></a>' for i,im in enumerate(gallery))+'</div></div>'
+ if len(gallery)>1:visual='<div>'+visual+'<div class="ux-thumbs">'+''.join('<a href="'+im['path']+'" aria-label="Open product view '+str(i+1)+'"><img src="'+im['path']+'" alt="'+esc(name+' reference view '+str(i+1),quote=True)+'" width="72" height="72" loading="lazy"></a>' for i,im in enumerate(gallery))+'</div></div>'
  body=detailhero(group['public_name'],esc(name),reference+' · Review this packaging direction and tell us what you need to customize.',visual,name+' · '+reference,'<a href="/catalog/">Product collection</a> / <a href="/catalog/'+group['slug']+'/">'+esc(group['public_name'])+'</a>',facts=quick)
  rows=[('Minimum order quantity','500 pieces')]+list(record['facts'])
  body+='<section class="section wrap product-details"><div><h2>Product details.</h2>'+specs(rows)+'<p class="smallnote">These are reference specifications. Confirm the material, dimensions, finish and sample for your order. MOQ: 500 pieces. Images show design references. Branded contents are not supplied; printed claims do not verify the order specification.</p></div><aside class="help-note"><h3>Make this packaging yours.</h3><p>Share your product dimensions, quantity per design, artwork and delivery country. Include reference '+reference+' in your enquiry.</p><div class="actions">'+button('Request a quote',qurl(name+' · '+reference))+'<a class="textlink" href="https://wa.me/8615105916426?text='+catalog_chat(record).split('?text=',1)[1]+'" target="_blank" rel="noopener noreferrer">Discuss on WhatsApp ↗</a></div><a class="textlink" href="/guides/packaging-quote-checklist/">Prepare your specification</a></aside></section>'
@@ -277,7 +277,7 @@ for product_id, record in catalog_records.items():
  if len(related_pool)<3:related_pool.extend(r for id,r in catalog_records.items() if id!=product_id and r['family']==record['family'] and r not in related_pool)
  application=next((v for k,v in record['facts'] if k=='Application'),'')
  related_items=sorted(related_pool,key=lambda r:(r['format']==record['format'],bool(application) and any(k=='Application' and v==application for k,v in r['facts']),len(set(r['groups'])&set(record['groups']))),reverse=True)[:3]
- body+='<section class="section wrap"><h2>Compare related product references.</h2><div class="catalog-grid related-products">'+''.join(catalog_card(r,'h3') for r in related_items)+'</div></section>'
+ body+='<section class="section wrap"><h2>Compare related product references.</h2><div class="catalog-grid related-products">'+''.join(catalog_card(r,'h3',compact=True) for r in related_items)+'</div></section>'
  body+='<section class="section softbg"><div class="wrap"><h2>Explore related packaging.</h2><div class="related-links"><a href="/catalog/'+record['family']+'/">'+FAMILIES[record['family']]+'</a>'+''.join('<a href="/catalog/'+catalog_groups[g]['slug']+'/">'+esc(catalog_groups[g]['public_name'])+'</a>' for g in record['groups'])+'</div></div></section>'+cta()
  schema={'@type':'Product','name':name,'sku':reference,'url':ORIGIN+record['path'],'image':ORIGIN+image['path'],'description':description,'brand':{'@type':'Brand','name':'PackHubGlobe'},'additionalProperty':[{'@type':'PropertyValue','name':label,'value':value} for label,value in rows]}
  write(record['path'],name+' · '+reference+' | PackHubGlobe',description,body,[schema])

@@ -36,10 +36,14 @@ for c in CATEGORIES:
  body=detailhero('Custom packaging',c['name'],c['summary'],art(c['art']),c['name'],trail)
  body+='<section class="section wrap"><div class="sectionhead centered"><h2>Choose your format.</h2><p>'+c['intro']+'</p></div><div class="formats">'
  for slug,name,desc,options,check,use in items:
+  if slug not in format_references:continue
   reference=format_references.get(slug)
-  photo=('<a href="/products/'+family+'/'+slug+'/"><div class="art"><img src="'+reference['image']+'" alt="'+esc(name,quote=True)+' structure reference" width="'+str(reference['width'])+'" height="'+str(reference['height'])+'" loading="lazy"></div></a>') if reference else ''
+  photo=('<a class="format-photo" href="/products/'+family+'/'+slug+'/"><div class="art"><img src="'+reference['image']+'" alt="'+esc(name,quote=True)+' structure reference" width="'+str(reference['width'])+'" height="'+str(reference['height'])+'" loading="lazy"></div></a>') if reference else ''
   body+='<article class="format">'+photo+'<h3><a href="/products/'+family+'/'+slug+'/">'+name+'</a></h3><p>'+desc+'</p><a class="textlink" href="/products/'+family+'/'+slug+'/">View '+name.lower()+'</a></article>'
- body+='</div><p class="catalog-browse-link"><a class="textlink" href="/catalog/">Browse product photos and specifications ↗</a></p></section><section class="section softbg"><div class="wrap split"><div><h2>Made around your product.</h2><p>Share the product, approximate size, quantity per design and delivery market. We can then review the material, print and sample you need.</p><a class="textlink" href="/guides/packaging-quote-checklist/">What to include in a quote request</a></div><div><h3>Explore the details</h3><div class="related-links vertical"><a href="/materials/">Materials & finishes</a><a href="/services/sampling/">Samples & approvals</a><a href="/services/artwork-preflight/">Artwork preparation</a></div></div></div></section>'+cta()
+ body+='</div>'
+ missing=[item for item in items if item[0] not in format_references]
+ if missing:body+='<div class="ux-additional-formats"><h3>More formats to discuss</h3><p>Share your requirements for these structures. A matching reference and sample can be reviewed with your project.</p><div class="related-links">'+''.join('<a href="/products/'+family+'/'+item[0]+'/">'+esc(item[1])+'</a>' for item in missing)+'</div></div>'
+ body+='<p class="catalog-browse-link"><a class="textlink" href="/catalog/">Browse product photos and specifications ↗</a></p></section><section class="section softbg"><div class="wrap split"><div><h2>Made around your product.</h2><p>Share the product, approximate size, quantity per design and delivery market. We can then review the material, print and sample you need.</p><a class="textlink" href="/guides/packaging-quote-checklist/">What to include in a quote request</a></div><div><h3>Explore the details</h3><div class="related-links vertical"><a href="/materials/">Materials & finishes</a><a href="/services/sampling/">Samples & approvals</a><a href="/services/artwork-preflight/">Artwork preparation</a></div></div></div></section>'+cta()
  body=body.removesuffix(cta())+'<section class="section wrap"><div class="sectionhead"><h2>Compare Product References</h2></div>'+ux_reference_cards(ux_references('/products/'+family+'/'))+'</section><section class="section softbg"><div class="wrap faqwrap"><h2>Frequently Asked Questions</h2>'+ux_faq()+'</div></section>'+cta()
  write('/products/'+family+'/',c['name']+' with Custom Printing | PackHubGlobe',c['summary'],body)
  for slug,name,desc,options,check,use in items:
@@ -61,9 +65,19 @@ for c in CATEGORIES:
 
 overview=intro('Industry solutions','Packaging for your industry.','Find a starting point for your product, from the retail pack to the delivery box.')+'<section class="wrap section" style="padding-top:0"><div class="industry-grid">'
 for slug,name,desc,brief,approach,check,links,img in INDUSTRIES:
- industry_items=ux_references('/products/'+links[0]+'/',limit=10000)
- keywords={'beauty-skincare':['skincare','cosmetic','lipstick'],'apparel':['clothing','apparel','garment'],'electronics':['laptop'],'jewellery':['jewelry','jewellery'],'coffee-tea':['coffee','tea'],'food-snacks':['food','snack']}
- industry_items=sorted(industry_items,key=lambda item:any(word in (item['name']+' '+item['searchText']).lower() for word in keywords.get(slug,[slug.replace('-',' ')])),reverse=True)[:6]
+ industry_items=[]
+ for link in links:
+  for item in ux_references('/products/'+link+'/',limit=10000):
+   if item not in industry_items:industry_items.append(item)
+ keywords={
+  'beauty-skincare':['skincare','cosmetic','lipstick'],'perfume':['perfume','fragrance'],
+  'apparel':['clothing','apparel','garment','underwear'],'electronics':['laptop','electronic'],
+  'jewellery':['jewelry','jewellery'],'coffee-tea':['coffee','tea'],'food-snacks':['snack','food'],
+  'bakery':['bakery','cake','pastry'],'chocolate':['chocolate'],'pet-food':['pet','dog','cat'],
+  'supplements':['protein','supplement'],'candles':['candle'],'gifting':['gift'],
+  'ecommerce':['mailer','shipping'],'personal-care-refills':['cleanser','soap','body wash','shampoo']}
+ terms=keywords[slug]
+ industry_items=sorted(industry_items,key=lambda item:sum(3*(word in item['name'].lower())+(word in item['searchText'].lower()) for word in terms),reverse=True)[:6]
  industry_image=('<div class="art">'+ux_photo(industry_items[0])+'</div>') if industry_items else ''
  overview+='<a class="industry-card" href="/industries/'+slug+'/">'+industry_image+'<h2>'+name+'</h2><p>'+desc+'</p><span class="cardlink">Explore packaging</span></a>'
  visual=('<figure class="catalog-product-image">'+ux_photo(industry_items[0],True)+'<figcaption>Related packaging reference; confirm suitability for your product.</figcaption></figure>') if industry_items else scene(img,'Illustrative '+name.lower()+' with branded printed packaging')
@@ -80,8 +94,15 @@ for root,label,records in [('materials','Materials & finishes',MATERIALS),('serv
  for slug,name,desc,first,second,third,links in records:
   overview+='<article class="format"><h2><a href="/'+root+'/'+slug+'/">'+name+'</a></h2><p>'+desc+'</p><a class="textlink" href="/'+root+'/'+slug+'/">Learn more</a></article>'
   body=intro(label,name,desc,'<a href="/'+root+'/">'+label+'</a> / '+name)
-  image='company/material-warehouse' if root=='materials' and slug!='printing-finishes' else 'process/lamination' if slug=='printing-finishes' else 'company/sample-room'
-  body+='<figure class="wrap ux-material-photo"><img src="/assets/'+image+'.webp" alt="Packaging '+esc(name.lower(),quote=True)+' reference at the facility" width="1000" height="750" loading="lazy"><figcaption>Material and production reference; confirm the options for your project.</figcaption></figure>'
+  material_refs={'paperboard':'PHG-FP-1601095882863','corrugated-board':'PHG-1600659751763','kraft-paper':'PHG-60519970698','barrier-films':'PHG-PC-FE809D4EF8','recyclable-structures':'PHG-60519970698'}
+  service_images={'structural-design':'company/sample-room','sampling':'company/sample-room','artwork-preflight':'process/plate-making','quality-control':'process/gluing','export-packing':'company/material-warehouse','multi-product-sourcing':'company/sample-room'}
+  if root=='materials' and slug in material_refs:
+   item=ux_item(material_refs[slug])
+   body+='<figure class="wrap ux-material-photo ux-material-product">'+ux_photo(item,True)+'<figcaption>Related '+esc(name.lower())+' reference. <a href="'+item['path']+'">View the product specification</a>. Confirm the complete material and intended use for your project.</figcaption></figure>'
+  else:
+   image='process/lamination' if root=='materials' else service_images[slug]
+   caption='Lamination equipment reference; review the selected surface finish on a physical sample.' if root=='materials' else {'structural-design':'Sample-room reference; dimensions and construction are developed around your product.','sampling':'Sample-room reference; agree the sample type and the decisions it needs to verify.','artwork-preflight':'Plate-making production reference; approve artwork and dieline revisions before print preparation.','quality-control':'Folding and gluing production reference; agree separate inspection points for the finished packaging.','export-packing':'Paper and board storage reference; export packing and freight are specified separately for your order.','multi-product-sourcing':'Packaging sample-room reference; coordinate each component in a single project brief.'}[slug]
+   body+='<figure class="wrap ux-material-photo"><img src="/assets/'+image+'.webp" alt="'+esc(name,quote=True)+' production and project reference" width="1000" height="750" loading="lazy"><figcaption>'+caption+'</figcaption></figure>'
   body+='<article class="article wrap">'+sections([('Start with your product',first),('Review the options',second),('Confirm before approval',third)])+'</article><section class="section softbg"><div class="wrap"><h2>Related packaging.</h2>'+related(links)+'</div></section>'+cta()
   write('/'+root+'/'+slug+'/',name+' | PackHubGlobe',desc,body)
  overview+='</div></section>'+cta()

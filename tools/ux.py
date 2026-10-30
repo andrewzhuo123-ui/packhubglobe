@@ -1,7 +1,7 @@
 """Shared purchasing components and the focused nine-section homepage."""
 UX_INDEX=json.loads((ROOT/'assets/catalog-index.json').read_text())
 
-UX_FEATURES=['PHG-FP-1601095882863','PHG-11000015570855','PHG-PC-ABD6FA1C57','PHG-1600976392997','PHG-60697040446','PHG-1601648812378']
+UX_FEATURES=['PHG-FP-1601095882863','PHG-11000015570855','PHG-1600658665574','PHG-1600976392997','PHG-60697040446','PHG-1601648812378']
 def ux_item(reference):return next(item for item in UX_INDEX if item['reference']==reference)
 def art(i):
  item=ux_item({0:UX_FEATURES[0],1:UX_FEATURES[1],2:'PHG-PC-1BF7350418',3:UX_FEATURES[2],4:UX_FEATURES[4],5:UX_FEATURES[3]}[i])
@@ -10,14 +10,40 @@ def art(i):
 def ux_photo(item,eager=False):
  return '<img src="'+esc(item['image'],quote=True)+'" alt="'+esc(item['name'],quote=True)+'" width="1000" height="1000" '+('fetchpriority="high"' if eager else 'loading="lazy"')+'>'
 
+UX_FAMILY_FORMATS={
+ 'custom-boxes':{'carton','rigid','mailer','carry-box','pillow','food-box','display','sleeve','pulp-insert'},
+ 'paper-bags':{'paper-bag','paper-mailer'},
+ 'plastic-bags':{'poly','poly-mailer'},
+ 'flexible-pouches':{'stand-up','flat-bottom','side-gusset','spout','flat','specialty','drink-pouch','bag-in-box'},
+ 'cards-tags':{'print'},'stickers-labels':{'label'}
+}
+UX_FORMATS={
+ 'folding-cartons':{'carton'},'rigid-boxes':{'rigid'},'mailer-boxes':{'mailer'},'shipping-boxes':{'mailer'},
+ 'display-boxes':{'display'},'packaging-sleeves':{'sleeve'},'box-inserts':{'pulp-insert','rigid'},
+ 'stand-up-pouches':{'stand-up'},'flat-bottom-pouches':{'flat-bottom'},'side-gusset-bags':{'side-gusset'},
+ 'spout-pouches':{'spout'},'three-side-seal-pouches':{'flat'},'sachets':{'flat'},'poly-mailers':{'poly-mailer'},
+ 'garment-bags':{'poly','flat'},'hang-tags':{'print'},'care-cards':{'print'},'roll-labels':{'label'}
+}
 def ux_references(path,limit=6):
- records=[item for item in UX_INDEX if item['path'].startswith('/catalog/')]
- words={'custom-boxes':['box'],'paper-bags':['paper bag','shopping bag'],'plastic-bags':['poly','garment bag'],'flexible-pouches':['pouch'],'cards-tags':['card','tag'],'stickers-labels':['label','sticker']}
- terms=words.get(path.split('/')[2] if path.startswith('/products/') else '',[])
- return [item for item in records if any(term in item['name'].lower() for term in terms)][:limit]
+ parts=path.strip('/').split('/');family=parts[1] if len(parts)>1 else '';slug=parts[2] if len(parts)>2 else ''
+ kinds=UX_FORMATS.get(slug,UX_FAMILY_FORMATS.get(family,set()))
+ records=[item for item in UX_INDEX if item['format'] in kinds]
+ if slug=='garment-bags':records=[item for item in records if item['format']=='poly' or re.search(r'garment|underwear|sock',item['name'],re.I)]
+ # A category should show its range, rather than six near-identical opening references.
+ chosen=[];seen=set()
+ for item in records:
+  if item['format'] not in seen:chosen.append(item);seen.add(item['format'])
+ return (chosen+[item for item in records if item not in chosen])[:limit]
 
 def ux_reference_cards(items):
- return '<div class="ux-grid">'+''.join('<article class="ux-card"><a class="ux-photo" href="'+item['path']+'">'+ux_photo(item)+'</a><div class="ux-card-copy"><h3><a href="'+item['path']+'">'+esc(item['name'])+'</a></h3><p>'+esc(' · '.join(v for k,v in item['facts'] if k in ['Material reference','Film reference','Print / finish options','Printing options','Application']))+'</p><a class="textlink" href="'+item['path']+'">View specifications ↗</a></div></article>' for item in items)+'</div>'
+ body='<div class="ux-grid">'
+ for item in items:
+  material=next((v for k,v in item['facts'] if k in ['Material reference','Film reference']),'')
+  finish=next((v for k,v in item['facts'] if k in ['Print / finish options','Finish options','Finish reference','Printing options']),'')
+  application=next((v for k,v in item['facts'] if k=='Application'),'')
+  facts=[(label,value) for label,value in [('Material',material),('Print / finish',finish),('Use',application)] if value]
+  body+='<article class="ux-card"><a class="ux-photo" href="'+item['path']+'">'+ux_photo(item)+'</a><div class="ux-card-copy"><h3><a href="'+item['path']+'">'+esc(item['name'])+'</a></h3><dl class="ux-card-facts">'+''.join('<div><dt>'+label+'</dt><dd>'+esc(value)+'</dd></div>' for label,value in facts)+'</dl><a class="textlink" href="'+item['path']+'">View specifications ↗</a></div></article>'
+ return body+'</div>'
 
 def ux_faq():
  return '<div class="faq">'+''.join('<details><summary>'+q+'</summary><p>'+a+'</p></details>' for q,a in [

@@ -1,5 +1,6 @@
 """Render expanded procurement content using captured specifications and focused profiles."""
 import importlib.util
+from geo_topics import TOPICS, FORMAT_GUIDES
 editorial_spec=importlib.util.spec_from_file_location('packhub_expanded',ROOT/'content/expanded.py')
 expanded_content=importlib.util.module_from_spec(editorial_spec);editorial_spec.loader.exec_module(expanded_content)
 
@@ -56,12 +57,14 @@ def product_editorial(record,rows):
  body+=prose_section('sample-review','Review a sample for the actual task',f'Select the sample according to the decision still open. For this format, the review should cover {sample_focus}. A blank sample can resolve construction and fit, while an appropriate printed reference helps review artwork and surface appearance. Confirm how closely the sample material and production route represent the proposed order. Agree the checks and conditions before approval, record the findings and identify the sample revision. If the material, size, opening or application changes, review the affected decision again rather than carrying it over from an unrelated example.')
  body+=prose_section('order-planning','MOQ, quotation and delivery planning',f'Catalog orders start at 500 pieces. State the quantity for each size and printed design so the quotation can identify the production split and the component being counted. {quantity_note} Ask for setup or tooling, samples, product supply, export packing and freight to be explained where applicable. Production scheduling follows the agreed specification and approvals, while delivery also depends on the destination and shipping arrangement. Include the required arrival window and confirm revised terms when artwork, quantities or packing change.')
  faq_items=[('What is the MOQ for '+reference+'?',f'Catalog orders start at 500 pieces. Confirm the unit being quoted and how the quantity is divided across sizes, artwork versions or included components. {quantity_note}'),('Can I request my own logo and dimensions?','Share the reference, product or companion-pack measurements and artwork status. We will review the component, printable area, dimensions and requested finish together before confirming the specification and sample.'),('Which material and print details should I review?',f'The material starting point is {material}. The print or finish reference is {printing}. Confirm the complete construction and one final print specification rather than treating a list of reference options as features automatically included in the order.'),('What should I send for an accurate quote?',f'Include {reference}, the actual component or pack required, dimensions with units, quantity per design, the {features}, sample priorities and delivery country. For filled packs, also describe the contents and filling conditions.'),('Can the image be used as production approval?','Use the image to communicate the design direction. Approve physical fit, printed color and the relevant functional checks using the final specification and an appropriate sample for the actual component and application.'),('How do I place a repeat order?','Share the previous reference and approved artwork revision. Confirm whether the product, companion package, material, size, printed information or delivery arrangement has changed, then review affected sample checks before repeating production.')]
+ decision_guides=FORMAT_GUIDES.get(record['format'],['packaging-sample-types','custom-packaging-moq','choose-packaging-supplier-china'])
+ body+='<section id="buying-decisions"><h2>Buying decisions for this packaging</h2><div class="related-links">'+''.join('<a href="/guides/'+slug+'/">'+esc(TOPICS[slug][0])+'</a>' for slug in decision_guides)+'</div></section>'
  body+='<section id="product-questions"><h2>'+esc(name)+' questions</h2>'+question_list(faq_items)+'</section><section><h2>Useful buying guides</h2><p>Prepare a <a href="/guides/packaging-quote-checklist/">complete packaging quote brief</a>, choose the right <a href="/guides/packaging-sample-types/">sample type</a>, and review what a <a href="/guides/packaging-print-proof/">print proof should confirm</a>. Compare relevant <a href="/materials/">materials and finishes</a> using the actual construction for your order.</p></section></article></div></section>'
  return body
 
 def guide_extra(slug):
  data=expanded_content.GUIDE_EXPANSIONS[slug]
- body='<div class="guide-answer"><strong>Quick answer</strong><p>'+esc(data['answer'])+'</p></div>'
+ body=''
  body+=prose_section('worked-example','A worked procurement example',data['example'])
  body+='<h2 id="comparison">Compare the decisions that matter</h2>'+table(data['rows'])
  body+='<section id="common-mistakes"><h2>Common mistakes to avoid</h2><ul>'+''.join('<li>'+esc(s)+'</li>' for s in data['mistakes'])+'</ul><p>Use the comparison above to identify what is still unknown. Ask for a written answer or a suitable sample where a purchasing decision depends on that point. An unanswered requirement is easier to resolve before artwork, tooling or a production quantity is approved than after the order has been scheduled.</p></section>'
@@ -72,6 +75,12 @@ def guide_extra(slug):
  if slug in ['internal-vs-external-box-dimensions','paper-bag-load-testing','label-roll-direction']:sources=[('GS1 US: package measurement guidance','https://www.gs1us.org/upcs-barcodes-prefixes/how-to-use-your-upc-barcodes/share-information-electronically'),('ISTA: reviewing changed packaged products','https://support.ista.org/portal/en/kb/articles/when-should-a-packaged-product-be-retested')]
  if slug=='label-roll-direction':sources[1]=('GS1 US: barcode placement on packaging','https://www.gs1us.org/upcs-barcodes-prefixes/how-to-use-your-upc-barcodes/place-barcodes-on-products')
  if slug in ['mailer-boxes-vs-shipping-boxes','folding-cartons-vs-rigid-boxes']:sources[0]=('FEFCO: corrugated design style references','https://www.fefco.org/technical-information/fefco-code')
+ if slug in {g['slug'] for g in GEO_GUIDES}:
+  sources=[('Adobe: print color management','https://helpx.adobe.com/illustrator/using/printing-color-management.html'),('Adobe: printer marks and bleeds','https://helpx.adobe.com/illustrator/using/printers-marks-bleeds.html')]
+  if slug in ['packaging-materials-explained','custom-paper-bags-guide','choose-packaging-supplier-china']:
+   sources=[('FSC: understanding material sourcing labels','https://fsc.org/en/label'),('ISTA: selecting distribution test procedures','https://www.ista.org/test_procedures.php')]
+  if slug=='custom-packaging-moq':
+   sources=[('PackHubGlobe: catalog quantity references','/catalog/'),('PackHubGlobe: quotation terms and supplying responsibility','/terms/')]
  body+='<section class="article-note"><h2>Technical references and further reading</h2><p>These references explain relevant measurement, print or test-planning concepts. They do not certify the products shown on this website.</p><ul>'+''.join('<li><a href="'+url+'" target="_blank" rel="noopener noreferrer">'+esc(title)+'</a></li>' for title,url in sources)+'</ul></section>'
  return body
 

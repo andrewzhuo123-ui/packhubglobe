@@ -1,8 +1,9 @@
 from pathlib import Path
 from html import escape as esc
-import json, csv, re, shutil, hashlib
+import json, csv, re, shutil, hashlib, sys
 
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'content'))
 from catalog_verify import verify_catalog
 verify_catalog(ROOT)
 OUT=ROOT
@@ -72,6 +73,22 @@ def write(path,title,description,body,extra=None,lang='en',breadcrumb=None):
    variants=RESPONSIVE[source[1]]
    tag=tag[:-1]+' srcset="'+', '.join(url+' '+str(width)+'w' for url,width in variants)+'" sizes="(max-width: 600px) 92vw, (max-width: 1100px) 45vw, 600px">'
   return tag
+ guide_links={
+  '/products/custom-boxes/':[('straight-vs-reverse-tuck-end','Straight vs reverse tuck end'),('folding-cartons-vs-rigid-boxes','Folding cartons vs rigid boxes')],
+  '/products/custom-boxes/folding-cartons/':[('straight-vs-reverse-tuck-end','Compare tuck-end closures'),('prepare-packaging-dielines','Prepare the carton artwork')],
+  '/products/paper-bags/':[('custom-paper-bags-guide','Paper bag materials and handles'),('paper-bag-load-testing','Plan a loaded bag review')],
+  '/materials/':[('packaging-materials-explained','Compare board constructions'),('foil-vs-spot-uv-vs-embossing','Compare decorative finishes')],
+  '/materials/printing-finishes/':[('foil-vs-spot-uv-vs-embossing','Foil, spot UV and embossing'),('prepare-packaging-dielines','Prepare finish layers')],
+  '/industries/beauty-skincare/':[('cosmetic-packaging-buyers-guide','Cosmetic carton and gift-box guide')],
+  '/industries/apparel/':[('apparel-packaging-selection','Coordinate bags, mailers and tags')],
+  '/services/artwork-preflight/':[('prepare-packaging-dielines','Prepare packaging dielines')],
+  '/services/quality-control/':[('choose-packaging-supplier-china','Supplier evaluation checklist')],
+  '/request-quote/':[('packaging-quote-checklist','What to include in your brief'),('custom-packaging-moq','Understand MOQ and quantity splits')],
+  '/about/':[('choose-packaging-supplier-china','Questions to ask your packaging supplier')],
+  '/':[('packaging-quote-checklist','Prepare a comparable quote brief'),('packaging-materials-explained','Choose a material direction'),('custom-packaging-moq','Understand starting quantities')]
+ }
+ if path in guide_links:
+  body+='<section class="section wrap"><h2>Make your next packaging decision</h2><div class="related-links">'+''.join('<a href="/guides/'+slug+'/">'+label+'</a>' for slug,label in guide_links[path])+'</div></section>'
  body=re.sub(r'<img\b[^>]*>',responsive_image,body)
  body=re.sub(r'(href="/request-quote/\?product=[^"]*)"',lambda m:m[1]+'&amp;source='+quote(path,safe='')+'"',body)
  product_page=path.startswith('/products/') and len(path.strip('/').split('/'))==3 or any(item.get('@type')=='Product' for item in (extra or []))
@@ -79,8 +96,15 @@ def write(path,title,description,body,extra=None,lang='en',breadcrumb=None):
   quote_link=re.search(r'href="(/request-quote/\?product=[^"]+)"',body)
   if quote_link:body+='<div class="ux-mobile-quote">'+button('Request a Quote',quote_link[1].replace('&amp;','&'))+'</div>'
  file=OUT/path.strip('/')/'index.html' if path!='/' else OUT/'index.html';file.parent.mkdir(parents=True,exist_ok=True)
- schema=[{'@type':'WebSite','@id':ORIGIN+'/#website','name':'PackHubGlobe','url':ORIGIN+'/'},{'@type':'WebPage','@id':ORIGIN+path+'#webpage','name':title,'url':ORIGIN+path,'inLanguage':lang,'isPartOf':{'@id':ORIGIN+'/#website'}}]
- if path=='/':schema.append({'@type':'Organization','@id':ORIGIN+'/#brand','name':'PackHubGlobe','url':ORIGIN+'/','email':EMAIL})
+ primary=next((item for kind in ['Product','Article','Service','ItemList'] for item in (extra or []) if item.get('@type')==kind),None)
+ schema=[{'@type':'WebSite','@id':ORIGIN+'/#website','name':'PackHubGlobe','url':ORIGIN+'/','publisher':{'@id':ORIGIN+'/#brand'}},{'@type':'WebPage','@id':ORIGIN+path+'#webpage','name':title,'url':ORIGIN+path,'description':description,'inLanguage':lang,'publisher':{'@id':ORIGIN+'/#brand'},'isPartOf':{'@id':ORIGIN+'/#website'}}]
+ schema.append({'@type':'Organization','@id':ORIGIN+'/#brand','name':'PackHubGlobe','url':ORIGIN+'/','email':EMAIL,'description':'Custom boxes, bags, pouches, cards, tags and labels for business buyers.','logo':{'@type':'ImageObject','url':ORIGIN+'/assets/favicon.svg'},'contactPoint':{'@type':'ContactPoint','contactType':'sales','email':EMAIL,'url':ORIGIN+'/request-quote/'}})
+ if primary:
+  primary.setdefault('@id',ORIGIN+path+'#'+{'Product':'product','Article':'article','Service':'service','ItemList':'list'}[primary['@type']])
+  schema[1]['mainEntity']={'@id':primary['@id']}
+  if primary['@type']=='ItemList':schema[1]['@type']='CollectionPage'
+  else:primary['mainEntityOfPage']={'@id':ORIGIN+path+'#webpage'}
+  if primary['@type']=='Service':primary['provider']={'@id':ORIGIN+'/#brand'}
  if path!='/':
   crumbs=[{'@type':'ListItem','position':1,'name':'Home','item':ORIGIN+'/'}]
   labels={'/products/':'Packaging','/guides/':'Guides','/industries/':'Industries',**{'/products/'+c['slug']+'/':c['name'] for c in CATEGORIES}}
@@ -88,11 +112,17 @@ def write(path,title,description,body,extra=None,lang='en',breadcrumb=None):
    part='/'+('/'.join(path.strip('/').split('/')[:i]))+'/'
    label=labels.get(part,title.split(' | ')[0] if part==path else part.strip('/').split('/')[-1].replace('-',' ').title())
    crumbs.append({'@type':'ListItem','position':i+1,'name':label,'item':ORIGIN+part})
+  if breadcrumb:
+   crumbs=[{'@type':'ListItem','position':i+1,'name':label,'item':ORIGIN+url} for i,(url,label) in enumerate([('/','Home')]+breadcrumb)]
   schema.append({'@type':'BreadcrumbList','itemListElement':crumbs})
  if extra:schema.extend(extra)
+ share_image=re.search(r'<img\b[^>]*src="([^"]+)"[^>]*alt="([^"]*)"',body)
+ share_url=(ORIGIN+share_image[1]) if share_image and share_image[1].startswith('/') else ORIGIN+'/assets/images/print-collection.webp'
+ share_alt=share_image[2] if share_image else 'Illustrative custom packaging design collection'
+ if primary and primary['@type']=='Article':primary['image']=share_url;primary['description']=description
  home_style='<link rel="stylesheet" href="/assets/home.css?v=20261030-detail-review">' if path=='/' else ''
  asset_version='20261030-detail-review'
- html='<!doctype html><html lang="'+lang+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(title)+'</title><meta name="description" content="'+esc(description,quote=True)+'"><meta name="robots" content="index,follow"><link rel="canonical" href="'+ORIGIN+path+'"><meta property="og:title" content="'+esc(title,quote=True)+'"><meta property="og:description" content="'+esc(description,quote=True)+'"><meta property="og:type" content="website"><meta property="og:url" content="'+ORIGIN+path+'"><meta property="og:image" content="'+ORIGIN+'/assets/images/print-collection.webp"><meta name="theme-color" content="#111315"><link rel="icon" href="/assets/favicon.svg?v=20261030-detail-review" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css?v=20261030-detail-review"><script src="/assets/ux.js?v=20261030-detail-review" defer></script><script src="/assets/app.js?v='+asset_version+'" defer></script><link rel="stylesheet" href="/assets/'+UX_STYLE+'">'+home_style+'<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@graph':schema},ensure_ascii=False).replace('</',r'<\/')+'</script></head><body'+(' class="has-product-quote"' if product_page else '')+'>'+header(path)+'<main id="main" tabindex="-1">'+body+'</main>'+footer()+'</body></html>'
+ html='<!doctype html><html lang="'+lang+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(title)+'</title><meta name="description" content="'+esc(description,quote=True)+'"><meta name="robots" content="index,follow"><link rel="canonical" href="'+ORIGIN+path+'"><meta property="og:title" content="'+esc(title,quote=True)+'"><meta property="og:description" content="'+esc(description,quote=True)+'"><meta property="og:type" content="'+('article' if any(item.get('@type')=='Article' for item in (extra or [])) else 'website')+'"><meta property="og:url" content="'+ORIGIN+path+'"><meta property="og:image" content="'+share_url+'"><meta property="og:image:alt" content="'+share_alt+'"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="'+esc(title,quote=True)+'"><meta name="twitter:description" content="'+esc(description,quote=True)+'"><meta name="twitter:image" content="'+share_url+'"><meta name="twitter:image:alt" content="'+share_alt+'"><meta name="theme-color" content="#111315"><link rel="icon" href="/assets/favicon.svg?v=20261030-detail-review" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css?v=20261030-detail-review"><script src="/assets/ux.js?v=20261030-detail-review" defer></script><script src="/assets/app.js?v='+asset_version+'" defer></script><link rel="stylesheet" href="/assets/'+UX_STYLE+'">'+home_style+'<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@graph':schema},ensure_ascii=False).replace('</',r'<\/')+'</script></head><body'+(' class="has-product-quote"' if product_page else '')+'>'+header(path)+'<main id="main" tabindex="-1">'+body+'</main>'+footer()+'</body></html>'
  file.write_text(html);PAGES[:]=[p for p in PAGES if p[0]!=path];PAGES.append((path,title,description))
 
 exec(compile((ROOT/'tools/editorial.py').read_text(),str(ROOT/'tools/editorial.py'),'exec'))

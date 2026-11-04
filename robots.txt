@@ -2,5 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /tools/
 Disallow: /content/
+Disallow: /qa/
+Disallow: /.git/
 
+# Public search and retrieval crawlers use the same rules as all visitors.
+# Training policy is unchanged; no training-specific permission is required for search.
 Sitemap: https://www.packhubglobe.com/sitemap.xml

@@ -4,8 +4,8 @@ Self-contained English B2B custom packaging website for **https://www.packhubglo
 
 ## Website
 
-- 2,246 public pages plus a branded `404.html`.
-- 1,824 catalog products in three primary catalog families, 44 detailed product formats, 15 industry solutions, materials and services, ten buyer guides, company/contact and information pages.
+- 2,255 public pages plus a branded `404.html`.
+- 1,824 catalog products in three primary catalog families, 44 detailed product formats, 15 industry solutions, materials and services, 19 buyer guides, company/contact and information pages.
 - Local fonts and five original AI packaging images with fictional logos and slogans. No external runtime dependencies.
 - Responsive navigation, category filters, native FAQ accordions, prefilled enquiry form, server email submission and text download.
 - Unique titles, meta descriptions, H1s, canonical URLs, image alt text, semantic HTML, JSON-LD, sitemap and robots.

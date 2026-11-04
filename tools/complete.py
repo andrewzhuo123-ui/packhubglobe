@@ -1,7 +1,5 @@
 """Build the complete static product, industry and resource page inventory."""
 exec(compile((ROOT/'tools/editorial.py').read_text(),str(ROOT/'tools/editorial.py'),'exec'))
-import sys
-sys.path.insert(0,str(ROOT/'content'))
 from products import PRODUCTS
 from product_buying_guides import BUYING_GUIDES
 import importlib.util
@@ -108,15 +106,32 @@ for root,label,records in [('materials','Materials & finishes',MATERIALS),('serv
  overview+='</div></section>'+cta()
  write('/'+root+'/',label+' | PackHubGlobe','Explore '+label.lower()+' for custom boxes, bags, pouches, cards and labels.',overview)
 
+from geo_guides import GUIDES as GEO_GUIDES
+for guide in GEO_GUIDES:
+ expanded_content.GUIDE_EXPANSIONS[guide['slug']]=guide
+EXTRA_GUIDES=EXTRA_GUIDES+[(g['slug'],g['title'],g['description'],g['chapters']) for g in GEO_GUIDES]
+
 allguides=[(g[0],g[2],g[3],g[4]) for g in GUIDES]+EXTRA_GUIDES
-overview=intro('Buyer resources','Packaging guides.','Practical answers for choosing packaging, preparing artwork and planning your order.')+'<section class="section wrap" style="padding-top:0"><div class="resourcegrid">'
+overview=intro('Buyer resources','Packaging buying guides for business buyers.','Compare packaging structures, materials, samples and artwork requirements before requesting a custom quotation.')
+overview+='<section class="section wrap"><h2>What are you deciding?</h2><div class="related-links">'+''.join('<a href="/guides/'+slug+'/">'+TOPICS[slug][0]+'</a>' for slug in ['packaging-quote-checklist','folding-cartons-vs-rigid-boxes','packaging-materials-explained','custom-packaging-moq','prepare-packaging-dielines','choose-packaging-supplier-china'])+'</div></section><section class="section wrap" style="padding-top:0"><h2>Explore the buying guides</h2><div class="resourcegrid">'
 for slug,title,desc,chapters in allguides:
  overview+='<article class="guidecard"><h2><a href="/guides/'+slug+'/">'+title+'</a></h2><p>'+desc+'</p><a class="textlink" href="/guides/'+slug+'/">Read guide</a></article>'
  body=intro('Buyer guide',title,desc,'<a href="/guides/">Guides</a> / '+title)
- body+='<article class="article wrap guide-longform"><p class="article-byline">By PackHubGlobe packaging team · Updated 16 October 2026</p><nav class="article-toc" aria-label="Guide contents"><a href="#worked-example">Worked example</a><a href="#comparison">Comparison</a><a href="#approval-checklist">Checklist</a><a href="#guide-faq">FAQ</a></nav>'+sections(chapters)+guide_extra(slug)+'<p class="article-note">For your own project, confirm the specification and sample requirements with us. <a href="/services/sampling/">Explore sampling</a> or <a href="/products/">browse packaging</a>.</p></article>'+cta()
- write('/guides/'+slug+'/',title+' | PackHubGlobe',desc,body,[{'@type':'Article','headline':title,'dateModified':'2026-10-16','author':{'@type':'Organization','name':'PackHubGlobe packaging team'},'publisher':{'@type':'Organization','name':'PackHubGlobe'},'mainEntityOfPage':ORIGIN+'/guides/'+slug+'/'}])
+ updated='2026-11-04'
+ guide_image=scene('beauty' if slug=='cosmetic-packaging-buyers-guide' else 'packing' if slug=='apparel-packaging-selection' else 'general','Illustrative packaging design concept; not a customer order') if slug in {g['slug'] for g in GEO_GUIDES} else ''
+ body+='<article class="article wrap guide-longform"><p class="article-byline">By <a href="/about/">PackHubGlobe</a> · Updated <time datetime="'+updated+'">'+'4 November 2026'+'</time></p><nav class="article-toc" aria-label="Guide contents"><a href="#worked-example">Worked example</a><a href="#comparison">Comparison</a><a href="#approval-checklist">Checklist</a><a href="#guide-faq">FAQ</a></nav>'+'<div class="guide-answer"><strong>Quick answer</strong><p>'+esc(expanded_content.GUIDE_EXPANSIONS[slug]['answer'])+'</p></div>'+guide_image+sections(chapters)+guide_extra(slug)+'<p class="article-note">For your own project, confirm the specification and sample requirements with us. <a href="/services/sampling/">Explore sampling</a> or <a href="/products/">browse packaging</a>.</p></article>'+cta()
+ allowed=TOPICS[slug][1]
+ candidates=[item for item in UX_INDEX if not allowed or item['format'] in allowed]
+ terms={'cosmetic-packaging-buyers-guide':['skincare','cosmetic','serum','perfume'],'apparel-packaging-selection':['apparel','clothing','garment','hang tag']}.get(slug,[])
+ if terms:candidates=[item for item in candidates if any(word in item['name'].lower() for word in terms)]
+ examples=[];formats=set()
+ for item in candidates:
+  if item['format'] not in formats:examples.append(item);formats.add(item['format'])
+ examples=(examples+[item for item in candidates if item not in examples])[:3]
+ body=body.removesuffix(cta())+'<section class="section wrap" id="product-examples"><h2>Compare specification references</h2><p>Use these product images and reference specifications to apply the decisions in this guide. They are starting points for your quotation, and should be confirmed against your final specification.</p>'+ux_reference_cards(examples)+'</section>'+cta()
+ write('/guides/'+slug+'/',title+' | PackHubGlobe',desc,body,[{'@type':'Article','headline':title,'dateModified':updated,'author':{'@id':ORIGIN+'/#brand'},'publisher':{'@id':ORIGIN+'/#brand'},'mainEntityOfPage':{'@id':ORIGIN+'/guides/'+slug+'/#webpage'}}])
 overview+='</div></section>'+cta()
-write('/guides/','Packaging Guides for B2B Buyers | PackHubGlobe','Compare packaging structures, dimensions, print proofs, sample types, label rolls and material choices.',overview)
+write('/guides/','Packaging Guides for B2B Buyers | PackHubGlobe','Compare packaging structures, dimensions, print proofs, sample types, label rolls and material choices.',overview,[{'@type':'ItemList','name':'Packaging buyer guides','numberOfItems':len(allguides),'itemListElement':[{'@type':'ListItem','position':i+1,'name':g[1],'url':ORIGIN+'/guides/'+g[0]+'/'} for i,g in enumerate(allguides)]}])
 
 body=intro('Design references','Packaging ideas, brought together.','Explore fictional-brand concepts for coffee, beauty and ecommerce. These illustrate design directions, rather than completed customer orders.')+'<section class="section wrap" style="padding-top:0">'
 for name,desc,links,img in [('Coffee range','Coordinate a printed pouch, retail bag, labels and insert card.',['flexible-pouches/flat-bottom-pouches','paper-bags/kraft-paper-bags','stickers-labels/roll-labels'],'coffee'),('Beauty presentation','Bring cartons, gift boxes and care cards into one range.',['custom-boxes/rigid-boxes','custom-boxes/folding-cartons','cards-tags/care-cards'],'beauty'),('Ecommerce unboxing','Connect a mailer, printed card and seal with your packing workflow.',['custom-boxes/mailer-boxes','cards-tags/insert-cards','stickers-labels/packaging-seals'],'packing')]:
@@ -139,9 +154,9 @@ error=(ROOT/'404/index.html').read_text().replace('content="index,follow"','cont
 (ROOT/'404.html').write_text(error);(ROOT/'404/index.html').unlink();(ROOT/'404').rmdir();PAGES[:]=[p for p in PAGES if p[0]!='/404/']
 
 from xml.sax.saxutils import escape as xesc
-(ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+xesc(ORIGIN+p[0])+'</loc></url>\n' for p in sorted(PAGES))+'</urlset>\n')
-(ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\nDisallow: /tools/\nDisallow: /content/\n\nSitemap: '+ORIGIN+'/sitemap.xml\n')
-(ROOT/'llms.txt').write_text('# PackHubGlobe\n\nCustom packaging and printing for business buyers. Contact: '+EMAIL+'. Catalog MOQ is 500 pieces. Pricing, materials and production timing require a project-specific quotation. Original virtual-brand imagery is illustrative.\n\n'+''.join('- ['+title+']('+ORIGIN+path+'): '+desc+'\n' for path,title,desc in PAGES if path in ['/','/catalog/','/products/','/industries/','/materials/','/services/','/guides/','/about/','/factory/','/request-quote/']))
+(ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+xesc(ORIGIN+p[0])+'</loc>'+('<lastmod>2026-11-04</lastmod>' if p[0].startswith('/guides/') else '')+'</url>\n' for p in sorted(PAGES))+'</urlset>\n')
+(ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\nDisallow: /tools/\nDisallow: /content/\nDisallow: /qa/\nDisallow: /.git/\n\n# Public search and retrieval crawlers use the same rules as all visitors.\n# Training policy is unchanged; no training-specific permission is required for search.\nSitemap: '+ORIGIN+'/sitemap.xml\n')
+(ROOT/'llms.txt').write_text('# PackHubGlobe\n\nCustom packaging and printing for business buyers. Contact: '+EMAIL+'. Catalog MOQ is 500 pieces. Pricing, materials and production timing require a project-specific quotation. Original virtual-brand imagery is illustrative.\n\n'+''.join('- ['+title+']('+ORIGIN+path+'): '+desc+'\n' for path,title,desc in PAGES if path in ['/','/catalog/','/products/','/industries/','/materials/','/services/','/guides/','/about/','/factory/','/request-quote/'] or path.startswith(('/guides/','/products/','/industries/','/materials/','/services/'))))
 # Superseded pagination is redirected; it must not remain as an orphaned HTML page.
 for old_path in json.loads((ROOT/'content/catalog-redirects.json').read_text()):
  stale=ROOT/old_path.strip('/')/'index.html'

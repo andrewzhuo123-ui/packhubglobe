@@ -34,7 +34,7 @@ form.addEventListener('submit',async e=>{
  }catch(error){globalThis.phgTrack?.('rfq_form_error',{error_type:'submission'});result.textContent=(error instanceof SyntaxError||error.name==='TypeError')?'The enquiry service is unavailable. Please try again or email andrew@packhubglobe.com.':error.message||'Your enquiry could not be sent. Please try again or email andrew@packhubglobe.com.'}
  finally{sending=false;button.disabled=false;button.textContent='Send enquiry';result.scrollIntoView({block:'nearest',behavior:'smooth'})}
 });
-document.querySelector('#download-brief').addEventListener('click',()=>{if(!form.reportValidity())return;const blob=new Blob([brief()],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='packhubglobe-packaging-brief.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)})}
+document.querySelector('#download-brief').addEventListener('click',()=>{if(!form.reportValidity())return;globalThis.phgTrack?.('rfq_brief_download');const blob=new Blob([brief()],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='packhubglobe-packaging-brief.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)})}
 
 document.querySelectorAll('.navlinks a').forEach(link=>link.addEventListener('click',()=>{menuButton?.setAttribute('aria-expanded','false');document.querySelector('.navlinks').classList.remove('open')}));
 

@@ -41,9 +41,9 @@ const routes=['/','/products/','/products/custom-boxes/','/products/custom-boxes
  await page.keyboard.press('Escape');assert.equal(await page.locator('.navgroup[open]').count(),0);
  await page.getByRole('button',{name:'Menu',exact:true}).click();await page.locator('.navgroup summary').first().click();
  await page.getByRole('link',{name:'Custom boxes',exact:true}).click();await page.waitForURL('**/products/custom-boxes/');
- await page.getByRole('link',{name:'View magnetic gift boxes',exact:true}).click();await page.waitForURL('**/magnetic-gift-boxes/');
+ await page.getByRole('link',{name:'Magnetic gift boxes',exact:true}).click();await page.waitForURL('**/magnetic-gift-boxes/');
  assert.ok(await page.locator('.ux-mobile-quote').isVisible());
- await page.locator('.ux-mobile-quote a').click();await page.waitForURL('**/request-quote/**');
+ await page.locator('.ux-mobile-quote a').click();assert.ok(await page.locator('#quick-quote-dialog').isVisible());await page.locator('#quick-quote-dialog .textlink').click();await page.waitForURL('**/request-quote/**');
  assert.equal(await page.locator('#product').inputValue(),'Magnetic gift boxes');
  assert.equal(await page.locator('#details').inputValue(),'');
  assert.equal(await page.locator('[name=source_page]').inputValue(),'/products/custom-boxes/magnetic-gift-boxes/');

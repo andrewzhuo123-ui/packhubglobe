@@ -12,3 +12,14 @@ def documentation_link(kind='all'):
   'paper':'A supplied white coated paperboard report identifies the tested sample and food-contact test conditions. Match the exact paper grade and finished construction to your order; other materials need their own evidence.',
   'quality':'Review the supplied ISO 9001 and ISO 14001 management-system certificates and the scope shown for carton production. Agree the inspection criteria and documentation for your actual order.'}
  return '<section class="section wrap documentation-link"><h2>Documentation for your packaging decision</h2><p>'+descriptions[kind]+'</p><a class="textlink" href="/factory/#certificates">Review certificates &amp; material reports ↗</a></section>'
+
+
+def entity_evidence():
+ return '<section class="section wrap entity-evidence"><h2>Company identity and documented production scope</h2><p>The supplied ISO documents name Xiamen Finer Packaging Co., Ltd. and identify carton production within their stated scope. The registered address printed on those documents is Room 303, No. 181, Siming Garden, Industrial Concentration Zone, Tong’an District, Xiamen City. The business address shown includes Room 202 and Floor 3 at the same site.</p><p>The separate FSC chain-of-custody document names Xiamen Finer Imp. &amp; Exp. Co., Ltd.; its scope is shown on the Factory page. Paper packaging and flexible packaging responsibilities are identified separately above. The supplying company, order specification and applicable documents are confirmed in your quotation. <a class="textlink" href="/factory/#certificates">Read the complete certificates and material report ↗</a></p></section>'
+
+
+def documented_companies():
+ return [
+ {'@type':'Organization','@id':ORIGIN+'/about/#paper-packaging-company','name':'Xiamen Finer Packaging Co., Ltd.','url':'https://www.finerpack.com/about','subjectOf':{'@type':'DigitalDocument','name':'Supplied ISO management-system certificates','url':ORIGIN+'/assets/documents/finer-packaging-iso-9001-14001.pdf'}},
+ {'@type':'Organization','@id':ORIGIN+'/about/#flexible-packaging-company','name':'Xiamen Unique Packaging Technology Co., Ltd.','url':'https://uniquepouches.com/about.html'},
+ {'@type':'Organization','@id':ORIGIN+'/about/#paper-trading-company','name':'Xiamen Finer Imp. & Exp. Co., Ltd.','subjectOf':{'@type':'DigitalDocument','name':'Supplied FSC chain-of-custody certificate and annex','url':ORIGIN+'/assets/documents/finer-import-export-fsc-coc.pdf'}}]

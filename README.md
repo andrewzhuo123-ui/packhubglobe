@@ -69,3 +69,9 @@ Conversion events are exposed to `dataLayer` and `packhubglobe:analytics` withou
 Catalog collections include structured buying comparisons, ordering FAQs, shareable structure/material/application filters and a persistent multi-item quote basket. The existing enquiry endpoint and downloaded brief carry the selected reference list. Details, validation and publication limits: [catalog optimization record](content/catalog-optimization-2026-11-05.md).
 
 Generate responsive catalog photos with `python3 tools/prepare-catalog-images.py`, rebuild, then run `node tools/test-catalog.cjs` using the same Playwright and Axe module settings as the UX checks.
+
+## Enquiry and delivery update (5 November 2026)
+
+The homepage includes a compact enquiry form, and product quote links open a contextual native dialog. Both reuse the existing PHP endpoint. The full form offers optional drafts limited to the current tab; files and consent are not stored. Shared styles and scripts are delivered as two content-addressed bundles with immutable caching. Guide Q&A markup and existing category/industry links are expanded without invented offers or credentials.
+
+Implementation decisions, evidence and limits: [SEO/GEO/frontend release record](content/seo-geo-frontend-implementation-2026-11-05.md). Run `node tools/test-conversion.cjs` with the documented Playwright/Axe module settings for the new enquiry flows. Analytics events remain local; the owner chose not to connect external collectors.

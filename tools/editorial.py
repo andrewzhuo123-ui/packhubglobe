@@ -123,3 +123,11 @@ def home_exhibitions():
   body+='<article><a href="/assets/exhibitions/booth-'+n+'.webp" target="_blank" rel="noopener noreferrer" aria-label="Open trade-fair photo '+n+'"><img src="/assets/exhibitions/booth-'+n+'.webp" alt="'+alt+'" width="620" height="424" loading="lazy"></a><h3>'+caption+'</h3></article>'
  body+='</div><div class="exhibition-invite"><div><h3>Let’s talk about your next packaging project.</h3><p>Ask about our next trade fair, the samples you would like to review, or a remote discussion of your packaging brief.</p></div>'+button('Talk to our packaging team',qurl('Trade fair meeting and packaging samples'))+'</div></div></section>'
  return body
+
+
+def guide_schemas(slug,title,chapters,updated):
+ path=ORIGIN+'/guides/'+slug+'/'
+ data=expanded_content.GUIDE_EXPANSIONS[slug]
+ nodes=[{'@type':'Article','headline':title,'dateModified':updated,'author':{'@id':ORIGIN+'/#brand'},'publisher':{'@id':ORIGIN+'/#brand'},'mainEntityOfPage':{'@id':path+'#webpage'}}, {'@type':'FAQPage','@id':path+'#guide-faq','mainEntity':[{'@type':'Question','name':q,'acceptedAnswer':{'@type':'Answer','text':a}} for q,a in data['faq']]}]
+ if slug=='packaging-quote-checklist':nodes.append({'@type':'HowTo','@id':path+'#quotation-steps','name':'Prepare a custom packaging quotation brief','description':'Define the product, specification, approvals and commercial basis for a comparable quotation.','step':[{'@type':'HowToStep','position':i+1,'name':name,'text':text,'url':path+'#quote-step-'+str(i+1)} for i,(name,text) in enumerate(chapters)]})
+ return nodes

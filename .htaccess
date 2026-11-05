@@ -27,10 +27,25 @@ RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L,NE]
 Header always set X-Robots-Tag "noindex, follow" "expr=%{REQUEST_URI} =~ m#^/catalog/# && %{QUERY_STRING} =~ m#(^|&)(q|industry|structure|material)=#"
 Header always set X-Content-Type-Options "nosniff"
 Header always set Referrer-Policy "strict-origin-when-cross-origin"
-<FilesMatch "\.(?:html|xml|txt)$">
+<FilesMatch "\.(?:html|xml|txt|json)$">
 Header set Cache-Control "no-cache, max-age=0, must-revalidate"
 </FilesMatch>
 <FilesMatch "\.(?:webp|svg|woff2)$">
 Header set Cache-Control "public, max-age=604800"
 </FilesMatch>
+</IfModule>
+
+# Only content-addressed bundles receive immutable caching.
+<IfModule mod_headers.c>
+<FilesMatch "^site-[a-f0-9]{12}\.(?:css|js)$">
+Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+</IfModule>
+<IfModule mod_brotli.c>
+AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+<IfModule !mod_brotli.c>
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
 </IfModule>

@@ -1,14 +1,14 @@
 from pathlib import Path
 from html import escape as esc
-import json, csv, re, shutil, hashlib, sys
+import json, csv, re, hashlib, sys
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'content'))
 from catalog_verify import verify_catalog
 verify_catalog(ROOT)
 OUT=ROOT
-UX_STYLE='ux-'+hashlib.sha256((ROOT/'assets/ux.css').read_bytes()).hexdigest()[:12]+'.css'
-shutil.copyfile(ROOT/'assets/ux.css',ROOT/'assets'/UX_STYLE)
+exec(compile((ROOT/'tools/site_assets.py').read_text(),str(ROOT/'tools/site_assets.py'),'exec'))
+exec(compile((ROOT/'tools/conversion.py').read_text(),str(ROOT/'tools/conversion.py'),'exec'))
 ORIGIN='https://www.packhubglobe.com'
 EMAIL='andrew@packhubglobe.com'
 RESPONSIVE=json.loads((ROOT/'assets/responsive/manifest.json').read_text())
@@ -92,7 +92,12 @@ def write(path,title,description,body,extra=None,lang='en',breadcrumb=None):
  body=re.sub(r'<img\b[^>]*>',responsive_image,body)
  body=re.sub(r'(href="/request-quote/\?product=[^"]*)"',lambda m:m[1]+'&amp;source='+quote(path,safe='')+'"',body)
  product_page=path.startswith('/products/') and len(path.strip('/').split('/'))==3 or any(item.get('@type')=='Product' for item in (extra or []))
+ if path=='/':
+  body=body.replace('<section class="section wrap"><div class="sectionhead"><div><span class="eyebrow">Customization</span>',home_fast_quote()+'<section class="section wrap"><div class="sectionhead"><div><span class="eyebrow">Customization</span>')
+  body=body.replace('href="/request-quote/"','href="#fast-quote"',1)
+ if path=='/request-quote/':body=body.replace('<div class="actions"><button class="button" type="submit">',draft_controls()+'<div class="actions"><button class="button" type="submit">')
  if product_page:
+  body+=product_quote_drawer(body,path,extra)
   quote_link=re.search(r'href="(/request-quote/\?product=[^"]+)"',body)
   if quote_link:body+='<div class="ux-mobile-quote">'+button('Request a Quote',quote_link[1].replace('&amp;','&'))+'</div>'
  file=OUT/path.strip('/')/'index.html' if path!='/' else OUT/'index.html';file.parent.mkdir(parents=True,exist_ok=True)
@@ -115,14 +120,15 @@ def write(path,title,description,body,extra=None,lang='en',breadcrumb=None):
   if breadcrumb:
    crumbs=[{'@type':'ListItem','position':i+1,'name':label,'item':ORIGIN+url} for i,(url,label) in enumerate([('/','Home')]+breadcrumb)]
   schema.append({'@type':'BreadcrumbList','itemListElement':crumbs})
+ if path in ['/about/','/factory/']:
+  companies=documented_companies();schema[1]['about']=[{'@id':company['@id']} for company in companies];schema.extend(companies)
  if extra:schema.extend(extra)
  share_image=re.search(r'<img\b[^>]*src="([^"]+)"[^>]*alt="([^"]*)"',body)
  share_url=(ORIGIN+share_image[1]) if share_image and share_image[1].startswith('/') else ORIGIN+'/assets/images/print-collection.webp'
  share_alt=share_image[2] if share_image else 'Illustrative custom packaging design collection'
  if primary and primary['@type']=='Article':primary['image']=share_url;primary['description']=description
- home_style='<link rel="stylesheet" href="/assets/home.css?v=20261030-detail-review">' if path=='/' else ''
- asset_version='20261105-catalog'
- html='<!doctype html><html lang="'+lang+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(title)+'</title><meta name="description" content="'+esc(description,quote=True)+'"><meta name="robots" content="index,follow"><link rel="canonical" href="'+ORIGIN+path+'"><meta property="og:title" content="'+esc(title,quote=True)+'"><meta property="og:description" content="'+esc(description,quote=True)+'"><meta property="og:type" content="'+('article' if any(item.get('@type')=='Article' for item in (extra or [])) else 'website')+'"><meta property="og:url" content="'+ORIGIN+path+'"><meta property="og:image" content="'+share_url+'"><meta property="og:image:alt" content="'+share_alt+'"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="'+esc(title,quote=True)+'"><meta name="twitter:description" content="'+esc(description,quote=True)+'"><meta name="twitter:image" content="'+share_url+'"><meta name="twitter:image:alt" content="'+share_alt+'"><meta name="theme-color" content="#111315"><link rel="icon" href="/assets/favicon.svg?v=20261030-detail-review" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css?v=20261030-detail-review"><script src="/assets/ux.js?v=20261030-detail-review" defer></script><script src="/assets/app.js?v='+asset_version+'" defer></script><script src="/assets/catalog-enhancements.js?v=20261105" defer></script><link rel="stylesheet" href="/assets/catalog-enhancements.css?v=20261105"><link rel="stylesheet" href="/assets/'+UX_STYLE+'">'+home_style+'<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@graph':schema},ensure_ascii=False).replace('</',r'<\/')+'</script></head><body'+(' class="has-product-quote"' if product_page else '')+'>'+header(path)+'<main id="main" tabindex="-1">'+body+'</main>'+footer()+'</body></html>'
+
+ html='<!doctype html><html lang="'+lang+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(title)+'</title><meta name="description" content="'+esc(description,quote=True)+'"><meta name="robots" content="index,follow"><link rel="canonical" href="'+ORIGIN+path+'"><meta property="og:title" content="'+esc(title,quote=True)+'"><meta property="og:description" content="'+esc(description,quote=True)+'"><meta property="og:type" content="'+('article' if any(item.get('@type')=='Article' for item in (extra or [])) else 'website')+'"><meta property="og:url" content="'+ORIGIN+path+'"><meta property="og:image" content="'+share_url+'"><meta property="og:image:alt" content="'+share_alt+'"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="'+esc(title,quote=True)+'"><meta name="twitter:description" content="'+esc(description,quote=True)+'"><meta name="twitter:image" content="'+share_url+'"><meta name="twitter:image:alt" content="'+share_alt+'"><meta name="theme-color" content="#111315"><link rel="icon" href="/assets/favicon.svg?v=20261030-detail-review" type="image/svg+xml"><link rel="stylesheet" href="'+SITE_CSS+'"><script src="'+SITE_JS+'" defer></script>'+'<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@graph':schema},ensure_ascii=False).replace('</',r'<\/')+'</script></head><body'+(' class="has-product-quote"' if product_page else '')+'>'+header(path)+'<main id="main" tabindex="-1">'+body+'</main>'+footer()+'</body></html>'
  file.write_text(html);PAGES[:]=[p for p in PAGES if p[0]!=path];PAGES.append((path,title,description))
 
 exec(compile((ROOT/'tools/editorial.py').read_text(),str(ROOT/'tools/editorial.py'),'exec'))
@@ -162,7 +168,7 @@ for slug,label,title,desc,sections in GUIDES:
  write('/guides/'+slug+'/',title+' | PackHubGlobe',desc,body)
 
 body=intro('About','About PackHubGlobe.','Paper packaging, flexible packaging and printed details, brought together for business buyers.')+'<section class="wrap section" style="padding-top:0"><div class="split"><figure class="scene"><img src="/assets/factory/offset-printing.png" alt="Offset press at the paper packaging facility" width="780" height="439" loading="lazy"><figcaption>Paper packaging production</figcaption></figure><div><h2>One conversation.<br>The right packaging range.</h2><p>Plan boxes, bags, pouches, cards and labels around your product. Share your quantity, artwork and delivery market to start with the decisions that matter.</p><a class="textlink" href="/factory/">Explore our production capabilities</a></div></div><div class="two about-companies"><section class="company-card"><h2>Paper packaging</h2><h3>Xiamen Finer Packaging Co., Ltd.</h3><p>Custom folding cartons, rigid gift boxes, corrugated mailers and printed paper accessories, developed around your product and brand.</p><a class="textlink" href="https://www.finerpack.com/about" target="_blank" rel="noopener noreferrer">Finer Pack company profile</a></section><section class="company-card"><h2>Flexible packaging</h2><h3>Xiamen Unique Packaging Technology Co., Ltd.</h3><p>Custom printed pouches and plastic bags, with material structures, closures and artwork reviewed for your product and packing process.</p><a class="textlink" href="https://uniquepouches.com/about.html" target="_blank" rel="noopener noreferrer">Unique Packaging company profile</a></section></div><p class="smallnote">All enquiries go to <a href="mailto:'+EMAIL+'">'+EMAIL+'</a>. Your quotation identifies the supplying company and agreed specification.</p></section>'+cta()
-body=body.removesuffix(cta())+documentation_link()+cta()
+body=body.removesuffix(cta())+entity_evidence()+documentation_link()+cta()
 write('/about/','About PackHubGlobe | Paper & Flexible Packaging','Discover the paper and flexible packaging companies behind the PackHubGlobe brand and its shared enquiry contact.',body)
 body=intro('Factory','A closer look at production.','Explore paper packaging equipment, a flexible packaging production excerpt and the documents relevant to your order.')+'<section class="wrap section" style="padding-top:0"><div class="sectionhead"><div><h2>Paper packaging</h2><p>Xiamen Finer Packaging Co., Ltd.</p></div></div><div class="factory-gallery">'
 for image,title,width,height in [('offset-printing','Offset printing',780,439),('die-cutting','Die cutting',566,434),('folder-gluer','Folding & gluing',934,525),('foil-stamping','Foil stamping',987,564)]:

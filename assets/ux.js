@@ -8,6 +8,7 @@ globalThis.phgTrack=(event,properties={})=>{
 const track=globalThis.phgTrack;
 document.addEventListener('click',event=>{
  const link=event.target.closest('a');if(!link)return;
+ if(link.pathname.startsWith('/assets/documents/')&&link.pathname.endsWith('.pdf'))track('documentation_open');
  if(link.pathname==='/request-quote/')track('quote_cta_click');
  if(link.closest('.ux-card,.productcard,.navpanel,.family-nav,.catalog-sidebar,.format')&&/^\/(products|catalog|industries)\//.test(link.pathname))track('category_select',{destination_path:link.pathname});
 });
@@ -15,6 +16,7 @@ if(document.body.classList.contains('has-product-quote'))track('product_view');
 const quoteForm=document.querySelector('#quote-form');
 if(quoteForm){
  track('rfq_form_view');let started=false;
+ quoteForm.addEventListener('focusout',event=>{const field=event.target;if(['name','email','company','product','quantity','country','size','material','whatsapp','timing','details'].includes(field.name)&&field.value)track('rfq_field_complete',{field_name:field.name})});
  quoteForm.addEventListener('input',()=>{if(!started){started=true;track('rfq_form_start')}});
  quoteForm.addEventListener('invalid',event=>{
   const input=event.target;

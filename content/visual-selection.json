@@ -1,0 +1,132 @@
+{
+  "home_hero": [
+    "PHG-FP-1601275614500",
+    "PHG-1601173654727",
+    "PHG-PC-5CF40C7876",
+    "PHG-FP-1601181749375"
+  ],
+  "home_categories": [
+    "PHG-1601967217413",
+    "PHG-11000015570855",
+    "PHG-1601448663543",
+    "PHG-1600770268154",
+    "PHG-1601193369522",
+    "PHG-1601648812378"
+  ],
+  "family_heroes": [
+    "PHG-FP-1601111577980",
+    "PHG-1601613459010",
+    "PHG-PC-7134D6BA87",
+    "PHG-1601448609380",
+    "PHG-1600727801473",
+    "PHG-1600258133219"
+  ],
+  "home_portfolio": [
+    "PHG-FP-1601155613239",
+    "PHG-FP-1600902684232",
+    "PHG-1601234511679",
+    "PHG-1601254940568",
+    "PHG-1600055373863",
+    "PHG-PC-D89A6C394D"
+  ],
+  "home_industries": {
+    "beauty-skincare": "PHG-1600185850128",
+    "apparel": "PHG-FP-1601234080995",
+    "food-snacks": "PHG-PC-8120D35978",
+    "jewellery": "PHG-FP-11000006315857",
+    "ecommerce": "PHG-FP-62167980739",
+    "electronics": "PHG-FP-1601187708259"
+  },
+  "industries": {
+    "beauty-skincare": [
+      "PHG-FP-1601535272619",
+      "PHG-FP-1601584833769",
+      "PHG-FP-1601627317129",
+      "PHG-FP-1601640967001"
+    ],
+    "perfume": [
+      "PHG-1601292243625",
+      "PHG-LX-5E69F9ACAC",
+      "PHG-FP-1601074805098",
+      "PHG-FP-1601088375102"
+    ],
+    "coffee-tea": [
+      "PHG-PC-3AD83494FE",
+      "PHG-PC-FE809D4EF8",
+      "PHG-PC-B81D42C70D",
+      "PHG-PC-0CB3B0BF8D"
+    ],
+    "food-snacks": [
+      "PHG-PC-E85F10DAF4",
+      "PHG-PC-B3E553DCB7",
+      "PHG-PC-A1FFDD9967",
+      "PHG-PC-2AA636820C"
+    ],
+    "bakery": [
+      "PHG-PC-D5E3E17D7D",
+      "PHG-PC-5C728D7CC0",
+      "PHG-PC-34A0E94A43",
+      "PHG-PC-BE4DD981BE"
+    ],
+    "chocolate": [
+      "PHG-LX-17FF571F45",
+      "PHG-LX-5A55E2E162",
+      "PHG-PC-19E93BC907",
+      "PHG-1600183275284"
+    ],
+    "pet-food": [
+      "PHG-PC-EB48E7DE83",
+      "PHG-PC-6E445422B1",
+      "PHG-PC-8702BD4251",
+      "PHG-PC-10F3FD360C"
+    ],
+    "supplements": [
+      "PHG-PC-9B6882AE70",
+      "PHG-PC-6A98D48250",
+      "PHG-PC-1C1FF4D167",
+      "PHG-PC-6EACAD41D6"
+    ],
+    "apparel": [
+      "PHG-LX-966F53725A",
+      "PHG-1601194794673",
+      "PHG-1601194864513",
+      "PHG-FP-1600254233562"
+    ],
+    "jewellery": [
+      "PHG-LX-1601ECE02B",
+      "PHG-LX-D3FCC0BFF6",
+      "PHG-FP-1601229823599",
+      "PHG-FP-1601693333668"
+    ],
+    "candles": [
+      "PHG-LX-A050912ADC",
+      "PHG-LX-31A22DAA7B",
+      "PHG-FP-1601322338597",
+      "PHG-1601058601551"
+    ],
+    "gifting": [
+      "PHG-LX-06310A49F9",
+      "PHG-LX-8D9897D565",
+      "PHG-LX-2BC608BBE9",
+      "PHG-1601025655836"
+    ],
+    "ecommerce": [
+      "PHG-FP-1601338717127",
+      "PHG-FP-1601232033678",
+      "PHG-1600732560686",
+      "PHG-1600732658092"
+    ],
+    "personal-care-refills": [
+      "PHG-PC-A197E97AC7",
+      "PHG-PC-BD42C09E15",
+      "PHG-PC-643CD1BED2",
+      "PHG-PC-27C036269C"
+    ],
+    "electronics": [
+      "PHG-1600619295087",
+      "PHG-1600608336866",
+      "PHG-1600972313101",
+      "PHG-1600661123607"
+    ]
+  }
+}

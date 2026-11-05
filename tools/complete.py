@@ -32,17 +32,23 @@ for c in CATEGORIES:
  family=c['slug'];items=PRODUCTS[family]
  trail='<a href="/products/">Packaging</a> / '+c['name']
  body=detailhero('Custom packaging',c['name'],c['summary'],art(c['art']),c['name'],trail)
+ used_images={ux_item(UX_VISUALS['family_heroes'][c['art']])['image']}
+ shown_formats=set()
  body+='<section class="section wrap"><div class="sectionhead centered"><h2>Choose your format.</h2><p>'+c['intro']+'</p></div><div class="formats">'
  for slug,name,desc,options,check,use in items:
   if slug not in format_references:continue
   reference=format_references.get(slug)
+  if reference['image'] in used_images:continue
+  shown_formats.add(slug)
   photo=('<a class="format-photo" href="/products/'+family+'/'+slug+'/"><div class="art"><img src="'+reference['image']+'" alt="'+esc(name,quote=True)+' structure reference" width="'+str(reference['width'])+'" height="'+str(reference['height'])+'" loading="lazy"></div></a>') if reference else ''
+  used_images.add(reference['image'])
   body+='<article class="format">'+photo+'<h3><a href="/products/'+family+'/'+slug+'/">'+name+'</a></h3><p>'+desc+'</p><a class="textlink" href="/products/'+family+'/'+slug+'/">View '+name.lower()+'</a></article>'
  body+='</div>'
- missing=[item for item in items if item[0] not in format_references]
+ missing=[item for item in items if item[0] not in shown_formats]
  if missing:body+='<div class="ux-additional-formats"><h3>More formats to discuss</h3><p>Share your requirements for these structures. A matching reference and sample can be reviewed with your project.</p><div class="related-links">'+''.join('<a href="/products/'+family+'/'+item[0]+'/">'+esc(item[1])+'</a>' for item in missing)+'</div></div>'
  body+='<p class="catalog-browse-link"><a class="textlink" href="/catalog/">Browse product photos and specifications ↗</a></p></section><section class="section softbg"><div class="wrap split"><div><h2>Made around your product.</h2><p>Share the product, approximate size, quantity per design and delivery market. We can then review the material, print and sample you need.</p><a class="textlink" href="/guides/packaging-quote-checklist/">What to include in a quote request</a></div><div><h3>Explore the details</h3><div class="related-links vertical"><a href="/materials/">Materials & finishes</a><a href="/services/sampling/">Samples & approvals</a><a href="/services/artwork-preflight/">Artwork preparation</a></div></div></div></section>'+cta()
- body=body.removesuffix(cta())+'<section class="section wrap"><div class="sectionhead"><h2>Compare Product References</h2></div>'+ux_reference_cards(ux_references('/products/'+family+'/'))+'</section><section class="section softbg"><div class="wrap faqwrap"><h2>Frequently Asked Questions</h2>'+ux_faq()+'</div></section>'+cta()
+ comparisons=ux_references('/products/'+family+'/',exclude=used_images)
+ body=body.removesuffix(cta())+('<section class="section wrap"><div class="sectionhead"><h2>Compare Product References</h2></div>'+ux_reference_cards(comparisons)+'</section>' if comparisons else '')+'<section class="section softbg"><div class="wrap faqwrap"><h2>Frequently Asked Questions</h2>'+ux_faq()+'</div></section>'+cta()
  write('/products/'+family+'/',c['name']+' with Custom Printing | PackHubGlobe',c['summary'],body)
  for slug,name,desc,options,check,use in items:
   path='/products/'+family+'/'+slug+'/'
@@ -63,25 +69,13 @@ for c in CATEGORIES:
 
 overview=intro('Industry solutions','Packaging for your industry.','Find a starting point for your product, from the retail pack to the delivery box.')+'<section class="wrap section" style="padding-top:0"><div class="industry-grid">'
 for slug,name,desc,brief,approach,check,links,img in INDUSTRIES:
- industry_items=[]
- for link in links:
-  for item in ux_references('/products/'+link+'/',limit=10000):
-   if item not in industry_items:industry_items.append(item)
- keywords={
-  'beauty-skincare':['skincare','cosmetic','lipstick'],'perfume':['perfume','fragrance'],
-  'apparel':['clothing','apparel','garment','underwear'],'electronics':['laptop','electronic'],
-  'jewellery':['jewelry','jewellery'],'coffee-tea':['coffee','tea'],'food-snacks':['snack','food'],
-  'bakery':['bakery','cake','pastry'],'chocolate':['chocolate'],'pet-food':['pet','dog','cat'],
-  'supplements':['protein','supplement'],'candles':['candle'],'gifting':['gift'],
-  'ecommerce':['mailer','shipping'],'personal-care-refills':['cleanser','soap','body wash','shampoo']}
- terms=keywords[slug]
- industry_items=sorted(industry_items,key=lambda item:sum(3*(word in item['name'].lower())+(word in item['searchText'].lower()) for word in terms),reverse=True)[:6]
+ industry_items=[ux_item(ref) for ref in UX_VISUALS['industries'][slug]]
  industry_image=('<div class="art">'+ux_photo(industry_items[0])+'</div>') if industry_items else ''
  overview+='<a class="industry-card" href="/industries/'+slug+'/">'+industry_image+'<h2>'+name+'</h2><p>'+desc+'</p><span class="cardlink">Explore packaging</span></a>'
  visual=('<figure class="catalog-product-image">'+ux_photo(industry_items[0],True)+'<figcaption>Related packaging reference; confirm suitability for your product.</figcaption></figure>') if industry_items else scene(img,'Illustrative '+name.lower()+' with branded printed packaging')
  body=detailhero('Industry packaging',name,desc,visual,name,'<a href="/industries/">Industries</a> / '+name)
  body+='<section class="section wrap"><div class="two"><section><h2>Build your packaging range.</h2><p>'+approach+'</p></section><section><h2>Check what matters.</h2><p>'+check+'</p></section></div><details class="technical"><summary>What to include in your enquiry</summary><p>'+brief+'</p><p>Include the quantity for each component and design, artwork status, delivery country and target arrival window.</p></details></section>'
- body+='<section class="section wrap"><h2>Product References for Your Project</h2>'+ux_reference_cards(industry_items[:3])+'</section>'
+ body+='<section class="section wrap"><h2>Product References for Your Project</h2>'+ux_reference_cards(industry_items[1:4])+'</section>'
  body+='<section class="section softbg"><div class="wrap"><h2>Packaging to explore.</h2>'+related(links)+'</div></section>'+cta()
  write('/industries/'+slug+'/',name+' Solutions | PackHubGlobe',desc,body)
 overview+='</div></section>'+cta()

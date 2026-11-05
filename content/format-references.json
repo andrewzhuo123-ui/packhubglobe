@@ -70,11 +70,11 @@
     "reference": "PHG-1601023928044"
   },
   "box-inserts": {
-    "path": "/catalog/custom-product-packaging-box-1601284127117/",
-    "image": "/assets/catalog/1601284127117.webp",
-    "width": 480,
-    "height": 480,
-    "reference": "PHG-1601284127117"
+    "path": "/catalog/molded-paper-pulp-insert-for-gift-boxes-fp-1601069918794/",
+    "image": "/assets/images/box-reference-catalog/6a038ff1f5dddce8863e.webp",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601069918794"
   },
   "kraft-paper-bags": {
     "path": "/catalog/kraft-paper-shopping-bag-60519970698/",
@@ -133,18 +133,18 @@
     "reference": "PHG-PC-BD42C09E15"
   },
   "three-side-seal-pouches": {
-    "path": "/catalog/whey-protein-powder-stand-up-pouch-pc-674101d769/",
-    "image": "/assets/images/pouch-catalog/cfbbb52acb7ea1418dd4.webp",
-    "width": 742,
-    "height": 742,
-    "reference": "PHG-PC-674101D769"
-  },
-  "sachets": {
-    "path": "/catalog/freeze-dried-fruit-stand-up-pouch-pc-6d4bef4ec0/",
-    "image": "/assets/images/pouch-catalog/0b0cb24e2ec8c0e7eb5c.webp",
+    "path": "/catalog/retail-flat-pouch-pc-e3859e79ae/",
+    "image": "/assets/images/pouch-catalog/a86ece8c906c18cd7545.webp",
     "width": 960,
     "height": 960,
-    "reference": "PHG-PC-6D4BEF4EC0"
+    "reference": "PHG-PC-E3859E79AE"
+  },
+  "sachets": {
+    "path": "/catalog/matte-underwear-sock-flat-pouch-pc-0921a64d01/",
+    "image": "/assets/images/pouch-catalog/2a5dba6df0451e655349.webp",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-PC-0921A64D01"
   },
   "poly-mailers": {
     "path": "/catalog/custom-poly-mailing-bag-for-apparel-1601254940568/",
@@ -166,13 +166,6 @@
     "width": 1000,
     "height": 1000,
     "reference": "PHG-1600908190577"
-  },
-  "die-cut-handle-bags": {
-    "path": "/catalog/clear-rice-flour-flat-bottom-pouch-pc-fae1f16c47/",
-    "image": "/assets/images/pouch-catalog/41d449a9eae9b4e6a8c7.webp",
-    "width": 800,
-    "height": 800,
-    "reference": "PHG-PC-FAE1F16C47"
   },
   "shopping-bags": {
     "path": "/catalog/cosmetic-stand-up-pouch-pc-ac6433c3ca/",

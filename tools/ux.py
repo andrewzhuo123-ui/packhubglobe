@@ -1,14 +1,15 @@
 """Shared purchasing components and the focused nine-section homepage."""
 UX_INDEX=json.loads((ROOT/'assets/catalog-index.json').read_text())
 
+UX_VISUALS=json.loads((ROOT/'content/visual-selection.json').read_text())
 UX_FEATURES=['PHG-FP-1601095882863','PHG-11000015570855','PHG-1600658665574','PHG-1600976392997','PHG-60697040446','PHG-1601648812378']
 def ux_item(reference):return next(item for item in UX_INDEX if item['reference']==reference)
 def art(i):
- item=ux_item({0:UX_FEATURES[0],1:UX_FEATURES[1],2:'PHG-PC-1BF7350418',3:UX_FEATURES[2],4:UX_FEATURES[4],5:UX_FEATURES[3]}[i])
+ item=ux_item(UX_VISUALS['family_heroes'][i])
  return '<div class="art">'+ux_photo(item)+'</div>'
 
 def ux_photo(item,eager=False):
- return '<img src="'+esc(item['image'],quote=True)+'" alt="'+esc(item['name'],quote=True)+'" width="1000" height="1000" '+('fetchpriority="high"' if eager else 'loading="lazy"')+'>'
+ return '<img src="'+esc(item['image'],quote=True)+'" alt="'+esc(item['name'],quote=True)+'" width="'+str(item['imageWidth'])+'" height="'+str(item['imageHeight'])+'" '+('fetchpriority="high"' if eager else 'loading="lazy"')+'>'
 
 UX_FAMILY_FORMATS={
  'custom-boxes':{'carton','rigid','mailer','carry-box','pillow','food-box','display','sleeve','pulp-insert'},
@@ -24,10 +25,10 @@ UX_FORMATS={
  'spout-pouches':{'spout'},'three-side-seal-pouches':{'flat'},'sachets':{'flat'},'poly-mailers':{'poly-mailer'},
  'garment-bags':{'poly','flat'},'hang-tags':{'print'},'care-cards':{'print'},'roll-labels':{'label'}
 }
-def ux_references(path,limit=6):
+def ux_references(path,limit=6,exclude=()):
  parts=path.strip('/').split('/');family=parts[1] if len(parts)>1 else '';slug=parts[2] if len(parts)>2 else ''
  kinds=UX_FORMATS.get(slug,UX_FAMILY_FORMATS.get(family,set()))
- records=[item for item in UX_INDEX if item['format'] in kinds]
+ records=[item for item in UX_INDEX if item['format'] in kinds and item['image'] not in exclude]
  if slug=='garment-bags':records=[item for item in records if item['format']=='poly' or re.search(r'garment|underwear|sock',item['name'],re.I)]
  # A category should show its range, rather than six near-identical opening references.
  chosen=[];seen=set()
@@ -55,21 +56,19 @@ def ux_faq():
  ('How does the production process work?','Share your brief, review the specification and quotation, then approve the agreed sample and artwork. Production, quality checks, export packing and delivery follow the confirmed order. <a href="/factory/">View production capabilities</a>.')])+'</div>'
 
 def ux_home():
- hero=[ux_item(ref) for ref in [UX_FEATURES[0],UX_FEATURES[1],UX_FEATURES[3],'PHG-FP-1600192691645']]
+ hero=[ux_item(ref) for ref in UX_VISUALS['home_hero']]
  body='<section class="ux-hero wrap"><div><span class="eyebrow">Custom packaging for business</span><h1>Custom Packaging Solutions for Your Brand</h1><p>PackHubGlobe brings together custom boxes, paper bags, flexible pouches, plastic bags, labels, tags and cards for business buyers. Compare packaging structures, materials and print options, then request a quotation with your dimensions, quantity per design and delivery market. Use the product references and buyer guides to prepare your specification.</p><div class="actions">'+button('Request a Quote','/request-quote/')+button('Explore Packaging','#packaging','light')+'</div></div><div class="ux-hero-gallery" aria-label="Custom packaging product references">'+''.join('<a href="'+item['path']+'">'+ux_photo(item,True)+'</a>' for item in hero)+'</div></section>'
  body+='<section class="section softbg" id="packaging"><div class="wrap"><div class="sectionhead"><div><span class="eyebrow">Find your packaging</span><h2>Explore Custom Packaging Products</h2><p>Discover packaging solutions for your products, from custom boxes and bags to labels, tags and printed materials.</p></div></div><div class="ux-grid">'
- for name,path,text,i in [('Custom Boxes','custom-boxes','Folding cartons, rigid boxes and corrugated mailers.',0),('Custom Paper Bags','paper-bags','Shopping and gift bags with custom print and handles.',1),('Custom Plastic Bags','plastic-bags','Garment bags, protective bags and printed mailers.',3),('Custom Labels & Stickers','stickers-labels','Roll labels, die-cut stickers and packaging seals.',5),('Custom Hang Tags & Cards','cards-tags','Product tags, care cards and packaging inserts.',4),('Retail & Display Packaging','custom-boxes/display-boxes','Printed displays and structures for retail presentation.',0)]:
-  image=art(i)
-  if '/' in path:
-   item=next(item for item in UX_INDEX if 'display' in item['name'].lower());image='<div class="art">'+ux_photo(item)+'</div>'
+ for position,(name,path,text) in enumerate([('Custom Boxes','custom-boxes','Folding cartons, rigid boxes and corrugated mailers.'),('Custom Paper Bags','paper-bags','Shopping and gift bags with custom print and handles.'),('Custom Plastic Bags','plastic-bags','Garment bags, protective bags and printed mailers.'),('Custom Labels & Stickers','stickers-labels','Roll labels, die-cut stickers and packaging seals.'),('Custom Hang Tags & Cards','cards-tags','Product tags, care cards and packaging inserts.'),('Retail & Display Packaging','custom-boxes/display-boxes','Printed displays and structures for retail presentation.')]):
+  image='<div class="art">'+ux_photo(ux_item(UX_VISUALS['home_categories'][position]))+'</div>'
   body+='<a class="ux-card" href="/products/'+path+'/">'+image+'<div class="ux-card-copy"><h3>'+name+'</h3><p>'+text+'</p><span class="textlink">Explore products ↗</span></div></a>'
  body+='</div><p class="ux-browse"><a class="textlink" href="/products/flexible-pouches/">Looking for flexible pouches? Compare formats ↗</a><a class="textlink" href="/catalog/">Search all product references ↗</a></p></div></section>'
  body+='<section class="section wrap"><div class="sectionhead"><div><span class="eyebrow">Customization</span><h2>Made for Your Packaging Requirements</h2><p>Match the structure, material and printed finish to the way your product is used.</p></div></div><div class="ux-grid ux-four">'
  for title,text,url,img in [('Materials & Paper Stocks','Compare paper, board and film choices around product protection and presentation.','/materials/','company/material-warehouse'),('Structures & Custom Sizes','Review dimensions, opening style and inserts with your actual product.','/services/structural-design/','company/sample-room'),('Printing & Color Options','Prepare artwork, print coverage and color references before approving the proof.','/services/artwork-preflight/','process/printing'),('Surface Finishes','Discuss foil, embossing, coatings and lamination for the selected substrate.','/materials/printing-finishes/','process/lamination')]:
   body+='<article class="ux-card"><a class="ux-detail-photo" href="'+url+'"><img src="/assets/'+img+'.webp" alt="'+title+' reference at the packaging facility" width="1000" height="750" loading="lazy"></a><div class="ux-card-copy"><h3>'+title+'</h3><p>'+text+'</p><a class="textlink" href="'+url+'">Learn More ↗</a></div></article>'
  body+='</div></section><section class="section softbg"><div class="wrap"><div class="sectionhead"><div><span class="eyebrow">Choose by application</span><h2>Packaging Solutions for Every Industry</h2><p>Start with what you sell. Build a packaging set around your sales channel and product requirements.</p></div></div><div class="ux-grid">'
- for title,slug,terms in [('Cosmetics & Beauty','beauty-skincare',['skincare folding carton']),('Apparel & Fashion','apparel',['clothing gift mailer']),('Food & Beverage','food-snacks',['coffee stand-up']),('Gifts & Jewelry','jewellery',['jewelry mailer']),('Retail & E-commerce','ecommerce',['kraft corrugated postal']),('Electronics & Accessories','electronics',['laptop shipping'])]:
-  item=next(item for item in UX_INDEX if any(t in item['name'].lower() for t in terms))
+ for title,slug in [('Cosmetics & Beauty','beauty-skincare'),('Apparel & Fashion','apparel'),('Food & Beverage','food-snacks'),('Gifts & Jewelry','jewellery'),('Retail & E-commerce','ecommerce'),('Electronics & Accessories','electronics')]:
+  item=ux_item(UX_VISUALS['home_industries'][slug])
   body+='<a class="ux-card" href="/industries/'+slug+'/"><div class="ux-photo">'+ux_photo(item)+'</div><div class="ux-card-copy"><h3>'+title+'</h3><span class="textlink">Explore industry solutions ↗</span></div></a>'
  body+='</div></div></section><section class="section wrap"><div class="ux-evidence"><figure><img src="/assets/factory/offset-printing.png" alt="Offset printing equipment at the paper packaging facility" width="780" height="439" loading="lazy"><figcaption>Paper packaging production · <a href="/factory/">Explore our factory</a></figcaption><video controls playsinline preload="none" poster="/assets/media/box-production-banner-poster.jpg" aria-label="Paper-box production video"><source src="/assets/media/box-production-banner.mp4" type="video/mp4"></video></figure><div><span class="eyebrow">People, samples and production</span><h2>Packaging Expertise You Can Rely On</h2><ul class="ux-benefits">'
  for title,text in [('Packaging customization','Review the shape, size and opening experience around your product.'),('Material selection support','Compare stocks and structures for the actual use and destination.'),('Printing & finishing options','Connect artwork, color references and selected surface treatments.'),('Production & quality control','Agree the checks that matter before production and shipment.'),('Sampling & project communication','Keep requirements, sample revisions and approvals connected.')]:
@@ -78,6 +77,6 @@ def ux_home():
  steps=[('Share Your Requirements','Describe your product, packaging type, quantity and destination. Include reference images and identify any details you still need help deciding.'),('Review Materials & Specifications','Compare suitable structures, materials, dimensions and printing options. Record the features and use conditions that the final packaging needs to support.'),('Quotation & Sampling','Review the quotation and sample route together. Confirm what each sample should verify before approving the final specification and artwork.'),('Production & Quality Check','Production follows the agreed specification. Review the approved reference and the inspection points selected for your product and packing requirements.'),('Packaging & Delivery','Confirm export packing, shipping arrangements and destination details. Review the delivery plan against the production schedule and your required arrival window.')]
  for i,(title,text) in enumerate(steps,1):body+='<li><span class="ux-step-number">'+str(i).zfill(2)+'</span><h3>'+title+'</h3><p>'+text+'</p></li>'
  body+='</ol></div></section><section class="section wrap"><div class="sectionhead"><div><span class="eyebrow">Product portfolio</span><h2>Explore Our Custom Packaging Work</h2><p>Product references from our packaging collections. Images illustrate design directions; they are not presented as verified customer orders. Confirm materials, finishes and applications for your project.</p></div></div>'
- portfolio=[ux_item(ref) for ref in [UX_FEATURES[0],'PHG-FP-1600192691645',UX_FEATURES[1],'PHG-FP-1600955216619',UX_FEATURES[3],UX_FEATURES[4],UX_FEATURES[5]]]
+ portfolio=[ux_item(ref) for ref in UX_VISUALS['home_portfolio']]
  body+=ux_reference_cards(portfolio)+'</section><section class="section softbg"><div class="wrap faqwrap"><div><span class="eyebrow">Before you enquire</span><h2>Frequently Asked Questions</h2><p>Find a starting point here, or <a href="/guides/">explore our buyer guides</a> for technical details.</p></div>'+ux_faq()+'</div></section>'+cta()
  return body

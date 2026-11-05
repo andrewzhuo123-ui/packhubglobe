@@ -24,6 +24,9 @@ cases = [
     ('oversized', {'CONTENT_LENGTH': '12000000'}, {}, 413, False),
     ('mail failure', {}, {}, 503, False),
     ('success', {}, {}, 200, True),
+    ('quote basket', {}, dict(quote_items='PHG-123 | Mailer box\nPHG-456 | Printed label'), 200, True),
+    ('oversized basket', {}, dict(quote_items='x'*20001), 422, False),
+    ('array basket', {}, dict(quote_items=['bad']), 422, False),
     ('context', {}, dict(source_page='/catalog/custom-corrugated-mailer-box-1600659751763/', product_reference='PHG-1600659751763'), 200, True),
     ('html source', {}, dict(source_page='/404.html'), 200, True),
     ('foreign source', {}, dict(source_page='https://example.com/private'), 422, False),
@@ -97,6 +100,8 @@ register_shutdown_function(function(){echo "\\n".http_response_code();});
         message = BytesParser(policy=policy.default).parsebytes(raw.encode())
         text = message.get_body().get_content() if message.is_multipart() else message.get_content()
         assert 'Line one\nLine two' in text
+        if name == 'quote basket':
+            assert 'PHG-123 | Mailer box\nPHG-456 | Printed label' in text
         if name == 'context':
             assert 'Source page: /catalog/custom-corrugated-mailer-box-1600659751763/' in text
             assert 'Product reference: PHG-1600659751763' in text

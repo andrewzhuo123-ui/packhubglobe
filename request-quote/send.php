@@ -21,12 +21,12 @@ if ((int) ($_SERVER['CONTENT_LENGTH'] ?? 0) > 11 * 1024 * 1024) {
 }
 
 $fields = [];
-foreach (['name', 'email', 'company', 'product', 'product_reference', 'source_page', 'quantity', 'country', 'size', 'unit', 'material', 'whatsapp', 'timing', 'details', 'website', 'consent'] as $key) {
+foreach (['name', 'email', 'company', 'product', 'product_reference', 'quote_items', 'source_page', 'quantity', 'country', 'size', 'unit', 'material', 'whatsapp', 'timing', 'details', 'website', 'consent'] as $key) {
     if (isset($_POST[$key]) && !is_string($_POST[$key])) {
         respond(422, false, 'Please check the form fields.');
     }
     $fields[$key] = trim($_POST[$key] ?? '');
-    if (strlen($fields[$key]) > ($key === 'details' ? 20000 : 720)) {
+    if (strlen($fields[$key]) > (in_array($key, ['details', 'quote_items'], true) ? 20000 : 720)) {
         respond(422, false, 'Please shorten the form fields.');
     }
 }
@@ -108,7 +108,7 @@ if ($lastSent > time() - 60) {
 }
 
 $body = "PACKHUBGLOBE — PACKAGING REQUEST\n\n";
-foreach (['name', 'email', 'company', 'product', 'product_reference', 'source_page', 'quantity', 'country', 'size', 'unit', 'material', 'whatsapp', 'timing', 'details'] as $key) {
+foreach (['name', 'email', 'company', 'product', 'product_reference', 'quote_items', 'source_page', 'quantity', 'country', 'size', 'unit', 'material', 'whatsapp', 'timing', 'details'] as $key) {
     $body .= ucfirst(str_replace('_', ' ', $key)) . ': ' . ($fields[$key] ?: 'Not specified') . "\n";
 }
 $headers = [

@@ -1,0 +1,23 @@
+[
+  {
+    "source": "/Users/autumnzhang/Downloads/ISO UPDATE 2026 2.pdf",
+    "public_path": "/assets/documents/finer-packaging-iso-9001-14001.pdf",
+    "sha256": "369b9557bf0d40c4f778daf92675f7f7ec386433affb74849144a8b4fbe8c4f3",
+    "supplied": "2026-11-05",
+    "verification": "Document visually reviewed; current registry status not independently verified."
+  },
+  {
+    "source": "/Users/autumnzhang/Downloads/FSC Certification Xiamen Finer EN (D).pdf",
+    "public_path": "/assets/documents/finer-import-export-fsc-coc.pdf",
+    "sha256": "6085aca35cd51c3c492be29fe4629d3befdcd25df1e6bcdd7ca0459b5bd4008e",
+    "supplied": "2026-11-05",
+    "verification": "Document visually reviewed; current registry status not independently verified."
+  },
+  {
+    "source": "/Users/autumnzhang/Downloads/2026食品接触涂布纸-白底FDA.pdf",
+    "public_path": "/assets/documents/white-coated-paperboard-food-contact-report-0725010975.pdf",
+    "sha256": "7f4075adc2cf029dcad8abc4ff4eea28ce0c2cce4021991694e7c1de9d61eb4c",
+    "supplied": "2026-11-05",
+    "verification": "Document visually reviewed; current registry status not independently verified."
+  }
+]

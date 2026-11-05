@@ -1,0 +1,22 @@
+const assert=require('node:assert/strict');
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const {default:AxeBuilder}=require(process.env.AXE_MODULE||'@axe-core/playwright');
+const fs=require('node:fs');
+(async()=>{
+const browser=await chromium.launch({channel:'chrome',headless:true});const context=await browser.newContext();const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+const origin=process.env.TEST_ORIGIN||'http://127.0.0.1:4174';fs.mkdirSync('qa/catalog-2026-11-05',{recursive:true});
+await page.goto(origin+'/catalog/');await page.locator('.quote-add').first().click();await page.locator('.quote-add').nth(1).click();await page.locator('.quote-add').nth(2).click();
+const selected=await page.evaluate(()=>JSON.parse(localStorage.getItem('phg-quote-basket')));assert.equal(selected.length,3);await page.reload();assert.equal(await page.locator('[data-quote-ref][aria-pressed=true]').count(),3);
+await page.getByRole('button',{name:'Review quote basket',exact:true}).click();assert.equal(await page.locator('dialog li').count(),3);await page.keyboard.press('Escape');assert.equal(await page.locator('dialog[open]').count(),0);
+await page.locator('#material-filter').selectOption('kraft');await page.waitForFunction(()=>document.querySelector('#catalog-search-status').textContent.includes('matching products'));assert.ok(await page.locator('#catalog-grid .catalog-card').count());await page.locator('#catalog-clear').click();
+await page.locator('#format-filter').selectOption('rigid');await page.waitForFunction(()=>document.querySelector('#catalog-search-status').textContent.includes('matching products'));assert.match(page.url(),/structure=rigid/);assert.equal(await page.locator('#catalog-grid h2').count(),0);
+await page.locator('#industry-filter').selectOption('Cosmetics & beauty');await page.waitForFunction(()=>document.querySelector('#catalog-search-status').textContent.includes('matching'));const filtered=page.url();await page.reload();await page.waitForFunction(()=>document.querySelector('#catalog-search-status').textContent.includes('matching'));assert.equal(page.url(),filtered);
+await page.locator('#catalog-clear').click();assert.equal(new URL(page.url()).search,'');await page.goBack();assert.equal(await page.locator('#industry-filter').inputValue(),'Cosmetics & beauty');
+await page.locator('#catalog-search').fill('xxzz-no-result');await page.waitForFunction(()=>document.querySelector('#catalog-search-status').textContent.includes('No matching'));assert.equal(await page.locator('.catalog-empty a').count(),1);
+await page.goto(origin+'/request-quote/?basket=1');await page.waitForFunction(()=>document.querySelector('[name=quote_items]').value.includes('PHG-'));for(const ref of selected)assert.ok((await page.locator('[name=quote_items]').inputValue()).includes(ref));
+await page.locator('#email').fill('buyer@example.com');await page.locator('#details').fill('500 pieces per reference. Please confirm each specification.');await page.locator('[name=consent]').check();
+let payload;await page.route('**/request-quote/send.php',async route=>{payload=route.request().postDataBuffer().toString();await route.fulfill({status:200,contentType:'application/json',body:'{"ok":true}'})});await page.locator('button[type=submit]').click();await page.waitForFunction(()=>document.querySelector('#form-result').textContent.includes('submitted'));for(const ref of selected)assert.ok(payload.includes(ref));
+for(const width of [360,390,768,1440]){await page.setViewportSize({width,height:900});for(const path of ['/catalog/','/catalog/page-2/','/catalog/bags/','/request-quote/?basket=1']){await page.goto(origin+path);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,`${width} ${path}`);assert.equal(await page.locator('h1').count(),1)}await page.goto(origin+'/catalog/');await page.screenshot({path:`qa/catalog-2026-11-05/catalog-${width}.png`,fullPage:true})}
+const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();fs.writeFileSync('qa/catalog-2026-11-05/accessibility.json',JSON.stringify(axe.violations,null,2));assert.deepEqual(axe.violations.map(v=>v.id),[]);assert.deepEqual(errors,[]);
+await browser.close();console.log('PASS basket persistence, 3-item RFQ payload, URL filters/history, empty state, 16 layouts, headings, accessibility and browser errors');
+})().catch(e=>{console.error(e);process.exit(1)});

@@ -23,6 +23,8 @@ RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L,NE]
 </IfModule>
 
 <IfModule mod_headers.c>
+# Filter combinations are shareable utilities, not additional indexable collections.
+Header always set X-Robots-Tag "noindex, follow" "expr=%{REQUEST_URI} =~ m#^/catalog/# && %{QUERY_STRING} =~ m#(^|&)(q|industry|structure|material)=#"
 Header always set X-Content-Type-Options "nosniff"
 Header always set Referrer-Policy "strict-origin-when-cross-origin"
 <FilesMatch "\.(?:html|xml|txt)$">

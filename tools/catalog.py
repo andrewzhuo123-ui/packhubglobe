@@ -176,10 +176,10 @@ def catalog_navigation(base):
 
 def catalog_family_choices():
  descriptions={'paper-boxes':'Mailers, folding cartons and gift boxes.','bags':'Flexible pouches, shopping bags and mailing bags.','packaging-accessories':'Cards, labels, sleeves, inserts and displays.'}
- result='<section class="wrap catalog-family-choices" aria-label="Choose a packaging family">'
+ result='<section class="wrap catalog-family-choices" aria-labelledby="catalog-categories"><h2 id="catalog-categories">Browse packaging by category</h2>'
  for family,title in FAMILIES.items():
   records=[r for r in catalog_records.values() if r['family']==family]
-  result+='<a class="catalog-family-choice" href="/catalog/'+family+'/"><h2>'+title+' <span aria-hidden="true">↗</span></h2><p>'+descriptions[family]+'</p><span>'+str(len(records))+' products</span></a>'
+  result+='<a class="catalog-family-choice" href="/catalog/'+family+'/"><h3>'+title+' <span aria-hidden="true">↗</span></h3><p>'+descriptions[family]+'</p><span>'+str(len(records))+' products</span></a>'
  return result+'</section>'
 
 def catalog_fact_preview(value):
@@ -187,14 +187,15 @@ def catalog_fact_preview(value):
  if len(parts)>3:return ', '.join(parts[:3])+' +'+str(len(parts)-3)+' more'
  return value if len(value)<=95 else value[:95].rsplit(' ',1)[0]+'…'
 
-def catalog_card(record,heading='h2',compact=False):
+def catalog_card(record,heading='h3',compact=False):
  image = record['image'];name = esc(record['name']);path = record['path']
  group = catalog_groups[record['groups'][0]]['public_name']
  facts = '<div class="moq-fact"><dt>MOQ</dt><dd>500 pieces</dd></div>'+''.join('<div><dt>'+label+'</dt><dd>'+esc(catalog_fact_preview(value))+'</dd></div>'
                  for label,value in record['facts'][:5])
+ quote_control='<button class="quote-add" type="button" data-quote-ref="'+record['reference']+'" aria-pressed="false" aria-label="Add '+esc(record['name']+' '+record['reference'],quote=True)+' to quote basket">+ Quote</button>'
  if compact:
-  return '<article class="catalog-card compact-card"><a class="catalog-photo" href="'+path+'"><img src="'+image['path']+'" alt="'+name+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" loading="lazy"></a><div class="catalog-copy"><p class="eyebrow">'+esc(group)+'</p><'+heading+'><a href="'+path+'">'+name+'</a></'+heading+'><p class="catalog-ref">'+record['reference']+'</p><p class="compact-moq">From 500 pieces</p><a class="textlink" href="'+path+'">View details ↗</a></div></article>'
- return '<article class="catalog-card"><a class="catalog-photo" href="'+path+'"><img src="'+image['path']+'" alt="'+esc(record['name'],quote=True)+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" loading="lazy"></a><div class="catalog-copy"><p class="eyebrow">'+esc(group)+'</p><'+heading+'><a href="'+path+'">'+name+'</a></'+heading+'><dl class="catalog-facts">'+facts+'</dl><p class="catalog-ref">'+record['reference']+'</p><div class="catalog-actions"><a class="textlink" href="'+path+'">View details ↗</a>'+button('Get a quote',qurl(record['name']+' · '+record['reference']))+'<a class="button chat-now" href="'+esc(catalog_chat(record),quote=True)+'" target="_blank" rel="noopener noreferrer">Chat now · WhatsApp</a></div></div></article>'
+  return '<article class="catalog-card compact-card"><a class="catalog-photo" href="'+path+'"><img src="'+image['path']+'" alt="'+name+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" loading="lazy"></a><div class="catalog-copy"><p class="eyebrow">'+esc(group)+'</p><'+heading+'><a href="'+path+'">'+name+'</a></'+heading+'><p class="catalog-ref">'+record['reference']+'</p><p class="compact-moq">From 500 pieces</p><a class="textlink" href="'+path+'">View details ↗</a>'+quote_control+'</div></article>'
+ return '<article class="catalog-card"><a class="catalog-photo" href="'+path+'"><img src="'+image['path']+'" alt="'+esc(record['name'],quote=True)+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" loading="lazy"></a><div class="catalog-copy"><p class="eyebrow">'+esc(group)+'</p><'+heading+'><a href="'+path+'">'+name+'</a></'+heading+'><dl class="catalog-facts">'+facts+'</dl><p class="catalog-ref">'+record['reference']+'</p><div class="catalog-actions"><a class="textlink" href="'+path+'">View details ↗</a>'+quote_control+button('Get a quote',qurl(record['name']+' · '+record['reference']))+'<a class="button chat-now" href="'+esc(catalog_chat(record),quote=True)+'" target="_blank" rel="noopener noreferrer">Chat now · WhatsApp</a></div></div></article>'
 
 def catalog_pagination(base,page,total):
  if total<=1:return ''
@@ -209,6 +210,8 @@ def catalog_pagination(base,page,total):
  if page<total:links.append('<a rel="next" href="'+url(page+1)+'">Next →</a>')
  return '<nav class="catalog-pages" aria-label="Catalog pages">'+''.join(links)+'</nav>'
 
+exec(compile((ROOT/'tools/catalog_buying.py').read_text(),str(ROOT/'tools/catalog_buying.py'),'exec'))
+
 collection_copy=json.loads((ROOT/'content/catalog-collection-copy.json').read_text())
 
 def catalog_listing(base,name,ids,all_products=False):
@@ -219,23 +222,23 @@ def catalog_listing(base,name,ids,all_products=False):
   description=collection_copy.get(base,collection_copy.get(group_id,''))
   if not description:raise ValueError('Missing collection copy: '+base)
   if page>1:description+=' Page '+str(page)+'.'
-  body=intro('Product collection',name+'.',description,'<a href="/catalog/">Product collection</a>'+(' / '+esc(name) if not all_products else ''))
+  body=intro('Product collection',('Custom packaging design catalog' if all_products else name)+'.',description,'<a href="/catalog/">Product collection</a>'+(' / '+esc(name) if not all_products else ''))
   if all_products and page==1:body+=catalog_family_choices()
   else:body+='<div class="wrap">'+family_nav(base)+'</div>'
   scope='family:'+base.split('/')[-2] if base.split('/')[-2] in FAMILIES else 'group:'+catalog_groups[group_id]['public_name'] if group_id else 'all'
   search_label='Search all products' if all_products else 'Search this category'
   formats=sorted({catalog_records[id]['format'] for id in ids})
-  materials=sorted({value.split(',')[0].strip() for id in ids for key,value in catalog_records[id]['facts'] if key in ['Material reference','Film reference'] and len(value.split(',')[0])<60})
+  materials=[term for term in ['Kraft','Paperboard','Cardboard','Corrugated','PET','PE','BOPP','Nylon','Foil'] if any(re.search(r'\b'+term+r'\b',value,re.I) for id in ids for key,value in catalog_records[id]['facts'] if key in ['Material reference','Film reference'])]
   filters='<div class="ux-filters" hidden>'
-  for ident,label,values in [('format','Packaging structure',formats),('material','Material',materials)]:
-   if 1<len(values)<=30:filters+='<label for="'+ident+'-filter">'+label+'<select id="'+ident+'-filter"><option value="">All '+label.lower()+'s</option>'+''.join('<option value="'+esc(value if ident=='format' else value.lower(),quote=True)+'">'+esc(value.replace('-',' ').title() if ident=='format' else value)+'</option>' for value in values)+'</select></label>'
+  for ident,label,values in [('format','Packaging structure',formats),('material','Material reference',materials),('industry','Application',[v for v in ['Cosmetics & beauty','Apparel & fashion','Food & beverage','Jewelry & gifts','Electronics']])]:
+   if 1<len(values)<=30:filters+='<label for="'+ident+'-filter">'+label+'<select id="'+ident+'-filter"><option value="">All '+label.lower()+'s</option>'+''.join('<option value="'+esc(value if ident in ['format','industry'] else value.lower(),quote=True)+'">'+esc(value.replace('-',' ').title() if ident=='format' else value)+'</option>' for value in values)+'</select></label>'
   filters+='</div>'
   batch=ids[(page-1)*24:page*24]
   product_cards=''.join(catalog_card(catalog_records[id],compact=True) for id in batch[:12])
   if len(batch)>12:product_cards+='<details class="ux-more-products"><summary>View '+str(len(batch)-12)+' more product references on this page</summary><div class="catalog-grid">'+''.join(catalog_card(catalog_records[id],compact=True) for id in batch[12:])+'</div></details>'
-  body+='<section class="wrap catalog-layout" data-catalog-scope="'+esc(scope,quote=True)+'">'+catalog_navigation(base)+'<div class="catalog-results"><div class="catalog-toolbar"><p>'+str(len(ids))+(' product' if len(ids)==1 else ' products')+' · Page '+str(page)+' of '+str(total)+'</p><div class="catalog-search" hidden><label for="catalog-search">'+search_label+'</label><input type="search" id="catalog-search" placeholder="Name, material or PHG reference" autocomplete="off"><button type="button" id="catalog-clear">Clear</button></div></div><p id="catalog-search-status" class="smallnote" role="status" aria-live="polite"></p>'+filters+'<div class="catalog-grid" id="catalog-grid">'+product_cards+'</div>'+catalog_pagination(base,page,total)+'</div></section>'+cta()
-  listing_schema={'@type':'ItemList','name':name,'url':ORIGIN+path,'numberOfItems':len(ids),'itemListElement':[{'@type':'ListItem','position':(page-1)*24+i+1,'url':ORIGIN+catalog_records[id]['path']} for i,id in enumerate(ids[(page-1)*24:page*24])]}
-  write(path,name+(' · Page '+str(page) if page>1 else '')+' | PackHubGlobe',description.split('. ',1)[0]+('. Page '+str(page)+'.' if page>1 else '.'),body,[listing_schema])
+  body+='<section class="wrap catalog-layout" data-catalog-scope="'+esc(scope,quote=True)+'">'+catalog_navigation(base)+'<div class="catalog-results"><h2>Compare custom packaging designs</h2><div class="catalog-toolbar"><p>'+str(len(ids))+(' product' if len(ids)==1 else ' products')+' · Page '+str(page)+' of '+str(total)+'</p><div class="catalog-search" hidden><label for="catalog-search">'+search_label+'</label><input type="search" id="catalog-search" placeholder="Name, material or PHG reference" autocomplete="off" list="catalog-suggestions"><datalist id="catalog-suggestions"><option value="Corrugated mailer"><option value="Magnetic box"><option value="Stand-up pouch"><option value="Drawer box"></datalist><button type="button" id="catalog-clear">Clear</button></div></div><p id="catalog-search-status" class="smallnote" role="status" aria-live="polite"></p>'+filters+'<div class="catalog-grid" id="catalog-grid">'+product_cards+'</div>'+catalog_pagination(base,page,total)+'</div></section>'+catalog_buying_guide()+cta()
+  listing_schema={'@type':'ItemList','name':name,'url':ORIGIN+path,'numberOfItems':len(ids),'itemListElement':[{'@type':'ListItem','position':(page-1)*24+i+1,'url':ORIGIN+catalog_records[id]['path'],'item':{'@type':'Product','name':catalog_records[id]['name'],'sku':catalog_records[id]['reference'],'url':ORIGIN+catalog_records[id]['path'],'image':ORIGIN+catalog_records[id]['image']['path'],'additionalProperty':[{'@type':'PropertyValue','name':k,'value':v} for k,v in [('MOQ','500 pieces')]+catalog_records[id]['facts'][:3]]}} for i,id in enumerate(ids[(page-1)*24:page*24])]}
+  write(path,('Custom Packaging Catalog | MOQ 500 pcs' if all_products else name+' | Custom Packaging')+(' · Page '+str(page) if page>1 else '')+' | PackHubGlobe',('Browse '+str(len(ids))+' custom packaging references: '+('boxes, bags, pouches and accessories' if all_products else name.lower())+'. Compare structures and materials. MOQ 500 pieces; request a project quote.'+(' Page '+str(page)+'.' if page>1 else '')),body,[listing_schema,catalog_faq_schema(path)])
 
 # Interleave source groups so the main collection opens with a varied range.
 catalog_order=[]
@@ -267,7 +270,7 @@ for product_id, record in catalog_records.items():
  if len(gallery)>1:visual='<div>'+visual+'<div class="ux-thumbs">'+''.join('<a href="'+im['path']+'" aria-label="Open product view '+str(i+1)+'"><img src="'+im['path']+'" alt="'+esc(name+' reference view '+str(i+1),quote=True)+'" width="72" height="72" loading="lazy"></a>' for i,im in enumerate(gallery))+'</div></div>'
  body=detailhero(group['public_name'],esc(name),esc(summary),visual,name+' · '+reference,'<a href="/catalog/">Product collection</a> / <a href="/catalog/'+group['slug']+'/">'+esc(group['public_name'])+'</a>',facts=quick)
  rows=[('Minimum order quantity','500 pieces')]+list(record['facts'])
- body+='<section class="section wrap product-details"><div><h2>Product details.</h2>'+specs(rows)+'<p class="smallnote">These are reference specifications. Confirm the material, dimensions, finish and sample for your order. MOQ: 500 pieces. Images show design references. Branded contents are not supplied; printed claims do not verify the order specification.</p></div><aside class="help-note"><h3>Make this packaging yours.</h3><p>Share your product dimensions, quantity per design, artwork and delivery country. Include reference '+reference+' in your enquiry.</p><div class="actions">'+button('Request a quote',qurl(name+' · '+reference))+'<a class="textlink" href="https://wa.me/8615105916426?text='+catalog_chat(record).split('?text=',1)[1]+'" target="_blank" rel="noopener noreferrer">Discuss on WhatsApp ↗</a></div><a class="textlink" href="/guides/packaging-quote-checklist/">Prepare your specification</a></aside></section>'
+ body+='<section class="section wrap product-details"><div><h2>Product details.</h2>'+specs(rows)+'<p class="smallnote">These are reference specifications. Confirm the material, dimensions, finish and sample for your order. MOQ: 500 pieces. Images show design references. Branded contents are not supplied; printed claims do not verify the order specification.</p></div><aside class="help-note"><h3>Make this packaging yours.</h3><p>Share your product dimensions, quantity per design, artwork and delivery country. Include reference '+reference+' in your enquiry.</p><div class="actions">'+button('Request a quote',qurl(name+' · '+reference))+'<a class="textlink" href="https://wa.me/8615105916426?text='+catalog_chat(record).split('?text=',1)[1]+'" target="_blank" rel="noopener noreferrer">Discuss on WhatsApp ↗</a></div><button class="quote-add" type="button" data-quote-ref="'+reference+'" aria-pressed="false">+ Add to quote basket</button><a class="textlink" href="/guides/packaging-quote-checklist/">Prepare your specification</a></aside></section>'
  if record.get('review_note'):
   body+='<section class="section wrap"><h2>Points to confirm for this reference.</h2><p>'+esc(record['review_note'])+'</p></section>'
  if record.get('gallery'):
@@ -295,6 +298,6 @@ with map_file.open('w',encoding='utf-8-sig',newline='') as stream:
  writer=csv.DictWriter(stream,fieldnames=fields);writer.writeheader();writer.writerows(planned)
 
 # Small search index uses only the curated public fields; original metadata remains in content/.
-search=[{'name':r['name'],'reference':r['reference'],'path':r['path'],'image':r['image']['path'],'family':r['family'],'format':r['format'],'chat':catalog_chat(r),'searchText':' '.join(value for label,value in r['facts']),'facts':[['MOQ','500 pieces']]+[(label,catalog_fact_preview(value)) for label,value in r['facts'][:5]],'groups':[catalog_groups[g]['public_name'] for g in r['groups']]} for r in catalog_records.values()]
+search=[{'name':r['name'],'reference':r['reference'],'path':r['path'],'image':r['image']['path'],'family':r['family'],'format':r['format'],'srcset':', '.join(url+' '+str(width)+'w' for url,width in RESPONSIVE.get(r['image']['path'],[])),'gallery':[im['path'] for im in r.get('gallery',[])],'imageWidth':r['image']['width'],'imageHeight':r['image']['height'],'chat':catalog_chat(r),'searchText':' '.join(value for label,value in r['facts']),'facts':[['MOQ','500 pieces']]+[(label,catalog_fact_preview(value)) for label,value in r['facts'][:5]],'groups':[catalog_groups[g]['public_name'] for g in r['groups']]} for r in catalog_records.values()]
 (ROOT/'assets/catalog-index.json').write_text(json.dumps(search,ensure_ascii=False))
 (catalog_data/'publication.json').write_text(json.dumps({'products':len(catalog_records),'groups':{id:{'name':g['public_name'],'published':len(catalog_selection[id]),'candidates':len(json.loads((catalog_data/'listings.json').read_text()).get(id, catalog_selection[id]))} for id,g in catalog_groups.items()},'public_paths':[p[0] for p in PAGES if p[0].startswith('/catalog/')]},indent=2))

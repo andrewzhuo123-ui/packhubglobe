@@ -63,3 +63,9 @@ The redesign follows the supplied V1.0 UX/UI plan. See [implementation and verif
 For browser acceptance install Playwright and @axe-core/playwright outside the deployment folder, start the local HTTP server and run `node tools/test-ux.cjs`. `PLAYWRIGHT_MODULE` and `AXE_MODULE` can point to their installed package paths. Browser checks mock email responses and never send a real enquiry.
 
 Conversion events are exposed to `dataLayer` and `packhubglobe:analytics` without enquiry content or contact details. No GA4 property or collection ID has been supplied; analytics collection is not connected.
+
+## Catalog purchasing update (5 November 2026)
+
+Catalog collections include structured buying comparisons, ordering FAQs, shareable structure/material/application filters and a persistent multi-item quote basket. The existing enquiry endpoint and downloaded brief carry the selected reference list. Details, validation and publication limits: [catalog optimization record](content/catalog-optimization-2026-11-05.md).
+
+Generate responsive catalog photos with `python3 tools/prepare-catalog-images.py`, rebuild, then run `node tools/test-catalog.cjs` using the same Playwright and Axe module settings as the UX checks.

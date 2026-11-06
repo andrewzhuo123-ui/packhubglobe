@@ -4,7 +4,7 @@ Self-contained English B2B custom packaging website for **https://www.packhubglo
 
 ## Website
 
-- 2,255 public pages plus a branded `404.html`.
+- 2,271 public pages plus a branded `404.html`.
 - 1,824 catalog products in three primary catalog families, 44 detailed product formats, 15 industry solutions, materials and services, 19 buyer guides, company/contact and information pages.
 - Local fonts and five original AI packaging images with fictional logos and slogans. No external runtime dependencies.
 - Responsive navigation, category filters, native FAQ accordions, prefilled enquiry form, server email submission and text download.
@@ -75,3 +75,14 @@ Generate responsive catalog photos with `python3 tools/prepare-catalog-images.py
 The homepage includes a compact enquiry form, and product quote links open a contextual native dialog. Both reuse the existing PHP endpoint. The full form offers optional drafts limited to the current tab; files and consent are not stored. Shared styles and scripts are delivered as two content-addressed bundles with immutable caching. Guide Q&A markup and existing category/industry links are expanded without invented offers or credentials.
 
 Implementation decisions, evidence and limits: [SEO/GEO/frontend release record](content/seo-geo-frontend-implementation-2026-11-05.md). Run `node tools/test-conversion.cjs` with the documented Playwright/Axe module settings for the new enquiry flows. Analytics events remain local; the owner chose not to connect external collectors.
+
+
+## Resources and blog update (6 November 2026)
+
+`/guides/` is the Resources pillar. It connects five topic collections, ten independent English blog articles and all 19 retained buying guides. `/blog/` is the article archive. Articles have four question-led sections, a short PAS opening and bold answer at each level, H3 analysis, tables, five local-library images, three contextual internal links and two external source footnotes. Each source uses its actual 6 November 2026 publication date. No old guide publication dates were reset.
+
+Sources are `content/blog/*.md`. Frontmatter uses one JSON-compatible YAML value per line; the build reads these constrained scalar/list values without a YAML dependency. Topic and image selections are in `content/blog-categories.json` and `content/blog-images.json`. The renderer is `tools/blog.py`; blog CSS is separately hashed and loads only on the Resources pillar and blog routes. Existing commercial pages keep their original CSS bundle.
+
+Install the maintenance dependencies with `python3 -m pip install -r tools/requirements-blog.txt`, then rebuild and run `python3 tools/validate-blog.py`. Run `node tools/test-blog.cjs` with the Playwright/Axe module settings documented above for responsive layouts, reading tasks and accessibility. The complete site validator, expansion validator and UI audit still apply. No Markdown runtime or external image dependency is needed on the host.
+
+GSC exports and the private editorial research/queue remain outside this deployment repository under the workspace's `docs/blog-research-2026-11-06/`. The deployment ZIP includes the new `blog/` directory and excludes research, source and QA directories. See `content/blog-release-2026-11-06.md` for scope and validation.

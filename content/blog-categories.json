@@ -1,0 +1,61 @@
+[
+  {
+    "slug": "sourcing-cost",
+    "name": "Sourcing & cost",
+    "summary": "Compare the full order cost, control stock risk and prepare a specification that suppliers can quote on the same basis.",
+    "question": "How can I buy packaging without tying up too much cash?",
+    "guides": [
+      "packaging-quote-checklist",
+      "custom-packaging-moq",
+      "choose-packaging-supplier-china"
+    ]
+  },
+  {
+    "slug": "shipping-protection",
+    "name": "Shipping & protection",
+    "summary": "Right-size the packed order, limit product movement and choose sample checks for the delivery route.",
+    "question": "How can I reduce parcel waste without increasing damage?",
+    "guides": [
+      "mailer-boxes-vs-shipping-boxes",
+      "internal-vs-external-box-dimensions",
+      "paper-bag-load-testing"
+    ]
+  },
+  {
+    "slug": "materials-sustainability",
+    "name": "Materials & sustainability",
+    "summary": "Look beyond a material's appearance. Review the complete construction, the claim evidence and the customer's disposal route.",
+    "question": "Which material claims can I support for my finished pack?",
+    "guides": [
+      "packaging-materials-explained",
+      "custom-paper-bags-guide"
+    ]
+  },
+  {
+    "slug": "pouches-food",
+    "name": "Pouches & food packaging",
+    "summary": "Connect pouch shape, material, valves and closures to the product, filling equipment and approval evidence.",
+    "question": "Which pouch specification fits my product and filling process?",
+    "guides": [
+      "stand-up-vs-flat-bottom-pouches"
+    ]
+  },
+  {
+    "slug": "design-sampling",
+    "name": "Design & sampling",
+    "summary": "Turn a drawing, proof and physical sample into clear approvals for fit, readable print and production details.",
+    "question": "What should I approve before the packaging goes into production?",
+    "guides": [
+      "packaging-sample-types",
+      "packaging-print-proof",
+      "prepare-packaging-dielines",
+      "label-roll-direction",
+      "folding-cartons-vs-rigid-boxes",
+      "straight-vs-reverse-tuck-end",
+      "foil-vs-spot-uv-vs-embossing",
+      "cosmetic-packaging-buyers-guide",
+      "apparel-packaging-selection",
+      "brand-color-across-materials"
+    ]
+  }
+]

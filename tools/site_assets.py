@@ -7,3 +7,5 @@ def asset_bundle(name,extension,sources):
  return '/assets/'+filename
 SITE_CSS=asset_bundle('site','css',['style.css','catalog-enhancements.css','ux.css','home.css','conversion.css'])
 SITE_JS=asset_bundle('site','js',['ux.js','app.js','catalog-enhancements.js','conversion.js'])
+
+BLOG_CSS=asset_bundle('blog','css',['blog.css'])

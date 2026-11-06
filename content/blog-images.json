@@ -1,0 +1,134 @@
+{
+  "mailer": {
+    "path": "/assets/images/box-reference-catalog/9f2b96354ca14a105758.webp",
+    "alt": "Small Pink Folding Mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600902684232",
+    "caption": "I use this mailer reference to review the lid, closure and space around the packed product."
+  },
+  "label": {
+    "path": "/assets/catalog/1600258133219.webp",
+    "alt": "Custom Printed Sticker",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1600258133219",
+    "caption": "I use this printed label reference to review legibility, placement and the application format."
+  },
+  "carton": {
+    "path": "/assets/catalog/1601967217413.webp",
+    "alt": "Custom Printed Carton",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601967217413",
+    "caption": "I use this printed carton reference to review panels, copy placement and the finished opening."
+  },
+  "rigid": {
+    "path": "/assets/images/box-reference-catalog/fa49d9073db981a02c9b.webp",
+    "alt": "Mini Bottle Drawer Box",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601275614500",
+    "caption": "I use this presentation box reference to review product position, opening and removal."
+  },
+  "bag": {
+    "path": "/assets/catalog/11000015570855.webp",
+    "alt": "Custom Paper Shopping Bag",
+    "width": 564,
+    "height": 564,
+    "reference": "PHG-11000015570855",
+    "caption": "I use this paper bag reference to review proportions, handles and printed surfaces."
+  },
+  "insert": {
+    "path": "/assets/images/box-reference-catalog/6a038ff1f5dddce8863e.webp",
+    "alt": "Molded Paper Pulp Insert for Gift Boxes",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601069918794",
+    "caption": "I compare these shaped insert references through product contact, support and removal."
+  },
+  "pouch": {
+    "path": "/assets/images/pouch-catalog/21c12f419ecaddcc7fba.webp",
+    "alt": "Transparent Freeze-Dried Apple Chips Pouch",
+    "width": 1600,
+    "height": 1600,
+    "reference": "PHG-PC-5CF40C7876",
+    "caption": "I use this pouch reference to review shape, closure placement and the space needed for filling."
+  },
+  "flat-bottom": {
+    "path": "/assets/images/pouch-catalog/12401ed244634a5092ca.webp",
+    "alt": "Coffee Flat-Bottom Pouch",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-PC-7134D6BA87",
+    "caption": "I use this flat-bottom pouch reference to discuss filled shape and panel layout."
+  },
+  "poly": {
+    "path": "/assets/catalog/1601254940568.webp",
+    "alt": "Custom Poly Mailing Bag",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601254940568",
+    "caption": "I use this mailing bag reference to review product fit, flap placement and sealing space."
+  },
+  "flat": {
+    "path": "/assets/images/pouch-catalog/e20230376c6c29cf9354.webp",
+    "alt": "Potato Chip Flat Pouch",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-PC-A185316A67",
+    "caption": "I use this flat pouch reference to discuss portion format, print panels and seal areas."
+  },
+  "coffee": {
+    "path": "/assets/catalog/1600659828071.webp",
+    "alt": "Custom Coffee & Tea Stand-Up Pouch",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1600659828071",
+    "caption": "I use this coffee pouch reference to discuss the complete structure, fill and closure specification."
+  },
+  "rollstock": {
+    "path": "/assets/process/printing.webp",
+    "alt": "Printing equipment reference; not a diagram of a specified rollstock filling line",
+    "width": 1000,
+    "height": 750,
+    "reference": "Existing process library photograph",
+    "caption": "This press photograph illustrates a printing stage. I confirm film handling and filling-line requirements separately."
+  },
+  "packing": {
+    "path": "/assets/images/print-packing.webp",
+    "alt": "AI concept of a printed mailer, mailing bag, cards and labels on a packing bench",
+    "width": 1536,
+    "height": 1024,
+    "reference": "Original AI concept; fictional brands"
+  },
+  "collection": {
+    "path": "/assets/images/print-collection.webp",
+    "alt": "AI concept collection of printed boxes, bags, pouches, cards and labels",
+    "width": 1254,
+    "height": 1254,
+    "reference": "Original AI concept; fictional brands"
+  },
+  "beauty": {
+    "path": "/assets/images/print-beauty.webp",
+    "alt": "AI concept of coordinated beauty cartons, a gift box, a bag and printed cards",
+    "width": 1536,
+    "height": 1024,
+    "reference": "Original AI concept; fictional brands"
+  },
+  "coffee-hero": {
+    "path": "/assets/images/print-coffee.webp",
+    "alt": "AI concept of printed coffee pouches in a coffee packing scene",
+    "width": 1536,
+    "height": 1024,
+    "reference": "Original AI concept; fictional brands"
+  },
+  "kraft-bag": {
+    "path": "/assets/catalog/60519970698.webp",
+    "alt": "Kraft Paper Shopping Bag",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-60519970698",
+    "caption": "I use this kraft bag reference to discuss the full material specification and intended load."
+  }
+}

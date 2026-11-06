@@ -150,10 +150,12 @@ write('/404/','Page Not Found | PackHubGlobe','Find packaging products or contac
 error=(ROOT/'404/index.html').read_text().replace('content="index,follow"','content="noindex,follow"')
 (ROOT/'404.html').write_text(error);(ROOT/'404/index.html').unlink();(ROOT/'404').rmdir();PAGES[:]=[p for p in PAGES if p[0]!='/404/']
 
+exec(compile((ROOT/'tools/blog.py').read_text(),str(ROOT/'tools/blog.py'),'exec'))
+
 from xml.sax.saxutils import escape as xesc
-(ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+xesc(ORIGIN+p[0])+'</loc>'+('<lastmod>2026-11-05</lastmod>' if p[0].startswith('/guides/') else '')+'</url>\n' for p in sorted(PAGES))+'</urlset>\n')
+(ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join('  <url><loc>'+xesc(ORIGIN+p[0])+'</loc>'+('<lastmod>2026-11-06</lastmod>' if p[0]=='/guides/' or p[0].startswith('/blog/') else '<lastmod>2026-11-05</lastmod>' if p[0].startswith('/guides/') else '')+'</url>\n' for p in sorted(PAGES))+'</urlset>\n')
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\nDisallow: /tools/\nDisallow: /content/\nDisallow: /qa/\nDisallow: /.git/\n\n# Public search and retrieval crawlers use the same rules as all visitors.\n# Training policy is unchanged; no training-specific permission is required for search.\nSitemap: '+ORIGIN+'/sitemap.xml\n')
-(ROOT/'llms.txt').write_text('# PackHubGlobe\n\nCustom packaging and printing for business buyers. Contact: '+EMAIL+'. Catalog MOQ is 500 pieces. Pricing, materials and production timing require a project-specific quotation. Original virtual-brand imagery is illustrative.\n\n'+''.join('- ['+title+']('+ORIGIN+path+'): '+desc+'\n' for path,title,desc in PAGES if path in ['/','/catalog/','/products/','/industries/','/materials/','/services/','/guides/','/about/','/factory/','/request-quote/'] or path.startswith(('/guides/','/products/','/industries/','/materials/','/services/'))))
+(ROOT/'llms.txt').write_text('# PackHubGlobe\n\nCustom packaging and printing for business buyers. Contact: '+EMAIL+'. Catalog MOQ is 500 pieces. Pricing, materials and production timing require a project-specific quotation. Original virtual-brand imagery is illustrative.\n\n'+''.join('- ['+title+']('+ORIGIN+path+'): '+desc+'\n' for path,title,desc in PAGES if path in ['/','/catalog/','/products/','/industries/','/materials/','/services/','/guides/','/about/','/factory/','/request-quote/'] or path.startswith(('/guides/','/blog/','/products/','/industries/','/materials/','/services/'))))
 # Superseded pagination is redirected; it must not remain as an orphaned HTML page.
 for old_path in json.loads((ROOT/'content/catalog-redirects.json').read_text()):
  stale=ROOT/old_path.strip('/')/'index.html'

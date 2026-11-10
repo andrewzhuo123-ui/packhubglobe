@@ -28,7 +28,7 @@ def blog_cards(posts):
  body='<div class="resourcegrid blog-cards">'
  for post in posts:
   category=next(c for c in BLOG_CATEGORIES if c['slug']==post['category'])
-  image=BLOG_IMAGES['coffee-hero' if post['hero']=='coffee' else post['hero']]
+  image=BLOG_IMAGES[post['hero']]
   body+='<article class="guidecard blog-card"><a class="blog-card-image" href="'+post['path']+'" tabindex="-1" aria-hidden="true"><img src="'+image['path']+'" alt="'+esc(image['alt'],quote=True)+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" loading="lazy"></a><div class="blog-card-copy"><p class="eyebrow">'+category['name']+'</p><h3><a href="'+post['path']+'">'+esc(post['title'])+'</a></h3><p>'+esc(post['description'])+'</p><p class="blog-meta"><time datetime="'+post['publishedAt']+'">'+blog_date(post['publishedAt'])+'</time> · '+str((len(post['markdown'].split())+219)//220)+' min read</p></div></article>'
  return body+'</div>'
 
@@ -56,7 +56,7 @@ for post in BLOG_POSTS:
   content+='</section>'
  content=content.replace('<th>','<th scope="col">')
  content+='<aside class="blog-sources" aria-label="Sources and notes"><h2>Sources &amp; notes</h2><ol>'+''.join('<li id="note-'+n+'">'+BLOG_MARKDOWN.render(note)+'<a href="#ref-'+n+'" aria-label="Back to source '+n+' in the article">↩</a></li>' for n,note in notes)+'</ol></aside>'
- hero='coffee-hero' if post['hero']=='coffee' else post['hero']
+ hero=post['hero']
  trail='<a href="/">Home</a> / <a href="/guides/">Resources</a> / <a href="/blog/category/'+category['slug']+'/">'+category['name']+'</a>'
  head='<header class="blog-heading wrap"><div class="breadcrumb">'+trail+'</div><p class="eyebrow">'+category['name']+'</p><h1>'+esc(post['title'])+'</h1><p class="blog-meta">By '+post['author']+' · <time datetime="'+post['publishedAt']+'">'+blog_date(post['publishedAt'])+'</time></p></header>'
  sidebar='<aside class="blog-sidebar"><nav aria-label="In this article"><p class="eyebrow">In this article</p><ol>'+''.join('<li><a href="#'+a+'">'+esc(h)+'</a></li>' for a,h in toc)+'</ol></nav><a class="textlink" href="/blog/category/'+category['slug']+'/">More in '+category['name']+' ↗</a></aside>'

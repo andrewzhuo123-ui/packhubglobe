@@ -5,12 +5,12 @@ publishedAt: "2026-11-06"
 author: "PackHubGlobe editorial team"
 category: "sourcing-cost"
 keyword: "compare packaging quotes"
-hero: "collection"
-images: ["mailer", "rigid", "bag", "carton"]
+hero: "compare-packaging-quotes-landed-cost-1"
+images: ["compare-packaging-quotes-landed-cost-2", "compare-packaging-quotes-landed-cost-3", "compare-packaging-quotes-landed-cost-4", "compare-packaging-quotes-landed-cost-5"]
 authorUrl: "https://www.packhubglobe.com/editorial-policy/"
 tags: ["sourcing-cost"]
-image: "/assets/images/print-collection.webp"
-imageAlt: "AI concept collection of printed boxes, bags, pouches, cards and labels"
+image: "/assets/images/print-categories.webp"
+imageAlt: "Illustrative assortment of printed packaging formats and accessories"
 ---
 # How do I compare packaging quotes beyond the unit price?
 

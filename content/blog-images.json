@@ -1,107 +1,4 @@
 {
-  "mailer": {
-    "path": "/assets/images/box-reference-catalog/9f2b96354ca14a105758.webp",
-    "alt": "Small Pink Folding Mailer",
-    "width": 960,
-    "height": 960,
-    "reference": "PHG-FP-1600902684232",
-    "caption": "I use this mailer reference to review the lid, closure and space around the packed product."
-  },
-  "label": {
-    "path": "/assets/catalog/1600258133219.webp",
-    "alt": "Custom Printed Sticker",
-    "width": 480,
-    "height": 480,
-    "reference": "PHG-1600258133219",
-    "caption": "I use this printed label reference to review legibility, placement and the application format."
-  },
-  "carton": {
-    "path": "/assets/catalog/1601967217413.webp",
-    "alt": "Custom Printed Carton",
-    "width": 480,
-    "height": 480,
-    "reference": "PHG-1601967217413",
-    "caption": "I use this printed carton reference to review panels, copy placement and the finished opening."
-  },
-  "rigid": {
-    "path": "/assets/images/box-reference-catalog/fa49d9073db981a02c9b.webp",
-    "alt": "Mini Bottle Drawer Box",
-    "width": 900,
-    "height": 900,
-    "reference": "PHG-FP-1601275614500",
-    "caption": "I use this presentation box reference to review product position, opening and removal."
-  },
-  "bag": {
-    "path": "/assets/catalog/11000015570855.webp",
-    "alt": "Custom Paper Shopping Bag",
-    "width": 564,
-    "height": 564,
-    "reference": "PHG-11000015570855",
-    "caption": "I use this paper bag reference to review proportions, handles and printed surfaces."
-  },
-  "insert": {
-    "path": "/assets/images/box-reference-catalog/6a038ff1f5dddce8863e.webp",
-    "alt": "Molded Paper Pulp Insert for Gift Boxes",
-    "width": 960,
-    "height": 960,
-    "reference": "PHG-FP-1601069918794",
-    "caption": "I compare these shaped insert references through product contact, support and removal."
-  },
-  "pouch": {
-    "path": "/assets/images/pouch-catalog/21c12f419ecaddcc7fba.webp",
-    "alt": "Transparent Freeze-Dried Apple Chips Pouch",
-    "width": 1600,
-    "height": 1600,
-    "reference": "PHG-PC-5CF40C7876",
-    "caption": "I use this pouch reference to review shape, closure placement and the space needed for filling."
-  },
-  "flat-bottom": {
-    "path": "/assets/images/pouch-catalog/12401ed244634a5092ca.webp",
-    "alt": "Coffee Flat-Bottom Pouch",
-    "width": 800,
-    "height": 800,
-    "reference": "PHG-PC-7134D6BA87",
-    "caption": "I use this flat-bottom pouch reference to discuss filled shape and panel layout."
-  },
-  "poly": {
-    "path": "/assets/catalog/1601254940568.webp",
-    "alt": "Custom Poly Mailing Bag",
-    "width": 1000,
-    "height": 1000,
-    "reference": "PHG-1601254940568",
-    "caption": "I use this mailing bag reference to review product fit, flap placement and sealing space."
-  },
-  "flat": {
-    "path": "/assets/images/pouch-catalog/e20230376c6c29cf9354.webp",
-    "alt": "Potato Chip Flat Pouch",
-    "width": 800,
-    "height": 800,
-    "reference": "PHG-PC-A185316A67",
-    "caption": "I use this flat pouch reference to discuss portion format, print panels and seal areas."
-  },
-  "coffee": {
-    "path": "/assets/catalog/1600659828071.webp",
-    "alt": "Custom Coffee & Tea Stand-Up Pouch",
-    "width": 480,
-    "height": 480,
-    "reference": "PHG-1600659828071",
-    "caption": "I use this coffee pouch reference to discuss the complete structure, fill and closure specification."
-  },
-  "rollstock": {
-    "path": "/assets/process/printing.webp",
-    "alt": "Printing equipment reference; not a diagram of a specified rollstock filling line",
-    "width": 1000,
-    "height": 750,
-    "reference": "Existing process library photograph",
-    "caption": "This press photograph illustrates a printing stage. I confirm film handling and filling-line requirements separately."
-  },
-  "packing": {
-    "path": "/assets/images/print-packing.webp",
-    "alt": "AI concept of a printed mailer, mailing bag, cards and labels on a packing bench",
-    "width": 1536,
-    "height": 1024,
-    "reference": "Original AI concept; fictional brands"
-  },
   "collection": {
     "path": "/assets/images/print-collection.webp",
     "alt": "AI concept collection of printed boxes, bags, pouches, cards and labels",
@@ -109,26 +6,524 @@
     "height": 1254,
     "reference": "Original AI concept; fictional brands"
   },
-  "beauty": {
-    "path": "/assets/images/print-beauty.webp",
-    "alt": "AI concept of coordinated beauty cartons, a gift box, a bag and printed cards",
+  "3pl-damage-inspection-record-1": {
+    "path": "/assets/images/print-packing.webp",
+    "alt": "Illustrative packing bench with an open corrugated box and packing materials",
     "width": 1536,
     "height": 1024,
-    "reference": "Original AI concept; fictional brands"
+    "reference": "Original AI concept; fictional brands",
+    "caption": "Illustrative packing bench with an open corrugated box and packing materials. AI concept with fictional brands."
   },
-  "coffee-hero": {
+  "3pl-damage-inspection-record-2": {
+    "path": "/assets/catalog/60684610689.webp",
+    "alt": "Open corrugated shipping carton with visible outer panels",
+    "width": 526,
+    "height": 526,
+    "reference": "PHG-60684610689",
+    "caption": "Open corrugated shipping carton with visible outer panels. Shown as a construction reference."
+  },
+  "3pl-damage-inspection-record-3": {
+    "path": "/assets/catalog/1601035745268.webp",
+    "alt": "Open shipping carton showing product placement in its insert",
+    "width": 700,
+    "height": 700,
+    "reference": "PHG-1601035745268",
+    "caption": "Open shipping carton showing product placement in its insert. Shown as a construction reference."
+  },
+  "3pl-damage-inspection-record-4": {
+    "path": "/assets/catalog/1600819644087.webp",
+    "alt": "Window carton showing a mug inside its retail packaging",
+    "width": 700,
+    "height": 700,
+    "reference": "PHG-1600819644087",
+    "caption": "Window carton showing a mug inside its retail packaging. Shown as a construction reference."
+  },
+  "3pl-damage-inspection-record-5": {
+    "path": "/assets/images/box-reference-catalog/de7b84659920ecb4873f.webp",
+    "alt": "Slotted insert separating bottles inside a corrugated mailer",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601489577717",
+    "caption": "Slotted insert separating bottles inside a corrugated mailer. Shown as a construction reference."
+  },
+  "coffee-pouch-valve-zipper-barrier-1": {
     "path": "/assets/images/print-coffee.webp",
-    "alt": "AI concept of printed coffee pouches in a coffee packing scene",
+    "alt": "Illustrative printed coffee pouches on a packing surface",
     "width": 1536,
     "height": 1024,
-    "reference": "Original AI concept; fictional brands"
+    "reference": "Original AI concept; fictional brands",
+    "caption": "Illustrative printed coffee pouches on a packing surface. AI concept with fictional brands."
   },
-  "kraft-bag": {
+  "coffee-pouch-valve-zipper-barrier-2": {
+    "path": "/assets/images/pouch-catalog/ffbe568deb7c64f3fccf.webp",
+    "alt": "Two printed flat-bottom coffee bean pouch references",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-PC-FA2D844A55",
+    "caption": "Two printed flat-bottom coffee bean pouch references."
+  },
+  "coffee-pouch-valve-zipper-barrier-3": {
+    "path": "/assets/images/pouch-catalog/2b93631de4b89308763f.webp",
+    "alt": "Black flat-bottom coffee pouches in several sizes",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-PC-F5F8E8D0F9",
+    "caption": "Black flat-bottom coffee pouches in several sizes."
+  },
+  "coffee-pouch-valve-zipper-barrier-4": {
+    "path": "/assets/images/pouch-catalog/2da5e8bc9a870eb69e0e.webp",
+    "alt": "Windowed coffee pouch showing the beans inside",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-PC-2CB3C57315",
+    "caption": "Windowed coffee pouch showing the beans inside."
+  },
+  "coffee-pouch-valve-zipper-barrier-5": {
+    "path": "/assets/images/pouch-catalog/12401ed244634a5092ca.webp",
+    "alt": "Printed coffee pouch with a wide front artwork panel",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-PC-7134D6BA87",
+    "caption": "Printed coffee pouch with a wide front artwork panel."
+  },
+  "compare-packaging-quotes-landed-cost-1": {
+    "path": "/assets/images/print-categories.webp",
+    "alt": "Illustrative assortment of printed packaging formats and accessories",
+    "width": 1536,
+    "height": 1024,
+    "reference": "Original AI concept; fictional brands",
+    "caption": "Illustrative assortment of printed packaging formats and accessories. AI concept with fictional brands."
+  },
+  "compare-packaging-quotes-landed-cost-2": {
+    "path": "/assets/catalog/1600686428187.webp",
+    "alt": "Two open corrugated mailer constructions for comparison",
+    "width": 650,
+    "height": 650,
+    "reference": "PHG-1600686428187",
+    "caption": "Two open corrugated mailer constructions for comparison."
+  },
+  "compare-packaging-quotes-landed-cost-3": {
+    "path": "/assets/catalog/1600951981525.webp",
+    "alt": "Stack of kraft mailing bags beside an assembled sample",
+    "width": 700,
+    "height": 700,
+    "reference": "PHG-1600951981525",
+    "caption": "Stack of kraft mailing bags beside an assembled sample."
+  },
+  "compare-packaging-quotes-landed-cost-4": {
+    "path": "/assets/catalog/1600623269526.webp",
+    "alt": "Open kraft carton with a shallow lid and base",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1600623269526",
+    "caption": "Open kraft carton with a shallow lid and base."
+  },
+  "compare-packaging-quotes-landed-cost-5": {
+    "path": "/assets/images/box-reference-catalog/d70eca2bad7daa4784b2.webp",
+    "alt": "Paper tube packaging with a fitted perfume bottle insert",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601177835822",
+    "caption": "Paper tube packaging with a fitted perfume bottle insert."
+  },
+  "fragile-product-inserts-transit-testing-1": {
+    "path": "/assets/images/luxopack-catalog/049f0a64582d126d3daa.webp",
+    "alt": "Two bottles seated in individual recesses in a presentation box",
+    "width": 1200,
+    "height": 1200,
+    "reference": "PHG-LX-08BF02520E",
+    "caption": "Two bottles seated in individual recesses in a presentation box."
+  },
+  "fragile-product-inserts-transit-testing-2": {
+    "path": "/assets/catalog/1601184092503.webp",
+    "alt": "Shoe on a rigid drawer box showing product and carton size",
+    "width": 825,
+    "height": 825,
+    "reference": "PHG-1601184092503",
+    "caption": "Shoe on a rigid drawer box showing product and carton size."
+  },
+  "fragile-product-inserts-transit-testing-3": {
+    "path": "/assets/images/box-reference-catalog/8ec3b9e8a4a0a34fae83.webp",
+    "alt": "Black hinged box with a fitted dark insert",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1600483744914",
+    "caption": "Black hinged box with a fitted dark insert."
+  },
+  "fragile-product-inserts-transit-testing-4": {
+    "path": "/assets/images/box-reference-catalog/89f15b6456ea2f8d77ce.webp",
+    "alt": "Open presentation box fitted around a candle jar",
+    "width": 750,
+    "height": 750,
+    "reference": "PHG-FP-1601322338597",
+    "caption": "Open presentation box fitted around a candle jar."
+  },
+  "fragile-product-inserts-transit-testing-5": {
+    "path": "/assets/images/box-reference-catalog/ef8081c58923a252540d.webp",
+    "alt": "Perfume bottle seated in a black drawer box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601059849735",
+    "caption": "Perfume bottle seated in a black drawer box."
+  },
+  "kraft-packaging-coatings-recycling-1": {
     "path": "/assets/catalog/60519970698.webp",
-    "alt": "Kraft Paper Shopping Bag",
+    "alt": "Kraft shopping bags with different handle constructions",
     "width": 1000,
     "height": 1000,
     "reference": "PHG-60519970698",
-    "caption": "I use this kraft bag reference to discuss the full material specification and intended load."
+    "caption": "Kraft shopping bags with different handle constructions."
+  },
+  "kraft-packaging-coatings-recycling-2": {
+    "path": "/assets/images/pouch-catalog/44b9ce7a6ea08488dfb6.webp",
+    "alt": "Kraft-look pouches with clear product windows",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-PC-75D0886C70",
+    "caption": "Kraft-look pouches with clear product windows."
+  },
+  "kraft-packaging-coatings-recycling-3": {
+    "path": "/assets/process/coating.webp",
+    "alt": "Coating equipment in the packaging production library",
+    "width": 563,
+    "height": 750,
+    "reference": "Existing editorial library",
+    "caption": "Coating equipment in the packaging production library."
+  },
+  "kraft-packaging-coatings-recycling-4": {
+    "path": "/assets/catalog/1600371189347.webp",
+    "alt": "Kraft mailer partially open with a garment inside",
+    "width": 480,
+    "height": 420,
+    "reference": "PHG-1600371189347",
+    "caption": "Kraft mailer partially open with a garment inside."
+  },
+  "kraft-packaging-coatings-recycling-5": {
+    "path": "/assets/catalog/1600976392997.webp",
+    "alt": "Printed stickers in different colors and shapes",
+    "width": 700,
+    "height": 700,
+    "reference": "PHG-1600976392997",
+    "caption": "Printed stickers in different colors and shapes."
+  },
+  "packaging-print-proof-approval-checklist-1": {
+    "path": "/assets/images/print-beauty.webp",
+    "alt": "Illustrative coordinated beauty cartons and other printed packages",
+    "width": 1536,
+    "height": 1024,
+    "reference": "Original AI concept; fictional brands",
+    "caption": "Illustrative coordinated beauty cartons and other printed packages. AI concept with fictional brands."
+  },
+  "packaging-print-proof-approval-checklist-2": {
+    "path": "/assets/catalog/1601834740467.webp",
+    "alt": "Open printed carton showing flaps and interior panels",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601834740467",
+    "caption": "Open printed carton showing flaps and interior panels."
+  },
+  "packaging-print-proof-approval-checklist-3": {
+    "path": "/assets/catalog/1601763284953.webp",
+    "alt": "Printed white carton showing text across adjacent panels",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601763284953",
+    "caption": "Printed white carton showing text across adjacent panels."
+  },
+  "packaging-print-proof-approval-checklist-4": {
+    "path": "/assets/process/lamination.webp",
+    "alt": "Lamination equipment in the packaging production library",
+    "width": 1000,
+    "height": 750,
+    "reference": "Existing editorial library",
+    "caption": "Lamination equipment in the packaging production library."
+  },
+  "packaging-print-proof-approval-checklist-5": {
+    "path": "/assets/catalog/1601731979330.webp",
+    "alt": "Dark blue printed folding carton with metallic-looking details",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601731979330",
+    "caption": "Dark blue printed folding carton with metallic-looking details."
+  },
+  "packaging-print-proof-approval-record-1": {
+    "path": "/assets/catalog/1601835095226.webp",
+    "alt": "Printed folding carton held to show side and rear panels",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601835095226",
+    "caption": "Printed folding carton held to show side and rear panels."
+  },
+  "packaging-print-proof-approval-record-2": {
+    "path": "/assets/catalog/1601834838749.webp",
+    "alt": "Small white folding carton with print on adjacent panels",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601834838749",
+    "caption": "Small white folding carton with print on adjacent panels."
+  },
+  "packaging-print-proof-approval-record-3": {
+    "path": "/assets/catalog/1601735503822.webp",
+    "alt": "Printed carton with a multicolor front panel",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601735503822",
+    "caption": "Printed carton with a multicolor front panel."
+  },
+  "packaging-print-proof-approval-record-4": {
+    "path": "/assets/process/plate-making.webp",
+    "alt": "Plate preparation equipment in the print production library",
+    "width": 1000,
+    "height": 750,
+    "reference": "Existing editorial library",
+    "caption": "Plate preparation equipment in the print production library."
+  },
+  "packaging-print-proof-approval-record-5": {
+    "path": "/assets/process/gluing.webp",
+    "alt": "Carton gluing equipment in the packaging production library",
+    "width": 1000,
+    "height": 750,
+    "reference": "Existing editorial library",
+    "caption": "Carton gluing equipment in the packaging production library."
+  },
+  "packaging-sample-approval-multiple-skus-1": {
+    "path": "/assets/images/box-reference-catalog/5978bc7c285e410a8417.webp",
+    "alt": "Three coordinated cosmetic cartons for separate product variants",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601104044858",
+    "caption": "Three coordinated cosmetic cartons for separate product variants."
+  },
+  "packaging-sample-approval-multiple-skus-2": {
+    "path": "/assets/catalog/1600958033499.webp",
+    "alt": "Drawer box components and inserts in multiple sizes",
+    "width": 700,
+    "height": 700,
+    "reference": "PHG-1600958033499",
+    "caption": "Drawer box components and inserts in multiple sizes."
+  },
+  "packaging-sample-approval-multiple-skus-3": {
+    "path": "/assets/catalog/1601739563382.webp",
+    "alt": "Open shaped carton showing the space for a single bottle",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601739563382",
+    "caption": "Open shaped carton showing the space for a single bottle."
+  },
+  "packaging-sample-approval-multiple-skus-4": {
+    "path": "/assets/catalog/1600258133219.webp",
+    "alt": "Size labels arranged by product variant",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1600258133219",
+    "caption": "Size labels arranged by product variant."
+  },
+  "packaging-sample-approval-multiple-skus-5": {
+    "path": "/assets/catalog/1601181500969.webp",
+    "alt": "Sample presentation folder with multiple individual bottle positions",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601181500969",
+    "caption": "Sample presentation folder with multiple individual bottle positions."
+  },
+  "recycled-or-compostable-mailers-1": {
+    "path": "/assets/catalog/1601448622838.webp",
+    "alt": "Dark flexible mailing bag with its closure open",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601448622838",
+    "caption": "Dark flexible mailing bag with its closure open. Shown as a construction reference."
+  },
+  "recycled-or-compostable-mailers-2": {
+    "path": "/assets/catalog/1601254940568.webp",
+    "alt": "Printed flexible mailer with an adhesive flap",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601254940568",
+    "caption": "Printed flexible mailer with an adhesive flap. Shown as a construction reference."
+  },
+  "recycled-or-compostable-mailers-3": {
+    "path": "/assets/images/pouch-catalog/c466c77f9dd4d8a97b0d.webp",
+    "alt": "Padded pink poly mailer showing printed handling information",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-PC-0930262165",
+    "caption": "Padded pink poly mailer showing printed handling information. Shown as a construction reference."
+  },
+  "recycled-or-compostable-mailers-4": {
+    "path": "/assets/catalog/1600302194598.webp",
+    "alt": "Kraft mailer showing the interior and adhesive closure",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1600302194598",
+    "caption": "Kraft mailer showing the interior and adhesive closure. Shown as a construction reference."
+  },
+  "recycled-or-compostable-mailers-5": {
+    "path": "/assets/catalog/1600501580681.webp",
+    "alt": "Flat kraft mailer with a wide adhesive flap",
+    "width": 634,
+    "height": 746,
+    "reference": "PHG-1600501580681",
+    "caption": "Flat kraft mailer with a wide adhesive flap. Shown as a construction reference."
+  },
+  "right-size-mailer-box-shipping-cost-1": {
+    "path": "/assets/images/box-reference-catalog/b1e706c6273a0574d700.webp",
+    "alt": "Corrugated mailers in different proportions",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1700000728788",
+    "caption": "Corrugated mailers in different proportions."
+  },
+  "right-size-mailer-box-shipping-cost-2": {
+    "path": "/assets/catalog/1600615165951.webp",
+    "alt": "Open and closed views of a kraft corrugated mailer",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1600615165951",
+    "caption": "Open and closed views of a kraft corrugated mailer."
+  },
+  "right-size-mailer-box-shipping-cost-3": {
+    "path": "/assets/catalog/1600659076290.webp",
+    "alt": "Three kraft mailers with different packed profiles",
+    "width": 750,
+    "height": 750,
+    "reference": "PHG-1600659076290",
+    "caption": "Three kraft mailers with different packed profiles."
+  },
+  "right-size-mailer-box-shipping-cost-4": {
+    "path": "/assets/catalog/1600549986481.webp",
+    "alt": "Printed mailer with a fitted compartment for small products",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1600549986481",
+    "caption": "Printed mailer with a fitted compartment for small products."
+  },
+  "right-size-mailer-box-shipping-cost-5": {
+    "path": "/assets/catalog/1600972313101.webp",
+    "alt": "Several shallow mailers stacked beside an open example",
+    "width": 700,
+    "height": 700,
+    "reference": "PHG-1600972313101",
+    "caption": "Several shallow mailers stacked beside an open example."
+  },
+  "rollstock-or-premade-pouches-filling-1": {
+    "path": "/assets/images/pouch-catalog/b5d9893936b4d1fb6a63.webp",
+    "alt": "Printed snack pouches in three finished sizes",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-PC-BE8D682D29",
+    "caption": "Printed snack pouches in three finished sizes."
+  },
+  "rollstock-or-premade-pouches-filling-2": {
+    "path": "/assets/process/printing.webp",
+    "alt": "Print production equipment reference",
+    "width": 1000,
+    "height": 750,
+    "reference": "Existing editorial library",
+    "caption": "Print equipment reference. I confirm filling-line compatibility against the actual equipment specification."
+  },
+  "rollstock-or-premade-pouches-filling-3": {
+    "path": "/assets/images/pouch-catalog/bae4d326bf66444d7299.webp",
+    "alt": "Assorted filled clear pouches for comparing finished packs",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-PC-258D2E66B1",
+    "caption": "Assorted filled clear pouches for comparing finished packs."
+  },
+  "rollstock-or-premade-pouches-filling-4": {
+    "path": "/assets/images/pouch-catalog/f5656e7ecf108b908a5e.webp",
+    "alt": "Clear stand-up pouches showing filled shape and seal area",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-PC-E86F16260D",
+    "caption": "Clear stand-up pouches showing filled shape and seal area."
+  },
+  "rollstock-or-premade-pouches-filling-5": {
+    "path": "/assets/images/pouch-catalog/fcdf39429c8a83680f89.webp",
+    "alt": "Printed snack pouch showing the artwork panel and sealed edges",
+    "width": 752,
+    "height": 752,
+    "reference": "PHG-PC-6A41AAADB9",
+    "caption": "Printed snack pouch showing the artwork panel and sealed edges."
+  },
+  "stock-or-custom-packaging-first-order-1": {
+    "path": "/assets/catalog/1600139618353.webp",
+    "alt": "Retail paper bags in a range of colors and sizes",
+    "width": 400,
+    "height": 400,
+    "reference": "PHG-1600139618353",
+    "caption": "Retail paper bags in a range of colors and sizes."
+  },
+  "stock-or-custom-packaging-first-order-2": {
+    "path": "/assets/catalog/1600302215534.webp",
+    "alt": "Stack of flat-packed kraft mailers",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1600302215534",
+    "caption": "Stack of flat-packed kraft mailers."
+  },
+  "stock-or-custom-packaging-first-order-3": {
+    "path": "/assets/catalog/1601559918472.webp",
+    "alt": "Plain mailer with restrained single-area branding",
+    "width": 505,
+    "height": 515,
+    "reference": "PHG-1601559918472",
+    "caption": "Plain mailer with restrained single-area branding."
+  },
+  "stock-or-custom-packaging-first-order-4": {
+    "path": "/assets/catalog/1600770268154.webp",
+    "alt": "Printed sticker sheet for adding branding to stock packs",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1600770268154",
+    "caption": "Printed sticker sheet for adding branding to stock packs."
+  },
+  "stock-or-custom-packaging-first-order-5": {
+    "path": "/assets/images/box-reference-catalog/57ba06a8d3a7b9f1f7e3.webp",
+    "alt": "Two printed corrugated mailers showing an alternate full-print approach",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601693459240",
+    "caption": "Two printed corrugated mailers showing an alternate full-print approach."
+  },
+  "structural-or-printed-packaging-sample-1": {
+    "path": "/assets/catalog/1601025655836.webp",
+    "alt": "Open printed drawer gift box showing shape and artwork",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601025655836",
+    "caption": "Open printed drawer gift box showing shape and artwork."
+  },
+  "structural-or-printed-packaging-sample-2": {
+    "path": "/assets/catalog/1601205379427.webp",
+    "alt": "Two drawer gift boxes showing how the closure fits",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601205379427",
+    "caption": "Two drawer gift boxes showing how the closure fits."
+  },
+  "structural-or-printed-packaging-sample-3": {
+    "path": "/assets/process/die-cutting.webp",
+    "alt": "Die-cutting equipment in the packaging production library",
+    "width": 1000,
+    "height": 750,
+    "reference": "Existing editorial library",
+    "caption": "Die-cutting equipment in the packaging production library."
+  },
+  "structural-or-printed-packaging-sample-4": {
+    "path": "/assets/catalog/1601092234260.webp",
+    "alt": "Printed folding cartons showing front artwork and window positions",
+    "width": 564,
+    "height": 564,
+    "reference": "PHG-1601092234260",
+    "caption": "Printed folding cartons showing front artwork and window positions."
+  },
+  "structural-or-printed-packaging-sample-5": {
+    "path": "/assets/images/box-reference-catalog/728988497823adae4710.webp",
+    "alt": "Open drawer box showing the insert, closure and printed finish",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601693333668",
+    "caption": "Open drawer box showing the insert, closure and printed finish."
   }
 }

@@ -5,12 +5,12 @@ publishedAt: "2026-11-10"
 author: "PackHubGlobe Editorial Team"
 category: "shipping-protection"
 keyword: "damage inspection record"
-hero: "packing"
-images: ["mailer","insert","label","carton"]
+hero: "3pl-damage-inspection-record-1"
+images: ["3pl-damage-inspection-record-2", "3pl-damage-inspection-record-3", "3pl-damage-inspection-record-4", "3pl-damage-inspection-record-5"]
 authorUrl: "https://www.packhubglobe.com/editorial-policy/"
 tags: ["shipping-protection"]
 image: "/assets/images/print-packing.webp"
-imageAlt: "AI concept of a printed mailer, mailing bag, cards and labels on a packing bench"
+imageAlt: "Illustrative packing bench with an open corrugated box and packing materials"
 ---
 # How do I record packaging damage at my 3PL?
 

@@ -5,12 +5,12 @@ publishedAt: "2026-11-06"
 author: "PackHubGlobe editorial team"
 category: "sourcing-cost"
 keyword: "stock or custom packaging"
-hero: "packing"
-images: ["mailer", "label", "carton", "rigid"]
+hero: "stock-or-custom-packaging-first-order-1"
+images: ["stock-or-custom-packaging-first-order-2", "stock-or-custom-packaging-first-order-3", "stock-or-custom-packaging-first-order-4", "stock-or-custom-packaging-first-order-5"]
 authorUrl: "https://www.packhubglobe.com/editorial-policy/"
 tags: ["sourcing-cost"]
-image: "/assets/images/print-packing.webp"
-imageAlt: "AI concept of a printed mailer, mailing bag, cards and labels on a packing bench"
+image: "/assets/catalog/1600139618353.webp"
+imageAlt: "Retail paper bags in a range of colors and sizes"
 ---
 # Should I choose stock or custom packaging for my first order?
 

@@ -5,12 +5,12 @@ publishedAt: "2026-11-06"
 author: "PackHubGlobe editorial team"
 category: "materials-sustainability"
 keyword: "kraft packaging"
-hero: "collection"
-images: ["kraft-bag", "carton", "label", "pouch"]
+hero: "kraft-packaging-coatings-recycling-1"
+images: ["kraft-packaging-coatings-recycling-2", "kraft-packaging-coatings-recycling-3", "kraft-packaging-coatings-recycling-4", "kraft-packaging-coatings-recycling-5"]
 authorUrl: "https://www.packhubglobe.com/editorial-policy/"
 tags: ["materials-sustainability"]
-image: "/assets/images/print-collection.webp"
-imageAlt: "AI concept collection of printed boxes, bags, pouches, cards and labels"
+image: "/assets/catalog/60519970698.webp"
+imageAlt: "Kraft shopping bags with different handle constructions"
 ---
 # Does kraft packaging stay recyclable after coatings and labels?
 

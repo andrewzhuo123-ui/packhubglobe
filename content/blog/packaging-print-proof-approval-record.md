@@ -5,12 +5,12 @@ publishedAt: "2026-11-10"
 author: "PackHubGlobe Editorial Team"
 category: "design-sampling"
 keyword: "packaging print proof approval"
-hero: "beauty"
-images: ["carton","label","rigid","bag"]
+hero: "packaging-print-proof-approval-record-1"
+images: ["packaging-print-proof-approval-record-2", "packaging-print-proof-approval-record-3", "packaging-print-proof-approval-record-4", "packaging-print-proof-approval-record-5"]
 authorUrl: "https://www.packhubglobe.com/editorial-policy/"
 tags: ["design-sampling"]
-image: "/assets/images/print-beauty.webp"
-imageAlt: "AI concept of coordinated beauty cartons, a gift box, a bag and printed cards"
+image: "/assets/catalog/1601835095226.webp"
+imageAlt: "Printed folding carton held to show side and rear panels"
 ---
 # How do I document packaging print proof approval?
 

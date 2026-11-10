@@ -5,12 +5,12 @@ publishedAt: "2026-11-06"
 author: "PackHubGlobe editorial team"
 category: "design-sampling"
 keyword: "packaging print proof approval"
-hero: "beauty"
-images: ["carton", "label", "rigid", "bag"]
+hero: "packaging-print-proof-approval-checklist-1"
+images: ["packaging-print-proof-approval-checklist-2", "packaging-print-proof-approval-checklist-3", "packaging-print-proof-approval-checklist-4", "packaging-print-proof-approval-checklist-5"]
 authorUrl: "https://www.packhubglobe.com/editorial-policy/"
 tags: ["design-sampling"]
 image: "/assets/images/print-beauty.webp"
-imageAlt: "AI concept of coordinated beauty cartons, a gift box, a bag and printed cards"
+imageAlt: "Illustrative coordinated beauty cartons and other printed packages"
 ---
 # What should I check before approving a packaging print proof?
 

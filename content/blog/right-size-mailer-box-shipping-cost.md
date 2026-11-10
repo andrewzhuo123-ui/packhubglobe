@@ -5,12 +5,12 @@ publishedAt: "2026-11-06"
 author: "PackHubGlobe editorial team"
 category: "shipping-protection"
 keyword: "right-size a mailer box"
-hero: "packing"
-images: ["mailer", "insert", "carton", "mailer"]
+hero: "right-size-mailer-box-shipping-cost-1"
+images: ["right-size-mailer-box-shipping-cost-2", "right-size-mailer-box-shipping-cost-3", "right-size-mailer-box-shipping-cost-4", "right-size-mailer-box-shipping-cost-5"]
 authorUrl: "https://www.packhubglobe.com/editorial-policy/"
 tags: ["shipping-protection"]
-image: "/assets/images/print-packing.webp"
-imageAlt: "AI concept of a printed mailer, mailing bag, cards and labels on a packing bench"
+image: "/assets/images/box-reference-catalog/b1e706c6273a0574d700.webp"
+imageAlt: "Corrugated mailers in different proportions"
 ---
 # How can I right-size a mailer box without losing protection?
 

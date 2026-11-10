@@ -5,12 +5,12 @@ publishedAt: "2026-11-10"
 author: "PackHubGlobe Editorial Team"
 category: "design-sampling"
 keyword: "packaging samples for multiple SKUs"
-hero: "collection"
-images: ["carton","insert","label","packing"]
+hero: "packaging-sample-approval-multiple-skus-1"
+images: ["packaging-sample-approval-multiple-skus-2", "packaging-sample-approval-multiple-skus-3", "packaging-sample-approval-multiple-skus-4", "packaging-sample-approval-multiple-skus-5"]
 authorUrl: "https://www.packhubglobe.com/editorial-policy/"
 tags: ["design-sampling"]
-image: "/assets/images/print-collection.webp"
-imageAlt: "AI concept collection of printed boxes, bags, pouches, cards and labels"
+image: "/assets/images/box-reference-catalog/5978bc7c285e410a8417.webp"
+imageAlt: "Three coordinated cosmetic cartons for separate product variants"
 ---
 # How do I approve packaging samples for multiple SKUs?
 

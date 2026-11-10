@@ -5,12 +5,12 @@ publishedAt: "2026-11-06"
 author: "PackHubGlobe editorial team"
 category: "pouches-food"
 keyword: "rollstock or premade pouches"
-hero: "coffee"
-images: ["rollstock", "pouch", "flat-bottom", "flat"]
+hero: "rollstock-or-premade-pouches-filling-1"
+images: ["rollstock-or-premade-pouches-filling-2", "rollstock-or-premade-pouches-filling-3", "rollstock-or-premade-pouches-filling-4", "rollstock-or-premade-pouches-filling-5"]
 authorUrl: "https://www.packhubglobe.com/editorial-policy/"
 tags: ["pouches-food"]
-image: "/assets/images/print-coffee.webp"
-imageAlt: "AI concept of printed coffee pouches in a coffee packing scene"
+image: "/assets/images/pouch-catalog/b5d9893936b4d1fb6a63.webp"
+imageAlt: "Printed snack pouches in three finished sizes"
 ---
 # Should I choose rollstock or premade pouches for food filling?
 

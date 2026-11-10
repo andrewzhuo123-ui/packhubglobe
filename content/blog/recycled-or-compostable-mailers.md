@@ -5,12 +5,12 @@ publishedAt: "2026-11-06"
 author: "PackHubGlobe editorial team"
 category: "materials-sustainability"
 keyword: "recycled or compostable mailers"
-hero: "packing"
-images: ["poly", "bag", "label", "mailer"]
+hero: "recycled-or-compostable-mailers-1"
+images: ["recycled-or-compostable-mailers-2", "recycled-or-compostable-mailers-3", "recycled-or-compostable-mailers-4", "recycled-or-compostable-mailers-5"]
 authorUrl: "https://www.packhubglobe.com/editorial-policy/"
 tags: ["materials-sustainability"]
-image: "/assets/images/print-packing.webp"
-imageAlt: "AI concept of a printed mailer, mailing bag, cards and labels on a packing bench"
+image: "/assets/catalog/1601448622838.webp"
+imageAlt: "Dark flexible mailing bag with its closure open"
 ---
 # Should I choose recycled or compostable mailers for my brand?
 

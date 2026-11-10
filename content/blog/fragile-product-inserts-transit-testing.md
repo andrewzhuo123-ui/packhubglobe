@@ -5,12 +5,12 @@ publishedAt: "2026-11-06"
 author: "PackHubGlobe editorial team"
 category: "shipping-protection"
 keyword: "inserts for fragile products"
-hero: "beauty"
-images: ["insert", "rigid", "mailer", "carton"]
+hero: "fragile-product-inserts-transit-testing-1"
+images: ["fragile-product-inserts-transit-testing-2", "fragile-product-inserts-transit-testing-3", "fragile-product-inserts-transit-testing-4", "fragile-product-inserts-transit-testing-5"]
 authorUrl: "https://www.packhubglobe.com/editorial-policy/"
 tags: ["shipping-protection"]
-image: "/assets/images/print-beauty.webp"
-imageAlt: "AI concept of coordinated beauty cartons, a gift box, a bag and printed cards"
+image: "/assets/images/luxopack-catalog/049f0a64582d126d3daa.webp"
+imageAlt: "Two bottles seated in individual recesses in a presentation box"
 ---
 # How do I choose inserts and tests for fragile product shipping?
 

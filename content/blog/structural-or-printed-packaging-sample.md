@@ -5,12 +5,12 @@ publishedAt: "2026-11-06"
 author: "PackHubGlobe editorial team"
 category: "design-sampling"
 keyword: "packaging sample"
-hero: "collection"
-images: ["carton", "insert", "rigid", "pouch"]
+hero: "structural-or-printed-packaging-sample-1"
+images: ["structural-or-printed-packaging-sample-2", "structural-or-printed-packaging-sample-3", "structural-or-printed-packaging-sample-4", "structural-or-printed-packaging-sample-5"]
 authorUrl: "https://www.packhubglobe.com/editorial-policy/"
 tags: ["design-sampling"]
-image: "/assets/images/print-collection.webp"
-imageAlt: "AI concept collection of printed boxes, bags, pouches, cards and labels"
+image: "/assets/catalog/1601025655836.webp"
+imageAlt: "Open printed drawer gift box showing shape and artwork"
 ---
 # Do I need a structural sample or a printed packaging sample?
 

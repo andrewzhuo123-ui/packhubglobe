@@ -5,12 +5,12 @@ publishedAt: "2026-11-06"
 author: "PackHubGlobe editorial team"
 category: "pouches-food"
 keyword: "coffee pouch specification"
-hero: "coffee"
-images: ["coffee", "pouch", "flat-bottom", "label"]
+hero: "coffee-pouch-valve-zipper-barrier-1"
+images: ["coffee-pouch-valve-zipper-barrier-2", "coffee-pouch-valve-zipper-barrier-3", "coffee-pouch-valve-zipper-barrier-4", "coffee-pouch-valve-zipper-barrier-5"]
 authorUrl: "https://www.packhubglobe.com/editorial-policy/"
 tags: ["pouches-food"]
 image: "/assets/images/print-coffee.webp"
-imageAlt: "AI concept of printed coffee pouches in a coffee packing scene"
+imageAlt: "Illustrative printed coffee pouches on a packing surface"
 ---
 # How do I specify a coffee pouch beyond the valve and zipper?
 

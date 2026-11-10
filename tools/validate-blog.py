@@ -1,12 +1,16 @@
 """Verify the owner's article contract against source and rendered HTML."""
 from pathlib import Path
 from collections import Counter
-import json,re
+import argparse,json,re
+from datetime import date
 from bs4 import BeautifulSoup
 
 ROOT=Path(__file__).resolve().parents[1]
 def words(text):return len(re.findall(r"\b[A-Za-z0-9]+(?:['’-][A-Za-z0-9]+)*\b",text))
-report=[];errors=[];categories=Counter()
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--batch-date',type=date.fromisoformat)
+batch_date=parser.parse_args().batch_date
+report=[];errors=[];categories=Counter();batch_count=0
 for source in sorted((ROOT/'content/blog').glob('*.md')):
  _,metadata,markdown=source.read_text().split('---',2)
  meta={k:json.loads(v) for line in metadata.strip().splitlines() for k,v in [line.split(': ',1)]}
@@ -32,13 +36,17 @@ for source in sorted((ROOT/'content/blog').glob('*.md')):
  internal={a['href'] for a in article.select('a[href^="/"]')}
  if len(external)!=2 or len(internal)!=3:own.append('Expected five contextual/source destinations')
  if len(article.select('.blog-sources li'))!=2:own.append('Expected two footnotes')
- if meta['publishedAt']!='2026-11-06' or page.select_one('time')['datetime']!=meta['publishedAt']:own.append('Publication date mismatch')
+ published=date.fromisoformat(meta['publishedAt'])
+ batch_count+=published==batch_date
+ if page.select_one('time')['datetime']!=published.isoformat() or page.select_one('time').get_text()!=published.strftime('%-d %B %Y'):own.append('Publication date mismatch')
  graph=json.loads(page.select_one('script[type="application/ld+json"]').string)['@graph'];schema=next(n for n in graph if n['@type']=='Article')
  if schema['datePublished']!=meta['publishedAt'] or schema['author']['name']!=meta['author']:own.append('Article schema mismatch')
  if re.search(r'Leading paragraph:|featured paragraph:|Dive deeper paragraph:|\[图片占位符\]',article.get_text(),re.I):own.append('Visible writing instructions')
  report.append(dict(slug=source.stem,words=total,diveDeeperWords=depths,internalLinks=len(internal),externalLinks=len(external),images=len(article.select('img')),errors=own))
  errors.extend(source.stem+': '+e for e in own)
-if len(categories)!=5 or any(n!=2 for n in categories.values()):errors.append('Each of five categories must have two articles')
+expected={c['slug'] for c in json.loads((ROOT/'content/blog-categories.json').read_text())}
+if set(categories)!=expected:errors.append('Blog categories do not match the configured topics')
+if batch_date and batch_count!=3:errors.append(f'Expected three posts dated {batch_date}, found {batch_count}')
 result=dict(status='passed' if not errors else 'failed',articles=report,categories=dict(categories),errors=errors)
-out=ROOT/'qa/blog-2026-11-06';out.mkdir(parents=True,exist_ok=True);(out/'content-gates.json').write_text(json.dumps(result,indent=2))
+out=ROOT/'qa'/('blog-'+(batch_date.isoformat() if batch_date else 'inventory'));out.mkdir(parents=True,exist_ok=True);(out/'content-gates.json').write_text(json.dumps(result,indent=2))
 print(json.dumps(result,indent=2));raise SystemExit(bool(errors))

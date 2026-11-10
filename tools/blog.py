@@ -1,7 +1,7 @@
 """Build the Resources pillar, topic collections and question-led long-form posts."""
+from datetime import date
 from markdown_it import MarkdownIt
 
-BLOG_DATE='2026-11-06'
 BLOG_CATEGORIES=json.loads((ROOT/'content/blog-categories.json').read_text())
 BLOG_IMAGES=json.loads((ROOT/'content/blog-images.json').read_text())
 BLOG_MARKDOWN=MarkdownIt('commonmark',{'html':True}).enable('table')
@@ -10,6 +10,14 @@ for source in sorted((ROOT/'content/blog').glob('*.md')):
  _,metadata,markdown=source.read_text().split('---',2)
  post={key:json.loads(value) for line in metadata.strip().splitlines() for key,value in [line.split(': ',1)]};post.update(slug=source.stem,markdown=markdown.strip(),path='/blog/'+source.stem+'/')
  BLOG_POSTS.append(post)
+BLOG_POSTS.sort(key=lambda post: post['publishedAt'],reverse=True)
+BLOG_LASTMOD={post['path']:post['publishedAt'] for post in BLOG_POSTS}
+BLOG_LASTMOD['/guides/']=BLOG_LASTMOD['/blog/']=BLOG_POSTS[0]['publishedAt']
+for category in BLOG_CATEGORIES:
+ BLOG_LASTMOD['/blog/category/'+category['slug']+'/']=max(post['publishedAt'] for post in BLOG_POSTS if post['category']==category['slug'])
+
+def blog_date(value):
+ return date.fromisoformat(value).strftime('%-d %B %Y')
 
 def blog_figure(key,caption='',eager=False):
  image=BLOG_IMAGES[key]
@@ -21,7 +29,7 @@ def blog_cards(posts):
  for post in posts:
   category=next(c for c in BLOG_CATEGORIES if c['slug']==post['category'])
   image=BLOG_IMAGES['coffee-hero' if post['hero']=='coffee' else post['hero']]
-  body+='<article class="guidecard blog-card"><a class="blog-card-image" href="'+post['path']+'" tabindex="-1" aria-hidden="true"><img src="'+image['path']+'" alt="'+esc(image['alt'],quote=True)+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" loading="lazy"></a><div class="blog-card-copy"><p class="eyebrow">'+category['name']+'</p><h3><a href="'+post['path']+'">'+esc(post['title'])+'</a></h3><p>'+esc(post['description'])+'</p><p class="blog-meta"><time datetime="'+post['publishedAt']+'">6 November 2026</time> · '+str((len(post['markdown'].split())+219)//220)+' min read</p></div></article>'
+  body+='<article class="guidecard blog-card"><a class="blog-card-image" href="'+post['path']+'" tabindex="-1" aria-hidden="true"><img src="'+image['path']+'" alt="'+esc(image['alt'],quote=True)+'" width="'+str(image['width'])+'" height="'+str(image['height'])+'" loading="lazy"></a><div class="blog-card-copy"><p class="eyebrow">'+category['name']+'</p><h3><a href="'+post['path']+'">'+esc(post['title'])+'</a></h3><p>'+esc(post['description'])+'</p><p class="blog-meta"><time datetime="'+post['publishedAt']+'">'+blog_date(post['publishedAt'])+'</time> · '+str((len(post['markdown'].split())+219)//220)+' min read</p></div></article>'
  return body+'</div>'
 
 def blog_list_schema(name,posts):
@@ -50,7 +58,7 @@ for post in BLOG_POSTS:
  content+='<aside class="blog-sources" aria-label="Sources and notes"><h2>Sources &amp; notes</h2><ol>'+''.join('<li id="note-'+n+'">'+BLOG_MARKDOWN.render(note)+'<a href="#ref-'+n+'" aria-label="Back to source '+n+' in the article">↩</a></li>' for n,note in notes)+'</ol></aside>'
  hero='coffee-hero' if post['hero']=='coffee' else post['hero']
  trail='<a href="/">Home</a> / <a href="/guides/">Resources</a> / <a href="/blog/category/'+category['slug']+'/">'+category['name']+'</a>'
- head='<header class="blog-heading wrap"><div class="breadcrumb">'+trail+'</div><p class="eyebrow">'+category['name']+'</p><h1>'+esc(post['title'])+'</h1><p class="blog-meta">By '+post['author']+' · <time datetime="'+post['publishedAt']+'">6 November 2026</time></p></header>'
+ head='<header class="blog-heading wrap"><div class="breadcrumb">'+trail+'</div><p class="eyebrow">'+category['name']+'</p><h1>'+esc(post['title'])+'</h1><p class="blog-meta">By '+post['author']+' · <time datetime="'+post['publishedAt']+'">'+blog_date(post['publishedAt'])+'</time></p></header>'
  sidebar='<aside class="blog-sidebar"><nav aria-label="In this article"><p class="eyebrow">In this article</p><ol>'+''.join('<li><a href="#'+a+'">'+esc(h)+'</a></li>' for a,h in toc)+'</ol></nav><a class="textlink" href="/blog/category/'+category['slug']+'/">More in '+category['name']+' ↗</a></aside>'
  body=head+'<div class="wrap blog-layout"><article class="blog-article">'+blog_figure(hero,eager=True)+content+'</article>'+sidebar+'</div>'
  siblings=[p for p in BLOG_POSTS if p['category']==post['category'] and p!=post]
@@ -86,6 +94,6 @@ with map_file.open(encoding='utf-8-sig',newline='') as stream:
  reader=csv.DictReader(stream);fields=reader.fieldnames;rows=[r for r in reader if not r['url'].startswith(ORIGIN+'/blog/')]
 for path,title,description in PAGES:
  if path.startswith('/blog/'):
-  rows.append(dict(zip(fields,[ORIGIN+path,title,ORIGIN+'/guides/',title.split(' | ')[0],'P1','Resources','implemented','Researched blog release 2026-11-06'])))
+  rows.append(dict(zip(fields,[ORIGIN+path,title,ORIGIN+'/guides/',title.split(' | ')[0],'P1','Resources','implemented','Researched blog content'])))
 with map_file.open('w',encoding='utf-8-sig',newline='') as stream:
  writer=csv.DictWriter(stream,fieldnames=fields);writer.writeheader();writer.writerows(rows)

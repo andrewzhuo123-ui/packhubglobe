@@ -29,7 +29,7 @@ const routes=JSON.parse(fs.readFileSync('content/page-manifest.json','utf8')).ma
   }
  }
  await page.goto(origin+'/guides/');await page.locator('.blog-guide-disclosure').first().locator('summary').click();assert(await page.locator('.blog-guide-disclosure').first().getAttribute('open')!==null);report.tasks.push('Retained guide disclosure opens');
- await page.locator('.blog-decisions a').last().click();assert(page.url().includes('/blog/category/design-sampling/'));await page.locator('.blog-card h3 a').first().click();assert(page.url().includes('/blog/packaging-print-proof-approval-checklist/'));
+ await page.locator('.blog-decisions a').last().click();assert(page.url().includes('/blog/category/design-sampling/'));await page.locator('.blog-card h3 a[href="/blog/packaging-print-proof-approval-checklist/"]').click();assert(page.url().includes('/blog/packaging-print-proof-approval-checklist/'));
  await page.locator('a[href="#note-1"]').click();assert(page.url().endsWith('#note-1'));await page.locator('#note-1 a[href="#ref-1"]').click();assert(page.url().endsWith('#ref-1'));report.tasks.push('Pillar → category → independent article → footnote and return');
  assert.deepEqual(report.errors,[]);fs.writeFileSync('qa/blog-2026-11-06/browser-results.json',JSON.stringify(report,null,2));await browser.close();console.log(`PASS ${report.layouts.length} layouts, ${report.accessibility.length} accessibility checks and ${report.tasks.length} reading tasks`);
 })().catch(e=>{console.error(e);process.exit(1)});

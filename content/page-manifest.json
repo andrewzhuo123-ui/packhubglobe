@@ -20,6 +20,46 @@
     "Create a 3PL damage inspection record with receiving photos, lot and pack identifiers, sample counts and evidence for the next packaging decision."
   ],
   [
+    "/blog/approval-hold-before-packaging-material-purchase/",
+    "How do I set up an approval hold before my supplier buys material? | PackHubGlobe",
+    "Define what packaging material a supplier may commit to, when a hold is released, and how to handle an early purchase request."
+  ],
+  [
+    "/blog/artwork-versions-across-carton-sizes/",
+    "How do I control an artwork version shared across multiple carton sizes? | PackHubGlobe",
+    "Separate shared carton artwork from size-specific print files, track which formats each change affects, and prevent obsolete PDFs from reaching production."
+  ],
+  [
+    "/blog/assess-fibre-tray-for-scratch-prone-product/",
+    "How should I assess a fibre tray when the product surface scratches? | PackHubGlobe",
+    "Use staged inspections to find when a fibre tray marks a product, compare changes in fit and finish, and approve a repeatable sample."
+  ],
+  [
+    "/blog/avoid-crushing-soft-product-under-insert/",
+    "How do I avoid crushing a soft product under a carton insert? | PackHubGlobe",
+    "Find where an insert presses on a soft product, redirect the load, and check recovery after packing and representative handling."
+  ],
+  [
+    "/blog/box-material-details-condensation/",
+    "Which material details matter when a box is exposed to condensation? | PackHubGlobe",
+    "Find where condensation reaches a carton, compare board and seam details, and test wet handling using the finished pack."
+  ],
+  [
+    "/blog/boxed-gift-set-quote-component-list/",
+    "How do I write a component list for a boxed gift set quote? | PackHubGlobe",
+    "Write a gift set component list that specifies quantities, fit, materials, assembly and supplier responsibilities for a comparable quote."
+  ],
+  [
+    "/blog/budget-packaging-stock-uncertain-demand/",
+    "How do I budget packaging stock around uncertain demand? | PackHubGlobe",
+    "Set a first packaging order with demand scenarios, a measured reorder point and a clear budget for stock left after launch."
+  ],
+  [
+    "/blog/carton-closure-packing-bench/",
+    "How do I check whether a carton stays closed on the packing bench? | PackHubGlobe",
+    "Check carton fit, tape adhesion and locking tabs at the packing bench, then record the closure defects that need a correction."
+  ],
+  [
     "/blog/category/design-sampling/",
     "Design & sampling Blog & Guides | PackHubGlobe",
     "Turn a drawing, proof and physical sample into clear approvals for fit, readable print and production details."
@@ -45,9 +85,34 @@
     "Compare the full order cost, control stock risk and prepare a specification that suppliers can quote on the same basis."
   ],
   [
+    "/blog/check-cheaper-board-substitution/",
+    "What should I ask before accepting a cheaper board substitution? | PackHubGlobe",
+    "Compare a proposed board substitution with the approved grade using specifications, formed cartons, line performance and total cost."
+  ],
+  [
+    "/blog/check-packaging-label-easy-to-remove/",
+    "How do I check whether a packaging label is easy to remove? | PackHubGlobe",
+    "Test label removal on the real package after storage and handling, then check peel effort, residue, damage and label retention."
+  ],
+  [
+    "/blog/check-small-reversed-text-before-printing/",
+    "How do I check small reversed text before printing? | PackHubGlobe",
+    "Check small light text on dark packaging for filled gaps, color fringes and reading difficulty before approving the production proof."
+  ],
+  [
     "/blog/coffee-pouch-valve-zipper-barrier/",
     "How do I specify a coffee pouch beyond the valve and zipper? | PackHubGlobe",
     "I build a coffee pouch brief around the coffee, filling process, barrier evidence and closure checks instead of relying on a valve or kraft appearance."
+  ],
+  [
+    "/blog/compare-brand-color-white-natural-kraft/",
+    "How do I compare white and natural kraft surfaces for brand color? | PackHubGlobe",
+    "Compare brand color on actual white and natural kraft boards, choose a print approach, and approve a reference for each surface."
+  ],
+  [
+    "/blog/compare-coated-uncoated-paper-inserts/",
+    "How do I compare paper inserts when one needs a coating? | PackHubGlobe",
+    "Compare coated and uncoated paper inserts against the actual product, then check fit, rub marks, cost and disposal evidence before buying."
   ],
   [
     "/blog/compare-packaging-quotes-landed-cost/",
@@ -55,14 +120,129 @@
     "I compare packaging quotes with a landed-cost worksheet, usable quantities, sample scope and delivery terms so a low unit price stays meaningful."
   ],
   [
+    "/blog/compare-packaging-supplier-lead-times/",
+    "How do I compare supplier lead-time estimates on the same basis? | PackHubGlobe",
+    "Compare packaging lead times using the same start conditions and usable delivery date, with separate milestones for approvals and transit."
+  ],
+  [
+    "/blog/compare-packaging-weight-product-protection/",
+    "How do I compare packaging weights without losing product protection? | PackHubGlobe",
+    "Measure complete shipping packs, compare protection using the same load, and verify weight savings before changing the specification."
+  ],
+  [
+    "/blog/compare-returns-and-outbound-packaging/",
+    "How do I compare returns packaging with my outbound packaging? | PackHubGlobe",
+    "Compare the outbound and return packing steps, test what remains after opening, and decide whether the original mailer can protect the return."
+  ],
+  [
+    "/blog/compare-sample-fee-order-credit/",
+    "How do I compare a sample fee with an order credit? | PackHubGlobe",
+    "Compare packaging sample fees, freight, revision charges and conditional credits across suppliers before committing to a production order."
+  ],
+  [
+    "/blog/compare-shared-box-custom-sleeve-cost/",
+    "How do I compare the cost of a shared box with a custom sleeve? | PackHubGlobe",
+    "Compare a common box and variant sleeves with dedicated printed boxes using complete costs, fit and inventory at risk."
+  ],
+  [
+    "/blog/coordinate-packaging-first-production-run/",
+    "How do I coordinate packaging delivery with my first production run? | PackHubGlobe",
+    "Work backward from the first packing shift, schedule approved packaging to arrive in time, and plan for late or incomplete deliveries."
+  ],
+  [
+    "/blog/damage-threshold-retail-presentation-packs/",
+    "How do I choose a damage threshold for retail presentation packs? | PackHubGlobe",
+    "Set receiving thresholds for damaged retail packs, separate piece and lot decisions, and give warehouse teams examples they can apply."
+  ],
+  [
+    "/blog/date-code-space-carton/",
+    "How much space should I leave for a date code on a carton? | PackHubGlobe",
+    "Size a carton date code area around the longest message, measured line movement, and the usable panel on the finished pack."
+  ],
+  [
+    "/blog/disposal-instructions-multi-part-package/",
+    "How do I write disposal instructions for a multi-part package? | PackHubGlobe",
+    "Map each packaging component to an evidenced disposal route, test separation, and put clear instructions where customers can still see them."
+  ],
+  [
+    "/blog/divider-instead-of-loose-fill/",
+    "When should I use a divider instead of loose fill? | PackHubGlobe",
+    "Choose a shipping divider or loose fill by comparing separation, packed movement, labor and results across representative orders."
+  ],
+  [
+    "/blog/document-materials-windowed-gift-box/",
+    "How do I document the materials in a windowed gift box? | PackHubGlobe",
+    "Build a material record for a windowed gift box, including the board, film, adhesive and insert, and link it to approved production."
+  ],
+  [
+    "/blog/document-supplier-packaging-cost-reduction/",
+    "What should I document when a supplier proposes a cost reduction? | PackHubGlobe",
+    "Record the packaging change, compare usable cost, agree on acceptance checks, and verify the actual savings after the first delivery."
+  ],
+  [
+    "/blog/flat-pouch-single-serve-food-sample/",
+    "When does a flat pouch work for a single-serve food sample? | PackHubGlobe",
+    "Specify a flat pouch for a food sample using the real portion, fill clearance, opening experience and food-contact evidence for the intended use."
+  ],
+  [
+    "/blog/flat-vs-assembled-box-purchasing-cost/",
+    "Which costs change if I buy boxes flat rather than assembled? | PackHubGlobe",
+    "Compare flat and assembled box quotes using freight, storage, assembly labor and usable output from a representative packing trial."
+  ],
+  [
     "/blog/fragile-product-inserts-transit-testing/",
     "How do I choose inserts and tests for fragile product shipping? | PackHubGlobe",
     "I plan inserts for fragile products by mapping damage, defining retention and cushioning, and matching sample checks to the shipping route."
   ],
   [
+    "/blog/identify-worst-case-parcel-mixed-orders/",
+    "How do I identify the worst-case parcel in a mixed order range? | PackHubGlobe",
+    "Rank representative orders by failure mode and select parcels that expose movement, concentrated loads and closure problems."
+  ],
+  [
+    "/blog/investigate-popped-parcel-seals/",
+    "How do I investigate popped seals after a parcel arrives? | PackHubGlobe",
+    "Preserve an opened parcel as received, read the tape and board damage, and compare likely causes before changing the closure."
+  ],
+  [
+    "/blog/keep-products-separated-multi-item-mailer/",
+    "How do I keep products from touching in a multi-item mailer? | PackHubGlobe",
+    "Map which items can collide, choose a divider or individual wrap, and inspect the loaded mailer for movement after handling."
+  ],
+  [
     "/blog/kraft-packaging-coatings-recycling/",
     "Does kraft packaging stay recyclable after coatings and labels? | PackHubGlobe",
     "I review kraft packaging as a complete construction, including coatings, windows and labels, before I choose a finish or write recycling guidance."
+  ],
+  [
+    "/blog/mailer-single-items-and-bundles/",
+    "How do I design a mailer for both single items and bundles? | PackHubGlobe",
+    "Compare two packing recipes for one mailer, test product movement and closure, and calculate when a second box size makes more sense."
+  ],
+  [
+    "/blog/measure-packed-parcel-dimensional-weight/",
+    "How do I measure a packed parcel for dimensional weight? | PackHubGlobe",
+    "Measure the outside of a ready-to-ship parcel, separate actual and dimensional weight, and document the result before comparing carrier quotes."
+  ],
+  [
+    "/blog/measure-pallet-layouts-for-cartons/",
+    "Which measurements help me compare pallet layouts for cartons? | PackHubGlobe",
+    "Compare carton patterns on a pallet using actual case sizes, deck clearance, load height, weight and stability after securing."
+  ],
+  [
+    "/blog/package-appearance-pass-criterion-after-testing/",
+    "How do I set a pass criterion for package appearance after testing? | PackHubGlobe",
+    "Define acceptable wear by surface and defect, set consistent inspection conditions, and document a clear appearance result after transport testing."
+  ],
+  [
+    "/blog/package-configuration-transit-test-lab/",
+    "Which package configuration should I send to a transit test lab? | PackHubGlobe",
+    "Choose a representative packaged product, identify the variants and shipping routes it covers, and brief the transit lab before dispatch."
+  ],
+  [
+    "/blog/packaging-changes-new-cutting-die/",
+    "Which packaging changes need a new cutting die? | PackHubGlobe",
+    "Compare cut and crease revisions, identify changes that affect a carton die, and ask the converter to price reuse, modification, or replacement."
   ],
   [
     "/blog/packaging-print-proof-approval-checklist/",
@@ -80,9 +260,84 @@
     "Plan a packaging sample review across multiple SKUs. Map each variant to the right fit, artwork and packing evidence before releasing production."
   ],
   [
+    "/blog/packaging-tooling-ownership-after-payment/",
+    "Who owns the tooling after I pay for it? | PackHubGlobe",
+    "Clarify who owns, stores, reuses and releases packaging tools, and confirm whether another converter can use them before paying a tooling fee."
+  ],
+  [
+    "/blog/packing-instruction-new-fulfilment-partner/",
+    "How do I prepare a packing instruction for a new fulfilment partner? | PackHubGlobe",
+    "Turn an approved packed sample into clear warehouse instructions with parts, photos, checks, exceptions and a first-shift trial."
+  ],
+  [
+    "/blog/pay-for-packaging-production-pilot/",
+    "When should I pay for a packaging production pilot? | PackHubGlobe",
+    "Decide when a packaging pilot is worth the fee, specify what the trial must reproduce, and set the conditions for releasing the bulk order."
+  ],
+  [
+    "/blog/phase-out-packaging-artwork-change/",
+    "How should I plan a phase-out when my packaging artwork changes? | PackHubGlobe",
+    "Decide which old packaging can still ship, count it by revision, and plan the cutover with suppliers, packing teams and warehouses."
+  ],
+  [
+    "/blog/presentation-box-outer-shipping-carton/",
+    "When should I ship a presentation box inside an outer carton? | PackHubGlobe",
+    "Decide when a presentation box needs an outer shipping carton, then check fit, support and appearance using the complete parcel."
+  ],
+  [
+    "/blog/price-hand-assembly-packaging-quote/",
+    "How should I price the cost of hand assembly in a packaging quote? | PackHubGlobe",
+    "Time the assembly work, separate setup and rework, and compare packaging quotes using the cost per usable assembled unit."
+  ],
+  [
+    "/blog/protect-fragile-protruding-handle/",
+    "How should I protect a product with a fragile protruding handle? | PackHubGlobe",
+    "Support the product body, leave clearance around a fragile handle, and verify the loaded shipping pack with actual samples."
+  ],
+  [
+    "/blog/qr-code-reflective-pouch/",
+    "How do I place a QR code on a reflective pouch? | PackHubGlobe",
+    "Choose a stable QR code area on reflective film, specify the print background, and check scanning on filled pouches under realistic lighting."
+  ],
+  [
+    "/blog/qualify-foam-to-folded-paper-protection/",
+    "How do I qualify a switch from foam to folded paper protection? | PackHubGlobe",
+    "Compare foam and folded paper supports using the same product, packing sequence and distribution tests before releasing the new insert."
+  ],
+  [
+    "/blog/record-carton-bulge-before-carrier/",
+    "How do I record a carton bulge before handing it to a carrier? | PackHubGlobe",
+    "Measure a bulging shipping carton without flattening it, photograph the deformation, and document the decision to hold or repack."
+  ],
+  [
+    "/blog/record-carton-front-panel-dieline/",
+    "How do I record the intended front panel of a carton on a dieline? | PackHubGlobe",
+    "Mark the front, top and viewing direction on a carton dieline, then check the approved layout on a formed sample before printing."
+  ],
+  [
     "/blog/recycled-or-compostable-mailers/",
     "Should I choose recycled or compostable mailers for my brand? | PackHubGlobe",
     "I compare recycled and compostable mailers through protection, disposal access, evidence and clear customer instructions before I choose a material."
+  ],
+  [
+    "/blog/reduce-printed-carton-scuffs-in-transit/",
+    "How can I reduce scuff marks on printed retail cartons in transit? | PackHubGlobe",
+    "Identify what rubs a retail carton, compare separation and finish changes, and verify the fix on the complete shipping configuration."
+  ],
+  [
+    "/blog/remove-plastic-window-carton/",
+    "What should I confirm before removing a plastic window from a carton? | PackHubGlobe",
+    "Compare an open cutout with a solid carton panel, then check retail visibility, product protection, and the updated material claims."
+  ],
+  [
+    "/blog/repeat-packaging-order-quote/",
+    "What should a repeat-order quote carry over from the first order? | PackHubGlobe",
+    "Carry forward the approved packaging specification and sample, then check new prices, tooling charges, quantities and delivery dates."
+  ],
+  [
+    "/blog/retail-barcode-placement-carton-fold/",
+    "How do I keep a retail barcode readable near a carton fold? | PackHubGlobe",
+    "Choose a retail barcode panel, keep its quiet zones clear, and check the assembled carton with the retailer's intended scan and verification process."
   ],
   [
     "/blog/right-size-mailer-box-shipping-cost/",
@@ -95,14 +350,59 @@
     "I compare rollstock and premade pouches through filling equipment, seal trials, artwork, changeovers and the cost of usable finished packs."
   ],
   [
+    "/blog/shipping-label-position-mailer/",
+    "How do I decide where to put shipping labels on a mailer? | PackHubGlobe",
+    "Choose a flat label area on a closed mailer, clear seams and opening features, and verify barcode readability at the packing bench."
+  ],
+  [
+    "/blog/source-packaging-components-together/",
+    "How do I decide which packaging components to source together? | PackHubGlobe",
+    "Group packaging parts by fit and delivery risk, then compare a bundled quote with separate sourcing using complete, usable sets."
+  ],
+  [
+    "/blog/specify-packaging-quantity-overrun/",
+    "How do I specify an acceptable quantity overrun? | PackHubGlobe",
+    "Set a packaging quantity tolerance by order line, agree on charges and approvals, and give receiving a clear rule for extra pieces."
+  ],
+  [
+    "/blog/split-packaging-moq-artwork-variants/",
+    "How do I split a packaging MOQ across artwork variants? | PackHubGlobe",
+    "Compare mixed-artwork packaging quotes, identify which minimum applies to each variant, and write quantities that protect your launch from shortages."
+  ],
+  [
     "/blog/stock-or-custom-packaging-first-order/",
     "Should I choose stock or custom packaging for my first order? | PackHubGlobe",
     "I compare stock packs, labels and custom printing through cash exposure, product fit and a first-order approval plan for a small brand."
   ],
   [
+    "/blog/stop-bottle-cap-rubbing-shipping-carton/",
+    "How do I stop a bottle cap rubbing inside a shipping carton? | PackHubGlobe",
+    "Find which surface rubs a bottle cap, adjust the insert and lid clearance, and compare packed samples before approving the change."
+  ],
+  [
     "/blog/structural-or-printed-packaging-sample/",
     "Do I need a structural sample or a printed packaging sample? | PackHubGlobe",
     "I choose structural and printed packaging samples by the risks I need to check, then record approvals that a supplier can repeat in production."
+  ],
+  [
+    "/blog/supplier-adhesive-paper-package/",
+    "How do I ask my supplier about an adhesive in a paper package? | PackHubGlobe",
+    "Request the adhesive identity, location and evidence needed to approve a paper packaging joint and review changes at reorder."
+  ],
+  [
+    "/blog/verify-recycled-content-exact-material/",
+    "How do I check a recycled-content claim against the exact material? | PackHubGlobe",
+    "Match recycled-content evidence to a material grade, component and supply lot before approving a percentage on the finished packaging."
+  ],
+  [
+    "/blog/when-to-choose-uncoated-carton/",
+    "When is an uncoated carton a sensible choice for my product? | PackHubGlobe",
+    "Check whether an uncoated carton suits your print, product contact and handling needs before adding an unnecessary surface treatment."
+  ],
+  [
+    "/blog/when-to-qualify-second-packaging-supplier/",
+    "When should I ask for a second production supplier? | PackHubGlobe",
+    "Decide when packaging needs a backup supplier, check shared dependencies, and qualify a second converter with a representative trial."
   ],
   [
     "/cases/",

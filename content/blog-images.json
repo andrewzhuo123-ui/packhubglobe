@@ -525,5 +525,2405 @@
     "height": 960,
     "reference": "PHG-FP-1601693333668",
     "caption": "Open drawer box showing the insert, closure and printed finish."
+  },
+  "measure-packed-parcel-dimensional-weight-1": {
+    "path": "/assets/images/box-reference-catalog/e0fc80484b2df89f2906.webp",
+    "alt": "Printed shipping mailers in several sizes",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601249246033",
+    "caption": "Printed shipping mailers in several sizes. Format reference."
+  },
+  "measure-packed-parcel-dimensional-weight-2": {
+    "path": "/assets/images/luxopack-catalog/24400555f11d03c4515e.webp",
+    "alt": "Kraft mailer held closed with its tear strip visible",
+    "width": 465,
+    "height": 347,
+    "reference": "PHG-LX-9E5045BC5B",
+    "caption": "Kraft mailer held closed with its tear strip visible. Format reference."
+  },
+  "measure-packed-parcel-dimensional-weight-3": {
+    "path": "/assets/catalog/1601701398548.webp",
+    "alt": "Open corrugated mailer with its packed contents",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601701398548",
+    "caption": "Open corrugated mailer with its packed contents. Format reference."
+  },
+  "measure-packed-parcel-dimensional-weight-4": {
+    "path": "/assets/images/box-reference-catalog/3524f1aa618fc88ab979.webp",
+    "alt": "Subscription mailer shown open with its carton panels",
+    "width": 600,
+    "height": 600,
+    "reference": "PHG-FP-1600224230474",
+    "caption": "Subscription mailer shown open with its carton panels. Format reference."
+  },
+  "measure-packed-parcel-dimensional-weight-5": {
+    "path": "/assets/images/box-reference-catalog/ae50aff522bc08ee0ce0.webp",
+    "alt": "Two mailer sizes shown side by side",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601596910192",
+    "caption": "Two mailer sizes shown side by side. Format reference."
+  },
+  "flat-pouch-single-serve-food-sample-1": {
+    "path": "/assets/images/pouch-catalog/0b0cb24e2ec8c0e7eb5c.webp",
+    "alt": "Printed flat sachets in several variants",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-PC-6D4BEF4EC0",
+    "caption": "Printed flat sachets in several variants. Format reference."
+  },
+  "flat-pouch-single-serve-food-sample-2": {
+    "path": "/assets/images/pouch-catalog/5da1ada976bb4cb65545.webp",
+    "alt": "Flat food pouch beside illustrative portion examples",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-PC-57E097CDE8",
+    "caption": "Flat food pouch beside illustrative portion examples. Format reference."
+  },
+  "flat-pouch-single-serve-food-sample-3": {
+    "path": "/assets/images/pouch-catalog/a86ece8c906c18cd7545.webp",
+    "alt": "Flat pouch showing its perimeter and top opening",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-PC-E3859E79AE",
+    "caption": "Flat pouch showing its perimeter and top opening. Format reference."
+  },
+  "flat-pouch-single-serve-food-sample-4": {
+    "path": "/assets/images/pouch-catalog/5aa1a900b6ab746b86ed.webp",
+    "alt": "Windowed flat pouches showing top opening and product visibility",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-PC-52AAD1B322",
+    "caption": "Windowed flat pouches showing top opening and product visibility. Format reference."
+  },
+  "flat-pouch-single-serve-food-sample-5": {
+    "path": "/assets/images/pouch-catalog/3b5f57baa55642b2ddcb.webp",
+    "alt": "Windowed snack pouches shown as an alternative finished format",
+    "width": 1600,
+    "height": 1600,
+    "reference": "PHG-PC-5AE662CD39",
+    "caption": "Windowed snack pouches shown as an alternative finished format. Format reference."
+  },
+  "retail-barcode-placement-carton-fold-1": {
+    "path": "/assets/catalog/1601735068777.webp",
+    "alt": "Printed retail carton with artwork covering its face",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601735068777",
+    "caption": "Printed retail carton with artwork covering its face. Format reference."
+  },
+  "retail-barcode-placement-carton-fold-2": {
+    "path": "/assets/catalog/1601778329428.webp",
+    "alt": "Printed carton showing the artwork panel and folded edges",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601778329428",
+    "caption": "Printed carton showing the artwork panel and folded edges. Format reference."
+  },
+  "retail-barcode-placement-carton-fold-3": {
+    "path": "/assets/catalog/1601184854355.webp",
+    "alt": "Narrow printed carton showing the panel available for artwork",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601184854355",
+    "caption": "Narrow printed carton showing the panel available for artwork. Format reference."
+  },
+  "retail-barcode-placement-carton-fold-4": {
+    "path": "/assets/images/luxopack-catalog/1a7cf1269e6f26f25b9a.webp",
+    "alt": "Hanging-tab carton showing the top flap and display face",
+    "width": 1200,
+    "height": 900,
+    "reference": "PHG-LX-662D2F6935",
+    "caption": "Hanging-tab carton showing the top flap and display face. Format reference."
+  },
+  "retail-barcode-placement-carton-fold-5": {
+    "path": "/assets/images/box-reference-catalog/421f59db986ab3519eaa.webp",
+    "alt": "Folded cartons with textured panels and visible corners",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601300804547",
+    "caption": "Folded cartons with textured panels and visible corners. Format reference."
+  },
+  "artwork-versions-across-carton-sizes-1": {
+    "path": "/assets/catalog/1601967086898.webp",
+    "alt": "Coordinated printed cartons in several formats",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601967086898",
+    "caption": "Coordinated printed cartons in several formats. Format reference."
+  },
+  "artwork-versions-across-carton-sizes-2": {
+    "path": "/assets/catalog/1601175357960.webp",
+    "alt": "Folding carton layouts with matching graphics and different panels",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601175357960",
+    "caption": "Folding carton layouts with matching graphics and different panels. Format reference."
+  },
+  "artwork-versions-across-carton-sizes-3": {
+    "path": "/assets/catalog/1601195216140.webp",
+    "alt": "Coordinated yellow and black cartons with distinct front graphics",
+    "width": 825,
+    "height": 825,
+    "reference": "PHG-1601195216140",
+    "caption": "Coordinated yellow and black cartons with distinct front graphics. Format reference."
+  },
+  "artwork-versions-across-carton-sizes-4": {
+    "path": "/assets/catalog/1601834745659.webp",
+    "alt": "Formed carton with print visible on two adjoining panels",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601834745659",
+    "caption": "Formed carton with print visible on two adjoining panels. Format reference."
+  },
+  "artwork-versions-across-carton-sizes-5": {
+    "path": "/assets/catalog/1600810868976.webp",
+    "alt": "Chocolate carton shown beside its corresponding product",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1600810868976",
+    "caption": "Chocolate carton shown beside its corresponding product. Format reference."
+  },
+  "split-packaging-moq-artwork-variants-1": {
+    "path": "/assets/catalog/1600732560686.webp",
+    "alt": "Pink mailer with graphics on the lid and a separate printed pack",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1600732560686",
+    "caption": "Pink mailer with graphics on the lid and a separate printed pack. Format reference."
+  },
+  "split-packaging-moq-artwork-variants-2": {
+    "path": "/assets/catalog/1601834854095.webp",
+    "alt": "Light printed carton with graphics on adjacent panels",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601834854095",
+    "caption": "Light printed carton with graphics on adjacent panels. Format reference."
+  },
+  "split-packaging-moq-artwork-variants-3": {
+    "path": "/assets/images/box-reference-catalog/d164ebfc1519cc180d1d.webp",
+    "alt": "Folding mailer with a reflective finish shown open",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601411784777",
+    "caption": "Folding mailer with a reflective finish shown open. Format reference."
+  },
+  "split-packaging-moq-artwork-variants-4": {
+    "path": "/assets/images/box-reference-catalog/f59bbb4b40ad827ac8a0.webp",
+    "alt": "Kraft gift pack containing several separate soap cartons",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1600474795303",
+    "caption": "Kraft gift pack containing several separate soap cartons. Format reference."
+  },
+  "split-packaging-moq-artwork-variants-5": {
+    "path": "/assets/catalog/1601835025323.webp",
+    "alt": "Printed carton with the product name on the main panel",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601835025323",
+    "caption": "Printed carton with the product name on the main panel. Format reference."
+  },
+  "packaging-changes-new-cutting-die-1": {
+    "path": "/assets/catalog/1601696705305.webp",
+    "alt": "Printed folding carton with defined panel edges",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601696705305",
+    "caption": "Printed folding carton with defined panel edges. Format reference."
+  },
+  "packaging-changes-new-cutting-die-2": {
+    "path": "/assets/images/box-reference-catalog/bbd8de6b4c23aea8388a.webp",
+    "alt": "Unfolded pink mailer showing side flaps and a tear strip",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1600609083635",
+    "caption": "Unfolded pink mailer showing side flaps and a tear strip. Format reference."
+  },
+  "packaging-changes-new-cutting-die-3": {
+    "path": "/assets/images/luxopack-catalog/1bcc7a649aa653dd8200.webp",
+    "alt": "Arched display carton with shaped front openings",
+    "width": 1200,
+    "height": 1200,
+    "reference": "PHG-LX-CA96753583",
+    "caption": "Arched display carton with shaped front openings. Format reference."
+  },
+  "packaging-changes-new-cutting-die-4": {
+    "path": "/assets/catalog/1601834969029.webp",
+    "alt": "Light folding carton showing the surface across an upper fold",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601834969029",
+    "caption": "Light folding carton showing the surface across an upper fold. Format reference."
+  },
+  "packaging-changes-new-cutting-die-5": {
+    "path": "/assets/catalog/1600717899579.webp",
+    "alt": "Opened printed mailer with fitted product compartments",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1600717899579",
+    "caption": "Opened printed mailer with fitted product compartments. Format reference."
+  },
+  "mailer-single-items-and-bundles-1": {
+    "path": "/assets/catalog/1601181687996.webp",
+    "alt": "Open printed mailer with wrapped items arranged inside",
+    "width": 825,
+    "height": 825,
+    "reference": "PHG-1601181687996",
+    "caption": "Open printed mailer with wrapped items arranged inside. Format reference."
+  },
+  "mailer-single-items-and-bundles-2": {
+    "path": "/assets/catalog/1601185009685.webp",
+    "alt": "Open mailer containing a printed carton and a card",
+    "width": 564,
+    "height": 564,
+    "reference": "PHG-1601185009685",
+    "caption": "Open mailer containing a printed carton and a card. Format reference."
+  },
+  "mailer-single-items-and-bundles-3": {
+    "path": "/assets/catalog/1600650001880.webp",
+    "alt": "Drawer package with a fitted white support",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1600650001880",
+    "caption": "Drawer package with a fitted white support. Format reference."
+  },
+  "mailer-single-items-and-bundles-4": {
+    "path": "/assets/images/box-reference-catalog/e038f3272b70a7b2724c.webp",
+    "alt": "Open gatefold gift box showing a fitted product insert",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601691663790",
+    "caption": "Open gatefold gift box showing a fitted product insert. Format reference."
+  },
+  "mailer-single-items-and-bundles-5": {
+    "path": "/assets/catalog/1601836364205.webp",
+    "alt": "Two views of a small printed mailer, open and closed",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601836364205",
+    "caption": "Two views of a small printed mailer, open and closed. Format reference."
+  },
+  "stop-bottle-cap-rubbing-shipping-carton-1": {
+    "path": "/assets/images/box-reference-catalog/496c9d2ea15657e1e9ca.webp",
+    "alt": "Bottle seated in the fitted insert of a navy perfume box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601828548765",
+    "caption": "Bottle seated in the fitted insert of a navy perfume box. Format reference."
+  },
+  "stop-bottle-cap-rubbing-shipping-carton-2": {
+    "path": "/assets/images/box-reference-catalog/f2a61c12ef03fb1f7e70.webp",
+    "alt": "Hands holding a closed purple tear-strip mailer",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601124665896",
+    "caption": "Hands holding a closed purple tear-strip mailer. Format reference."
+  },
+  "stop-bottle-cap-rubbing-shipping-carton-3": {
+    "path": "/assets/images/box-reference-catalog/8862bc7c2f6119e58254.webp",
+    "alt": "Open gold drawer box showing its recessed product compartment",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601568358380",
+    "caption": "Open gold drawer box showing its recessed product compartment. Format reference."
+  },
+  "stop-bottle-cap-rubbing-shipping-carton-4": {
+    "path": "/assets/catalog/1601836304243.webp",
+    "alt": "Printed beauty mailer shown in open and closed positions",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601836304243",
+    "caption": "Printed beauty mailer shown in open and closed positions. Format reference."
+  },
+  "stop-bottle-cap-rubbing-shipping-carton-5": {
+    "path": "/assets/images/luxopack-catalog/3c992cd79e3054803221.webp",
+    "alt": "Carton with individual compartments arranged in a grid",
+    "width": 1200,
+    "height": 1200,
+    "reference": "PHG-LX-CD3A2B1361",
+    "caption": "Carton with individual compartments arranged in a grid. Format reference."
+  },
+  "disposal-instructions-multi-part-package-1": {
+    "path": "/assets/catalog/1601836295655.webp",
+    "alt": "Open printed box alongside its closed presentation pack",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601836295655",
+    "caption": "Open printed box alongside its closed presentation pack. Format reference."
+  },
+  "disposal-instructions-multi-part-package-2": {
+    "path": "/assets/catalog/1600312423824.webp",
+    "alt": "Kraft mailers with packaged contents visible",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-1600312423824",
+    "caption": "Kraft mailers with packaged contents visible. Format reference."
+  },
+  "disposal-instructions-multi-part-package-3": {
+    "path": "/assets/catalog/1600659089221.webp",
+    "alt": "Kraft paper mailer with seams and side profile visible",
+    "width": 750,
+    "height": 750,
+    "reference": "PHG-1600659089221",
+    "caption": "Kraft paper mailer with seams and side profile visible. Format reference."
+  },
+  "disposal-instructions-multi-part-package-4": {
+    "path": "/assets/catalog/1600659075264.webp",
+    "alt": "Several paper mailers with their flaps open",
+    "width": 620,
+    "height": 570,
+    "reference": "PHG-1600659075264",
+    "caption": "Several paper mailers with their flaps open. Format reference."
+  },
+  "disposal-instructions-multi-part-package-5": {
+    "path": "/assets/catalog/1600952017503.webp",
+    "alt": "Printed paper mailer standing beside a stack",
+    "width": 700,
+    "height": 700,
+    "reference": "PHG-1600952017503",
+    "caption": "Printed paper mailer standing beside a stack. Format reference."
+  },
+  "verify-recycled-content-exact-material-1": {
+    "path": "/assets/catalog/1600322862122.webp",
+    "alt": "Kraft paper mailers with printed labels and visible closure strips",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1600322862122",
+    "caption": "Kraft paper mailers with printed labels and visible closure strips. Format reference."
+  },
+  "verify-recycled-content-exact-material-2": {
+    "path": "/assets/catalog/1600661208069.webp",
+    "alt": "Two kraft mailers shown with their paper panels visible",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1600661208069",
+    "caption": "Two kraft mailers shown with their paper panels visible. Format reference."
+  },
+  "verify-recycled-content-exact-material-3": {
+    "path": "/assets/catalog/1601173654727.webp",
+    "alt": "Three sizes of a dark paper carrier bag",
+    "width": 375,
+    "height": 375,
+    "reference": "PHG-1601173654727",
+    "caption": "Three sizes of a dark paper carrier bag. Format reference."
+  },
+  "verify-recycled-content-exact-material-4": {
+    "path": "/assets/catalog/1600727740903.webp",
+    "alt": "Two mailer sizes shown upright and laid flat",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1600727740903",
+    "caption": "Two mailer sizes shown upright and laid flat. Format reference."
+  },
+  "verify-recycled-content-exact-material-5": {
+    "path": "/assets/catalog/1600495609400.webp",
+    "alt": "Side view of a printed kraft paper mailer",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1600495609400",
+    "caption": "Side view of a printed kraft paper mailer. Format reference."
+  },
+  "remove-plastic-window-carton-1": {
+    "path": "/assets/images/box-reference-catalog/bbc1a4ca40c2465105da.webp",
+    "alt": "Folding carton with a display window for soap or cosmetics",
+    "width": 736,
+    "height": 736,
+    "reference": "PHG-FP-1601491329992",
+    "caption": "Folding carton with a display window for soap or cosmetics. Format reference."
+  },
+  "remove-plastic-window-carton-2": {
+    "path": "/assets/images/box-reference-catalog/f8492176ca654e9d156c.webp",
+    "alt": "Pink cosmetic carton with a front display opening",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601274377818",
+    "caption": "Pink cosmetic carton with a front display opening. Format reference."
+  },
+  "remove-plastic-window-carton-3": {
+    "path": "/assets/images/box-reference-catalog/b037c4f10754a409e0e9.webp",
+    "alt": "White cosmetic carton with a circular window",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601314488398",
+    "caption": "White cosmetic carton with a circular window. Format reference."
+  },
+  "remove-plastic-window-carton-4": {
+    "path": "/assets/images/box-reference-catalog/678a91b496dc3b003c35.webp",
+    "alt": "Soap drawer carton with a window in its sleeve",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1600488292104",
+    "caption": "Soap drawer carton with a window in its sleeve. Format reference."
+  },
+  "remove-plastic-window-carton-5": {
+    "path": "/assets/images/luxopack-catalog/fa10907d3f599f1f1c3f.webp",
+    "alt": "Window gift box with separate compartments",
+    "width": 1200,
+    "height": 1200,
+    "reference": "PHG-LX-24F15DC33A",
+    "caption": "Window gift box with separate compartments. Format reference."
+  },
+  "compare-coated-uncoated-paper-inserts-1": {
+    "path": "/assets/images/luxopack-catalog/0f0c5269a2653e7aa707.webp",
+    "alt": "Chocolate gift box with divider tray",
+    "width": 1200,
+    "height": 751,
+    "reference": "PHG-LX-17FF571F45",
+    "caption": "Chocolate gift box with divider tray. Insert format reference."
+  },
+  "compare-coated-uncoated-paper-inserts-2": {
+    "path": "/assets/images/luxopack-catalog/c8dfb71e686faf77b12c.webp",
+    "alt": "Magnetic gift box with modular insert",
+    "width": 828,
+    "height": 552,
+    "reference": "PHG-LX-319ADD04A9",
+    "caption": "Magnetic gift box with modular insert. Insert format reference."
+  },
+  "compare-coated-uncoated-paper-inserts-3": {
+    "path": "/assets/images/luxopack-catalog/9237f4df3a1879242760.webp",
+    "alt": "Skincare gift set box with fitted insert",
+    "width": 1600,
+    "height": 1000,
+    "reference": "PHG-LX-AE2C577862",
+    "caption": "Skincare gift set box with fitted insert. Insert format reference."
+  },
+  "compare-coated-uncoated-paper-inserts-4": {
+    "path": "/assets/images/luxopack-catalog/1de9fd39a821f653f5ef.webp",
+    "alt": "Wellness gift set box with fitted insert",
+    "width": 1448,
+    "height": 1086,
+    "reference": "PHG-LX-539335A71C",
+    "caption": "Wellness gift set box with fitted insert. Insert format reference."
+  },
+  "compare-coated-uncoated-paper-inserts-5": {
+    "path": "/assets/images/luxopack-catalog/55724d7852e3c9a3a493.webp",
+    "alt": "Candle presentation box with insert",
+    "width": 1200,
+    "height": 1200,
+    "reference": "PHG-LX-A050912ADC",
+    "caption": "Candle presentation box with insert. Insert format reference."
+  },
+  "packaging-tooling-ownership-after-payment-1": {
+    "path": "/assets/catalog/1601836218771.webp",
+    "alt": "Printed folding mailer shown open and closed",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1601836218771",
+    "caption": "Printed folding mailer shown open and closed. Packaging format reference."
+  },
+  "packaging-tooling-ownership-after-payment-2": {
+    "path": "/assets/catalog/1600659751763.webp",
+    "alt": "Pink folding box shown assembled and open",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1600659751763",
+    "caption": "Pink folding box shown assembled and open. Packaging format reference."
+  },
+  "packaging-tooling-ownership-after-payment-3": {
+    "path": "/assets/catalog/11000015570855.webp",
+    "alt": "Pink paper carrier bag with handles",
+    "width": 564,
+    "height": 564,
+    "reference": "PHG-11000015570855",
+    "caption": "Pink paper carrier bag with handles. Packaging format reference."
+  },
+  "packaging-tooling-ownership-after-payment-4": {
+    "path": "/assets/catalog/1600501685105.webp",
+    "alt": "Kraft mailing bag with closure flaps visible",
+    "width": 449,
+    "height": 480,
+    "reference": "PHG-1600501685105",
+    "caption": "Kraft mailing bag with closure flaps visible. Packaging format reference."
+  },
+  "packaging-tooling-ownership-after-payment-5": {
+    "path": "/assets/catalog/1601308108169.webp",
+    "alt": "Paper carriers with different shapes and handle styles",
+    "width": 1000,
+    "height": 1000,
+    "reference": "PHG-1601308108169",
+    "caption": "Paper carriers with different shapes and handle styles. Packaging format reference."
+  },
+  "budget-packaging-stock-uncertain-demand-1": {
+    "path": "/assets/images/box-reference-catalog/d08a58c7208db257ed9e.webp",
+    "alt": "Pink subscription shipping box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600599438016",
+    "caption": "Pink subscription shipping box. Packaging format reference."
+  },
+  "budget-packaging-stock-uncertain-demand-2": {
+    "path": "/assets/images/box-reference-catalog/add0acdbacb2c429626e.webp",
+    "alt": "Magnetic fragrance sample set box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601581704292",
+    "caption": "Magnetic fragrance sample set box. Packaging format reference."
+  },
+  "budget-packaging-stock-uncertain-demand-3": {
+    "path": "/assets/images/box-reference-catalog/9f6a62b2427da0d8e76e.webp",
+    "alt": "Compact black corrugated mailer",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1600478453816",
+    "caption": "Compact black corrugated mailer. Packaging format reference."
+  },
+  "budget-packaging-stock-uncertain-demand-4": {
+    "path": "/assets/images/box-reference-catalog/594d83ae06ad868b7e27.webp",
+    "alt": "Kraft self-seal mailer with tear strip",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600060539699",
+    "caption": "Kraft self-seal mailer with tear strip. Packaging format reference."
+  },
+  "budget-packaging-stock-uncertain-demand-5": {
+    "path": "/assets/images/box-reference-catalog/b09e6508301574bc1914.webp",
+    "alt": "Full-color graphic corrugated mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600152979800",
+    "caption": "Full-color graphic corrugated mailer. Packaging format reference."
+  },
+  "protect-fragile-protruding-handle-1": {
+    "path": "/assets/images/box-reference-catalog/183cac84c5e494198f5f.webp",
+    "alt": "Kraft shipping mailer with insert",
+    "width": 564,
+    "height": 564,
+    "reference": "PHG-FP-1601338717127",
+    "caption": "Kraft shipping mailer with insert. Insert format reference."
+  },
+  "protect-fragile-protruding-handle-2": {
+    "path": "/assets/images/box-reference-catalog/27a0344a7a57445d222c.webp",
+    "alt": "Fragrance jar magnetic box with foam insert",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601585395791",
+    "caption": "Fragrance jar magnetic box with foam insert. Insert format reference."
+  },
+  "protect-fragile-protruding-handle-3": {
+    "path": "/assets/images/box-reference-catalog/6a038ff1f5dddce8863e.webp",
+    "alt": "Molded paper pulp insert for gift boxes",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601069918794",
+    "caption": "Molded paper pulp insert for gift boxes. Insert format reference."
+  },
+  "protect-fragile-protruding-handle-4": {
+    "path": "/assets/images/box-reference-catalog/0246103c7d81a51e725b.webp",
+    "alt": "Skincare airplane mailer with insert",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601694898000",
+    "caption": "Skincare airplane mailer with insert. Insert format reference."
+  },
+  "protect-fragile-protruding-handle-5": {
+    "path": "/assets/images/box-reference-catalog/70193243560959527406.webp",
+    "alt": "White printed mailer with insert",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601202103104",
+    "caption": "White printed mailer with insert. Insert format reference."
+  },
+  "keep-products-separated-multi-item-mailer-1": {
+    "path": "/assets/images/box-reference-catalog/acd545f82b1da437dfdb.webp",
+    "alt": "Perfume sample mailer with insert",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601181749375",
+    "caption": "Perfume sample mailer with insert. Packaging format reference."
+  },
+  "keep-products-separated-multi-item-mailer-2": {
+    "path": "/assets/images/box-reference-catalog/f06bdb0272d21d3d5656.webp",
+    "alt": "Magnetic lipstick set box with insert",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601634998169",
+    "caption": "Magnetic lipstick set box with insert. Packaging format reference."
+  },
+  "keep-products-separated-multi-item-mailer-3": {
+    "path": "/assets/images/box-reference-catalog/3eb06138aecb7355e26f.webp",
+    "alt": "Magnetic vial storage box with insert",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601796170328",
+    "caption": "Magnetic vial storage box with insert. Packaging format reference."
+  },
+  "keep-products-separated-multi-item-mailer-4": {
+    "path": "/assets/images/box-reference-catalog/0cd525e5d4069bb4471b.webp",
+    "alt": "Black book-style care kit box with foam insert",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600091015689",
+    "caption": "Black book-style care kit box with foam insert. Packaging format reference."
+  },
+  "keep-products-separated-multi-item-mailer-5": {
+    "path": "/assets/images/box-reference-catalog/d1da2ab8c7eab872e23e.webp",
+    "alt": "Pink cosmetic gift box with insert",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601273271110",
+    "caption": "Pink cosmetic gift box with insert. Packaging format reference."
+  },
+  "presentation-box-outer-shipping-carton-1": {
+    "path": "/assets/images/box-reference-catalog/cf389b66b6ebeb44a90e.webp",
+    "alt": "Magnetic gift set box with ribbon and card",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601420560664",
+    "caption": "Magnetic gift set box with ribbon and card. Packaging format reference."
+  },
+  "presentation-box-outer-shipping-carton-2": {
+    "path": "/assets/images/box-reference-catalog/a844bbd1d763092b22f9.webp",
+    "alt": "Black hardcover magnetic gift set box",
+    "width": 750,
+    "height": 750,
+    "reference": "PHG-FP-1600220653522",
+    "caption": "Black hardcover magnetic gift set box. Packaging format reference."
+  },
+  "presentation-box-outer-shipping-carton-3": {
+    "path": "/assets/images/box-reference-catalog/7b23e07b3092f5c80990.webp",
+    "alt": "Large e-flute corrugated mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600558196887",
+    "caption": "Large e-flute corrugated mailer. Packaging format reference."
+  },
+  "presentation-box-outer-shipping-carton-4": {
+    "path": "/assets/images/box-reference-catalog/1592dc70ecfc7f042897.webp",
+    "alt": "Black book-style gift box with insert",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600930147521",
+    "caption": "Black book-style gift box with insert. Packaging format reference."
+  },
+  "presentation-box-outer-shipping-carton-5": {
+    "path": "/assets/images/box-reference-catalog/ad41e740d9432f3cdb48.webp",
+    "alt": "Matte black corrugated shipping box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600676438397",
+    "caption": "Matte black corrugated shipping box. Packaging format reference."
+  },
+  "carton-closure-packing-bench-1": {
+    "path": "/assets/images/box-reference-catalog/eab47ba7543ff0087411.webp",
+    "alt": "Self-sealing folding mailer with tear strip",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601300614761",
+    "caption": "Self-sealing folding mailer with tear strip. Packaging format reference."
+  },
+  "carton-closure-packing-bench-2": {
+    "path": "/assets/images/box-reference-catalog/bf1238b712efe0d4514f.webp",
+    "alt": "Flat printed tuck-end carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601171962239",
+    "caption": "Flat printed tuck-end carton. Packaging format reference."
+  },
+  "carton-closure-packing-bench-3": {
+    "path": "/assets/images/box-reference-catalog/a389c8fb3ac5e3ceeacd.webp",
+    "alt": "Tear-open self-sealing cosmetic mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601633860492",
+    "caption": "Tear-open self-sealing cosmetic mailer. Packaging format reference."
+  },
+  "carton-closure-packing-bench-4": {
+    "path": "/assets/images/box-reference-catalog/fdfcb33c4520c59698c2.webp",
+    "alt": "Printed tuck-end cosmetic carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1600968302675",
+    "caption": "Printed tuck-end cosmetic carton. Packaging format reference."
+  },
+  "carton-closure-packing-bench-5": {
+    "path": "/assets/images/box-reference-catalog/9f2b96354ca14a105758.webp",
+    "alt": "Small pink folding mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600902684232",
+    "caption": "Small pink folding mailer. Packaging format reference."
+  },
+  "qr-code-reflective-pouch-1": {
+    "path": "/assets/images/pouch-catalog/4542069da7b801fd8663.webp",
+    "alt": "Holographic gummy candy stand-up pouch",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-PC-2F6CC65E03",
+    "caption": "Holographic gummy candy stand-up pouch. Reflective pouch format reference."
+  },
+  "qr-code-reflective-pouch-2": {
+    "path": "/assets/images/pouch-catalog/4c35c4e2e191cc889011.webp",
+    "alt": "Holographic mylar doypack with tear notch",
+    "width": 1024,
+    "height": 1024,
+    "reference": "PHG-PC-388F0274BD",
+    "caption": "Holographic mylar doypack with tear notch. Reflective pouch format reference."
+  },
+  "qr-code-reflective-pouch-3": {
+    "path": "/assets/images/pouch-catalog/fadb14ccb33bb4e35ef8.webp",
+    "alt": "Holographic cosmetic powder stand-up pouch",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-PC-B155690EC4",
+    "caption": "Holographic cosmetic powder stand-up pouch. Reflective pouch format reference."
+  },
+  "qr-code-reflective-pouch-4": {
+    "path": "/assets/images/pouch-catalog/310dda18fbe6429b1e67.webp",
+    "alt": "Metallic kettle chips gusset pouch",
+    "width": 1600,
+    "height": 1600,
+    "reference": "PHG-PC-A30F4B3490",
+    "caption": "Metallic kettle chips gusset pouch. Reflective pouch format reference."
+  },
+  "qr-code-reflective-pouch-5": {
+    "path": "/assets/images/pouch-catalog/2a2085130d4951bbc18f.webp",
+    "alt": "Holographic freeze-dried candy pouch",
+    "width": 1600,
+    "height": 1600,
+    "reference": "PHG-PC-F5D3C1D3ED",
+    "caption": "Holographic freeze-dried candy pouch. Reflective pouch format reference."
+  },
+  "date-code-space-carton-1": {
+    "path": "/assets/images/box-reference-catalog/f68c5053abeb55ce312d.webp",
+    "alt": "Printed folding bottle carton set",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601155613239",
+    "caption": "Printed folding bottle carton set. Carton format reference."
+  },
+  "date-code-space-carton-2": {
+    "path": "/assets/images/box-reference-catalog/f2d42270204f507c1d5a.webp",
+    "alt": "Printed lip product carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1600808547054",
+    "caption": "Printed lip product carton. Carton format reference."
+  },
+  "date-code-space-carton-3": {
+    "path": "/assets/images/box-reference-catalog/0b458da265f39e1bda05.webp",
+    "alt": "White square cosmetic carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1600999087655",
+    "caption": "White square cosmetic carton. Carton format reference."
+  },
+  "date-code-space-carton-4": {
+    "path": "/assets/images/box-reference-catalog/4c1ba725dde40f37ab2e.webp",
+    "alt": "Printed dispenser carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601006471099",
+    "caption": "Printed dispenser carton. Carton format reference."
+  },
+  "date-code-space-carton-5": {
+    "path": "/assets/images/box-reference-catalog/75d785acf946233f55ed.webp",
+    "alt": "Green textured cream jar carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601274734039",
+    "caption": "Green textured cream jar carton. Carton format reference."
+  },
+  "check-small-reversed-text-before-printing-1": {
+    "path": "/assets/images/box-reference-catalog/a05b0ce058de5277a742.webp",
+    "alt": "Black magnetic t-shirt box with logo",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1600598425596",
+    "caption": "Black magnetic t-shirt box with logo. Printed packaging format reference."
+  },
+  "check-small-reversed-text-before-printing-2": {
+    "path": "/assets/images/box-reference-catalog/c18509017a62730ed818.webp",
+    "alt": "Black printed folding mailer",
+    "width": 761,
+    "height": 960,
+    "reference": "PHG-FP-1600577027110",
+    "caption": "Black printed folding mailer. Printed packaging format reference."
+  },
+  "check-small-reversed-text-before-printing-3": {
+    "path": "/assets/images/box-reference-catalog/d34cc5f9b5b3b9579d0e.webp",
+    "alt": "Holographic-look serum carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601175494770",
+    "caption": "Holographic-look serum carton. Printed packaging format reference."
+  },
+  "check-small-reversed-text-before-printing-4": {
+    "path": "/assets/images/box-reference-catalog/f8272abb9d5b1b5ed4b6.webp",
+    "alt": "Color-printed lipstick carton set",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601095882863",
+    "caption": "Color-printed lipstick carton set. Printed packaging format reference."
+  },
+  "check-small-reversed-text-before-printing-5": {
+    "path": "/assets/images/box-reference-catalog/20d58ded1ed49accaa90.webp",
+    "alt": "Black perfume presentation box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601719327747",
+    "caption": "Black perfume presentation box. Printed packaging format reference."
+  },
+  "record-carton-front-panel-dieline-1": {
+    "path": "/assets/images/box-reference-catalog/24987dacf505ef3dcc9b.webp",
+    "alt": "Skincare bottle display carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601181978339",
+    "caption": "Skincare bottle display carton. Carton orientation reference."
+  },
+  "record-carton-front-panel-dieline-2": {
+    "path": "/assets/images/box-reference-catalog/7713be5245a07a35ee48.webp",
+    "alt": "Pink serum carton pair",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601197142349",
+    "caption": "Pink serum carton pair. Carton orientation reference."
+  },
+  "record-carton-front-panel-dieline-3": {
+    "path": "/assets/images/box-reference-catalog/9548c0686d09bd8c1d44.webp",
+    "alt": "Green skincare carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1600592908334",
+    "caption": "Green skincare carton. Carton orientation reference."
+  },
+  "record-carton-front-panel-dieline-4": {
+    "path": "/assets/images/box-reference-catalog/c4201c04cbe0fa8bdcd5.webp",
+    "alt": "Printed soap folding carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1600789058805",
+    "caption": "Printed soap folding carton. Carton orientation reference."
+  },
+  "record-carton-front-panel-dieline-5": {
+    "path": "/assets/images/box-reference-catalog/e5ffb45e83357894b388.webp",
+    "alt": "Cream lip product carton pair",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601204563347",
+    "caption": "Cream lip product carton pair. Carton orientation reference."
+  },
+  "pay-for-packaging-production-pilot-1": {
+    "path": "/assets/factory/folder-gluer.png",
+    "alt": "Carton folding and gluing equipment",
+    "width": 934,
+    "height": 525,
+    "reference": "Supplied factory photography",
+    "caption": "Carton folding and gluing equipment. Production or format reference."
+  },
+  "pay-for-packaging-production-pilot-2": {
+    "path": "/assets/factory/die-cutting.png",
+    "alt": "Flatbed die-cutting equipment at the packaging facility",
+    "width": 566,
+    "height": 434,
+    "reference": "Supplied factory photography",
+    "caption": "Flatbed die-cutting equipment at the packaging facility. Production or format reference."
+  },
+  "pay-for-packaging-production-pilot-3": {
+    "path": "/assets/factory/offset-printing.png",
+    "alt": "Offset press at the paper packaging facility",
+    "width": 780,
+    "height": 439,
+    "reference": "Supplied factory photography",
+    "caption": "Offset press at the paper packaging facility. Production or format reference."
+  },
+  "pay-for-packaging-production-pilot-4": {
+    "path": "/assets/images/box-reference-catalog/db49bde617e0f00bb924.webp",
+    "alt": "Bottle packaging carton set",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601239800721",
+    "caption": "Bottle packaging carton set. Production or format reference."
+  },
+  "pay-for-packaging-production-pilot-5": {
+    "path": "/assets/images/box-reference-catalog/f40317a21a42a34bac1c.webp",
+    "alt": "White folding perfume carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601011574172",
+    "caption": "White folding perfume carton. Production or format reference."
+  },
+  "compare-sample-fee-order-credit-1": {
+    "path": "/assets/images/box-reference-catalog/dc1ee06295402acabbdb.webp",
+    "alt": "Textured skincare carton set",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601296385244",
+    "caption": "Textured skincare carton set. Packaging format reference."
+  },
+  "compare-sample-fee-order-credit-2": {
+    "path": "/assets/images/box-reference-catalog/3883e2ad285564bef0c2.webp",
+    "alt": "White printed cosmetic carton set",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601298588894",
+    "caption": "White printed cosmetic carton set. Packaging format reference."
+  },
+  "compare-sample-fee-order-credit-3": {
+    "path": "/assets/images/box-reference-catalog/a2f291c6eccad0d9dae6.webp",
+    "alt": "Pink skincare carton set",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601006344627",
+    "caption": "Pink skincare carton set. Packaging format reference."
+  },
+  "compare-sample-fee-order-credit-4": {
+    "path": "/assets/images/box-reference-catalog/c8aad31e0f5647e5668b.webp",
+    "alt": "Pink printed cosmetic carton set",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601298012285",
+    "caption": "Pink printed cosmetic carton set. Packaging format reference."
+  },
+  "compare-sample-fee-order-credit-5": {
+    "path": "/assets/images/box-reference-catalog/e70e4b2185dcb6b7e308.webp",
+    "alt": "Dark textured skincare carton set",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601157985391",
+    "caption": "Dark textured skincare carton set. Packaging format reference."
+  },
+  "flat-vs-assembled-box-purchasing-cost-1": {
+    "path": "/assets/images/box-reference-catalog/b56c3dff73277a052e0f.webp",
+    "alt": "Pink folding magnetic gift box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-11000024759631",
+    "caption": "Pink folding magnetic gift box. Box construction reference."
+  },
+  "flat-vs-assembled-box-purchasing-cost-2": {
+    "path": "/assets/images/box-reference-catalog/ed773deff67ff475ad90.webp",
+    "alt": "Printed book-shape folding magnetic box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601092883548",
+    "caption": "Printed book-shape folding magnetic box. Box construction reference."
+  },
+  "flat-vs-assembled-box-purchasing-cost-3": {
+    "path": "/assets/images/box-reference-catalog/9c978d965509925ff09b.webp",
+    "alt": "Foldable corrugated clothing and shoe mailer",
+    "width": 720,
+    "height": 720,
+    "reference": "PHG-FP-1601628358771",
+    "caption": "Foldable corrugated clothing and shoe mailer. Box construction reference."
+  },
+  "flat-vs-assembled-box-purchasing-cost-4": {
+    "path": "/assets/images/box-reference-catalog/f1d71160524e1c6789cf.webp",
+    "alt": "Collapsible rigid magnetic paper box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601208244639",
+    "caption": "Collapsible rigid magnetic paper box. Box construction reference."
+  },
+  "flat-vs-assembled-box-purchasing-cost-5": {
+    "path": "/assets/images/box-reference-catalog/bdeabf7ae41bb9acecab.webp",
+    "alt": "Foldable magnetic presentation box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601693259167",
+    "caption": "Foldable magnetic presentation box. Box construction reference."
+  },
+  "specify-packaging-quantity-overrun-1": {
+    "path": "/assets/images/box-reference-catalog/0db61b579cf3be8e2775.webp",
+    "alt": "Printed cosmetic carton set",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601231166956",
+    "caption": "Printed cosmetic carton set. Printed packaging format reference."
+  },
+  "specify-packaging-quantity-overrun-2": {
+    "path": "/assets/images/pouch-catalog/74ecfea443b78e051149.webp",
+    "alt": "Printed candy & dried fruit pouch",
+    "width": 1024,
+    "height": 1024,
+    "reference": "PHG-PC-3845B9B4D4",
+    "caption": "Printed candy & dried fruit pouch. Printed packaging format reference."
+  },
+  "specify-packaging-quantity-overrun-3": {
+    "path": "/assets/images/pouch-catalog/93e9f399bd340f7cfb6e.webp",
+    "alt": "Custom printed mylar stand up zipper bag",
+    "width": 1024,
+    "height": 1024,
+    "reference": "PHG-PC-C6E16DA1CC",
+    "caption": "Custom printed mylar stand up zipper bag. Printed packaging format reference."
+  },
+  "specify-packaging-quantity-overrun-4": {
+    "path": "/assets/images/pouch-catalog/cdb1478bff3fbd6f3006.webp",
+    "alt": "Printed cat treat pouch with clear window",
+    "width": 1024,
+    "height": 1024,
+    "reference": "PHG-PC-D1CFC98427",
+    "caption": "Printed cat treat pouch with clear window. Printed packaging format reference."
+  },
+  "specify-packaging-quantity-overrun-5": {
+    "path": "/assets/images/pouch-catalog/8441aed5b25a1424c55c.webp",
+    "alt": "Custom printed coffee stand up pouch with valve",
+    "width": 1024,
+    "height": 1024,
+    "reference": "PHG-PC-C5C02F0EC5",
+    "caption": "Custom printed coffee stand up pouch with valve. Printed packaging format reference."
+  },
+  "check-cheaper-board-substitution-1": {
+    "path": "/assets/images/box-reference-catalog/d44b844da895ae803f6f.webp",
+    "alt": "Textured cosmetic carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601298535978",
+    "caption": "Textured cosmetic carton. Carton format reference."
+  },
+  "check-cheaper-board-substitution-2": {
+    "path": "/assets/images/box-reference-catalog/8c977bbb7f5847ef832f.webp",
+    "alt": "Green textured cosmetic carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601111577980",
+    "caption": "Green textured cosmetic carton. Carton format reference."
+  },
+  "check-cheaper-board-substitution-3": {
+    "path": "/assets/images/box-reference-catalog/eff8668aa615909e9803.webp",
+    "alt": "Cream dropper bottle carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601089400143",
+    "caption": "Cream dropper bottle carton. Carton format reference."
+  },
+  "check-cheaper-board-substitution-4": {
+    "path": "/assets/images/box-reference-catalog/eab6e99f241c1e315f04.webp",
+    "alt": "White decorative cosmetic carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601081458151",
+    "caption": "White decorative cosmetic carton. Carton format reference."
+  },
+  "check-cheaper-board-substitution-5": {
+    "path": "/assets/images/box-reference-catalog/b0f4ca8f32e4295de07f.webp",
+    "alt": "Ivory cream jar carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601201213835",
+    "caption": "Ivory cream jar carton. Carton format reference."
+  },
+  "price-hand-assembly-packaging-quote-1": {
+    "path": "/assets/images/box-reference-catalog/7df4006b957360ce7e7d.webp",
+    "alt": "Folding magnetic hair box with satin insert",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601779013439",
+    "caption": "Folding magnetic hair box with satin insert. Assembly format reference."
+  },
+  "price-hand-assembly-packaging-quote-2": {
+    "path": "/assets/images/box-reference-catalog/a3872dde64668b21ba9e.webp",
+    "alt": "Foldable magnetic hat gift box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601693182676",
+    "caption": "Foldable magnetic hat gift box. Assembly format reference."
+  },
+  "price-hand-assembly-packaging-quote-3": {
+    "path": "/assets/images/box-reference-catalog/d5028be510824ca89ef7.webp",
+    "alt": "Black foldable magnetic paper box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600168996505",
+    "caption": "Black foldable magnetic paper box. Assembly format reference."
+  },
+  "price-hand-assembly-packaging-quote-4": {
+    "path": "/assets/images/box-reference-catalog/cd4a494d38b8119e3203.webp",
+    "alt": "Magnetic rigid gift box with insert",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600887001051",
+    "caption": "Magnetic rigid gift box with insert. Assembly format reference."
+  },
+  "price-hand-assembly-packaging-quote-5": {
+    "path": "/assets/images/box-reference-catalog/5b9d9f7c13f1827034dd.webp",
+    "alt": "Pink presentation box with insert",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600316859242",
+    "caption": "Pink presentation box with insert. Assembly format reference."
+  },
+  "source-packaging-components-together-1": {
+    "path": "/assets/images/box-reference-catalog/ed25ff033717cfc267c9.webp",
+    "alt": "Magnetic perfume gift box with fitted insert",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601088375102",
+    "caption": "Magnetic perfume gift box with fitted insert. Packaging component reference."
+  },
+  "source-packaging-components-together-2": {
+    "path": "/assets/images/box-reference-catalog/facaa8abcd4f2f9df521.webp",
+    "alt": "Blue book-style perfume box with fitted insert",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601932136222",
+    "caption": "Blue book-style perfume box with fitted insert. Packaging component reference."
+  },
+  "source-packaging-components-together-3": {
+    "path": "/assets/images/box-reference-catalog/8364a739a65aaad321e2.webp",
+    "alt": "Kraft soap drawer sleeve with ribbon",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601786913011",
+    "caption": "Kraft soap drawer sleeve with ribbon. Packaging component reference."
+  },
+  "source-packaging-components-together-4": {
+    "path": "/assets/images/box-reference-catalog/aad8e13ff773706d5bc7.webp",
+    "alt": "Pink matte magnetic gift box with ribbon",
+    "width": 509,
+    "height": 508,
+    "reference": "PHG-FP-1601584665856",
+    "caption": "Pink matte magnetic gift box with ribbon. Packaging component reference."
+  },
+  "source-packaging-components-together-5": {
+    "path": "/assets/images/box-reference-catalog/bbcdb38476b617421daf.webp",
+    "alt": "Hair and wig drawer box with ribbon handle",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601038460650",
+    "caption": "Hair and wig drawer box with ribbon handle. Packaging component reference."
+  },
+  "repeat-packaging-order-quote-1": {
+    "path": "/assets/images/box-reference-catalog/7a99fc7910262f08bb36.webp",
+    "alt": "Black magnetic pr presentation box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600320883285",
+    "caption": "Black magnetic pr presentation box. Packaging format reference."
+  },
+  "repeat-packaging-order-quote-2": {
+    "path": "/assets/images/box-reference-catalog/c61238d10c6ddd34604f.webp",
+    "alt": "Black magnetic personal care box with foam",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601110295775",
+    "caption": "Black magnetic personal care box with foam. Packaging format reference."
+  },
+  "repeat-packaging-order-quote-3": {
+    "path": "/assets/images/box-reference-catalog/ee132ebdb8db82593ac6.webp",
+    "alt": "Small pink gift shipping box",
+    "width": 748,
+    "height": 748,
+    "reference": "PHG-FP-1601118337845",
+    "caption": "Small pink gift shipping box. Packaging format reference."
+  },
+  "repeat-packaging-order-quote-4": {
+    "path": "/assets/images/box-reference-catalog/4b3af0a3af160d559bfb.webp",
+    "alt": "Hot pink printed mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600131609136",
+    "caption": "Hot pink printed mailer. Packaging format reference."
+  },
+  "repeat-packaging-order-quote-5": {
+    "path": "/assets/images/box-reference-catalog/00fa334e123abb5ca228.webp",
+    "alt": "Pink corrugated lash mailer",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1600741054598",
+    "caption": "Pink corrugated lash mailer. Packaging format reference."
+  },
+  "compare-shared-box-custom-sleeve-cost-1": {
+    "path": "/assets/images/luxopack-catalog/9d5a3a20a459db0df568.webp",
+    "alt": "Sleeve and drawer presentation box",
+    "width": 1376,
+    "height": 768,
+    "reference": "PHG-LX-B482755AA3",
+    "caption": "Sleeve and drawer presentation box. Sleeve or drawer format reference."
+  },
+  "compare-shared-box-custom-sleeve-cost-2": {
+    "path": "/assets/images/box-reference-catalog/89617da5919f68c3cb57.webp",
+    "alt": "Square pull-out soap drawer box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601670062359",
+    "caption": "Square pull-out soap drawer box. Sleeve or drawer format reference."
+  },
+  "compare-shared-box-custom-sleeve-cost-3": {
+    "path": "/assets/images/box-reference-catalog/36c5eb0f0c29dfbf5916.webp",
+    "alt": "Sliding clothing gift drawer box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601590208004",
+    "caption": "Sliding clothing gift drawer box. Sleeve or drawer format reference."
+  },
+  "compare-shared-box-custom-sleeve-cost-4": {
+    "path": "/assets/images/box-reference-catalog/5ff7f48f5e1947506218.webp",
+    "alt": "Peach printed drawer box",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601244441800",
+    "caption": "Peach printed drawer box. Sleeve or drawer format reference."
+  },
+  "compare-shared-box-custom-sleeve-cost-5": {
+    "path": "/assets/images/box-reference-catalog/8181accc6058a6633f01.webp",
+    "alt": "Pale soap drawer box",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1600455683399",
+    "caption": "Pale soap drawer box. Sleeve or drawer format reference."
+  },
+  "when-to-qualify-second-packaging-supplier-1": {
+    "path": "/assets/factory/foil-stamping.png",
+    "alt": "Foil stamping equipment at a paper packaging facility",
+    "width": 987,
+    "height": 564,
+    "reference": "Supplied factory photography",
+    "caption": "Foil stamping equipment at a paper packaging facility. Production or packaging format reference."
+  },
+  "when-to-qualify-second-packaging-supplier-2": {
+    "path": "/assets/images/box-reference-catalog/4041e3e18e9d3615ec50.webp",
+    "alt": "Foldable pen-format box with plastic liner",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601520507356",
+    "caption": "Foldable pen-format box with plastic liner. Production or packaging format reference."
+  },
+  "when-to-qualify-second-packaging-supplier-3": {
+    "path": "/assets/images/box-reference-catalog/b465c58061ea33ee688d.webp",
+    "alt": "Green and white carry-handle mailer",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601155161763",
+    "caption": "Green and white carry-handle mailer. Production or packaging format reference."
+  },
+  "when-to-qualify-second-packaging-supplier-4": {
+    "path": "/assets/images/box-reference-catalog/2ba6d226ab5cc5c28ad4.webp",
+    "alt": "Black magnetic fragrance box with lining",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601846222553",
+    "caption": "Black magnetic fragrance box with lining. Production or packaging format reference."
+  },
+  "when-to-qualify-second-packaging-supplier-5": {
+    "path": "/assets/images/box-reference-catalog/1864dbc3464ccb3cf1ed.webp",
+    "alt": "Green and black folding magnetic gift box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601204846683",
+    "caption": "Green and black folding magnetic gift box. Production or packaging format reference."
+  },
+  "coordinate-packaging-first-production-run-1": {
+    "path": "/assets/media/box-production-banner-poster.jpg",
+    "alt": "Still from the box production video",
+    "width": 1280,
+    "height": 480,
+    "reference": "Existing site production media",
+    "caption": "Still from the box production video. Production or packaging format reference."
+  },
+  "coordinate-packaging-first-production-run-2": {
+    "path": "/assets/images/box-reference-catalog/9982e766a5eafa510eb9.webp",
+    "alt": "Pink skincare shipping mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-11000031700615",
+    "caption": "Pink skincare shipping mailer. Production or packaging format reference."
+  },
+  "coordinate-packaging-first-production-run-3": {
+    "path": "/assets/images/box-reference-catalog/984e7ca74f145b51734e.webp",
+    "alt": "Pink corrugated jewelry mailer",
+    "width": 600,
+    "height": 600,
+    "reference": "PHG-FP-11000006315857",
+    "caption": "Pink corrugated jewelry mailer. Production or packaging format reference."
+  },
+  "coordinate-packaging-first-production-run-4": {
+    "path": "/assets/images/box-reference-catalog/71a1fcc318d655cfbe2d.webp",
+    "alt": "Pink cosmetic corrugated shipping box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600105427881",
+    "caption": "Pink cosmetic corrugated shipping box. Production or packaging format reference."
+  },
+  "coordinate-packaging-first-production-run-5": {
+    "path": "/assets/images/box-reference-catalog/eb36e8d20e11902441dc.webp",
+    "alt": "Pink printed clothing shipping box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1600972351014",
+    "caption": "Pink printed clothing shipping box. Production or packaging format reference."
+  },
+  "phase-out-packaging-artwork-change-1": {
+    "path": "/assets/images/pouch-catalog/c037c3acde765c13f598.webp",
+    "alt": "Holographic confectionery doypack",
+    "width": 1600,
+    "height": 1600,
+    "reference": "PHG-PC-5E476B8ACC",
+    "caption": "Holographic confectionery doypack. Printed packaging format reference."
+  },
+  "phase-out-packaging-artwork-change-2": {
+    "path": "/assets/images/box-reference-catalog/caaf511a1bdb0444805a.webp",
+    "alt": "Pink postal mailer box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600212941277",
+    "caption": "Pink postal mailer box. Printed packaging format reference."
+  },
+  "phase-out-packaging-artwork-change-3": {
+    "path": "/assets/images/box-reference-catalog/f1576723c84094e6e3cb.webp",
+    "alt": "Black collapsible magnetic gift box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601434662981",
+    "caption": "Black collapsible magnetic gift box. Printed packaging format reference."
+  },
+  "phase-out-packaging-artwork-change-4": {
+    "path": "/assets/images/box-reference-catalog/088d4c071c6c15aafd8e.webp",
+    "alt": "Large logo-led folding magnetic box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601300543400",
+    "caption": "Large logo-led folding magnetic box. Printed packaging format reference."
+  },
+  "phase-out-packaging-artwork-change-5": {
+    "path": "/assets/images/box-reference-catalog/415f786af667a82671a9.webp",
+    "alt": "White perfume carton set",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601006355728",
+    "caption": "White perfume carton set. Printed packaging format reference."
+  },
+  "compare-packaging-supplier-lead-times-1": {
+    "path": "/assets/images/box-reference-catalog/b9995f9402277047bd93.webp",
+    "alt": "Kraft shampoo shipping carton",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601504404821",
+    "caption": "Kraft shampoo shipping carton. Packaging format reference."
+  },
+  "compare-packaging-supplier-lead-times-2": {
+    "path": "/assets/images/box-reference-catalog/d6bd21f589d2e756a335.webp",
+    "alt": "Double-sided printed cosmetic mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601641494809",
+    "caption": "Double-sided printed cosmetic mailer. Packaging format reference."
+  },
+  "compare-packaging-supplier-lead-times-3": {
+    "path": "/assets/images/box-reference-catalog/99cfe231dd2ac29c158f.webp",
+    "alt": "Flat corrugated clothing mailer with tear strip",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601679192585",
+    "caption": "Flat corrugated clothing mailer with tear strip. Packaging format reference."
+  },
+  "compare-packaging-supplier-lead-times-4": {
+    "path": "/assets/images/box-reference-catalog/5302066c76a1153cfd63.webp",
+    "alt": "Corrugated skincare and cosmetic shipping box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601711840210",
+    "caption": "Corrugated skincare and cosmetic shipping box. Packaging format reference."
+  },
+  "compare-packaging-supplier-lead-times-5": {
+    "path": "/assets/images/box-reference-catalog/7456268e44a410735dc8.webp",
+    "alt": "Ivory compact postal mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601460847022",
+    "caption": "Ivory compact postal mailer. Packaging format reference."
+  },
+  "approval-hold-before-packaging-material-purchase-1": {
+    "path": "/assets/images/box-reference-catalog/a374833f9e18eacdb62e.webp",
+    "alt": "Colored kraft beauty and apparel mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601518152341",
+    "caption": "Colored kraft beauty and apparel mailer. Packaging material or format reference."
+  },
+  "approval-hold-before-packaging-material-purchase-2": {
+    "path": "/assets/images/box-reference-catalog/ab3f9d3b398cb9d87283.webp",
+    "alt": "Kraft personal care corrugated mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601606601796",
+    "caption": "Kraft personal care corrugated mailer. Packaging material or format reference."
+  },
+  "approval-hold-before-packaging-material-purchase-3": {
+    "path": "/assets/images/box-reference-catalog/f9dda70e73b296528d5f.webp",
+    "alt": "Double-printed black apparel mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601618543280",
+    "caption": "Double-printed black apparel mailer. Packaging material or format reference."
+  },
+  "approval-hold-before-packaging-material-purchase-4": {
+    "path": "/assets/images/box-reference-catalog/2399a034961cc8d59051.webp",
+    "alt": "Glitter beauty mailer packaging set",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-60827279940",
+    "caption": "Glitter beauty mailer packaging set. Packaging material or format reference."
+  },
+  "approval-hold-before-packaging-material-purchase-5": {
+    "path": "/assets/images/box-reference-catalog/6a60cab05bec3c12c56f.webp",
+    "alt": "Printed mailer for beauty and apparel orders",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-60838067033",
+    "caption": "Printed mailer for beauty and apparel orders. Packaging material or format reference."
+  },
+  "boxed-gift-set-quote-component-list-1": {
+    "path": "/assets/images/luxopack-catalog/aeae372ba7cf468a2cea.webp",
+    "alt": "Corporate gift set presentation box",
+    "width": 1200,
+    "height": 900,
+    "reference": "PHG-LX-8D9897D565",
+    "caption": "Corporate gift set presentation box. Gift set format reference."
+  },
+  "boxed-gift-set-quote-component-list-2": {
+    "path": "/assets/images/luxopack-catalog/4cf3d7e71413c5e179fb.webp",
+    "alt": "Coffee and tea gift set box",
+    "width": 1200,
+    "height": 1200,
+    "reference": "PHG-LX-3D71360226",
+    "caption": "Coffee and tea gift set box. Gift set format reference."
+  },
+  "boxed-gift-set-quote-component-list-3": {
+    "path": "/assets/images/luxopack-catalog/4f3ac96c7e884edc1627.webp",
+    "alt": "Lid and base gift box with ribbon",
+    "width": 705,
+    "height": 594,
+    "reference": "PHG-LX-E78089659F",
+    "caption": "Lid and base gift box with ribbon. Gift set format reference."
+  },
+  "boxed-gift-set-quote-component-list-4": {
+    "path": "/assets/images/luxopack-catalog/38c2d1d224240953f5d0.webp",
+    "alt": "Fragrance and beauty gift set box",
+    "width": 1200,
+    "height": 900,
+    "reference": "PHG-LX-974301E629",
+    "caption": "Fragrance and beauty gift set box. Gift set format reference."
+  },
+  "boxed-gift-set-quote-component-list-5": {
+    "path": "/assets/images/luxopack-catalog/d3bf06f7f4d98e000c1b.webp",
+    "alt": "Dates and chocolate gift box",
+    "width": 1600,
+    "height": 1000,
+    "reference": "PHG-LX-5A55E2E162",
+    "caption": "Dates and chocolate gift box. Gift set format reference."
+  },
+  "document-supplier-packaging-cost-reduction-1": {
+    "path": "/assets/images/box-reference-catalog/c6dd0c4a7da12ceab6d1.webp",
+    "alt": "Printed corrugated clothing mailer",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601655546338",
+    "caption": "Printed corrugated clothing mailer. Packaging format reference."
+  },
+  "document-supplier-packaging-cost-reduction-2": {
+    "path": "/assets/images/box-reference-catalog/f56dd81944644cf67d17.webp",
+    "alt": "Pink folding corrugated gift mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601684425857",
+    "caption": "Pink folding corrugated gift mailer. Packaging format reference."
+  },
+  "document-supplier-packaging-cost-reduction-3": {
+    "path": "/assets/images/box-reference-catalog/f1b619183bcebcbb692a.webp",
+    "alt": "Kraft cosmetic corrugated mailer",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601496912841",
+    "caption": "Kraft cosmetic corrugated mailer. Packaging format reference."
+  },
+  "document-supplier-packaging-cost-reduction-4": {
+    "path": "/assets/images/box-reference-catalog/aa5c3b935eec088b62db.webp",
+    "alt": "Portable printed corrugated gift mailer",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601694073790",
+    "caption": "Portable printed corrugated gift mailer. Packaging format reference."
+  },
+  "document-supplier-packaging-cost-reduction-5": {
+    "path": "/assets/images/box-reference-catalog/c31b190c23e51df1a548.webp",
+    "alt": "Logo-printed corrugated shipping mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-62167980739",
+    "caption": "Logo-printed corrugated shipping mailer. Packaging format reference."
+  },
+  "package-configuration-transit-test-lab-1": {
+    "path": "/assets/images/box-reference-catalog/712941df706787647a1e.webp",
+    "alt": "Corrugated mailer for beauty e-commerce orders",
+    "width": 960,
+    "height": 898,
+    "reference": "PHG-FP-1601832965566",
+    "caption": "Corrugated mailer for beauty e-commerce orders. Packaging configuration reference."
+  },
+  "package-configuration-transit-test-lab-2": {
+    "path": "/assets/images/box-reference-catalog/ffeefbad74c7afdc9521.webp",
+    "alt": "Socks and clothing gift mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601594700361",
+    "caption": "Socks and clothing gift mailer. Packaging configuration reference."
+  },
+  "package-configuration-transit-test-lab-3": {
+    "path": "/assets/images/box-reference-catalog/16910942de5927663868.webp",
+    "alt": "Floral printed gift mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601594419778",
+    "caption": "Floral printed gift mailer. Packaging configuration reference."
+  },
+  "package-configuration-transit-test-lab-4": {
+    "path": "/assets/images/luxopack-catalog/aabec8c7eeedee9bde81.webp",
+    "alt": "Perfume gift box with bottle insert",
+    "width": 1200,
+    "height": 1200,
+    "reference": "PHG-LX-5E69F9ACAC",
+    "caption": "Perfume gift box with bottle insert. Packaging configuration reference."
+  },
+  "package-configuration-transit-test-lab-5": {
+    "path": "/assets/images/luxopack-catalog/cc34363d591557680fc9.webp",
+    "alt": "Vial presentation box with fitted insert",
+    "width": 1448,
+    "height": 1086,
+    "reference": "PHG-LX-7064181911",
+    "caption": "Vial presentation box with fitted insert. Packaging configuration reference."
+  },
+  "shipping-label-position-mailer-1": {
+    "path": "/assets/images/box-reference-catalog/80af55fd5dbe66bf50c0.webp",
+    "alt": "Compact kraft apparel e-commerce mailer",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601365206960",
+    "caption": "Compact kraft apparel e-commerce mailer. Mailer format reference."
+  },
+  "shipping-label-position-mailer-2": {
+    "path": "/assets/images/box-reference-catalog/b114f2f5c5008cada295.webp",
+    "alt": "Large corrugated shoe postal mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601290855532",
+    "caption": "Large corrugated shoe postal mailer. Mailer format reference."
+  },
+  "shipping-label-position-mailer-3": {
+    "path": "/assets/images/box-reference-catalog/ae3669a58b130207bf2b.webp",
+    "alt": "Self-adhesive zip-open corrugated mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601362623904",
+    "caption": "Self-adhesive zip-open corrugated mailer. Mailer format reference."
+  },
+  "shipping-label-position-mailer-4": {
+    "path": "/assets/images/box-reference-catalog/6c6f8a9f24c8bd18d140.webp",
+    "alt": "Holographic-look pink mailer box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1600223277051",
+    "caption": "Holographic-look pink mailer box. Mailer format reference."
+  },
+  "shipping-label-position-mailer-5": {
+    "path": "/assets/images/box-reference-catalog/ac9a20e19d2be617ba82.webp",
+    "alt": "Self-sealing e-commerce mailer with zipper strip",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601753960251",
+    "caption": "Self-sealing e-commerce mailer with zipper strip. Mailer format reference."
+  },
+  "record-carton-bulge-before-carrier-1": {
+    "path": "/assets/images/box-reference-catalog/6777233f0c786908e931.webp",
+    "alt": "Pink gift mailer and shipping carton",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601232033678",
+    "caption": "Pink gift mailer and shipping carton. Carton construction reference."
+  },
+  "record-carton-bulge-before-carrier-2": {
+    "path": "/assets/images/box-reference-catalog/bf3182bac2257cb5b5eb.webp",
+    "alt": "Black tuck-top apparel mailer with foil",
+    "width": 634,
+    "height": 634,
+    "reference": "PHG-FP-1600955216619",
+    "caption": "Black tuck-top apparel mailer with foil. Carton construction reference."
+  },
+  "record-carton-bulge-before-carrier-3": {
+    "path": "/assets/images/box-reference-catalog/4296d29501e5f7b47b3f.webp",
+    "alt": "Brown kraft t-shirt mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601019012436",
+    "caption": "Brown kraft t-shirt mailer. Carton construction reference."
+  },
+  "record-carton-bulge-before-carrier-4": {
+    "path": "/assets/images/box-reference-catalog/4dbf4fb840cce3627746.webp",
+    "alt": "Pink apparel gift postal mailer",
+    "width": 750,
+    "height": 750,
+    "reference": "PHG-FP-1601351932141",
+    "caption": "Pink apparel gift postal mailer. Carton construction reference."
+  },
+  "record-carton-bulge-before-carrier-5": {
+    "path": "/assets/images/box-reference-catalog/1f28cba9ac925a2c3636.webp",
+    "alt": "Laptop shipping mailer with foam and handle",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601187708259",
+    "caption": "Laptop shipping mailer with foam and handle. Carton construction reference."
+  },
+  "divider-instead-of-loose-fill-1": {
+    "path": "/assets/images/luxopack-catalog/1d0b50e8d8a76854dec6.webp",
+    "alt": "Window gift box with compartments",
+    "width": 1200,
+    "height": 1200,
+    "reference": "PHG-LX-24F15DC33A",
+    "caption": "Window gift box with compartments. Packaging support reference."
+  },
+  "divider-instead-of-loose-fill-2": {
+    "path": "/assets/images/box-reference-catalog/699b93c9ed421264fc52.webp",
+    "alt": "Black magnetic box for a 50ml perfume bottle",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601672288863",
+    "caption": "Black magnetic box for a 50ml perfume bottle. Packaging support reference."
+  },
+  "divider-instead-of-loose-fill-3": {
+    "path": "/assets/images/luxopack-catalog/e0ed55b92d2dad092dda.webp",
+    "alt": "Pyramid gift box",
+    "width": 1200,
+    "height": 900,
+    "reference": "PHG-LX-938733D61E",
+    "caption": "Pyramid gift box. Packaging support reference."
+  },
+  "divider-instead-of-loose-fill-4": {
+    "path": "/assets/images/luxopack-catalog/47bd02edb13b72f7e663.webp",
+    "alt": "Shoulder and neck rigid gift box",
+    "width": 1200,
+    "height": 896,
+    "reference": "PHG-LX-684C87643F",
+    "caption": "Shoulder and neck rigid gift box. Packaging support reference."
+  },
+  "divider-instead-of-loose-fill-5": {
+    "path": "/assets/images/box-reference-catalog/0ed8d79423ead07c6f80.webp",
+    "alt": "Foil and candle drawer gift box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601807354015",
+    "caption": "Foil and candle drawer gift box. Packaging support reference."
+  },
+  "reduce-printed-carton-scuffs-in-transit-1": {
+    "path": "/assets/images/box-reference-catalog/3fb02a96bc6fc042837e.webp",
+    "alt": "Black soap mailer with gold foil logo",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601418698948",
+    "caption": "Black soap mailer with gold foil logo. Printed packaging format reference."
+  },
+  "reduce-printed-carton-scuffs-in-transit-2": {
+    "path": "/assets/images/box-reference-catalog/76f3141ffeff1e5a3301.webp",
+    "alt": "Metallic-look silver drawer box",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601076370428",
+    "caption": "Metallic-look silver drawer box. Printed packaging format reference."
+  },
+  "reduce-printed-carton-scuffs-in-transit-3": {
+    "path": "/assets/images/box-reference-catalog/4c78209ede545be8b959.webp",
+    "alt": "Dark green skincare corrugated mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601259750482",
+    "caption": "Dark green skincare corrugated mailer. Printed packaging format reference."
+  },
+  "reduce-printed-carton-scuffs-in-transit-4": {
+    "path": "/assets/images/box-reference-catalog/922f5a96ce018683b5a0.webp",
+    "alt": "Matte hoodie and t-shirt drawer box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601683375284",
+    "caption": "Matte hoodie and t-shirt drawer box. Printed packaging format reference."
+  },
+  "reduce-printed-carton-scuffs-in-transit-5": {
+    "path": "/assets/images/box-reference-catalog/d806685f695dca1d3951.webp",
+    "alt": "Small colored corrugated pr mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601411329758",
+    "caption": "Small colored corrugated pr mailer. Printed packaging format reference."
+  },
+  "package-appearance-pass-criterion-after-testing-1": {
+    "path": "/assets/images/luxopack-catalog/9e8f2902b2810f7d947c.webp",
+    "alt": "Textured gift box with ribbon",
+    "width": 1200,
+    "height": 900,
+    "reference": "PHG-LX-68C8BF0B4C",
+    "caption": "Textured gift box with ribbon. Packaging appearance reference."
+  },
+  "package-appearance-pass-criterion-after-testing-2": {
+    "path": "/assets/images/box-reference-catalog/5861918eff140b372117.webp",
+    "alt": "Gold-foil perfume drawer box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601691905226",
+    "caption": "Gold-foil perfume drawer box. Packaging appearance reference."
+  },
+  "package-appearance-pass-criterion-after-testing-3": {
+    "path": "/assets/images/luxopack-catalog/d1f4eb850f17a081c65f.webp",
+    "alt": "Ribbon-tied rigid gift box",
+    "width": 1024,
+    "height": 1024,
+    "reference": "PHG-LX-96747723A2",
+    "caption": "Ribbon-tied rigid gift box. Packaging appearance reference."
+  },
+  "package-appearance-pass-criterion-after-testing-4": {
+    "path": "/assets/images/luxopack-catalog/a95a051b2040a0cf1b93.webp",
+    "alt": "Festive cosmetic gift box",
+    "width": 1448,
+    "height": 1086,
+    "reference": "PHG-LX-EF7DC6F348",
+    "caption": "Festive cosmetic gift box. Packaging appearance reference."
+  },
+  "package-appearance-pass-criterion-after-testing-5": {
+    "path": "/assets/images/box-reference-catalog/64b9c3081774a553ede9.webp",
+    "alt": "White beauty packaging mailer set",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601420856898",
+    "caption": "White beauty packaging mailer set. Packaging appearance reference."
+  },
+  "compare-returns-and-outbound-packaging-1": {
+    "path": "/assets/images/box-reference-catalog/49ad2d10b4eb26966188.webp",
+    "alt": "Self-seal tear-open gift mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600746612411",
+    "caption": "Self-seal tear-open gift mailer. Mailer format reference."
+  },
+  "compare-returns-and-outbound-packaging-2": {
+    "path": "/assets/images/box-reference-catalog/2241388bbc6616d3653f.webp",
+    "alt": "Tear-strip corrugated mailer",
+    "width": 935,
+    "height": 935,
+    "reference": "PHG-FP-1601761844280",
+    "caption": "Tear-strip corrugated mailer. Mailer format reference."
+  },
+  "compare-returns-and-outbound-packaging-3": {
+    "path": "/assets/images/box-reference-catalog/eb318f5aff832db92afd.webp",
+    "alt": "Folding e-commerce gift mailer",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601221675006",
+    "caption": "Folding e-commerce gift mailer. Mailer format reference."
+  },
+  "compare-returns-and-outbound-packaging-4": {
+    "path": "/assets/images/box-reference-catalog/c1fa5fab10ec2b7c6c51.webp",
+    "alt": "Printed foldable clothing gift mailer",
+    "width": 959,
+    "height": 960,
+    "reference": "PHG-FP-1601234080995",
+    "caption": "Printed foldable clothing gift mailer. Mailer format reference."
+  },
+  "compare-returns-and-outbound-packaging-5": {
+    "path": "/assets/images/box-reference-catalog/5447d815def7f5db1c8f.webp",
+    "alt": "Corrugated mailer for shirts and socks",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601426858616",
+    "caption": "Corrugated mailer for shirts and socks. Mailer format reference."
+  },
+  "avoid-crushing-soft-product-under-insert-1": {
+    "path": "/assets/images/box-reference-catalog/7840147c4a477178cd6c.webp",
+    "alt": "Flat-pack magnetic apparel gift box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1600177772499",
+    "caption": "Flat-pack magnetic apparel gift box. Soft product packaging format reference."
+  },
+  "avoid-crushing-soft-product-under-insert-2": {
+    "path": "/assets/images/box-reference-catalog/11c9ca41645450c27e40.webp",
+    "alt": "Black folding magnetic clothing box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1600254233562",
+    "caption": "Black folding magnetic clothing box. Soft product packaging format reference."
+  },
+  "avoid-crushing-soft-product-under-insert-3": {
+    "path": "/assets/images/box-reference-catalog/4406a042ad45eaf0804a.webp",
+    "alt": "Coated-paper magnetic apparel gift box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601364526807",
+    "caption": "Coated-paper magnetic apparel gift box. Soft product packaging format reference."
+  },
+  "avoid-crushing-soft-product-under-insert-4": {
+    "path": "/assets/images/box-reference-catalog/a33ad601a51eb8a29998.webp",
+    "alt": "Folded magnetic apparel packaging box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601787073527",
+    "caption": "Folded magnetic apparel packaging box. Soft product packaging format reference."
+  },
+  "avoid-crushing-soft-product-under-insert-5": {
+    "path": "/assets/images/box-reference-catalog/0b38d9b66d4b9f5c46ef.webp",
+    "alt": "Brown corrugated clothing postal box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601202150827",
+    "caption": "Brown corrugated clothing postal box. Soft product packaging format reference."
+  },
+  "identify-worst-case-parcel-mixed-orders-1": {
+    "path": "/assets/images/box-reference-catalog/c108593da94fe8b5de78.webp",
+    "alt": "Custom printed brand mailer box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601429765490",
+    "caption": "Custom printed brand mailer box. Packed order format reference."
+  },
+  "identify-worst-case-parcel-mixed-orders-2": {
+    "path": "/assets/images/box-reference-catalog/484a87c923064b5bba61.webp",
+    "alt": "Pink stripe perfume and essential oil mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601430601788",
+    "caption": "Pink stripe perfume and essential oil mailer. Packed order format reference."
+  },
+  "identify-worst-case-parcel-mixed-orders-3": {
+    "path": "/assets/images/box-reference-catalog/640d342af21232d1ae16.webp",
+    "alt": "Cosmetic corrugated mailer for skincare",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601535272619",
+    "caption": "Cosmetic corrugated mailer for skincare. Packed order format reference."
+  },
+  "identify-worst-case-parcel-mixed-orders-4": {
+    "path": "/assets/images/box-reference-catalog/51bb8d3bd261e2f9bf52.webp",
+    "alt": "Printed hijab mailer box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1600513435707",
+    "caption": "Printed hijab mailer box. Packed order format reference."
+  },
+  "identify-worst-case-parcel-mixed-orders-5": {
+    "path": "/assets/images/box-reference-catalog/aa2c5dcda19cc148842e.webp",
+    "alt": "Small pink corrugated gift mailer",
+    "width": 600,
+    "height": 600,
+    "reference": "PHG-FP-1601187566860",
+    "caption": "Small pink corrugated gift mailer. Packed order format reference."
+  },
+  "packing-instruction-new-fulfilment-partner-1": {
+    "path": "/assets/images/box-reference-catalog/d9b12ae8011890a0eb6a.webp",
+    "alt": "Beauty and hair corrugated mailer",
+    "width": 960,
+    "height": 949,
+    "reference": "PHG-FP-1601812713340",
+    "caption": "Beauty and hair corrugated mailer. Packing format reference."
+  },
+  "packing-instruction-new-fulfilment-partner-2": {
+    "path": "/assets/images/box-reference-catalog/1cd7994e70200cea7352.webp",
+    "alt": "Dried-flower bouquet mailer",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1600738628561",
+    "caption": "Dried-flower bouquet mailer. Packing format reference."
+  },
+  "packing-instruction-new-fulfilment-partner-3": {
+    "path": "/assets/images/luxopack-catalog/90dd58e21c19decf02cb.webp",
+    "alt": "Gable gift box with handle",
+    "width": 1200,
+    "height": 900,
+    "reference": "PHG-LX-2BC608BBE9",
+    "caption": "Gable gift box with handle. Packing format reference."
+  },
+  "packing-instruction-new-fulfilment-partner-4": {
+    "path": "/assets/images/luxopack-catalog/cee76a11d65882f43911.webp",
+    "alt": "Round paper tube gift box",
+    "width": 1200,
+    "height": 896,
+    "reference": "PHG-LX-06310A49F9",
+    "caption": "Round paper tube gift box. Packing format reference."
+  },
+  "packing-instruction-new-fulfilment-partner-5": {
+    "path": "/assets/images/box-reference-catalog/7e3192f1532f5a083582.webp",
+    "alt": "Handle carry gift box",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601184438696",
+    "caption": "Handle carry gift box. Packing format reference."
+  },
+  "measure-pallet-layouts-for-cartons-1": {
+    "path": "/assets/company/material-warehouse.webp",
+    "alt": "Packaging materials at the warehouse",
+    "width": 805,
+    "height": 363,
+    "reference": "Existing site library",
+    "caption": "Packaging materials at the warehouse. Warehouse or carton format reference."
+  },
+  "measure-pallet-layouts-for-cartons-2": {
+    "path": "/assets/images/box-reference-catalog/364f383313ef50287cb8.webp",
+    "alt": "Folding corrugated apparel and shoe box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1600471522305",
+    "caption": "Folding corrugated apparel and shoe box. Warehouse or carton format reference."
+  },
+  "measure-pallet-layouts-for-cartons-3": {
+    "path": "/assets/images/box-reference-catalog/08c3c3f5f3295915c449.webp",
+    "alt": "Pink corrugated clothing mailer",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601228919445",
+    "caption": "Pink corrugated clothing mailer. Warehouse or carton format reference."
+  },
+  "measure-pallet-layouts-for-cartons-4": {
+    "path": "/assets/images/box-reference-catalog/8465112fc8d8681ecca3.webp",
+    "alt": "Black folding magnetic clothing gift box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601682769625",
+    "caption": "Black folding magnetic clothing gift box. Warehouse or carton format reference."
+  },
+  "measure-pallet-layouts-for-cartons-5": {
+    "path": "/assets/images/box-reference-catalog/4ccdc365ae18d8677a50.webp",
+    "alt": "Magnetic flap-lid apparel and makeup box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601406147522",
+    "caption": "Magnetic flap-lid apparel and makeup box. Warehouse or carton format reference."
+  },
+  "investigate-popped-parcel-seals-1": {
+    "path": "/assets/images/luxopack-catalog/2d8235a0c0847262ef3c.webp",
+    "alt": "Printed mailer box with tear strip",
+    "width": 1200,
+    "height": 896,
+    "reference": "PHG-LX-A8153AD7FA",
+    "caption": "Printed mailer box with tear strip. Shipping carton format reference."
+  },
+  "investigate-popped-parcel-seals-2": {
+    "path": "/assets/images/luxopack-catalog/aa47d8240ceed239d3e7.webp",
+    "alt": "Printed corrugated shipping box",
+    "width": 1200,
+    "height": 900,
+    "reference": "PHG-LX-0F11B86A69",
+    "caption": "Printed corrugated shipping box. Shipping carton format reference."
+  },
+  "investigate-popped-parcel-seals-3": {
+    "path": "/assets/images/box-reference-catalog/227eb8e5aff55ad0126e.webp",
+    "alt": "Corrugated beauty gift shipping box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601416057814",
+    "caption": "Corrugated beauty gift shipping box. Shipping carton format reference."
+  },
+  "investigate-popped-parcel-seals-4": {
+    "path": "/assets/images/box-reference-catalog/b74eded5aa09df9c7bbc.webp",
+    "alt": "Pink cosmetic postal shipping box",
+    "width": 600,
+    "height": 600,
+    "reference": "PHG-FP-1601590595102",
+    "caption": "Pink cosmetic postal shipping box. Shipping carton format reference."
+  },
+  "investigate-popped-parcel-seals-5": {
+    "path": "/assets/images/box-reference-catalog/1b08d67a034f1c52c114.webp",
+    "alt": "Colorful cosmetic pr shipping box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601411926213",
+    "caption": "Colorful cosmetic pr shipping box. Shipping carton format reference."
+  },
+  "damage-threshold-retail-presentation-packs-1": {
+    "path": "/assets/images/luxopack-catalog/2c657700a731b43b9257.webp",
+    "alt": "Apparel magnetic gift box",
+    "width": 1200,
+    "height": 900,
+    "reference": "PHG-LX-966F53725A",
+    "caption": "Apparel magnetic gift box. Retail presentation format reference."
+  },
+  "damage-threshold-retail-presentation-packs-2": {
+    "path": "/assets/images/luxopack-catalog/b8bd968d63f58154d751.webp",
+    "alt": "Leather-look jewelry drawer box",
+    "width": 800,
+    "height": 446,
+    "reference": "PHG-LX-1601ECE02B",
+    "caption": "Leather-look jewelry drawer box. Retail presentation format reference."
+  },
+  "damage-threshold-retail-presentation-packs-3": {
+    "path": "/assets/images/box-reference-catalog/8ec418b4882deff80e76.webp",
+    "alt": "Magnetic press-on nail and lash set box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601581572557",
+    "caption": "Magnetic press-on nail and lash set box. Retail presentation format reference."
+  },
+  "damage-threshold-retail-presentation-packs-4": {
+    "path": "/assets/images/box-reference-catalog/2303d24e9d7175de2d4b.webp",
+    "alt": "Black collapsible magnetic gift box",
+    "width": 631,
+    "height": 632,
+    "reference": "PHG-FP-1601870681941",
+    "caption": "Black collapsible magnetic gift box. Retail presentation format reference."
+  },
+  "damage-threshold-retail-presentation-packs-5": {
+    "path": "/assets/images/box-reference-catalog/19d815417fac0b514a5f.webp",
+    "alt": "Folding magnetic cardboard gift box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601693213693",
+    "caption": "Folding magnetic cardboard gift box. Retail presentation format reference."
+  },
+  "assess-fibre-tray-for-scratch-prone-product-1": {
+    "path": "/assets/images/luxopack-catalog/cf388963af89eb7a2430.webp",
+    "alt": "Skincare gift set box with fitted insert",
+    "width": 1600,
+    "height": 1000,
+    "reference": "PHG-LX-AE2C577862",
+    "caption": "Skincare gift set box with fitted insert. Contact and support format reference."
+  },
+  "assess-fibre-tray-for-scratch-prone-product-2": {
+    "path": "/assets/images/luxopack-catalog/20055a4b53324ae2bd6e.webp",
+    "alt": "Jewelry presentation box with lined insert",
+    "width": 1200,
+    "height": 900,
+    "reference": "PHG-LX-D3FCC0BFF6",
+    "caption": "Jewelry presentation box with lined insert. Contact and support format reference."
+  },
+  "assess-fibre-tray-for-scratch-prone-product-3": {
+    "path": "/assets/images/box-reference-catalog/e7b77645e0b97d2876dd.webp",
+    "alt": "Magnetic multi-vial box with slotted liner",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601867749547",
+    "caption": "Magnetic multi-vial box with slotted liner. Contact and support format reference."
+  },
+  "assess-fibre-tray-for-scratch-prone-product-4": {
+    "path": "/assets/images/box-reference-catalog/8333382a72852ee83acc.webp",
+    "alt": "Rigid perfume bottle drawer box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601367069777",
+    "caption": "Rigid perfume bottle drawer box. Contact and support format reference."
+  },
+  "assess-fibre-tray-for-scratch-prone-product-5": {
+    "path": "/assets/images/box-reference-catalog/7c4b2b0d60343e12c6da.webp",
+    "alt": "Magnetic vial and pen-format presentation box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601723415858",
+    "caption": "Magnetic vial and pen-format presentation box. Contact and support format reference."
+  },
+  "check-packaging-label-easy-to-remove-1": {
+    "path": "/assets/images/box-reference-catalog/4145ef37fc03ac7841d6.webp",
+    "alt": "Drawer box for slim cosmetic bottles",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600736731396",
+    "caption": "Drawer box for slim cosmetic bottles. Packaging surface reference."
+  },
+  "check-packaging-label-easy-to-remove-2": {
+    "path": "/assets/images/box-reference-catalog/98d4eff6e17bfede7daf.webp",
+    "alt": "Burgundy perfume drawer box with matching bag",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-10000048351551",
+    "caption": "Burgundy perfume drawer box with matching bag. Packaging surface reference."
+  },
+  "check-packaging-label-easy-to-remove-3": {
+    "path": "/assets/images/box-reference-catalog/6bf1faecfa45074b6040.webp",
+    "alt": "30ml dropper-oil drawer box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601383548890",
+    "caption": "30ml dropper-oil drawer box. Packaging surface reference."
+  },
+  "check-packaging-label-easy-to-remove-4": {
+    "path": "/assets/images/box-reference-catalog/deed838c3d2af3978034.webp",
+    "alt": "Handmade soap drawer packaging box",
+    "width": 580,
+    "height": 580,
+    "reference": "PHG-FP-1601494303838",
+    "caption": "Handmade soap drawer packaging box. Packaging surface reference."
+  },
+  "check-packaging-label-easy-to-remove-5": {
+    "path": "/assets/images/box-reference-catalog/a3f3c3cc13180076f7be.webp",
+    "alt": "Square soap and body butter drawer box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601696327749",
+    "caption": "Square soap and body butter drawer box. Packaging surface reference."
+  },
+  "when-to-choose-uncoated-carton-1": {
+    "path": "/assets/images/box-reference-catalog/a7610effa12d430073d2.webp",
+    "alt": "Floral pink folding carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601025696727",
+    "caption": "Floral pink folding carton. Carton construction or process reference."
+  },
+  "when-to-choose-uncoated-carton-2": {
+    "path": "/assets/process/paper-cutting.webp",
+    "alt": "Paper cutting equipment",
+    "width": 563,
+    "height": 750,
+    "reference": "Existing site process library",
+    "caption": "Paper cutting equipment. Carton construction or process reference."
+  },
+  "when-to-choose-uncoated-carton-3": {
+    "path": "/assets/images/luxopack-catalog/39cd52e519fcbd3aa37b.webp",
+    "alt": "Printed folding carton",
+    "width": 1200,
+    "height": 900,
+    "reference": "PHG-LX-8579620ADC",
+    "caption": "Printed folding carton. Carton construction or process reference."
+  },
+  "when-to-choose-uncoated-carton-4": {
+    "path": "/assets/images/box-reference-catalog/c520addc932eab1136c3.webp",
+    "alt": "Printed rigid paperboard box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601446119600",
+    "caption": "Printed rigid paperboard box. Carton construction or process reference."
+  },
+  "when-to-choose-uncoated-carton-5": {
+    "path": "/assets/company/sample-room.webp",
+    "alt": "Packaging samples in the sample room",
+    "width": 1100,
+    "height": 388,
+    "reference": "Existing site library",
+    "caption": "Packaging samples in the sample room. Carton construction or process reference."
+  },
+  "document-materials-windowed-gift-box-1": {
+    "path": "/assets/images/box-reference-catalog/cc91a504f9253fccf5b5.webp",
+    "alt": "Pink window gift box",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601284096115",
+    "caption": "Pink window gift box. Packaging component reference."
+  },
+  "document-materials-windowed-gift-box-2": {
+    "path": "/assets/images/box-reference-catalog/b07b3b13ad5dd56197df.webp",
+    "alt": "Window magnetic beauty gift box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601686858157",
+    "caption": "Window magnetic beauty gift box. Packaging component reference."
+  },
+  "document-materials-windowed-gift-box-3": {
+    "path": "/assets/images/luxopack-catalog/e0903ac90829b8c93939.webp",
+    "alt": "Window phone case packaging box",
+    "width": 1200,
+    "height": 900,
+    "reference": "PHG-LX-048461871F",
+    "caption": "Window phone case packaging box. Packaging component reference."
+  },
+  "document-materials-windowed-gift-box-4": {
+    "path": "/assets/images/box-reference-catalog/cdcfb5b563a7c21319cd.webp",
+    "alt": "Window magnetic nail presentation box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601595553382",
+    "caption": "Window magnetic nail presentation box. Packaging component reference."
+  },
+  "document-materials-windowed-gift-box-5": {
+    "path": "/assets/images/box-reference-catalog/334ce4a539789137da15.webp",
+    "alt": "Ribbon-tied magnetic gift box",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1600303020148",
+    "caption": "Ribbon-tied magnetic gift box. Packaging component reference."
+  },
+  "compare-brand-color-white-natural-kraft-1": {
+    "path": "/assets/images/box-reference-catalog/e532f2ce8a9bb8cb66fd.webp",
+    "alt": "White skincare carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601045112496",
+    "caption": "White skincare carton. Print surface reference."
+  },
+  "compare-brand-color-white-natural-kraft-2": {
+    "path": "/assets/catalog/1600499157232.webp",
+    "alt": "Printed natural kraft mailer",
+    "width": 480,
+    "height": 480,
+    "reference": "PHG-1600499157232",
+    "caption": "Printed natural kraft mailer. Print surface reference."
+  },
+  "compare-brand-color-white-natural-kraft-3": {
+    "path": "/assets/catalog/1600768789952.webp",
+    "alt": "Brown kraft mailing bags with dark printed graphics",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-1600768789952",
+    "caption": "Brown kraft mailing bags with dark printed graphics. Print surface reference."
+  },
+  "compare-brand-color-white-natural-kraft-4": {
+    "path": "/assets/images/box-reference-catalog/29090cae60e5b943e23f.webp",
+    "alt": "Off-white magnetic perfume box with gold foil",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601773863255",
+    "caption": "Off-white magnetic perfume box with gold foil. Print surface reference."
+  },
+  "compare-brand-color-white-natural-kraft-5": {
+    "path": "/assets/images/box-reference-catalog/d1027c03fac716e45b3f.webp",
+    "alt": "White face mask carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601175513281",
+    "caption": "White face mask carton. Print surface reference."
+  },
+  "box-material-details-condensation-1": {
+    "path": "/assets/images/luxopack-catalog/2e9e905fb023e071d2b6.webp",
+    "alt": "Printed food packaging set",
+    "width": 800,
+    "height": 446,
+    "reference": "PHG-LX-A1DD5C7FD8",
+    "caption": "Printed food packaging set. Packaging construction reference."
+  },
+  "box-material-details-condensation-2": {
+    "path": "/assets/images/box-reference-catalog/4ecf9cc4fb064be0fb50.webp",
+    "alt": "Cookie and dessert drawer box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601584358849",
+    "caption": "Cookie and dessert drawer box. Packaging construction reference."
+  },
+  "box-material-details-condensation-3": {
+    "path": "/assets/images/luxopack-catalog/4e6b2bb3626c49916001.webp",
+    "alt": "Printed food service box",
+    "width": 1200,
+    "height": 804,
+    "reference": "PHG-LX-FDF8801F4C",
+    "caption": "Printed food service box. Packaging construction reference."
+  },
+  "box-material-details-condensation-4": {
+    "path": "/assets/images/box-reference-catalog/fa49d9073db981a02c9b.webp",
+    "alt": "Mini bottle drawer box",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601275614500",
+    "caption": "Mini bottle drawer box. Packaging construction reference."
+  },
+  "box-material-details-condensation-5": {
+    "path": "/assets/images/box-reference-catalog/77657ca04c002adc1781.webp",
+    "alt": "Perfume sample drawer box",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601244653658",
+    "caption": "Perfume sample drawer box. Packaging construction reference."
+  },
+  "qualify-foam-to-folded-paper-protection-1": {
+    "path": "/assets/images/box-reference-catalog/f697af643cb44958cd50.webp",
+    "alt": "Magnetic skincare gift box with sponge lining",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601009674395",
+    "caption": "Magnetic skincare gift box with sponge lining. Packaging construction reference."
+  },
+  "qualify-foam-to-folded-paper-protection-2": {
+    "path": "/assets/images/box-reference-catalog/f2e9e7b1d5875179ec66.webp",
+    "alt": "Matte book-style magnetic box with liner",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601693468489",
+    "caption": "Matte book-style magnetic box with liner. Packaging construction reference."
+  },
+  "qualify-foam-to-folded-paper-protection-3": {
+    "path": "/assets/images/box-reference-catalog/31350c631a6d8be4f7cb.webp",
+    "alt": "Perfume sample folding presentation pack",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601268507354",
+    "caption": "Perfume sample folding presentation pack. Packaging construction reference."
+  },
+  "qualify-foam-to-folded-paper-protection-4": {
+    "path": "/assets/images/luxopack-catalog/b7a61a3d8fa9390dca9a.webp",
+    "alt": "Corrugated product box",
+    "width": 1200,
+    "height": 900,
+    "reference": "PHG-LX-3C9346CDBB",
+    "caption": "Corrugated product box. Packaging construction reference."
+  },
+  "qualify-foam-to-folded-paper-protection-5": {
+    "path": "/assets/images/box-reference-catalog/840232380ad353dff539.webp",
+    "alt": "Folding paper box for candle jars",
+    "width": 960,
+    "height": 960,
+    "reference": "PHG-FP-1601082023722",
+    "caption": "Folding paper box for candle jars. Packaging construction reference."
+  },
+  "supplier-adhesive-paper-package-1": {
+    "path": "/assets/images/box-reference-catalog/87d5afc1c961fd906193.webp",
+    "alt": "Cream bottle carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601280051961",
+    "caption": "Cream bottle carton. Packaging construction reference."
+  },
+  "supplier-adhesive-paper-package-2": {
+    "path": "/assets/images/box-reference-catalog/c8a405620d9f8b2566e6.webp",
+    "alt": "Printed perfume sample folder",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601181778046",
+    "caption": "Printed perfume sample folder. Packaging construction reference."
+  },
+  "supplier-adhesive-paper-package-3": {
+    "path": "/assets/images/box-reference-catalog/142a607804790e9dad14.webp",
+    "alt": "Gray textured cosmetic carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601250820963",
+    "caption": "Gray textured cosmetic carton. Packaging construction reference."
+  },
+  "supplier-adhesive-paper-package-4": {
+    "path": "/assets/images/box-reference-catalog/2c049dd259e48397b0d9.webp",
+    "alt": "Small folding lip gloss and perfume box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601451173783",
+    "caption": "Small folding lip gloss and perfume box. Packaging construction reference."
+  },
+  "supplier-adhesive-paper-package-5": {
+    "path": "/assets/images/box-reference-catalog/a5eae01ac2c447287a07.webp",
+    "alt": "Cream skincare carton",
+    "width": 900,
+    "height": 900,
+    "reference": "PHG-FP-1601274352853",
+    "caption": "Cream skincare carton. Packaging construction reference."
+  },
+  "compare-packaging-weight-product-protection-1": {
+    "path": "/assets/images/box-reference-catalog/58fe36b7193dc8164640.webp",
+    "alt": "Large foldable magnetic gift box",
+    "width": 750,
+    "height": 750,
+    "reference": "PHG-FP-1600791351131",
+    "caption": "Large foldable magnetic gift box. Packaging construction reference."
+  },
+  "compare-packaging-weight-product-protection-2": {
+    "path": "/assets/images/box-reference-catalog/bd6f9968d918399e1fad.webp",
+    "alt": "Flat-profile magnetic gift box",
+    "width": 640,
+    "height": 640,
+    "reference": "PHG-FP-1600901964348",
+    "caption": "Flat-profile magnetic gift box. Packaging construction reference."
+  },
+  "compare-packaging-weight-product-protection-3": {
+    "path": "/assets/images/box-reference-catalog/5f4d877bb4375a345640.webp",
+    "alt": "Matte collapsible magnetic box",
+    "width": 960,
+    "height": 959,
+    "reference": "PHG-FP-1600094963721",
+    "caption": "Matte collapsible magnetic box. Packaging construction reference."
+  },
+  "compare-packaging-weight-product-protection-4": {
+    "path": "/assets/images/luxopack-catalog/6179e2678f8d54a2694b.webp",
+    "alt": "Long presentation box with carry handle",
+    "width": 1200,
+    "height": 1200,
+    "reference": "PHG-LX-C5BFFC50F2",
+    "caption": "Long presentation box with carry handle. Packaging construction reference."
+  },
+  "compare-packaging-weight-product-protection-5": {
+    "path": "/assets/images/box-reference-catalog/80daf0caf31762d6f888.webp",
+    "alt": "Printed corrugated gift mailing box",
+    "width": 800,
+    "height": 800,
+    "reference": "PHG-FP-1601705753799",
+    "caption": "Printed corrugated gift mailing box. Packaging construction reference."
   }
 }
